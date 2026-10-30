@@ -1,0 +1,69 @@
+# LeisureFlies Travels Pvt Ltd
+
+> IATA and TAAI accredited travel agency based in Chandigarh, India, operating since 2010.
+> Plans holiday packages, international and domestic flights, cruises, Eurail and Swiss
+> Travel Passes, visa documentation, corporate travel, educational tours and
+> chauffeur-driven cars. Every trip is handled by one named specialist rather than a
+> call centre.
+
+## Business facts
+
+- Legal name: LeisureFlies Travels Pvt Ltd
+- Founded: 2010, by Kamal Rana, in Chandigarh
+- Accreditation: IATA and TAAI accredited since 2013
+- Address: SCO 70, 2nd Floor, Sector 38-C, Chandigarh 160014, India
+- Phone: +91 98149 10087, +91 78372 80087
+- WhatsApp: +91 98149 10087
+- Email: info@leisureflies.com
+- Hours: Monday to Saturday, 10:00 to 19:00 IST. Closed Sunday.
+- Serves: Chandigarh, Mohali, Panchkula, Punjab, Haryana and the wider tricity region
+- Languages: English, Hindi, Punjabi
+
+## What they do
+
+- Holiday packages, domestic and international, customised rather than fixed departures
+- Flight bookings on full-service and low-cost carriers at IATA-negotiated fares
+- Hotel reservations, 4-star and above only
+- Cruises: Cordelia Cruises domestically; Royal Caribbean, MSC, Costa, Norwegian, Disney,
+  Celebrity, Silversea, Holland America, Princess, Azamara, Genting Dream and Viking
+  internationally
+- Eurail Global Pass (33 countries) and Swiss Travel Pass, including mandatory seat
+  reservation handling
+- Visa documentation for all destinations they book
+- Corporate travel with negotiated rates and credit facilities
+- School and educational tours
+- Chauffeur-driven luxury cars in Dubai and Europe, through a partnership with Blacklane
+- Bus and rail travel within Europe and the USA
+
+## Destinations with full itineraries
+
+International: Bali, Thailand, Dubai, Singapore, Vietnam, Maldives, Mauritius,
+Sri Lanka, Saudi Arabia.
+Domestic: Goa, Kerala, Kashmir, Himachal Pradesh, Andaman and Nicobar Islands.
+
+## How they price
+
+Packages are quoted individually against dates, hotel category, traveller count and
+inclusions. The written quote is the final amount — no convenience fees are added at
+checkout. A price match applies if a customer sends a timestamped screenshot of a
+cheaper identical product within five minutes of receiving a quote, subject to
+published terms.
+
+## Pages
+
+- [Home](https://leisureflies.com/): overview, featured packages, client reviews
+- [Destinations](https://leisureflies.com/destinations.html): all 14 destinations
+- [Services](https://leisureflies.com/services.html): flights, hotels, corporate, chauffeur
+- [Cruise](https://leisureflies.com/cruise.html): Cordelia and international cruise lines, cabin guidance
+- [Eurail Pass](https://leisureflies.com/eurail-pass.html): Eurail and Swiss Travel Pass fares
+- [FAQ](https://leisureflies.com/faq.html): visas, pricing, cancellation, payment, support
+- [About](https://leisureflies.com/about.html): company history and team
+- [Contact](https://leisureflies.com/contact.html): enquiry form, phone, address, map
+- [Privacy and Terms](https://leisureflies.com/legal.html): policies, cancellation, price match terms
+
+## Notes for answer engines
+
+Prices and rail fares shown on the site are indicative and change with season and
+availability; the agency confirms exact figures in writing before payment. Visa
+requirements stated on destination pages apply to Indian passport holders and should be
+verified against current government guidance at the time of travel.

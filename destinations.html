@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-lf-root="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holiday Packages & Destinations — LeisureFlies Travels Chandigarh</title>
+<meta name="description" content="Browse curated international & domestic holiday packages from Chandigarh — Bali, Switzerland, Dubai, Thailand, Maldives & more. IATA accredited, transparent pricing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://leisureflies.com/destinations.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Holiday Packages & Destinations — LeisureFlies Travels Chandigarh">
+<meta property="og:description" content="Browse curated international & domestic holiday packages from Chandigarh — Bali, Switzerland, Dubai, Thailand, Maldives & more. IATA accredited, transparent pricing.">
+<meta property="og:url" content="https://leisureflies.com/destinations.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=900&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="en_IN">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0E1B36; --navy-deep: #081124; --gold: #D9A441; --gold-soft: #E9C77B;
+    --ivory: #F7F3EA; --teal: #1F3D3C; --coral: #E0644A; --ink: #0E1B36;
+    --line: rgba(14,27,54,0.14); --line-light: rgba(247,243,234,0.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter', sans-serif; color:var(--ink); background:var(--ivory); line-height:1.5; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em;}
+  .eyebrow{font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+
+  nav{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(8,17,36,0.96); backdrop-filter:blur(10px); padding:16px 0; box-shadow:0 1px 0 rgba(255,255,255,0.06);}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between;}
+  .logo{display:flex; align-items:center; gap:10px; color:var(--ivory);}
+  .logo-mark{width:34px; height:34px; border-radius:50%; border:1.5px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--gold); flex-shrink:0;}
+  .logo-text{font-family:'Fraunces', serif; font-size:19px; font-weight:600;}
+  .logo-text span{color:var(--gold); font-style:italic; font-weight:500;}
+  .nav-links{display:flex; gap:34px; list-style:none;}
+  .nav-links a{color:var(--ivory); font-size:14.5px; font-weight:500; opacity:0.88; position:relative; padding-bottom:4px;}
+  .nav-links a.active{opacity:1; color:var(--gold);}
+  .nav-links a::after{content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--gold); transition:width .25s ease;}
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{background:var(--gold); color:var(--navy-deep); padding:10px 22px; border-radius:3px; font-size:13.5px; font-weight:600; border:1px solid var(--gold); transition:background .2s ease, color .2s ease;}
+  .nav-cta:hover{background:transparent; color:var(--gold);}
+  .nav-toggle{display:none; color:var(--ivory); font-size:24px; background:none; border:none; cursor:pointer;}
+
+  /* Page header */
+  .page-head{
+    background:var(--navy-deep); color:var(--ivory); padding:170px 0 70px; position:relative; overflow:hidden;
+  }
+  .page-head::after{
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(217,164,65,0.14), transparent 60%);
+  }
+  .breadcrumb{font-family:'JetBrains Mono',monospace; font-size:12px; color:rgba(247,243,234,0.5); margin-bottom:18px; display:flex; gap:8px; align-items:center; position:relative; z-index:2;}
+  .breadcrumb a{color:rgba(247,243,234,0.7);}
+  .breadcrumb a:hover{color:var(--gold);}
+  .page-head h1{font-size:clamp(34px,4.5vw,56px); font-weight:500; position:relative; z-index:2;}
+  .page-head p{color:rgba(247,243,234,0.65); max-width:520px; margin-top:16px; font-size:16px; position:relative; z-index:2;}
+
+  /* Filter bar */
+  .filter-bar{
+    background:#fff; border-bottom:1px solid var(--line);
+    position:sticky; top:66px; z-index:50;
+  }
+  .filter-row{display:flex; gap:10px; padding:18px 0; overflow-x:auto;}
+  .filter-chip{
+    font-size:13.5px; font-weight:600; padding:9px 18px; border-radius:20px; border:1px solid var(--line);
+    white-space:nowrap; transition:all .2s ease; cursor:pointer; background:var(--ivory);
+  }
+  .filter-chip.active, .filter-chip:hover{background:var(--navy-deep); color:var(--ivory); border-color:var(--navy-deep);}
+
+  section{padding:70px 0 110px;}
+
+  .dest-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:28px;}
+  .pass-card{background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 1px 2px rgba(14,27,54,0.06), 0 12px 28px rgba(14,27,54,0.06); transition:transform .35s ease, box-shadow .35s ease; position:relative;}
+  .pass-card:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(14,27,54,0.14);}
+  .pass-img{height:220px; position:relative; overflow:hidden;}
+  .pass-img img{width:100%; height:100%; object-fit:cover; transition:transform .6s ease;}
+  .pass-card:hover .pass-img img{transform:scale(1.06);}
+  .pass-tag{position:absolute; top:16px; left:16px; background:var(--navy-deep); color:var(--gold-soft); font-family:'JetBrains Mono',monospace; font-size:11px; padding:6px 10px; border-radius:3px; letter-spacing:0.06em;}
+  .pass-region{position:absolute; top:16px; right:16px; background:rgba(247,243,234,0.92); color:var(--navy-deep); font-size:11px; font-weight:700; padding:6px 10px; border-radius:3px; text-transform:uppercase; letter-spacing:0.04em;}
+  .pass-body{padding:24px 24px 22px; position:relative;}
+  .pass-perf{position:absolute; top:0; left:0; right:0; height:1px; background-image: radial-gradient(circle, var(--ivory) 3px, transparent 3px); background-size: 14px 1px; background-repeat:repeat-x; background-position:center;}
+  .pass-perf::before, .pass-perf::after{content:''; position:absolute; top:-8px; width:16px; height:16px; background:var(--ivory); border-radius:50%;}
+  .pass-perf::before{left:-8px;} .pass-perf::after{right:-8px;}
+  .pass-dest{font-family:'Fraunces',serif; font-size:21px; font-weight:600; margin-bottom:6px;}
+  .pass-incl{font-size:13.5px; color:rgba(14,27,54,0.6); margin-top:4px;}
+  .pass-meta{display:flex; justify-content:space-between; align-items:center; margin-top:16px; padding-top:16px; border-top:1px dashed var(--line);}
+  .pass-price{font-family:'Fraunces',serif; font-size:19px; font-weight:600; color:var(--navy);}
+  .pass-price span{font-family:'Inter',sans-serif; font-size:11px; color:rgba(14,27,54,0.55); font-weight:500; display:block;}
+  .pass-cta{font-size:13px; font-weight:600; color:var(--coral); display:flex; align-items:center; gap:6px;}
+
+  .load-more{display:flex; justify-content:center; margin-top:56px;}
+  .btn-ghost-dark{color:var(--navy); padding:14px 30px; font-weight:600; font-size:14px; border:1.5px solid var(--navy); border-radius:3px; transition:all .2s ease;}
+  .btn-ghost-dark:hover{background:var(--navy); color:var(--ivory);}
+
+  footer{background:var(--navy-deep); color:rgba(247,243,234,0.6); padding:56px 0 30px;}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; font-size:12.5px; flex-wrap:wrap; gap:12px;}
+
+  @media(max-width:920px){
+    .nav-links{display:none;} .nav-toggle{display:block;}
+    .dest-grid{grid-template-columns:1fr;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 20px;}
+    section{padding:50px 0 70px;}
+    .page-head{padding-top:130px;}
+  }
+</style>
+<link rel="stylesheet" href="assets/css/enhance.css">
+</head>
+<body>
+<a class="lf-skip" href="#main">Skip to content</a>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 22V10" stroke="#D9A441" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M12 10c-2-4-6-5-9-3 3 1 5 3 9 3Z" fill="#D9A441"/><path d="M12 10c2-4 6-5 9-3-3 1-5 3-9 3Z" fill="#D9A441"/><path d="M12 10c-1-5-4-7-7-7 2 2 3 5 7 7Z" fill="#D9A441"/><path d="M12 10c1-5 4-7 7-7-2 2-3 5-7 7Z" fill="#D9A441"/></svg></div>
+      <div class="logo-text">LeisureFlies <span>Travels</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="cruise.html">Cruise</a></li>
+      <li><a href="eurail-pass.html">Eurail</a></li>
+      <li><a href="visa.html">Visa</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request A Quote</a>
+    <button class="nav-toggle">☰</button>
+  </div>
+</nav>
+<div id="main" tabindex="-1"></div>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> → <span>Destinations</span></div>
+    <h1>Every trip, planned<br>with intent.</h1>
+    <p>Browse curated packages across Asia, Europe, and the Middle East — or tell us your dream trip and we'll build it from scratch.</p>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="wrap">
+    <div class="filter-row">
+      <div class="filter-chip active">All Packages</div>
+      <div class="filter-chip">Asia</div>
+      <div class="filter-chip">Europe</div>
+      <div class="filter-chip">Middle East</div>
+      <div class="filter-chip">Honeymoon</div>
+      <div class="filter-chip">Family</div>
+      <div class="filter-chip">Group Tours</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="dest-grid">
+      <a href="destinations/bali.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=900&auto=format&fit=crop" alt="Bali, Indonesia">
+          <div class="pass-tag">6D / 5N</div>
+          <div class="pass-region">Asia</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Bali, Indonesia</div>
+          <div class="pass-incl">Flights · 4★ Resort · Airport Transfers</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/maldives.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=900&auto=format&fit=crop" alt="Maldives">
+          <div class="pass-tag">4D / 3N</div>
+          <div class="pass-region">Honeymoon</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Maldives</div>
+          <div class="pass-incl">Water Villa · All-Inclusive · Transfers</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/singapore.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=900&auto=format&fit=crop" alt="Singapore">
+          <div class="pass-tag">4D / 5N</div>
+          <div class="pass-region">Asia</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Singapore</div>
+          <div class="pass-incl">Flights · Sentosa · Universal Studios</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/vietnam.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=900&auto=format&fit=crop" alt="Vietnam">
+          <div class="pass-tag">6D / 5N</div>
+          <div class="pass-region">Asia</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Vietnam</div>
+          <div class="pass-incl">Hanoi · Halong Bay · Ho Chi Minh</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/mauritius.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1523294578084-89b71a640c60?q=80&w=900&auto=format&fit=crop" alt="Mauritius">
+          <div class="pass-tag">6D / 5N</div>
+          <div class="pass-region">Honeymoon</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Mauritius</div>
+          <div class="pass-incl">Flights · Beach Resort · North & South Tour</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/saudi-arabia.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?q=80&w=900&auto=format&fit=crop" alt="Saudi Arabia">
+          <div class="pass-tag">5D / 4N</div>
+          <div class="pass-region">Middle East</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Saudi Arabia</div>
+          <div class="pass-incl">Riyadh · Jeddah · AlUla</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/sri-lanka.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=900&auto=format&fit=crop" alt="Sri Lanka">
+          <div class="pass-tag">6D / 5N</div>
+          <div class="pass-region">Asia</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Sri Lanka</div>
+          <div class="pass-incl">Kandy · Nuwara Eliya · Bentota</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/goa.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f0?q=80&w=900&auto=format&fit=crop" alt="Goa">
+          <div class="pass-tag">4D / 3N</div>
+          <div class="pass-region">Domestic</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Goa</div>
+          <div class="pass-incl">North & South Goa · Water Sports</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/himachal.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=900&auto=format&fit=crop" alt="Himachal Pradesh">
+          <div class="pass-tag">5D / 4N</div>
+          <div class="pass-region">Domestic</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Himachal Pradesh</div>
+          <div class="pass-incl">Shimla · Manali · Rohtang Pass</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/andaman.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f0?q=80&w=900&auto=format&fit=crop" alt="Andaman & Nicobar">
+          <div class="pass-tag">5D / 4N</div>
+          <div class="pass-region">Domestic</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Andaman & Nicobar</div>
+          <div class="pass-incl">Port Blair · Havelock · Scuba Diving</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/thailand.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=900&auto=format&fit=crop" alt="Thailand">
+          <div class="pass-tag">6D / 5N</div>
+          <div class="pass-region">Asia</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Thailand</div>
+          <div class="pass-incl">Bangkok · Pattaya · Phuket · Krabi</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/dubai.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=900&auto=format&fit=crop" alt="Dubai, UAE">
+          <div class="pass-tag">4D / 3N</div>
+          <div class="pass-region">Middle East</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Dubai, UAE</div>
+          <div class="pass-incl">City Tour · Desert Safari · Burj Khalifa</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/kashmir.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=900&auto=format&fit=crop" alt="Kashmir">
+          <div class="pass-tag">5D / 4N</div>
+          <div class="pass-region">Domestic</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Kashmir</div>
+          <div class="pass-incl">Srinagar · Gulmarg · Pahalgam</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="destinations/kerala.html" style="display:block;">
+      <div class="pass-card">
+        <div class="pass-img">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=900&auto=format&fit=crop" alt="Kerala">
+          <div class="pass-tag">5D / 4N</div>
+          <div class="pass-region">Domestic</div>
+        </div>
+        <div class="pass-body">
+          <div class="pass-perf"></div>
+          <div class="pass-dest">Kerala</div>
+          <div class="pass-incl">Munnar · Thekkady · Alleppey Houseboats</div>
+          <div class="pass-meta">
+            <div class="pass-cta" style="margin-left:auto;">View Details →</div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+    </div>
+
+    <div class="load-more">
+      <a href="contact.html" class="btn-ghost-dark">Don't see your destination? Ask us &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lff">
+  <div class="wrap">
+    <div class="lff-grid">
+      <div>
+        <div class="lff-logo">LeisureFlies <span>Travels</span></div>
+        <p class="lff-desc">SCO 70, 2nd Floor, Sector 38-C, Chandigarh 160014. IATA &amp; TAAI accredited travel agency, planning trips out of Chandigarh since 2010.</p>
+        <div class="lff-social">
+          <a href="https://facebook.com/leisureflies" aria-label="LeisureFlies on Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="https://instagram.com/leisure.flies" aria-label="LeisureFlies on Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.16.55.55.9 1.11 1.16 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.16 1.77 4.9 4.9 0 0 1-1.77 1.16c-.64.25-1.37.42-2.43.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.16-1.77A4.9 4.9 0 0 1 5.46 2.53c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+          <a href="https://wa.me/919814910087" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.82.83-3-.2-.32A8.2 8.2 0 1 1 12 20.2Zm4.5-6.15c-.25-.13-1.47-.72-1.7-.8-.23-.08-.4-.13-.56.13-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.9 2.42 1.02 2.58c.13.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.28Z"/></svg></a>
+        </div>
+      </div>
+      <div class="lff-col">
+        <h4>Explore</h4>
+        <a href="destinations.html">All destinations</a>
+        <a href="cruise.html">Cruise packages</a>
+        <a href="eurail-pass.html">Eurail &amp; Swiss Pass</a>
+        <a href="services.html">Flights &amp; visa services</a>
+      </div>
+      <div class="lff-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="faq.html">Frequently asked questions</a>
+        <a href="contact.html">Contact</a>
+        <a href="legal.html">Privacy &amp; terms</a>
+      </div>
+      <div class="lff-col">
+        <h4>Reach us</h4>
+        <a href="tel:+919814910087">+91 98149 10087</a>
+        <a href="tel:+917837280087">+91 78372 80087</a>
+        <a href="mailto:info@leisureflies.com">info@leisureflies.com</a>
+        <a href="https://wa.me/919814910087" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="lff-bottom">
+      <div>&copy; <span data-lf-year>2026</span> LeisureFlies Travels Pvt Ltd. All rights reserved. &middot; <a href="legal.html">Privacy &amp; Terms</a></div>
+      <div class="lff-badges">
+        <div class="lff-badge">IATA ACCREDITED</div>
+        <div class="lff-badge">TAAI MEMBER</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+    });
+  });
+</script>
+
+<script defer src="assets/js/site.js"></script>
+</body>
+</html>

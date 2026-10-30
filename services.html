@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-lf-root="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services — Flights, Hotels, Corporate Travel | LeisureFlies Travels</title>
+<meta name="description" content="Full-service travel management from Chandigarh: flight booking, 4-star+ hotels, corporate travel, educational tours, and luxury chauffeur service via Blacklane.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://leisureflies.com/services.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Our Services — Flights, Hotels, Corporate Travel | LeisureFlies Travels">
+<meta property="og:description" content="Full-service travel management from Chandigarh: flight booking, 4-star+ hotels, corporate travel, educational tours, and luxury chauffeur service via Blacklane.">
+<meta property="og:url" content="https://leisureflies.com/services.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="en_IN">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0E1B36; --navy-deep: #081124; --gold: #D9A441; --gold-soft: #E9C77B;
+    --ivory: #F7F3EA; --teal: #1F3D3C; --coral: #E0644A; --ink: #0E1B36;
+    --line: rgba(14,27,54,0.14); --line-light: rgba(247,243,234,0.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter', sans-serif; color:var(--ink); background:var(--ivory); line-height:1.5; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em;}
+  .eyebrow{font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+
+  nav{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(8,17,36,0.96); backdrop-filter:blur(10px); padding:16px 0; box-shadow:0 1px 0 rgba(255,255,255,0.06);}
+  .nav-inner{display:flex; align-items:center; justify-content:space-between;}
+  .logo{display:flex; align-items:center; gap:10px; color:var(--ivory);}
+  .logo-mark{width:34px; height:34px; border-radius:50%; border:1.5px solid var(--gold); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .logo-text{font-family:'Fraunces', serif; font-size:19px; font-weight:600;}
+  .logo-text span{color:var(--gold); font-style:italic; font-weight:500;}
+  .nav-links{display:flex; gap:28px; list-style:none;}
+  .nav-links a{color:var(--ivory); font-size:14.5px; font-weight:500; opacity:0.88; position:relative; padding-bottom:4px;}
+  .nav-links a.active{opacity:1; color:var(--gold);}
+  .nav-links a::after{content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--gold); transition:width .25s ease;}
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{background:var(--gold); color:var(--navy-deep); padding:10px 22px; border-radius:3px; font-size:13.5px; font-weight:600; border:1px solid var(--gold);}
+  .nav-toggle{display:none; color:var(--ivory); font-size:24px; background:none; border:none; cursor:pointer;}
+
+  .page-head{background:var(--navy-deep); color:var(--ivory); padding:170px 0 80px; position:relative; overflow:hidden;}
+  .page-head::after{content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 80% 20%, rgba(217,164,65,0.14), transparent 60%);}
+  .breadcrumb{font-family:'JetBrains Mono',monospace; font-size:12px; color:rgba(247,243,234,0.5); margin-bottom:18px; display:flex; gap:8px; align-items:center; position:relative; z-index:2;}
+  .breadcrumb a{color:rgba(247,243,234,0.7);}
+  .breadcrumb a:hover{color:var(--gold);}
+  .page-head h1{font-size:clamp(34px,4.6vw,56px); font-weight:500; max-width:760px; position:relative; z-index:2;}
+  .page-head p{color:rgba(247,243,234,0.65); max-width:560px; margin-top:18px; font-size:16.5px; position:relative; z-index:2;}
+
+  section{padding:90px 0;}
+  .section-head{max-width:600px; margin-bottom:56px;}
+  .section-head .eyebrow{margin-bottom:14px; display:block;}
+  .section-head h2{font-size:clamp(28px,3.2vw,38px); font-weight:500;}
+
+  /* Services grid */
+  .svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .svc-card{
+    background:#fff; border-radius:10px; padding:32px 28px; box-shadow:0 1px 2px rgba(14,27,54,0.05), 0 10px 24px rgba(14,27,54,0.05);
+    transition:transform .3s ease, box-shadow .3s ease; position:relative;
+  }
+  .svc-card:hover{transform:translateY(-5px); box-shadow:0 18px 36px rgba(14,27,54,0.12);}
+  .svc-num{font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--gold); margin-bottom:18px; letter-spacing:0.05em;}
+  .svc-card h3{font-size:18px; font-weight:600; margin-bottom:10px;}
+  .svc-card p{font-size:14px; color:rgba(14,27,54,0.6); line-height:1.6;}
+  .svc-badge{
+    position:absolute; top:24px; right:24px; background:var(--coral); color:#fff; font-size:10px; font-weight:700;
+    padding:4px 9px; border-radius:12px; letter-spacing:0.04em; text-transform:uppercase;
+  }
+
+  /* Featured / Luxury Car Rental spotlight */
+  .spotlight{background:var(--navy-deep); color:var(--ivory);}
+  .spot-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+  .spot-img{border-radius:12px; overflow:hidden; height:400px;}
+  .spot-img img{width:100%; height:100%; object-fit:cover;}
+  .spot-text .eyebrow{margin-bottom:16px; display:block;}
+  .spot-text h2{font-size:clamp(26px,3vw,36px); font-weight:500; margin-bottom:18px;}
+  .spot-text p{color:rgba(247,243,234,0.65); font-size:15px; margin-bottom:14px;}
+  .spot-list{list-style:none; margin:24px 0;}
+  .spot-list li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:rgba(247,243,234,0.8); margin-bottom:12px;}
+  .spot-list li::before{content:'—'; color:var(--gold); flex-shrink:0;}
+  .spot-cta{display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:var(--navy-deep); padding:14px 26px; border-radius:3px; font-weight:600; font-size:14px; margin-top:8px;}
+
+  /* Process strip */
+  .process-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .process-item{padding:36px 24px; border-right:1px solid var(--line);}
+  .process-item:last-child{border-right:none;}
+  .process-step{font-family:'Fraunces',serif; font-style:italic; color:var(--coral); font-size:26px; margin-bottom:14px;}
+  .process-item h4{font-size:15px; font-weight:700; margin-bottom:8px;}
+  .process-item p{font-size:13.5px; color:rgba(14,27,54,0.58);}
+
+  .cta-strip{background:var(--gold); padding:70px 0; text-align:center;}
+  .cta-strip h2{font-size:clamp(26px,3vw,36px); color:var(--navy-deep); font-weight:500; margin-bottom:24px;}
+  .btn-dark{background:var(--navy-deep); color:var(--ivory); padding:15px 30px; font-weight:600; font-size:14.5px; border-radius:3px; display:inline-flex; align-items:center; gap:10px;}
+
+  footer{background:var(--navy-deep); color:rgba(247,243,234,0.6); padding:56px 0 30px;}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; font-size:12.5px; flex-wrap:wrap; gap:12px;}
+
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  @media(max-width:920px){
+    .nav-links{display:none;} .nav-toggle{display:block;}
+    .svc-grid{grid-template-columns:1fr 1fr;}
+    .spot-grid{grid-template-columns:1fr; gap:36px;}
+    .spot-img{height:280px;}
+    .process-grid{grid-template-columns:1fr 1fr;}
+    .process-item{border-bottom:1px solid var(--line);}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 20px;}
+    section{padding:56px 0;}
+    .page-head{padding-top:130px;}
+    .svc-grid{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr;}
+  }
+</style>
+<link rel="stylesheet" href="assets/css/enhance.css">
+</head>
+<body>
+<a class="lf-skip" href="#main">Skip to content</a>
+
+<nav>
+  <div class="wrap nav-inner">
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 22V10" stroke="#D9A441" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M12 10c-2-4-6-5-9-3 3 1 5 3 9 3Z" fill="#D9A441"/><path d="M12 10c2-4 6-5 9-3-3 1-5 3-9 3Z" fill="#D9A441"/><path d="M12 10c-1-5-4-7-7-7 2 2 3 5 7 7Z" fill="#D9A441"/><path d="M12 10c1-5 4-7 7-7-2 2-3 5-7 7Z" fill="#D9A441"/></svg></div>
+      <div class="logo-text">LeisureFlies <span>Travels</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="services.html" aria-current="page">Services</a></li>
+      <li><a href="cruise.html">Cruise</a></li>
+      <li><a href="eurail-pass.html">Eurail</a></li>
+      <li><a href="visa.html">Visa</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request A Quote</a>
+    <button class="nav-toggle">☰</button>
+  </div>
+</nav>
+<div id="main" tabindex="-1"></div>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> → <span>Services</span></div>
+    <h1>Everything a modern traveler actually needs.</h1>
+    <p>From a single flight ticket to a fully managed corporate travel program — one team, one point of contact.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Handle</span>
+      <h2>Full-service travel management.</h2>
+    </div>
+    <div class="svc-grid reveal">
+
+      <div class="svc-card">
+        <div class="svc-num">01</div>
+        <h3>Flight Bookings</h3>
+        <p>Domestic & international air travel at competitive, pre-negotiated fares — including discounted tickets on full-service and low-cost carriers alike.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <h3>Hotel Reservations</h3>
+        <p>Only 4-star and above, always. We shortlist properties around your preferences, not just the cheapest listing.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <h3>Holiday Packages</h3>
+        <p>Domestic and international tour packages, customized to your pace and budget — not a fixed template everyone gets.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-num">04</div>
+        <h3>Bus & Rail Travel</h3>
+        <p>For inner Europe and the USA where flights don't reach — we arrange onward bus and rail travel to keep your itinerary seamless.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-num">05</div>
+        <h3>Corporate Travel</h3>
+        <p>Negotiated corporate rates, credit facilities, and dedicated support for businesses that travel often.</p>
+      </div>
+
+      <div class="svc-card">
+        <div class="svc-num">06</div>
+        <h3>Educational Tours</h3>
+        <p>School picnics and educational trips planned for safety and smoothness, so teachers can focus on the students.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="spotlight">
+  <div class="wrap spot-grid">
+    <div class="spot-img reveal">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop" alt="Luxury chauffeur car">
+    </div>
+    <div class="spot-text reveal">
+      <span class="eyebrow">In Partnership with Blacklane</span>
+      <h2>Luxury chauffeur-driven cars, on request.</h2>
+      <p>For clients who want more than a taxi at the airport — LeisureFlies now offers luxury chauffeur-driven vehicles in Dubai and across Europe.</p>
+      <ul class="spot-list">
+        <li>Audi A8, A6 · Bentley · Cadillac Escalade</li>
+        <li>Toyota Land Cruiser · BMW 7, 5, 3 Series</li>
+        <li>Mercedes-Benz C, E & S Class</li>
+        <li>Self-driven sports cars available in Dubai & Monaco</li>
+      </ul>
+      <a href="contact.html" class="spot-cta">Enquire About Chauffeur Service →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>From enquiry to boarding.</h2>
+    </div>
+  </div>
+  <div class="wrap reveal">
+    <div class="process-grid">
+      <div class="process-item">
+        <div class="process-step">01</div>
+        <h4>Tell Us Your Trip</h4>
+        <p>Message us on WhatsApp or fill the quote form — destination, dates, budget.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-step">02</div>
+        <h4>We Build Your Plan</h4>
+        <p>A specialist puts together flights, stays, and add-ons matched to what you actually want.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-step">03</div>
+        <h4>You Confirm & Book</h4>
+        <p>Transparent pricing, no hidden fees. Confirm when you're ready.</p>
+      </div>
+      <div class="process-item">
+        <div class="process-step">04</div>
+        <h4>We Support the Trip</h4>
+        <p>Delays, changes, questions — we're reachable throughout, not just before booking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="wrap">
+    <h2>Tell us what kind of trip you're picturing.</h2>
+    <a href="contact.html" class="btn-dark">Request A Free Quote →</a>
+  </div>
+</div>
+
+<footer class="lff">
+  <div class="wrap">
+    <div class="lff-grid">
+      <div>
+        <div class="lff-logo">LeisureFlies <span>Travels</span></div>
+        <p class="lff-desc">SCO 70, 2nd Floor, Sector 38-C, Chandigarh 160014. IATA &amp; TAAI accredited travel agency, planning trips out of Chandigarh since 2010.</p>
+        <div class="lff-social">
+          <a href="https://facebook.com/leisureflies" aria-label="LeisureFlies on Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="https://instagram.com/leisure.flies" aria-label="LeisureFlies on Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.16.55.55.9 1.11 1.16 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.42.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.16 1.77 4.9 4.9 0 0 1-1.77 1.16c-.64.25-1.37.42-2.43.47-1.06.05-1.42.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.16-1.77A4.9 4.9 0 0 1 5.46 2.53c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+          <a href="https://wa.me/919814910087" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.1.82.83-3-.2-.32A8.2 8.2 0 1 1 12 20.2Zm4.5-6.15c-.25-.13-1.47-.72-1.7-.8-.23-.08-.4-.13-.56.13-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.9 2.42 1.02 2.58c.13.17 1.77 2.7 4.28 3.79.6.26 1.06.41 1.43.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.48-.28Z"/></svg></a>
+        </div>
+      </div>
+      <div class="lff-col">
+        <h4>Explore</h4>
+        <a href="destinations.html">All destinations</a>
+        <a href="cruise.html">Cruise packages</a>
+        <a href="eurail-pass.html">Eurail &amp; Swiss Pass</a>
+        <a href="services.html">Flights &amp; visa services</a>
+      </div>
+      <div class="lff-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="faq.html">Frequently asked questions</a>
+        <a href="contact.html">Contact</a>
+        <a href="legal.html">Privacy &amp; terms</a>
+      </div>
+      <div class="lff-col">
+        <h4>Reach us</h4>
+        <a href="tel:+919814910087">+91 98149 10087</a>
+        <a href="tel:+917837280087">+91 78372 80087</a>
+        <a href="mailto:info@leisureflies.com">info@leisureflies.com</a>
+        <a href="https://wa.me/919814910087" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="lff-bottom">
+      <div>&copy; <span data-lf-year>2026</span> LeisureFlies Travels Pvt Ltd. All rights reserved. &middot; <a href="legal.html">Privacy &amp; Terms</a></div>
+      <div class="lff-badges">
+        <div class="lff-badge">IATA ACCREDITED</div>
+        <div class="lff-badge">TAAI MEMBER</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.12});
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+<script defer src="assets/js/site.js"></script>
+</body>
+</html>
