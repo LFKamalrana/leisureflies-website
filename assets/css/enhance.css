@@ -1,0 +1,556 @@
+/* ==========================================================================
+   LeisureFlies Travels — shared enhancements
+   Loaded on every page after each page's own inline <style>.
+   Uses the existing brand tokens, with fallbacks so it works standalone.
+   ========================================================================== */
+
+:root{
+  --lf-navy: #0E1B36;
+  --lf-navy-deep: #081124;
+  --lf-gold: #D9A441;
+  --lf-gold-soft: #E9C77B;
+  --lf-ivory: #F7F3EA;
+  --lf-wa: #25D366;
+  --lf-shadow: 0 18px 50px rgba(8,17,36,0.28);
+}
+
+/* --------------------------------------------------------------- a11y --- */
+
+.lf-skip{
+  position:absolute; left:-9999px; top:0; z-index:9999;
+  background:var(--lf-gold); color:var(--lf-navy);
+  padding:12px 20px; font-weight:600; border-radius:0 0 6px 0;
+}
+.lf-skip:focus{ left:0; }
+
+a:focus-visible, button:focus-visible,
+input:focus-visible, select:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--lf-gold);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration:0.01ms !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+/* ------------------------------------------------- mobile nav drawer --- */
+
+.nav-toggle{
+  display:none;
+  color:var(--lf-ivory);
+  font-size:24px; line-height:1;
+  background:none; border:none; cursor:pointer;
+  padding:6px 4px;
+}
+
+.lf-drawer{
+  position:fixed; inset:0; z-index:1200;
+  visibility:hidden; opacity:0;
+  transition:opacity .25s ease, visibility .25s ease;
+}
+.lf-drawer.open{ visibility:visible; opacity:1; }
+
+.lf-drawer-veil{
+  position:absolute; inset:0;
+  background:rgba(8,17,36,0.6);
+  backdrop-filter:blur(3px);
+}
+
+.lf-drawer-panel{
+  position:absolute; top:0; right:0; bottom:0;
+  width:min(340px, 86vw);
+  background:var(--lf-navy-deep);
+  border-left:1px solid rgba(217,164,65,0.28);
+  padding:22px 26px 32px;
+  display:flex; flex-direction:column;
+  transform:translateX(102%);
+  transition:transform .3s cubic-bezier(.22,.7,.3,1);
+  overflow-y:auto;
+}
+.lf-drawer.open .lf-drawer-panel{ transform:translateX(0); }
+
+.lf-drawer-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding-bottom:18px; margin-bottom:14px;
+  border-bottom:1px solid rgba(247,243,234,0.14);
+}
+.lf-drawer-title{
+  font-family:'Fraunces', Georgia, serif;
+  color:var(--lf-ivory); font-size:17px; font-weight:600;
+}
+.lf-drawer-title span{ color:var(--lf-gold); }
+.lf-drawer-close{
+  background:none; border:none; cursor:pointer;
+  color:var(--lf-ivory); font-size:26px; line-height:1; padding:4px 8px;
+}
+
+.lf-drawer-panel nav{ display:flex; flex-direction:column; }
+.lf-drawer-panel nav a{
+  color:var(--lf-ivory);
+  text-decoration:none;
+  font-size:16px;
+  padding:14px 2px;
+  border-bottom:1px solid rgba(247,243,234,0.08);
+  display:flex; align-items:center; justify-content:space-between;
+}
+.lf-drawer-panel nav a[aria-current="page"]{ color:var(--lf-gold); }
+.lf-drawer-panel nav a::after{
+  content:"›"; color:rgba(247,243,234,0.35); font-size:19px;
+}
+
+.lf-drawer-actions{ margin-top:24px; display:grid; gap:10px; }
+.lf-drawer-actions a{
+  display:block; text-align:center; text-decoration:none;
+  padding:14px 16px; border-radius:6px;
+  font-size:15px; font-weight:600;
+}
+.lf-drawer-quote{ background:var(--lf-gold); color:var(--lf-navy); }
+.lf-drawer-wa{ background:var(--lf-wa); color:#fff; }
+.lf-drawer-call{
+  border:1px solid rgba(247,243,234,0.3);
+  color:var(--lf-ivory);
+}
+
+.lf-drawer-meta{
+  margin-top:auto; padding-top:24px;
+  color:rgba(247,243,234,0.5); font-size:12.5px; line-height:1.6;
+}
+
+@media (max-width:920px){
+  .nav-links{ display:none !important; }
+  .nav-toggle{ display:block; }
+  .nav-cta{ display:none; }
+}
+
+/* -------------------------------------------------- standard footer --- */
+
+.lff{
+  background:var(--lf-navy-deep);
+  color:var(--lf-ivory);
+  padding:64px 0 28px;
+  font-family:'Inter', system-ui, sans-serif;
+}
+.lff a{ color:inherit; }
+.lff-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1.2fr;
+  gap:44px;
+  padding-bottom:44px;
+  border-bottom:1px solid rgba(247,243,234,0.14);
+}
+.lff-logo{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:21px; font-weight:600; margin-bottom:14px;
+}
+.lff-logo span{ color:var(--lf-gold); }
+.lff-desc{
+  font-size:14px; line-height:1.75;
+  color:rgba(247,243,234,0.66);
+  max-width:34ch;
+}
+.lff-social{ display:flex; gap:12px; margin-top:20px; }
+.lff-social a{
+  width:38px; height:38px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid rgba(247,243,234,0.22);
+  transition:background .2s ease, border-color .2s ease;
+}
+.lff-social a:hover{ background:var(--lf-gold); border-color:var(--lf-gold); }
+.lff-social svg{ width:17px; height:17px; fill:currentColor; }
+.lff-social a:hover svg{ fill:var(--lf-navy); }
+
+.lff-col h4{
+  font-family:'Inter', sans-serif;
+  font-size:12px; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--lf-gold); margin-bottom:18px; font-weight:600;
+}
+.lff-col a{
+  display:block; text-decoration:none;
+  font-size:14.5px; padding:7px 0;
+  color:rgba(247,243,234,0.72);
+  transition:color .18s ease;
+}
+.lff-col a:hover{ color:var(--lf-gold); }
+
+.lff-bottom{
+  padding-top:26px;
+  display:flex; flex-wrap:wrap; gap:16px;
+  align-items:center; justify-content:space-between;
+  font-size:13px; color:rgba(247,243,234,0.55);
+}
+.lff-bottom a{ color:inherit; }
+.lff-badges{ display:flex; gap:10px; flex-wrap:wrap; }
+.lff-badge{
+  font-family:'JetBrains Mono', ui-monospace, monospace;
+  font-size:10.5px; letter-spacing:0.1em;
+  border:1px solid rgba(217,164,65,0.42);
+  color:var(--lf-gold-soft);
+  padding:6px 11px; border-radius:3px;
+}
+
+@media (max-width:860px){
+  .lff-grid{ grid-template-columns:1fr 1fr; gap:34px; }
+}
+@media (max-width:560px){
+  .lff{ padding:48px 0 24px; }
+  .lff-grid{ grid-template-columns:1fr; gap:30px; }
+  .lff-bottom{ flex-direction:column; align-items:flex-start; }
+}
+
+/* ------------------------------------------------- floating actions --- */
+
+.lf-float-stack{
+  position:fixed;
+  right:20px; bottom:20px;
+  z-index:1100;
+  display:flex; flex-direction:column; gap:12px;
+  align-items:flex-end;
+}
+
+.lf-float{
+  width:56px; height:56px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:var(--lf-shadow);
+  border:none; cursor:pointer; padding:0;
+  transition:transform .18s ease;
+}
+.lf-float:hover{ transform:scale(1.07); }
+.lf-float svg{ width:27px; height:27px; }
+
+.lf-float-wa{ background:var(--lf-wa); }
+.lf-float-wa svg{ fill:#fff; }
+
+.lf-float-bot{
+  background:var(--lf-gold);
+  position:relative;
+}
+.lf-float-bot svg{ fill:var(--lf-navy); }
+.lf-float-bot .lf-ping{
+  position:absolute; top:2px; right:2px;
+  width:12px; height:12px; border-radius:50%;
+  background:var(--lf-wa);
+  border:2px solid var(--lf-ivory);
+}
+.lf-float-bot.dismissed .lf-ping{ display:none; }
+
+/* the old single WhatsApp button, if a page still has it */
+.wa-float{ display:none !important; }
+
+@media (max-width:560px){
+  .lf-float-stack{ right:14px; bottom:14px; gap:10px; }
+  .lf-float{ width:50px; height:50px; }
+  .lf-float svg{ width:24px; height:24px; }
+}
+
+/* --------------------------------------------------- chat assistant --- */
+
+.lfbot{
+  position:fixed;
+  right:20px; bottom:92px;
+  z-index:1150;
+  width:min(390px, calc(100vw - 32px));
+  height:min(560px, calc(100vh - 130px));
+  background:var(--lf-ivory);
+  border-radius:16px;
+  box-shadow:var(--lf-shadow);
+  display:flex; flex-direction:column;
+  overflow:hidden;
+  transform:translateY(14px) scale(.97);
+  opacity:0; visibility:hidden; pointer-events:none;
+  transition:opacity .22s ease, transform .22s ease, visibility .22s ease;
+  font-family:'Inter', system-ui, sans-serif;
+}
+.lfbot.open{
+  opacity:1; visibility:visible; pointer-events:auto;
+  transform:translateY(0) scale(1);
+}
+
+.lfbot-head{
+  background:var(--lf-navy);
+  color:var(--lf-ivory);
+  padding:15px 16px;
+  display:flex; align-items:center; gap:12px;
+  flex-shrink:0;
+}
+.lfbot-avatar{
+  width:38px; height:38px; border-radius:50%;
+  background:var(--lf-gold);
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.lfbot-avatar svg{ width:21px; height:21px; fill:var(--lf-navy); }
+.lfbot-id{ flex:1; min-width:0; }
+.lfbot-name{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:15.5px; font-weight:600;
+}
+.lfbot-status{
+  font-size:11.5px; color:rgba(247,243,234,0.6);
+  display:flex; align-items:center; gap:6px; margin-top:2px;
+}
+.lfbot-dot{
+  width:7px; height:7px; border-radius:50%;
+  background:var(--lf-wa); flex-shrink:0;
+}
+.lfbot-close{
+  background:none; border:none; cursor:pointer;
+  color:var(--lf-ivory); font-size:24px; line-height:1;
+  padding:2px 6px; opacity:.75;
+}
+.lfbot-close:hover{ opacity:1; }
+
+.lfbot-log{
+  flex:1; overflow-y:auto;
+  padding:18px 16px 8px;
+  display:flex; flex-direction:column; gap:12px;
+  scroll-behavior:smooth;
+}
+
+.lfbot-msg{
+  max-width:86%;
+  font-size:14.2px; line-height:1.62;
+  padding:11px 14px;
+  border-radius:14px;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
+.lfbot-msg a{ color:var(--lf-navy); font-weight:600; }
+.lfbot-bot{
+  align-self:flex-start;
+  background:#fff;
+  border:1px solid rgba(14,27,54,0.10);
+  border-bottom-left-radius:5px;
+  color:var(--lf-navy);
+}
+.lfbot-user{
+  align-self:flex-end;
+  background:var(--lf-navy);
+  color:var(--lf-ivory);
+  border-bottom-right-radius:5px;
+}
+.lfbot-user a{ color:var(--lf-gold-soft); }
+
+.lfbot-typing{
+  align-self:flex-start;
+  background:#fff;
+  border:1px solid rgba(14,27,54,0.10);
+  border-radius:14px; border-bottom-left-radius:5px;
+  padding:14px 16px;
+  display:flex; gap:5px;
+}
+.lfbot-typing i{
+  width:7px; height:7px; border-radius:50%;
+  background:rgba(14,27,54,0.32);
+  animation:lfbot-bounce 1.3s infinite ease-in-out;
+}
+.lfbot-typing i:nth-child(2){ animation-delay:.18s; }
+.lfbot-typing i:nth-child(3){ animation-delay:.36s; }
+@keyframes lfbot-bounce{
+  0%,60%,100%{ transform:translateY(0); opacity:.45; }
+  30%{ transform:translateY(-5px); opacity:1; }
+}
+
+.lfbot-chips{
+  display:flex; flex-wrap:wrap; gap:7px;
+  padding:4px 16px 12px;
+  flex-shrink:0;
+}
+.lfbot-chip{
+  font-family:inherit;
+  font-size:12.8px;
+  padding:8px 13px;
+  border-radius:100px;
+  border:1px solid rgba(14,27,54,0.20);
+  background:transparent;
+  color:var(--lf-navy);
+  cursor:pointer;
+  transition:background .16s ease, border-color .16s ease;
+}
+.lfbot-chip:hover{
+  background:var(--lf-navy);
+  border-color:var(--lf-navy);
+  color:var(--lf-ivory);
+}
+
+.lfbot-foot{
+  border-top:1px solid rgba(14,27,54,0.12);
+  padding:10px 12px;
+  background:#fff;
+  flex-shrink:0;
+}
+.lfbot-form{ display:flex; gap:8px; align-items:flex-end; }
+.lfbot-input{
+  flex:1;
+  font-family:inherit; font-size:14px;
+  border:1px solid rgba(14,27,54,0.18);
+  border-radius:10px;
+  padding:11px 13px;
+  resize:none;
+  max-height:96px;
+  line-height:1.45;
+  color:var(--lf-navy);
+  background:#fff;
+}
+.lfbot-input::placeholder{ color:rgba(14,27,54,0.42); }
+.lfbot-send{
+  width:42px; height:42px; flex-shrink:0;
+  border-radius:10px; border:none; cursor:pointer;
+  background:var(--lf-gold);
+  display:flex; align-items:center; justify-content:center;
+}
+.lfbot-send svg{ width:19px; height:19px; fill:var(--lf-navy); }
+.lfbot-send:disabled{ opacity:.4; cursor:not-allowed; }
+
+.lfbot-disclaimer{
+  font-size:10.5px;
+  color:rgba(14,27,54,0.48);
+  text-align:center;
+  padding:7px 12px 2px;
+}
+
+@media (max-width:560px){
+  .lfbot{
+    right:0; left:0; bottom:0;
+    width:100%;
+    height:82vh; height:82dvh;
+    border-radius:16px 16px 0 0;
+  }
+}
+
+/* ------------------------------------------------------- utilities --- */
+
+/* wraps wide price tables so they scroll instead of breaking the layout */
+.lf-table-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  margin:0 -4px;
+  padding:0 4px 4px;
+}
+.lf-table-scroll table{ min-width:540px; }
+.lf-table-scroll::-webkit-scrollbar{ height:6px; }
+.lf-table-scroll::-webkit-scrollbar-thumb{
+  background:rgba(14,27,54,0.22); border-radius:3px;
+}
+
+.lf-note{
+  font-size:12.5px;
+  color:rgba(14,27,54,0.55);
+  margin-top:10px;
+  font-style:italic;
+}
+
+/* team cards on About, without stock-photo faces */
+.lf-person-mark{
+  width:96px; height:96px; border-radius:50%;
+  margin:0 auto 18px;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--lf-navy);
+  color:var(--lf-gold);
+  font-family:'Fraunces', Georgia, serif;
+  font-size:30px; font-weight:600;
+  letter-spacing:0.02em;
+}
+
+/* pages whose own stylesheet has no nav-link rules (legal, faq, 404, thank-you) */
+.lf-basic-nav .nav-links{
+  display:flex; gap:30px; list-style:none; margin:0 auto 0 40px;
+}
+.lf-basic-nav .nav-links a{
+  color:rgba(247,243,234,0.82);
+  text-decoration:none; font-size:14.5px;
+  transition:color .18s ease;
+}
+.lf-basic-nav .nav-links a:hover,
+.lf-basic-nav .nav-links a[aria-current="page"]{ color:var(--lf-gold); }
+.lf-basic-nav .nav-cta{
+  background:var(--lf-gold); color:var(--lf-navy);
+  padding:11px 20px; border-radius:4px;
+  font-size:13.5px; font-weight:600; text-decoration:none;
+  border:1px solid var(--lf-gold);
+}
+.lf-basic-nav .nav-inner{ gap:16px; }
+
+/* ------------------------------------------------------ quote form --- */
+
+.quote-form fieldset{ border:none; padding:0; margin:0; }
+.quote-form legend{
+  font-size:12.5px; font-weight:600;
+  text-transform:uppercase; letter-spacing:0.04em;
+  color:rgba(14,27,54,0.55);
+  padding:0; margin-bottom:10px;
+}
+.quote-form .radio-group{ display:flex; flex-wrap:wrap; gap:9px; }
+.quote-form label.radio-chip{
+  position:relative;
+  display:inline-flex; align-items:center;
+  margin:0; padding:0;
+  text-transform:none; letter-spacing:0; font-size:inherit;
+  color:inherit; font-weight:400;
+  cursor:pointer;
+}
+.quote-form label.radio-chip input{
+  position:absolute; opacity:0; width:0; height:0;
+}
+.quote-form label.radio-chip span{
+  display:inline-block;
+  padding:9px 15px;
+  border:1px solid rgba(14,27,54,0.20);
+  border-radius:100px;
+  font-size:13.5px;
+  color:var(--lf-navy);
+  transition:background .16s ease, border-color .16s ease, color .16s ease;
+}
+.quote-form label.radio-chip:hover span{ border-color:var(--lf-navy); }
+.quote-form label.radio-chip input:checked + span{
+  background:var(--lf-navy-deep);
+  border-color:var(--lf-navy-deep);
+  color:var(--lf-ivory);
+}
+.quote-form label.radio-chip input:focus-visible + span{
+  outline:2px solid var(--lf-gold);
+  outline-offset:2px;
+}
+
+/* --------------------------------------- things-to-do cards (no photo) --- */
+
+.thing-card{
+  position:relative;
+  padding-top:4px;
+  transition:border-color .2s ease, background .2s ease;
+}
+.thing-card:hover{
+  border-color:rgba(217,164,65,0.42);
+  background:rgba(247,243,234,0.08);
+}
+.thing-body{ padding:24px 22px 26px; }
+.thing-body h3{
+  font-family:'Fraunces', Georgia, serif;
+  position:relative;
+  padding-top:16px;
+  margin-bottom:10px;
+  line-height:1.3;
+}
+.thing-body h3::before{
+  content:"";
+  position:absolute; top:0; left:0;
+  width:26px; height:2px;
+  background:var(--lf-gold);
+}
+.thing-body p{ line-height:1.65; }
+
+/* team cards while we wait for real photographs */
+.team-photo:has(.lf-person-mark){
+  height:auto; background:transparent; margin-bottom:14px;
+  display:flex; align-items:center; justify-content:center;
+  padding:22px 0;
+}
+.team-photo .lf-person-mark{ margin:0; }
+
+/* Brand logo mark (palm + pool) in the header */
+.logo-mark{width:42px !important;height:42px !important;background:#fff;overflow:hidden;border:2px solid var(--gold,#D9A441) !important;padding:0}
+.logo-mark img{display:block;width:100%;height:100%;object-fit:cover}
