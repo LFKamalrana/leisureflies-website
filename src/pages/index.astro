@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ArtScene from '../components/ArtScene.astro';
+import Offers from '../components/Offers.astro';
 import { SITE, DEST, FEATURED, VISA_COUNTRIES, wa } from '../data/site.js';
 const schema = {
   '@context': 'https://schema.org', '@type': 'TravelAgency', name: SITE.legalName, url: SITE.url,
@@ -102,6 +103,8 @@ const schema = {
     </div>
   </div>
 </section>
+
+<Offers limit={3} />
 
 <section id="destinations">
   <div class="wrap">

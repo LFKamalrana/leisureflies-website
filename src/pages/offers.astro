@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Offers from '../components/Offers.astro';
+import { wa } from '../data/site.js';
+---
+<Base title="Latest Offers" description="Current holiday offers and packages from LeisureFlies Travels, Chandigarh. Message us on WhatsApp to book.">
+  <div class="wrap"><div class="crumbs"><a href="/">Home</a> / Offers</div></div>
+  <Offers page={true} />
+  <div class="wrap"><div class="cta-band">
+    <div><h2>Want something different?</h2><p>Tell us your dates and group and we build a package around you. Found a cheaper flight or hotel? Send the screenshot.</p></div>
+    <a class="btn btn-sun" href={wa('Hi LeisureFlies, I would like a custom package.')} target="_blank" rel="noopener">Ask on WhatsApp</a>
+  </div></div>
+</Base>

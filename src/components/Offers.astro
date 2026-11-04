@@ -1,0 +1,42 @@
+---
+// Latest offers, loaded in the browser from Sanity so new offers appear without redeploying the site.
+const { limit = 0, page = false } = Astro.props;
+---
+<section id="offers" class="offers-sec" data-limit={limit} data-page={page ? '1' : '0'} hidden={!page}>
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Latest offers</div><h2 style="margin-top:8px">Fresh deals from our desk.</h2>
+      <p class="lead">Limited-time packages and offers. Message us to book or to customise one.</p></div>
+      {!page && <a class="btn btn-line" href="/offers">See all offers</a>}
+    </div>
+    <div class="cards2 offer-grid" id="offerGrid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))"></div>
+    <p class="note" id="offerEmpty" hidden>No offers are listed right now. Message us on WhatsApp for the latest deals.</p>
+  </div>
+</section>
+<script is:inline>
+(function(){
+  var sec=document.getElementById('offers'),grid=document.getElementById('offerGrid'),empty=document.getElementById('offerEmpty');
+  var limit=parseInt(sec.dataset.limit||'0',10),isPage=sec.dataset.page==='1';
+  var P='xaf8quzi',D='production';
+  var today=new Date().toISOString().slice(0,10);
+  var q='*[_type=="offer" && (!defined(validUntil) || validUntil >= $today)] | order(_createdAt desc)'+(limit?'[0...'+limit+']':'')+'{title,destination,summary,priceNote,validUntil,"img":image.asset->url}';
+  var url='https://'+P+'.apicdn.sanity.io/v2025-01-01/data/query/'+D+'?query='+encodeURIComponent(q)+'&%24today='+encodeURIComponent('"'+today+'"');
+  function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML}
+  function fmt(d){try{return new Date(d+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}catch(e){return d}}
+  fetch(url).then(function(r){return r.json()}).then(function(j){
+    var list=j.result||[];
+    if(!list.length){if(isPage){empty.hidden=false}return}
+    grid.innerHTML=list.map(function(o){
+      var msg='Hi LeisureFlies, I am interested in this offer: '+o.title+(o.destination?' ('+o.destination+')':'');
+      return '<article class="info offer">'+
+        (o.img?'<img src="'+esc(o.img)+'?w=640&h=420&fit=crop&auto=format" alt="'+esc(o.title)+'" loading="lazy" width="640" height="420">':'')+
+        (o.destination?'<span class="tagline">'+esc(o.destination)+'</span>':'')+
+        '<h3>'+esc(o.title)+'</h3><p>'+esc(o.summary)+'</p>'+
+        '<p class="price">'+esc(o.priceNote||'Ask for a quote')+'</p>'+
+        (o.validUntil?'<p class="until">Valid until '+esc(fmt(o.validUntil))+'</p>':'')+
+        '<a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/919814910087?text='+encodeURIComponent(msg)+'">Enquire on WhatsApp</a></article>';
+    }).join('');
+    sec.hidden=false;
+  }).catch(function(){if(isPage){empty.hidden=false}});
+})();
+</script>

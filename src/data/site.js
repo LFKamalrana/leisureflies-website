@@ -46,6 +46,7 @@ export const VISA_COUNTRIES = [
 ];
 export const NAV = [
   { href: '/holidays', label: 'Holidays' },
+  { href: '/offers', label: 'Offers' },
   { href: '/visa', label: 'Visa' },
   { href: '/cruises', label: 'Cruises' },
   { href: '/flights-hotels', label: 'Flights & Hotels' },

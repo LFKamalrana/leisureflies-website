@@ -251,3 +251,14 @@ footer a:hover{color:var(--sun)}
 .contact-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:18px 20px;box-shadow:var(--shadow)}
 .contact-card small{display:block;color:var(--muted);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px;margin-bottom:4px}
 .contact-card a,.contact-card p{font-weight:800;display:block;padding:2px 0}
+
+/* offers */
+.offer{padding:0 0 20px;overflow:hidden;display:flex;flex-direction:column;gap:0}
+.offer img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:0}
+.offer h3,.offer p,.offer .btn,.offer .tagline{margin-inline:20px}
+.offer h3{margin-top:12px}
+.offer .tagline{display:inline-block;align-self:flex-start;margin-top:14px;background:var(--sky);color:var(--turq-deep);border-radius:999px;padding:3px 12px;font-weight:800;font-size:13px}
+.offer .price{color:var(--ink);font-weight:800;margin-top:10px}
+.offer .until{font-size:14px;margin-top:2px}
+.offer .btn{margin-top:14px;align-self:flex-start}
+.offers-sec{background:var(--sky)}
