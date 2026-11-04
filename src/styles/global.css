@@ -262,3 +262,13 @@ footer a:hover{color:var(--sun)}
 .offer .until{font-size:14px;margin-top:2px}
 .offer .btn{margin-top:14px;align-self:flex-start}
 .offers-sec{background:var(--sky)}
+
+/* team */
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mosaic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:24px;box-shadow:var(--shadow)}
+.mosaic img:nth-child(even){transform:translateY(18px)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px;margin-top:26px}
+.member{margin:0;background:var(--surface);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.member img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;display:block}
+.member figcaption{padding:12px 14px;display:grid;gap:2px}
+.member figcaption span{color:var(--muted);font-size:14px;font-weight:700}

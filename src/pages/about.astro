@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { SITE, wa } from '../data/site.js';
+import team from '../data/team.json';
 ---
 <Base title="About Us" description="LeisureFlies Travels Private Limited, an IATA accredited travel company founded in 2010 by Kamal Rana in Chandigarh. More than 20,000 passengers served.">
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / About</div>
     <section class="about" style="padding-block:clamp(24px,4vw,48px)">
-      <div class="photo-slot"><div>Photo of Kamal Rana and the team<br><small style="font-weight:600">to be added</small></div></div>
+      <div class="mosaic" aria-label="The LeisureFlies team">{team.slice(0, 4).map((m) => <img src={`/img/team/${m.photo}`} alt="LeisureFlies team member" loading="lazy" width="280" height="350" />)}</div>
       <div>
         <div class="eyebrow">About us</div>
         <h1 style="font-size:clamp(32px,4.8vw,52px);margin-top:8px">Founded by someone who has worked inside the travel trade.</h1>
@@ -22,6 +23,19 @@ import { SITE, wa } from '../data/site.js';
           <div class="fact"><span class="num">IATA</span><small>Accredited agent</small></div>
         </div>
         <div class="iata-row"><img src="/img/iata.png" alt="IATA Accredited Travel Agent seal"><p><b>IATA accredited.</b> Your tickets are issued by an agency that meets the industry's own standards. GST number {SITE.gst}.</p></div>
+      </div>
+    </section>
+    <section class="sec-block">
+      <div class="eyebrow">Our people</div>
+      <h2 style="margin-top:8px">Meet the team.</h2>
+      <p class="lead">The people who plan your trip, book your tickets and answer your messages.</p>
+      <div class="team-grid">
+        {team.map((m) => (
+          <figure class="member">
+            <img src={`/img/team/${m.photo}`} alt={m.name || 'LeisureFlies team member'} loading="lazy" width="280" height="350" />
+            {(m.name || m.role) && <figcaption><b>{m.name}</b>{m.role && <span>{m.role}</span>}</figcaption>}
+          </figure>
+        ))}
       </div>
     </section>
     <section class="sec-block">
