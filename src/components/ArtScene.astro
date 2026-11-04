@@ -1,0 +1,40 @@
+---
+// Illustrated stand-in for destinations that have no photo yet. Swap for a real photo when one arrives.
+const { variant = 'beach', wide = false } = Astro.props;
+const bg = { beach: '#BDEFF5', city: '#BDEFF5', desert: '#FFE3B0' }[variant];
+---
+{wide ? (
+<svg viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <rect width="1000" height="400" fill={bg} />
+  {variant === 'beach' && (<><rect y="210" width="1000" height="190" fill="#12B5C2"/><path d="M0 232q30-14 60 0t60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0 60 0" fill="none" stroke="#fff" stroke-width="4" opacity=".5"/><circle cx="930" cy="75" r="34" fill="#FFB938"/></>)}
+  {variant === 'city' && (<rect y="360" width="1000" height="40" fill="#3DAE4B"/>)}
+  {variant === 'desert' && (<><path d="M0 300c150-70 300-40 450-10s350 30 550-20v130H0Z" fill="#F2B866"/><circle cx="930" cy="85" r="40" fill="#FFB938"/></>)}
+  <g transform="translate(560,0)">
+    {variant === 'beach' && (<><ellipse cx="150" cy="250" rx="130" ry="26" fill="#FFE7BD"/><path d="M150 250c-3-30 0-60 6-88" stroke="#9B6A3A" stroke-width="9" stroke-linecap="round" fill="none"/><g fill="#3DAE4B"><path d="M156 162c-22-20-50-18-66-2 22-4 42 0 66 2Z"/><path d="M156 162c18-24 48-26 68-13-22 0-44 5-68 13Z"/><path d="M156 162c-30 4-48 22-50 42 14-18 32-30 50-42Z"/><path d="M156 162c28 5 46 24 48 44-14-19-30-31-48-44Z"/></g></>)}
+    {variant === 'city' && (<><g fill="#0A8F9B"><rect x="30" y="220" width="46" height="180"/><rect x="86" y="170" width="40" height="230"/><rect x="136" y="200" width="50" height="200"/><rect x="196" y="150" width="36" height="250"/><rect x="240" y="230" width="40" height="170"/></g><g fill="#E9FAFC"><rect x="40" y="236" width="8" height="10"/><rect x="58" y="236" width="8" height="10"/><rect x="96" y="190" width="8" height="10"/><rect x="110" y="190" width="8" height="10"/><rect x="146" y="220" width="8" height="10"/><rect x="164" y="220" width="8" height="10"/><rect x="206" y="170" width="8" height="10"/><rect x="250" y="250" width="8" height="10"/></g></>)}
+    {variant === 'desert' && (<g fill="#3DAE4B"><rect x="160" y="250" width="12" height="60" rx="6"/><rect x="148" y="268" width="12" height="26" rx="6"/><rect x="172" y="260" width="12" height="22" rx="6"/></g>)}
+  </g>
+</svg>
+) : (
+<svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  {variant === 'beach' && (<>
+    <rect width="300" height="400" fill="#BDEFF5"/><circle cx="230" cy="70" r="30" fill="#FFB938"/>
+    <rect y="210" width="300" height="190" fill="#12B5C2"/>
+    <ellipse cx="150" cy="250" rx="130" ry="26" fill="#FFE7BD"/>
+    <path d="M150 250c-3-30 0-60 6-88" stroke="#9B6A3A" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <g fill="#3DAE4B"><path d="M156 162c-22-20-50-18-66-2 22-4 42 0 66 2Z"/><path d="M156 162c18-24 48-26 68-13-22 0-44 5-68 13Z"/><path d="M156 162c-30 4-48 22-50 42 14-18 32-30 50-42Z"/><path d="M156 162c28 5 46 24 48 44-14-19-30-31-48-44Z"/></g>
+  </>)}
+  {variant === 'city' && (<>
+    <rect width="300" height="400" fill="#BDEFF5"/><circle cx="60" cy="70" r="26" fill="#FFB938"/>
+    <g fill="#0A8F9B"><rect x="30" y="220" width="46" height="180"/><rect x="86" y="170" width="40" height="230"/><rect x="136" y="200" width="50" height="200"/><rect x="196" y="150" width="36" height="250"/><rect x="240" y="230" width="40" height="170"/></g>
+    <g fill="#E9FAFC"><rect x="40" y="236" width="8" height="10"/><rect x="58" y="236" width="8" height="10"/><rect x="96" y="190" width="8" height="10"/><rect x="110" y="190" width="8" height="10"/><rect x="146" y="220" width="8" height="10"/><rect x="164" y="220" width="8" height="10"/><rect x="206" y="170" width="8" height="10"/><rect x="250" y="250" width="8" height="10"/></g>
+    <rect y="360" width="300" height="40" fill="#3DAE4B"/>
+  </>)}
+  {variant === 'desert' && (<>
+    <rect width="300" height="400" fill="#FFE3B0"/><circle cx="220" cy="90" r="38" fill="#FFB938"/>
+    <path d="M0 300c60-60 120-50 170-20s90 30 130-10v130H0Z" fill="#F2B866"/>
+    <path d="M0 350c70-40 150-30 300 0v50H0Z" fill="#E59F4A"/>
+    <g fill="#3DAE4B"><rect x="60" y="250" width="12" height="60" rx="6"/><rect x="48" y="268" width="12" height="26" rx="6"/><rect x="72" y="260" width="12" height="22" rx="6"/></g>
+  </>)}
+</svg>
+)}

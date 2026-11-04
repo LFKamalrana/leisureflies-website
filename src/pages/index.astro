@@ -1,0 +1,204 @@
+---
+import Base from '../layouts/Base.astro';
+import ArtScene from '../components/ArtScene.astro';
+import { SITE, DEST, FEATURED, VISA_COUNTRIES, wa } from '../data/site.js';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'TravelAgency', name: SITE.legalName, url: SITE.url,
+  logo: SITE.url + '/logo.png', image: SITE.url + '/og-image.jpg', telephone: '+919814910087', email: SITE.email,
+  foundingDate: '2010', slogan: SITE.tagline,
+  address: { '@type': 'PostalAddress', streetAddress: 'SCO 70, 2nd Floor, Sector 38-C', addressLocality: 'Chandigarh', postalCode: '160014', addressCountry: 'IN' },
+  sameAs: [SITE.facebook, SITE.instagram, SITE.google],
+};
+---
+<Base title={SITE.name} description="Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited since 2010. Found it cheaper? Send the screenshot and we match it." schema={schema}>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Chandigarh · IATA accredited · Since 2010</div>
+        <h1 style="margin-top:14px">Your travel, <em>our passion.</em></h1>
+        <p class="lead" style="margin-top:20px">Holidays for families and honeymooners, flights, hotels, cruises and visas, planned by a team that has sent more than 20,000 travellers on their way.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa" href={wa(decodeURIComponent("Hi%20LeisureFlies%2C%20I%20would%20like%20a%20quote."))} target="_blank" rel="noopener">Get a quote on WhatsApp</a>
+          <a class="btn btn-line" href="/holidays">See holidays</a>
+        </div>
+        <div class="trust">
+          <div class="chip"><img src="/img/iata.png" alt="IATA Accredited Travel Agent seal"><span>IATA accredited<small>Travel agent</small></span></div>
+          <div class="chip"><span class="num">20,000+</span><span>travellers<small>and counting</small></span></div>
+          <div class="chip"><span class="num">2010</span><span>established<small>Chandigarh</small></span></div>
+        </div>
+      </div>
+
+      <div class="scene" role="img" aria-label="Cartoon illustration of a plane flying over a palm island">
+        <svg viewBox="0 0 560 560" preserveAspectRatio="xMidYMid slice">
+          <g class="rays"><g stroke="#FFD36E" stroke-width="8" stroke-linecap="round">
+            <path d="M430 40v-24M430 150v24M375 95h-24M485 95h24M391 56l-17-17M469 134l17 17M469 56l17-17M391 134l-17 17"/></g></g>
+          <circle cx="430" cy="95" r="42" fill="#FFB938"/>
+          <circle cx="418" cy="86" r="6" fill="#fff" opacity=".5"/>
+          <g class="cloud" style="transform-box:fill-box"><g fill="#fff"><ellipse cx="80" cy="140" rx="50" ry="22"/><ellipse cx="115" cy="125" rx="36" ry="24"/><ellipse cx="55" cy="130" rx="28" ry="18"/></g></g>
+          <g class="cloud c2"><g fill="#fff" opacity=".9"><ellipse cx="60" cy="235" rx="44" ry="18"/><ellipse cx="92" cy="222" rx="30" ry="20"/></g></g>
+          <g class="cloud c3"><g fill="#fff" opacity=".85"><ellipse cx="40" cy="60" rx="38" ry="15"/><ellipse cx="68" cy="50" rx="26" ry="17"/></g></g>
+          <g class="plane"><g transform="translate(0,150)">
+            <path d="M-70 14c30-2 64-4 96-4" stroke="#fff" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round" fill="none"/>
+            <ellipse cx="62" cy="10" rx="48" ry="15" fill="#fff"/>
+            <path d="M104 6c10 0 16 3 16 6s-6 6-16 6Z" fill="#12B5C2"/>
+            <path d="M44 6 18 -22l16 0 30 28Z" fill="#12B5C2"/>
+            <path d="M46 16 22 40l16 0 30-24Z" fill="#0A8F9B"/>
+            <path d="M18 8 4 -8l12 0 16 16Z" fill="#12B5C2"/>
+            <circle cx="88" cy="8" r="4" fill="#9ADFEA"/><circle cx="74" cy="8" r="4" fill="#9ADFEA"/><circle cx="60" cy="8" r="4" fill="#9ADFEA"/>
+          </g></g>
+          <rect y="340" width="560" height="220" fill="#12B5C2"/>
+          <g class="wave"><path d="M-200 350q25-16 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0" fill="none" stroke="#fff" stroke-width="5" opacity=".65"/></g>
+          <g class="wave w2"><path d="M-200 395q25-16 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0" fill="none" stroke="#fff" stroke-width="4" opacity=".45"/></g>
+          <g class="bob" style="animation-duration:6s"><path d="M120 470h90l-12 22h-66Z" fill="#fff"/><path d="M165 468V418l34 44Z" fill="#FFB938"/><path d="M162 468V430l-24 36Z" fill="#FF7A59"/></g>
+          <ellipse cx="300" cy="392" rx="170" ry="36" fill="#FFD9A0"/>
+          <ellipse cx="300" cy="384" rx="150" ry="28" fill="#FFE7BD"/>
+          <g class="palm">
+            <path d="M298 384C292 330 296 270 304 215" stroke="#9B6A3A" stroke-width="16" stroke-linecap="round" fill="none"/>
+            <g fill="#3DAE4B">
+              <path d="M304 215c-36-34-84-30-110-4 36-6 70 0 110 4Z"/>
+              <path d="M304 215c30-40 80-44 112-22-36 0-72 8-112 22Z"/>
+              <path d="M304 215c-52 6-80 38-84 70 24-30 52-50 84-70Z"/>
+              <path d="M304 215c48 8 78 40 80 74-22-32-50-52-80-74Z"/>
+              <path d="M304 215c-10-30-8-62 6-86 8 28 6 58-6 86Z"/>
+            </g>
+            <circle cx="298" cy="226" r="9" fill="#8A5A2B"/><circle cx="314" cy="230" r="9" fill="#8A5A2B"/>
+          </g>
+          <g fill="#3DAE4B"><path d="M392 384c0-24 4-40 12-52 4 20 0 38-4 52Z"/><path d="M404 384c4-20 14-34 28-42-4 20-14 34-24 42Z"/></g>
+        </svg>
+      </div>
+    </div>
+
+    <form class="planner" id="planner" aria-label="Plan a trip on WhatsApp">
+      <div class="field"><label for="dest">Where to?</label>
+        <select id="dest">{Object.values(DEST).map((d)=><option>{d.name}</option>)}<option>Somewhere else</option></select></div>
+      <div class="field"><label for="trav">Travellers</label><input id="trav" type="number" min="1" max="60" value="2" inputmode="numeric"></div>
+      <div class="field"><label for="when">When?</label><input id="when" type="text" placeholder="e.g. December"></div>
+      <div class="field"><label for="who">Your name</label><input id="who" type="text" placeholder="Optional" autocomplete="name"></div>
+      <button class="btn btn-wa" type="submit">Plan on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="sts" style="padding-top:0">
+  <div class="wrap">
+    <div class="sts">
+      <div class="bubble" aria-hidden="true"></div>
+      <div class="sts-grid">
+        <div>
+          <span class="badge">STS PROGRAM · AIR TICKETS &amp; HOTELS</span>
+          <h2>Found it cheaper? Send the Screenshot.</h2>
+          <p class="lead" style="margin-top:14px;font-size:19px">Show us a lower price on the final payment page of an authentic, renowned travel website. We guarantee to match it, and we book it for you.</p>
+          <div class="hero-cta"><a class="btn btn-wa" href={wa("Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.")} target="_blank" rel="noopener">Start on WhatsApp</a><a class="btn btn-line" href="/flights-hotels" style="margin-left:0">Read the rules</a></div>
+          <small>Same conditions apply to hotels. We cannot hold a booking, so send everything together.</small>
+        </div>
+        <ol class="steps">
+          <li>Message us on WhatsApp. Your 4 minutes start here.</li>
+          <li>Send a screenshot of the final payment page within 4 minutes. The time stamp must be visible.</li>
+          <li>Send your ID and payment with it.</li>
+          <li>We match the price and book it.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="destinations">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Holiday packages</div><h2 style="margin-top:8px">Pick a place. We plan the rest.</h2>
+      <p class="lead">Every package is tailored to your dates, group and budget. Tell us what you need and we send a quote.</p></div>
+      <a class="btn btn-line" href="/contact">Ask for a custom plan</a>
+    </div>
+    <div class="cards">
+      {FEATURED.map((slug)=>{const d=DEST[slug];return (
+        <a class={`card${d.photo ? "" : " art"}`} href={`/holidays/${slug}`}>
+          {d.photo ? <img src={`/img/${slug}.jpg`} alt={d.name} loading="lazy" /> : <ArtScene variant={d.art} />}
+          {d.tag && <span class="tag">{d.photo ? d.tag : 'Photo coming soon'}</span>}
+          {!d.photo && !d.tag && <span class="tag">Photo coming soon</span>}
+          <div class="txt"><h3>{d.name}</h3><span>See the plan →</span></div>
+        </a>)})}
+    </div>
+    <div class="more"><b>Also planning:</b>
+      {['singapore','vietnam','sri-lanka','mauritius','saudi-arabia','andaman'].map((s)=><a class="pill" href={`/holidays/${s}`}>{DEST[s].name}</a>)}
+      <a class="pill" href="/holidays">All holidays →</a>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2 style="margin-top:8px">Everything for your trip, in one place.</h2>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="ico" style="background:#DDF5F8"><svg viewBox="0 0 24 24" fill="#12B5C2"><path d="M21 16v-2l-8-5V3.500a1.500 1.500 0 0 0-3 0V9l-8 5v2l8-2.500V19l-2 1.500V22l3.500-1 3.500 1v-1.500L13 19v-5.500Z"/></svg></div><h3>Flights</h3><p>International and domestic tickets at competitive prices, covered by our Send the Screenshot price match.</p></div>
+      <div class="svc-card"><div class="ico" style="background:#FFF1D6"><svg viewBox="0 0 24 24" fill="#FFB938"><path d="M3 20V6h2v8h14v-2.500A3.500 3.500 0 0 0 15.500 8H9v6H7V8a2 2 0 0 1 2-2h6.500A5.500 5.500 0 0 1 21 11.500V20h-2v-4H5v4Z"/></svg></div><h3>Hotels</h3><p>A careful selection of deluxe five-star and four-star hotels, picked to match what you like.</p></div>
+      <div class="svc-card"><div class="ico" style="background:#E3F6E5"><svg viewBox="0 0 24 24" fill="#3DAE4B"><path d="M12 2c-2 3-6 5-6 10a6 6 0 0 0 12 0c0-5-4-7-6-10Zm0 15a3 3 0 0 1-3-3c0-2 2-3 3-5 1 2 3 3 3 5a3 3 0 0 1-3 3Z"/></svg></div><h3>Holiday packages</h3><p>Tours within India and abroad, built around you so you can enjoy the trip and share the photos.</p></div>
+      <div class="svc-card"><div class="ico" style="background:#FFE3DB"><svg viewBox="0 0 24 24" fill="#FF7A59"><path d="M3 17l2-6h14l2 6-9 3Zm5-8V5h8v4h-2V7h-4v2Z"/></svg></div><h3>Cruises</h3><p>Royal Caribbean, Celebrity, Silversea, Cordelia, Disney, Carnival, Genting Dream, NCL, MSC and more.</p></div>
+      <div class="svc-card"><div class="ico" style="background:#DDF5F8"><svg viewBox="0 0 24 24" fill="#0A8F9B"><path d="M6 3h12a2 2 0 0 1 2 2v10a3 3 0 0 1-3 3l2 3h-2.500l-1.500-3h-6L9.500 21H7l2-3a3 3 0 0 1-3-3V5a2 2 0 0 1 2-2Zm0 4v5h12V7Zm2 8.500a1.500 1.500 0 1 0 0 .01Zm8 0a1.500 1.500 0 1 0 0 .01Z"/></svg></div><h3>Rail &amp; bus passes</h3><p>Eurail and bus bookings for the USA, Europe, Japan and South Korea.</p><div class="note">We do not book Indian rail or bus tickets.</div></div>
+      <div class="svc-card"><div class="ico" style="background:#E3F6E5"><svg viewBox="0 0 24 24" fill="#3DAE4B"><path d="M5 3h10l4 4v14H5Zm9 1.500V8h3.500ZM8 12h8v2H8Zm0 4h8v2H8Z"/></svg></div><h3>Visa services</h3><p>Complete documentation help, country by country. This is our strength.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visa">
+  <div class="wrap">
+    <div class="visa">
+      <div>
+        <div class="eyebrow">Visa services</div>
+        <h2 style="margin-top:8px">Visas, handled properly.</h2>
+        <p class="lead" style="margin-top:14px">Checklists sorted by whether you are salaried, self-employed, studying or retired, so you only see what applies to you. Rules change, so we confirm current requirements before you apply.</p>
+        <div class="hero-cta"><a class="btn btn-sun" href="/visa" target="_blank" rel="noopener">See visa checklists</a></div>
+      </div>
+      <div class="visa-list">{VISA_COUNTRIES.map((c)=><a href={`/visa/${c.slug}`}>{c.name}</a>)}<a href="/visa">All visa help</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="cruises" style="padding-top:0">
+  <div class="wrap cruise-wrap">
+    <div><div class="eyebrow">Cruises</div><h2 style="margin-top:8px">Almost every cruise line, one booking desk.</h2>
+      <p class="lead">From short sailings out of Asia to week-long ocean voyages. Tell us your dates and group and we find the ship.</p>
+      <div class="hero-cta"><a class="btn btn-wa" href={wa("Hi LeisureFlies, please send me cruise options.")} target="_blank" rel="noopener">Ask about cruises</a><a class="btn btn-line" href="/cruises">Cruise details</a></div></div>
+    <div class="brands"><span>Royal Caribbean</span><span>Celebrity</span><span>Silversea</span><span>Cordelia</span><span>Disney</span><span>Carnival</span><span>Genting Dream</span><span>NCL</span><span>MSC</span><span>and more</span></div>
+  </div>
+</section>
+
+<section id="about" style="background:var(--sky)">
+  <div class="wrap about">
+    <div class="photo-slot"><div>Photo of Kamal Rana and the team<br><small style="font-weight:600">to be added</small></div></div>
+    <div>
+      <div class="eyebrow">About us</div>
+      <h2 style="margin-top:8px">Founded by someone who has worked inside the travel trade.</h2>
+      <p class="lead">Leisureflies Travels Private Limited was established in 2010 by Kamal Rana, who worked with brands such as MakeMyTrip India and Affordable Holidays London before starting out on his own. With a good team and years of experience, we have served more than 20,000 passengers. We focus on honest pricing, clear travel planning and good service from enquiry to return.</p>
+      <div class="facts">
+        <div class="fact"><span class="num">2010</span><small>Established</small></div>
+        <div class="fact"><span class="num">20,000+</span><small>Passengers served</small></div>
+        <div class="fact"><span class="num">IATA</span><small>Accredited agent</small></div>
+      </div>
+      <div class="hero-cta" style="margin-top:20px"><a class="btn btn-line" href="/about">Read our story</a></div>
+      <div class="iata-row"><img src="/img/iata.png" alt="IATA Accredited Travel Agent seal"><p><b>IATA accredited.</b> Your tickets are issued by an agency that meets the industry's own standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="head"><div><div class="eyebrow">Google reviews</div><h2 style="margin-top:8px">What travellers say.</h2></div>
+      <a class="btn btn-line" href="https://share.google/pRkmxrpVo126YOx9t" target="_blank" rel="noopener">Read all reviews on Google</a></div>
+    <div class="rev">
+      <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Visited Phu Quoc with family. Wonderful itinerary, very cooperative team. Enjoyed the trip thoroughly."</p><div><b>Ajata Shatru Kapoor</b><br><small>Google review</small></div></div>
+      <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Best arrangements by the team, and they take care of all group members very well. Wish to travel with you again soon."</p><div><b>Davinder Kalra</b><br><small>Google review</small></div></div>
+      <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"It was a well planned, well organised tour at Pattaya and Bangkok. Indian food at every new destination was praise-worthy."</p><div><b>Er. Raman Kumar Verma</b><br><small>Google review</small></div></div>
+    </div>
+  </div>
+</section>
+</Base>
+<script is:inline>
+  document.getElementById('planner').addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=document.getElementById('dest').value,t=document.getElementById('trav').value||'2',w=document.getElementById('when').value.trim(),n=document.getElementById('who').value.trim();
+    var m='Hi LeisureFlies, I would like a quote for '+d+'.\nTravellers: '+t+(w?'\nTravel dates: '+w:'')+(n?'\nName: '+n:'');
+    window.open('https://wa.me/919814910087?text='+encodeURIComponent(m),'_blank','noopener');
+  });
+</script>

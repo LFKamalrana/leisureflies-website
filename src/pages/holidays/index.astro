@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArtScene from '../../components/ArtScene.astro';
+import { DEST, wa } from '../../data/site.js';
+const items = Object.entries(DEST);
+---
+<Base title="Holiday Packages" description="Holiday packages from Chandigarh to Bali, Thailand, Dubai, Maldives, Kashmir, Kerala, Goa, Himachal and more. Tailored to your dates and group.">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / Holidays</div>
+    <section style="padding-bottom:20px">
+      <div class="eyebrow">Holiday packages</div>
+      <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">Pick a place. We plan the rest.</h1>
+      <p class="lead">Every package is tailored to your dates, group and budget. Open a destination to see what to do, sample itineraries and visa notes, then ask us for a quote.</p>
+      <div class="filters" role="group" aria-label="Filter destinations">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="india" aria-pressed="false">In India</button>
+        <button type="button" data-f="international" aria-pressed="false">International</button>
+        <button type="button" data-f="honeymoon" aria-pressed="false">Honeymoons</button>
+        <button type="button" data-f="family" aria-pressed="false">Families</button>
+      </div>
+    </section>
+    <div class="cards" id="grid" style="padding-bottom:30px">
+      {items.map(([slug, d]) => (
+        <a class={`card${d.photo ? '' : ' art'}`} href={`/holidays/${slug}`} data-region={d.region} data-tag={d.tag || ''}>
+          {d.photo ? <img src={`/img/${slug}.jpg`} alt={d.name} loading="lazy" /> : <ArtScene variant={d.art} />}
+          <span class="tag">{d.photo ? (d.tag || (d.region === 'india' ? 'In India' : 'International')) : 'Photo coming soon'}</span>
+          <div class="txt"><h3>{d.name}</h3><span>See the plan →</span></div>
+        </a>
+      ))}
+    </div>
+    <p class="note" style="padding-bottom:10px">More destinations are on the way, including Malaysia, Almaty and Azerbaijan. Ask us if you want somewhere not listed.</p>
+    <div class="cta-band">
+      <div><h2>Not sure where to go?</h2><p>Tell us who is travelling, when, and roughly what you want to spend. We will suggest places that fit.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, I need help choosing a holiday destination.')} target="_blank" rel="noopener">Ask on WhatsApp</a>
+    </div>
+  </div>
+</Base>
+<script is:inline>
+(function(){
+  var btns=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('#grid .card');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    var f=b.dataset.f;
+    cards.forEach(function(c){
+      var tag=(c.dataset.tag||'').toLowerCase(),show=f==='all'||c.dataset.region===f||(f==='honeymoon'&&tag.indexOf('honeymoon')>-1)||(f==='family'&&tag.indexOf('famil')>-1);
+      c.style.display=show?'':'none';
+    });
+  })});
+})();
+</script>

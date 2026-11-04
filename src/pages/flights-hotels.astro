@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import { wa } from '../data/site.js';
+---
+<Base title="Flights and Hotels: Send the Screenshot Program" description="Found a lower price on flights or hotels? Send us the screenshot of the final payment page and we match it and book it. The STS Program from LeisureFlies Travels.">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / Flights &amp; Hotels</div>
+    <section style="padding-bottom:20px">
+      <div class="sts" style="margin-top:10px">
+        <div class="bubble" aria-hidden="true"></div>
+        <span class="badge">STS PROGRAM · AIR TICKETS &amp; HOTELS</span>
+        <h1 style="font-size:clamp(34px,5.4vw,62px)">Found it cheaper? Send the Screenshot.</h1>
+        <p class="lead" style="margin-top:14px;font-size:19px">We have published a Send the Screenshot (STS) Program for air tickets and hotels. If you find a lower price on an authentic, renowned travel website, we match it and book it.</p>
+        <div class="hero-cta"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Start on WhatsApp</a></div>
+      </div>
+    </section>
+
+    <section class="sec-block">
+      <div class="eyebrow">How it works</div>
+      <h2 style="margin-top:8px">Four steps. Four minutes.</h2>
+      <div class="sts" style="margin-top:22px;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);border:1px solid var(--line)">
+        <ol class="steps">
+          <li>Message us on WhatsApp. Your 4 minutes start from this message.</li>
+          <li>Send a screenshot of the final payment page of any authentic, renowned travel website. It must show the time stamp.</li>
+          <li>Send your ID and payment together with the screenshot.</li>
+          <li>We guarantee to match the same price and book it for you.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec-block">
+      <div class="eyebrow">The conditions</div>
+      <h2 style="margin-top:8px">Read these before you send.</h2>
+      <div class="cards2">
+        <div class="info"><h3>Air tickets</h3><ul><li>Screenshot of the final payment page of an authentic, renowned travel website.</li><li>Sent within 4 minutes of messaging us.</li><li>Time stamp visible on the screenshot.</li><li>Sent along with your ID and payment.</li></ul></div>
+        <div class="info"><h3>Hotels</h3><p>The same conditions apply to hotels as to air tickets.</p></div>
+        <div class="info"><h3>No holds</h3><p>We cannot hold a booking while you decide. Send the screenshot, your ID and the payment together so we can book straight away.</p></div>
+      </div>
+    </section>
+
+    <section class="sec-block">
+      <div class="eyebrow">What we book</div>
+      <h2 style="margin-top:8px">Flights and hotels, covered.</h2>
+      <div class="cards2" style="grid-template-columns:repeat(2,1fr)">
+        <div class="info"><h3>Flights, international and domestic</h3><p>Competitive pricing on both international and domestic air travel, so your journey stays hassle free.</p></div>
+        <div class="info"><h3>Hotel reservations</h3><p>A selection of deluxe five-star and four-star hotels, carefully chosen to match your preferences and the standards of Leisureflies.</p></div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div><h2>Have a screenshot ready?</h2><p>Open WhatsApp and send it with your ID and payment. The 4-minute clock starts when you message us.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Start on WhatsApp</a>
+    </div>
+  </div>
+</Base>

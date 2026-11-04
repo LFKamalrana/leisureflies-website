@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import visas from '../../data/visas.json';
+import { wa } from '../../data/site.js';
+export function getStaticPaths() { return Object.keys(visas).map((slug) => ({ params: { slug } })); }
+const { slug } = Astro.params;
+const v = visas[slug];
+const hasProfiles = v.sections.some((s) => s.docs.some((x) => x.for !== 'all'));
+// A final section with only paragraphs is the closing call to action.
+const last = v.sections[v.sections.length - 1];
+const closing = last && !last.docs.length && !last.bullets.length ? last : null;
+const body = closing ? v.sections.slice(0, -1) : v.sections;
+const profiles = [['salaried', 'Salaried'], ['self-employed', 'Self-employed'], ['student', 'A student'], ['retired', 'Retired']];
+---
+<Base title={`${v.name} Visa Checklist`} description={v.sub.length > 155 ? v.sub.slice(0, 152) + '...' : v.sub}>
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / <a href="/visa">Visa</a> / {v.name}</div>
+    <div class="passcard">
+      <div class="main">
+        <div class="eyebrow">{v.route}</div>
+        <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">{v.name}</h1>
+        <p class="lead">{v.sub}</p>
+        <dl>{v.facts.map((f) => <div><dt>{f.k}</dt><dd>{f.v}</dd></div>)}</dl>
+      </div>
+      <aside class="stub no-print">
+        <div><div class="eyebrow" style="color:#D8FBFF">Your progress</div><div class="count"><span id="done">0</span><small> / <span id="total">0</span></small></div></div>
+        <p style="font-size:15px;opacity:.95">Tick items as you collect them. Nothing is saved. Print the page when you are done.</p>
+        <button type="button" id="clear">Clear all ticks</button>
+      </aside>
+    </div>
+
+    {hasProfiles && (
+      <div class="profile no-print"><b>Show me the documents for someone who is:</b>
+        <div class="filters" id="profiles" style="margin:0">
+          {profiles.map(([k, l], i) => <button type="button" data-p={k} aria-pressed={i === 0 ? 'true' : 'false'}>{l}</button>)}
+        </div>
+      </div>
+    )}
+
+    {body.map((s) => (
+      <section class="sec-block">
+        {s.level === 'h2' ? <h2>{s.title}</h2> : <h3 style="font-size:26px">{s.title}</h3>}
+        {s.paras.length > 0 && <div class="prose">{s.paras.map((p) => <p>{p}</p>)}</div>}
+        {s.docs.length > 0 && (
+          <ul class="docs">
+            {s.docs.map((x) => (
+              <li data-for={x.for}>
+                <label><input type="checkbox" /><span>{x.title}</span></label>
+                {(x.tags.length > 0 || x.note) && <p class="n">{x.tags.map((t) => <span class="tag-we">{t}</span>)}{x.note}</p>}
+              </li>
+            ))}
+          </ul>
+        )}
+        {s.bullets.length > 0 && <div class="info" style="margin-top:18px"><ul style="margin:0">{s.bullets.map((b) => <li>{b}</li>)}</ul></div>}
+      </section>
+    ))}
+
+    <div class="cta-band">
+      <div><h2>{closing ? closing.title : 'Need a hand with your file?'}</h2><p>{closing && closing.paras.length ? closing.paras[0] : 'Send us your documents and we tell you what is missing.'}</p></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-sun" href={wa(`Hi LeisureFlies, I need help with my ${v.name} visa.`)} target="_blank" rel="noopener">Message us on WhatsApp</a></div>
+    </div>
+  </div>
+</Base>
+<script is:inline>
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('.docs input')),profile='salaried';
+  var hasProfiles=!!document.getElementById('profiles');
+  function visible(li){var f=li.dataset.for||'all';return !hasProfiles||f.indexOf('all')>-1||f.split(' ').indexOf(profile)>-1}
+  function refresh(){
+    var total=0,done=0;
+    document.querySelectorAll('.docs li').forEach(function(li){var show=visible(li);li.hidden=!show;if(show){total++;if(li.querySelector('input').checked)done++}});
+    document.getElementById('done').textContent=done;document.getElementById('total').textContent=total;
+  }
+  boxes.forEach(function(b){b.addEventListener('change',refresh)});
+  var pr=document.getElementById('profiles');
+  if(pr)pr.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;profile=b.dataset.p;pr.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});refresh()});
+  document.getElementById('clear').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});refresh()});
+  refresh();
+})();
+</script>

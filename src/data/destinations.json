@@ -1,0 +1,2404 @@
+{
+ "andaman": {
+  "slug": "andaman",
+  "name": "Andaman",
+  "title": "Andaman & Nicobar — experience the extraordinary.",
+  "lead": "Islands floating in splendid isolation in the Bay of Bengal, with some of India's best diving and snorkelling.",
+  "chips": [
+   "Beach",
+   "Marine Life",
+   "Shopping",
+   "Seafood"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Beach Marine Life Shopping Seafood"
+   },
+   {
+    "type": "p",
+    "text": "Beach"
+   },
+   {
+    "type": "p",
+    "text": "Marine Life"
+   },
+   {
+    "type": "p",
+    "text": "Shopping"
+   },
+   {
+    "type": "p",
+    "text": "Seafood"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Andaman"
+   },
+   {
+    "type": "h2",
+    "text": "Splendid isolation in the Bay of Bengal."
+   },
+   {
+    "type": "p",
+    "text": "The Andaman and Nicobar Islands sit east of the Indian mainland, and Port Blair — the gateway to these pristine islands — offers water-based activities like snorkelling, scuba diving, and sea cruises alongside a rich history and culture."
+   },
+   {
+    "type": "p",
+    "text": "Divers get the best conditions between December and April; bird watchers should aim for the winter months."
+   },
+   {
+    "type": "p",
+    "text": "Beach"
+   },
+   {
+    "type": "p",
+    "text": "Marine Life"
+   },
+   {
+    "type": "p",
+    "text": "Seafood"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Andaman."
+   },
+   {
+    "type": "p",
+    "text": "From history at Cellular Jail to the reefs off Havelock."
+   },
+   {
+    "type": "h3",
+    "text": "Cellular Jail"
+   },
+   {
+    "type": "p",
+    "text": "A three-storey British-era prison from 1906, now a National Memorial to India's freedom fighters."
+   },
+   {
+    "type": "h3",
+    "text": "Radhanagar Beach"
+   },
+   {
+    "type": "p",
+    "text": "Hugged by coconut trees and tropical jungle — complete serenity for its visitors."
+   },
+   {
+    "type": "h3",
+    "text": "Corbyn's Cove Beach"
+   },
+   {
+    "type": "p",
+    "text": "A coconut-palm fringed beach 6km from Port Blair, ideal for swimming and water sports."
+   },
+   {
+    "type": "h3",
+    "text": "Limestone Caves"
+   },
+   {
+    "type": "p",
+    "text": "Tucked deep within mangroves and rainforest — a highly recommended addition to any itinerary."
+   },
+   {
+    "type": "h3",
+    "text": "Scuba Diving & Snorkelling"
+   },
+   {
+    "type": "p",
+    "text": "One of the densest coral reef ecosystems around — soft and hard corals, and a huge variety of fish."
+   },
+   {
+    "type": "h3",
+    "text": "Mount Harriet National Park"
+   },
+   {
+    "type": "p",
+    "text": "Unmatched flora and fauna, with Port Blair visible from the peak."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Port Blair, Havelock & Neil Island packages."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (Port Blair + Havelock)"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (+ Neil Island)"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D (+ Neil Island)"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "December to April is best for diving; winter months are best for bird watching."
+   },
+   {
+    "type": "h3",
+    "text": "Andaman in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "Not Andamanese or Nicobarese — it's Bengali, followed by Hindi, Tamil, Telugu and Malayalam."
+   },
+   {
+    "type": "p",
+    "text": "The Dugong, a gentle sea cow."
+   },
+   {
+    "type": "p",
+    "text": "Barren Island, located right here in the Andaman Islands."
+   }
+  ]
+ },
+ "bali": {
+  "slug": "bali",
+  "name": "Bali",
+  "title": "Bali — an Indonesian paradise that feels like a fantasy.",
+  "lead": "Temples wrapped in jungle, rice terraces at dawn, and sunsets over Uluwatu's cliffs. Whatever kind of holiday you're picturing, Bali has a version of it.",
+  "chips": [
+   "Temples",
+   "Beaches",
+   "Volcano Tours",
+   "Visa on Arrival"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Temples Beaches Volcano Tours Visa on Arrival"
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Volcano Tours"
+   },
+   {
+    "type": "p",
+    "text": "Visa on Arrival"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Bali"
+   },
+   {
+    "type": "h2",
+    "text": "An ideal retreat for beaches, temples & rice terraces."
+   },
+   {
+    "type": "p",
+    "text": "Adventurous, spiritual, or purely lazy-by-the-pool — Bali flexes to whatever holiday you're after. It's home to the coral reefs of Tulamben, the mountain peaks of Kintamani, the buzz of Seminyak and Kuta, and the quieter, traditional village life of Ubud."
+   },
+   {
+    "type": "p",
+    "text": "Between the sunrises over Mount Batur and the sunsets at Uluwatu, it's a destination that's hard to leave once you've landed."
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beauty"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Do Experiences"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Bali."
+   },
+   {
+    "type": "p",
+    "text": "The tours our travelers ask for most, built into every LeisureFlies Bali package."
+   },
+   {
+    "type": "h3",
+    "text": "Nusa Penida Island Tour"
+   },
+   {
+    "type": "p",
+    "text": "One of the most beautiful islands in the world, reached by boat — home to the iconic Broken Beach."
+   },
+   {
+    "type": "h3",
+    "text": "Bedugul & Tanah Lot Tour"
+   },
+   {
+    "type": "p",
+    "text": "Visit the exotic Ulun Danu Beratan Temple, set on a high tableland surrounded by ponds."
+   },
+   {
+    "type": "h3",
+    "text": "Denpasar City & Bali Bounty Cruise"
+   },
+   {
+    "type": "p",
+    "text": "Explore Bali's architecture, then take to the ocean for snorkeling, banana boat rides, and a 44-metre water slide."
+   },
+   {
+    "type": "h3",
+    "text": "Kintamani Volcano & Ubud Village"
+   },
+   {
+    "type": "p",
+    "text": "View Mount Batur and the Ubud Tegalalang rice terraces, then visit Celuk's gold & silver craft village and the Holy Spring Temple."
+   },
+   {
+    "type": "h3",
+    "text": "Watersports & Uluwatu Temple"
+   },
+   {
+    "type": "p",
+    "text": "Parasailing, banana boat and jet ski rides, the roaring Water Blow at Nusa Dua, and Uluwatu's cliffside temple with Kecak fire dance."
+   },
+   {
+    "type": "h3",
+    "text": "Ubud Art Market & Villages"
+   },
+   {
+    "type": "p",
+    "text": "Shop the Ubud Art Market and visit Celuk & Mas villages, known for centuries-old craft traditions."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling Itineraries"
+   },
+   {
+    "type": "h2",
+    "text": "Ubud + Kuta packages."
+   },
+   {
+    "type": "p",
+    "text": "4 Nights / 5 Days"
+   },
+   {
+    "type": "p",
+    "text": "5 Nights / 6 Days"
+   },
+   {
+    "type": "p",
+    "text": "6 Nights / 7 Days"
+   },
+   {
+    "type": "h3",
+    "text": "Ubud + Kuta — 4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "Most Booked"
+   },
+   {
+    "type": "li",
+    "text": "Full day tour of watersports & Uluwatu Temple — private"
+   },
+   {
+    "type": "li",
+    "text": "Kintamani tour with Mount Batur, Cantik Coffee Plantation, Tegalalang Rice Terraces, Tukad Cepung Falls — private"
+   },
+   {
+    "type": "li",
+    "text": "Bedugul tour with Beratan Temple, Bali Botanical Garden, photo stop at Handara Gate & Twin Lake View Point — private"
+   },
+   {
+    "type": "li",
+    "text": "Return airport transfers on private basis"
+   },
+   {
+    "type": "h3",
+    "text": "Ubud + Kuta — 5N/6D"
+   },
+   {
+    "type": "li",
+    "text": "Nusa Penida day west tour from North Kuta hotel with lunch — SIC"
+   },
+   {
+    "type": "li",
+    "text": "Ubud tour with Alas Harum, Tegalalang Rice Terraces, Tibumana Falls — private"
+   },
+   {
+    "type": "li",
+    "text": "Full day tour of Lempuyang Temple and Amed Beach — private"
+   },
+   {
+    "type": "li",
+    "text": "Full day tour of Garuda Wisnu Kencana Cultural Park, Melasti Beach, Uluwatu Temple with Kecak Dance — private"
+   },
+   {
+    "type": "li",
+    "text": "Return airport transfers on private basis"
+   },
+   {
+    "type": "h3",
+    "text": "Ubud + Kuta — 6N/7D"
+   },
+   {
+    "type": "li",
+    "text": "Full day tour of watersports & Uluwatu Temple — private"
+   },
+   {
+    "type": "li",
+    "text": "Full day tour with Tanah Lot Temple, Alas Kedaton Monkey Forest, Taman Ayun Temple — private"
+   },
+   {
+    "type": "li",
+    "text": "Kintamani tour with Mount Batur, Cantik Coffee Plantation, Tegalalang Rice Terraces, Tukad Cepung Falls — private"
+   },
+   {
+    "type": "li",
+    "text": "Ubud shopping tour with Ubud Art Market, Celuk & Mas villages — private"
+   },
+   {
+    "type": "li",
+    "text": "Return airport transfers on private basis"
+   },
+   {
+    "type": "h3",
+    "text": "Indonesia Visa"
+   },
+   {
+    "type": "p",
+    "text": "Getting a visa for Indonesia is refreshingly simple — Indian travelers don't need to apply in advance. A Visa on Arrival is purchased directly at the immigration hall on landing in Bali (or anywhere in Indonesia), and it's valid for 30 days."
+   },
+   {
+    "type": "p",
+    "text": "Between April and October."
+   },
+   {
+    "type": "p",
+    "text": "Don't enter temples with your shoes on, and avoid using your left hand when giving or receiving gifts."
+   },
+   {
+    "type": "h3",
+    "text": "Bali in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "The world's most expensive coffee comes from Bali — it's not your typical coffee bean."
+   },
+   {
+    "type": "p",
+    "text": "Indonesian waters host double the marine species found in the Great Barrier Reef."
+   },
+   {
+    "type": "p",
+    "text": "Balinese babies aren't allowed to touch the ground for their first few months — they're considered little angels."
+   }
+  ]
+ },
+ "dubai": {
+  "slug": "dubai",
+  "name": "Dubai",
+  "title": "Dubai — experience the extraordinary.",
+  "lead": "One of the most sought-after destinations among the seven cities of the UAE — pure, unfiltered luxury.",
+  "chips": [
+   "Desert",
+   "Shopping",
+   "Architecture",
+   "Diversity"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Desert Shopping Architecture Diversity"
+   },
+   {
+    "type": "p",
+    "text": "Desert"
+   },
+   {
+    "type": "p",
+    "text": "Shopping"
+   },
+   {
+    "type": "p",
+    "text": "Architecture"
+   },
+   {
+    "type": "p",
+    "text": "Diversity"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Dubai"
+   },
+   {
+    "type": "h2",
+    "text": "What luxury actually looks like."
+   },
+   {
+    "type": "p",
+    "text": "Dubai makes you feel what luxury life literally looks like. Roaming the city in a limousine, viewing exotic building structures, is simply splendid."
+   },
+   {
+    "type": "p",
+    "text": "Having dinner on a luxurious cruise under shining stars takes your breath away — and standing atop the world's tallest building pleases you from the bottom of your heart."
+   },
+   {
+    "type": "p",
+    "text": "Desert"
+   },
+   {
+    "type": "p",
+    "text": "Shopping"
+   },
+   {
+    "type": "p",
+    "text": "Architecture"
+   },
+   {
+    "type": "eyebrow",
+    "text": "The Dubai Trio"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Dubai."
+   },
+   {
+    "type": "p",
+    "text": "The essentials, plus what to explore beyond them."
+   },
+   {
+    "type": "h3",
+    "text": "Dubai City Tour"
+   },
+   {
+    "type": "p",
+    "text": "A great short break for shopping, sunbathing, sporting events, and fine dining."
+   },
+   {
+    "type": "h3",
+    "text": "Dhow Cruise with Dinner"
+   },
+   {
+    "type": "p",
+    "text": "Cruise, buffet dinner, live shows and a licensed bar — the trio's most important part."
+   },
+   {
+    "type": "h3",
+    "text": "Desert Safari"
+   },
+   {
+    "type": "p",
+    "text": "Evening dune bashing on 4x4 land cruisers, sand boarding, BBQ dinner, tanura show and belly dance."
+   },
+   {
+    "type": "h3",
+    "text": "Burj Khalifa & Dubai Mall"
+   },
+   {
+    "type": "p",
+    "text": "The world's tallest building — views from the 124th floor, then the Dubai Aquarium below."
+   },
+   {
+    "type": "h3",
+    "text": "Abu Dhabi & Ferrari World"
+   },
+   {
+    "type": "p",
+    "text": "The Sheikh Zayed Grand Mosque, accommodating 40,000 worshippers, plus the world's largest Ferrari theme park."
+   },
+   {
+    "type": "h3",
+    "text": "Aquaventure & Lost Chambers"
+   },
+   {
+    "type": "p",
+    "text": "The world's largest waterslide tube, and an 11-million-litre aquarium for an underwater yoga session."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Dubai city & Abu Dhabi combos."
+   },
+   {
+    "type": "p",
+    "text": "3N/4D"
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (+ Abu Dhabi & Ferrari World)"
+   },
+   {
+    "type": "p",
+    "text": "Every package includes daily breakfast, airport transfers, and the Dubai Trio (city tour, desert safari, dhow cruise) as standard. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Dubai Visa"
+   },
+   {
+    "type": "p",
+    "text": "Only soft copies required: a scanned colour copy of your passport's first & last page, a passport-size photo on white background, and your PAN card. The e-visa is issued digitally and can be printed."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "Between November and April."
+   },
+   {
+    "type": "p",
+    "text": "Snapping photos — don't photograph government buildings without consent."
+   },
+   {
+    "type": "p",
+    "text": "Don't consume alcohol or illicit substances outside licensed venues — follow local norms and enjoy the journey."
+   }
+  ]
+ },
+ "goa": {
+  "slug": "goa",
+  "name": "Goa",
+  "title": "Goa — India's pocket-sized paradise.",
+  "lead": "A kaleidoscopic blend of Indian and Portuguese cultures, sweetened with sun, sea, sand, seafood and susegad.",
+  "chips": [
+   "Beaches",
+   "Water Sports",
+   "Heritage"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Beaches Water Sports Heritage"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Water Sports"
+   },
+   {
+    "type": "p",
+    "text": "Heritage"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Goa"
+   },
+   {
+    "type": "h2",
+    "text": "One of India's top holiday destinations, and it's easy to see why."
+   },
+   {
+    "type": "p",
+    "text": "From shopping at local markets to feasting on Goan cuisine and endless water sports, Goa is spoilt for choice. It's a kaleidoscopic blend of Indian and Portuguese cultures, wrapped in sun, sea, sand, seafood, and susegad."
+   },
+   {
+    "type": "p",
+    "text": "North Goa brings the energy — beaches, nightlife, forts. South Goa slows it down with quieter shores and turtle-nesting beaches. Most travelers do a bit of both."
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Water Sports"
+   },
+   {
+    "type": "p",
+    "text": "Heritage"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Do Experiences"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Goa."
+   },
+   {
+    "type": "p",
+    "text": "A mix of North and South Goa highlights, built into every LeisureFlies Goa package."
+   },
+   {
+    "type": "h3",
+    "text": "North Goa Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Mandrem, Keri, Morjim, Sinquerim & Candolim — from quiet sunsets to dolphin spotting and jet skiing."
+   },
+   {
+    "type": "h3",
+    "text": "Chapora Fort"
+   },
+   {
+    "type": "p",
+    "text": "Made famous by 'Dil Chahta Hai', this 1717 hill-top fort offers sweeping views over the Chapora River."
+   },
+   {
+    "type": "h3",
+    "text": "Basilica of Bom Jesus"
+   },
+   {
+    "type": "p",
+    "text": "A UNESCO Heritage Site over 400 years old, home to the mummy of St. Xavier, displayed once a decade."
+   },
+   {
+    "type": "h3",
+    "text": "Arpora Night Market"
+   },
+   {
+    "type": "p",
+    "text": "A shopaholic's Saturday night paradise — local handicrafts to designer garments."
+   },
+   {
+    "type": "h3",
+    "text": "Dudhsagar Falls"
+   },
+   {
+    "type": "p",
+    "text": "A striking four-tiered waterfall on the Mandovi River, roughly 60km from Panaji."
+   },
+   {
+    "type": "h3",
+    "text": "South Goa Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Benaulim, Galgibaga (Olive Ridley turtle nesting), Agonda and Majorda — quieter, more laid-back shores."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "North + South Goa packages."
+   },
+   {
+    "type": "p",
+    "text": "3 Nights / 4 Days"
+   },
+   {
+    "type": "p",
+    "text": "4 Nights / 5 Days"
+   },
+   {
+    "type": "p",
+    "text": "5 Nights / 6 Days"
+   },
+   {
+    "type": "p",
+    "text": "Every duration is fully customizable around your preferred mix of North and South Goa. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "Between October and March — visit Feb-March for Goa's Carnival season."
+   },
+   {
+    "type": "p",
+    "text": "The Anjuna Flea Market on Wednesdays — started in 1975 by \"eight finger Eddie\", it's the queen of hippie flea markets."
+   },
+   {
+    "type": "p",
+    "text": "Skip the heels on the beach, and don't drink on public beaches — it's discouraged locally."
+   },
+   {
+    "type": "h3",
+    "text": "Goa in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "Goa is the smallest state in India by area."
+   },
+   {
+    "type": "p",
+    "text": "Goa celebrates both 15th August and 19th December, marking its freedom from Portuguese rule."
+   },
+   {
+    "type": "p",
+    "text": "Goan people can apply for a Portuguese passport alongside their Indian one."
+   }
+  ]
+ },
+ "himachal": {
+  "slug": "himachal",
+  "name": "Himachal Pradesh",
+  "title": "Himachal — the land of gods.",
+  "lead": "Snow-laden peaks, ancient temples, and hill stations that have drawn travelers for generations.",
+  "chips": [
+   "Adventure",
+   "Mountains",
+   "Temples",
+   "Cuisine"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Adventure Mountains Temples Cuisine"
+   },
+   {
+    "type": "p",
+    "text": "Adventure"
+   },
+   {
+    "type": "p",
+    "text": "Mountains"
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Cuisine"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Himachal"
+   },
+   {
+    "type": "h2",
+    "text": "Dev Bhoomi — the land of the gods."
+   },
+   {
+    "type": "p",
+    "text": "Himachal Pradesh sits in the Western Himalayas, earning its nickname 'Dev Bhoomi' from the sheer number of historical temples scattered across the state. Shimla, Manali, Dharamshala, Dalhousie, Chamba, Khajjiar, Kullu and Kasauli are its best-known hill stations."
+   },
+   {
+    "type": "p",
+    "text": "It's also home to major Hindu pilgrimage sites — Naina Devi, Bajreshwari Mata, Jwala Ji, Chintpurni, Chamunda Devi, Baijnath, Bhimakali and Jakhoo temples among them."
+   },
+   {
+    "type": "p",
+    "text": "Adventure"
+   },
+   {
+    "type": "p",
+    "text": "Mountains"
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Himachal."
+   },
+   {
+    "type": "p",
+    "text": "From Shimla's colonial charm to Manali's adventure sports — the essentials of every LeisureFlies Himachal package."
+   },
+   {
+    "type": "h3",
+    "text": "Shimla Local Sightseeing"
+   },
+   {
+    "type": "p",
+    "text": "Christ Church, The Mall Road, Shimla State Museum, Sankat Mochan Temple and Summer Hill."
+   },
+   {
+    "type": "h3",
+    "text": "Kalka-Shimla Toy Train"
+   },
+   {
+    "type": "p",
+    "text": "A UNESCO World Heritage narrow-gauge railway — a 5.5-hour ride through deodar and pine forests."
+   },
+   {
+    "type": "h3",
+    "text": "Kufri"
+   },
+   {
+    "type": "p",
+    "text": "16km from Shimla — ski slopes, a mini zoo, and views over the Potato Research Station."
+   },
+   {
+    "type": "h3",
+    "text": "Paragliding in Manali"
+   },
+   {
+    "type": "p",
+    "text": "At 2050m above sea level, Manali is a favorite for both international and domestic paragliders."
+   },
+   {
+    "type": "h3",
+    "text": "Solang Valley"
+   },
+   {
+    "type": "p",
+    "text": "Parachuting, paragliding, horse riding, and zorbing — one of Himachal's most popular adventure hubs."
+   },
+   {
+    "type": "h3",
+    "text": "Rohtang Pass"
+   },
+   {
+    "type": "p",
+    "text": "Open June-October, the gateway to Lahaul & Spiti — sledging, snow scooters, and the Rahala Waterfall nearby."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Shimla + Manali packages."
+   },
+   {
+    "type": "p",
+    "text": "3N/4D"
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D"
+   },
+   {
+    "type": "p",
+    "text": "9N/10D"
+   },
+   {
+    "type": "p",
+    "text": "Multiple durations available depending on how much of Shimla, Manali, and surrounding valleys you want to cover. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "March to June, and September to December."
+   },
+   {
+    "type": "p",
+    "text": "Water currents in Himachal's rivers are strong — avoid standing near cliffs or riverbanks for photos."
+   },
+   {
+    "type": "p",
+    "text": "Carry cash — ATMs get scarce in remote areas."
+   },
+   {
+    "type": "h3",
+    "text": "Himachal in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "Malana village has a strict rule: no outsider may touch a resident's belongings or the village walls."
+   },
+   {
+    "type": "p",
+    "text": "Shimla sits atop seven hills, including Jakhu Hill and Summer Hill."
+   },
+   {
+    "type": "p",
+    "text": "Christ Church (built 1857) is India's second-oldest church, after St. John's in Meerut."
+   }
+  ]
+ },
+ "kashmir": {
+  "slug": "kashmir",
+  "name": "Kashmir",
+  "title": "Kashmir — a paradise on earth.",
+  "lead": "Nature lovers flock to India's northernmost extremity for Gulmarg, Pahalgam, Sonmarg, and the houseboats of Dal Lake.",
+  "chips": [
+   "Adventure",
+   "Mountains",
+   "Flora & Fauna"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Adventure Mountains Flora & Fauna"
+   },
+   {
+    "type": "p",
+    "text": "Adventure"
+   },
+   {
+    "type": "p",
+    "text": "Mountains"
+   },
+   {
+    "type": "p",
+    "text": "Flora & Fauna"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Kashmir"
+   },
+   {
+    "type": "h2",
+    "text": "India's northernmost extremity, made for nature lovers."
+   },
+   {
+    "type": "p",
+    "text": "The state of Jammu & Kashmir sits mostly in the Himalayan mountains, frequently visited by adventure enthusiasts for trekking, rafting, and skiing."
+   },
+   {
+    "type": "p",
+    "text": "Some of India's major pilgrimage centers — including the Amarnath Caves and Vaishnodevi Shrine — are situated here too."
+   },
+   {
+    "type": "p",
+    "text": "Adventure"
+   },
+   {
+    "type": "p",
+    "text": "Mountains"
+   },
+   {
+    "type": "p",
+    "text": "Flora & Fauna"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Kashmir."
+   },
+   {
+    "type": "p",
+    "text": "From Srinagar's gardens to Pahalgam's saffron fields."
+   },
+   {
+    "type": "h3",
+    "text": "Dal Lake"
+   },
+   {
+    "type": "p",
+    "text": "Over 15km around — Srinagar's jewel, with shikaras skiffing goods, children, and travelers across the water."
+   },
+   {
+    "type": "h3",
+    "text": "Srinagar's Mughal Gardens"
+   },
+   {
+    "type": "p",
+    "text": "A UNESCO World Heritage Site, flourishing with indigenous flowers in Persian-style architecture."
+   },
+   {
+    "type": "h3",
+    "text": "Gulmarg"
+   },
+   {
+    "type": "p",
+    "text": "2,730m above sea level, with the world's second-highest gondola ride and second-longest cable car."
+   },
+   {
+    "type": "h3",
+    "text": "Pahalgam"
+   },
+   {
+    "type": "p",
+    "text": "The jewel of Liddar Valley, part of Asia's only saffron-growing region — hiking, trekking and fishing."
+   },
+   {
+    "type": "h3",
+    "text": "Sonmarg"
+   },
+   {
+    "type": "p",
+    "text": "'Meadow of Gold' — a majestic glacier, dense forests, and snow-capped peaks at 2,800m."
+   },
+   {
+    "type": "h3",
+    "text": "Aru Valley"
+   },
+   {
+    "type": "p",
+    "text": "12km from Pahalgam — the base camp for trekking to Kolahoi Glacier and Tarsar Lake."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Srinagar + Gulmarg + Pahalgam packages."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D"
+   },
+   {
+    "type": "p",
+    "text": "Every package includes a 1-hour shikara ride and local sightseeing across all cities. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "April to June, and October to March."
+   },
+   {
+    "type": "p",
+    "text": "Heavy woollens, sweaters and scarves — especially for winter travel."
+   },
+   {
+    "type": "p",
+    "text": "Taxis are easily available for local sightseeing and excursions out of Srinagar."
+   },
+   {
+    "type": "h3",
+    "text": "Kashmir in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "Kashmir is India's largest producer of saffron, and the third largest in the world."
+   },
+   {
+    "type": "p",
+    "text": "The Indira Gandhi Memorial Tulip Garden."
+   },
+   {
+    "type": "p",
+    "text": "The Pir Panjal (Banihal) tunnel — 11,215m long, and Asia's fourth-longest."
+   }
+  ]
+ },
+ "kerala": {
+  "slug": "kerala",
+  "name": "Kerala",
+  "title": "Kerala — God's own country.",
+  "lead": "Serene beaches, tranquil backwaters, lush hill stations and exotic wildlife — a land that never stops amazing you.",
+  "chips": [
+   "Nature",
+   "Culture",
+   "Heritage"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Nature Culture Heritage"
+   },
+   {
+    "type": "p",
+    "text": "Nature"
+   },
+   {
+    "type": "p",
+    "text": "Culture"
+   },
+   {
+    "type": "p",
+    "text": "Heritage"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Kerala"
+   },
+   {
+    "type": "h2",
+    "text": "A land of serenity."
+   },
+   {
+    "type": "p",
+    "text": "Kerala is a destination of equable climate, a long shoreline with serene beaches, tranquil backwaters, lush hill stations and exotic wildlife."
+   },
+   {
+    "type": "p",
+    "text": "Waterfalls, sprawling plantations, paddy fields, Ayurvedic health holidays, enchanting art forms, and exotic cuisine — Kerala will make you want to explore it inch by inch."
+   },
+   {
+    "type": "p",
+    "text": "Nature"
+   },
+   {
+    "type": "p",
+    "text": "Culture"
+   },
+   {
+    "type": "p",
+    "text": "Heritage"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Kerala."
+   },
+   {
+    "type": "p",
+    "text": "From Munnar's tea gardens to Alleppey's backwaters."
+   },
+   {
+    "type": "h3",
+    "text": "Kochi to Munnar Drive"
+   },
+   {
+    "type": "p",
+    "text": "A 4-hour scenic drive through spice plantations, past Valara and Cheeyappara Falls."
+   },
+   {
+    "type": "h3",
+    "text": "Munnar Sightseeing"
+   },
+   {
+    "type": "p",
+    "text": "Eravikulam National Park (home to the Nilgiri Tahr), Anamudi Peak, and the Tata Tea Museum."
+   },
+   {
+    "type": "h3",
+    "text": "Thekkady (Periyar)"
+   },
+   {
+    "type": "p",
+    "text": "A boat safari through Periyar Tiger Reserve, followed by an evening spice market walk in Kumily village."
+   },
+   {
+    "type": "h3",
+    "text": "Alleppey Houseboats"
+   },
+   {
+    "type": "p",
+    "text": "A 120-metre luxury houseboat on Vembanad Lake, with traditional Kuttanadan meals onboard."
+   },
+   {
+    "type": "h3",
+    "text": "Kovalam Beach"
+   },
+   {
+    "type": "p",
+    "text": "A rocky promontory creates a calm bay ideal for sea bathing — plus diving, parasailing and windsurfing."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Munnar + Thekkady + Alleppey packages."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (+ Cochin)"
+   },
+   {
+    "type": "p",
+    "text": "7N/8D (+ Cochin & Kovalam)"
+   },
+   {
+    "type": "p",
+    "text": "Every package includes all meals aboard the houseboat and local sightseeing across cities. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "Between September and March."
+   },
+   {
+    "type": "p",
+    "text": "Plastic is banned in Kerala — plan accordingly for shopping."
+   },
+   {
+    "type": "p",
+    "text": "Only visit Ayurveda centers approved by the Ministry of Tourism."
+   },
+   {
+    "type": "h3",
+    "text": "Kerala in Numbers"
+   },
+   {
+    "type": "p",
+    "text": "Kerala is the first Indian state to receive rainfall each year."
+   },
+   {
+    "type": "p",
+    "text": "The Padmanabhaswamy Temple is the wealthiest Hindu temple in the world."
+   },
+   {
+    "type": "p",
+    "text": "Traditional Kerala houseboats are built entirely from wooden planks, without any iron nails."
+   }
+  ]
+ },
+ "maldives": {
+  "slug": "maldives",
+  "name": "Maldives",
+  "title": "Maldives — the sunny side of life.",
+  "lead": "White sand beaches, turquoise waters, and a marine world that pulls in solo travelers, honeymooners, and families alike.",
+  "chips": [
+   "Honeymoon",
+   "Water Villas",
+   "All-Inclusive"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Honeymoon Water Villas All-Inclusive"
+   },
+   {
+    "type": "p",
+    "text": "Honeymoon"
+   },
+   {
+    "type": "p",
+    "text": "Water Villas"
+   },
+   {
+    "type": "p",
+    "text": "All-Inclusive"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Maldives"
+   },
+   {
+    "type": "h2",
+    "text": "An utterly awe-inspiring escape into the Indian Ocean."
+   },
+   {
+    "type": "p",
+    "text": "The Maldives is an awe-inspiring destination of white sand beaches, turquoise waters, majestic islands, and startling marine life — a tranquil vacation for solo travelers, honeymooners, or families."
+   },
+   {
+    "type": "p",
+    "text": "November through April is peak season, with the most reliable sunshine — though prices climb accordingly across accommodation and activities."
+   },
+   {
+    "type": "p",
+    "text": "Honeymoon"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Marine Life"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Experiences You Shouldn't Miss"
+   },
+   {
+    "type": "h2",
+    "text": "What to do in the Maldives."
+   },
+   {
+    "type": "p",
+    "text": "Every resort has its own version of these — we help you pick the one that fits."
+   },
+   {
+    "type": "h3",
+    "text": "Scuba Diving"
+   },
+   {
+    "type": "p",
+    "text": "Some of the clearest waters in the world, with reef life right off most resort jetties."
+   },
+   {
+    "type": "h3",
+    "text": "Sunset Fishing & Kayaking"
+   },
+   {
+    "type": "p",
+    "text": "Traditional fishing trips at golden hour, or a quiet kayak around the lagoon."
+   },
+   {
+    "type": "h3",
+    "text": "Floating Breakfast"
+   },
+   {
+    "type": "p",
+    "text": "Breakfast served on a raft in your own private plunge pool — a Maldives signature."
+   },
+   {
+    "type": "h3",
+    "text": "Romantic Dinner & Spa"
+   },
+   {
+    "type": "p",
+    "text": "Private beach dinners, couples' massages, and spa treatments overlooking the water — honeymoon essentials."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "How to pick the perfect resort."
+   },
+   {
+    "type": "p",
+    "text": "Transfers"
+   },
+   {
+    "type": "p",
+    "text": "Room Category"
+   },
+   {
+    "type": "p",
+    "text": "Meal Plan"
+   },
+   {
+    "type": "p",
+    "text": "Speedboat, domestic flight or seaplane transfers; Garden, Beach, Pool or Water Villa rooms; Breakfast-only through All-Inclusive meal plans — we match all three to your budget and trip length."
+   },
+   {
+    "type": "h3",
+    "text": "Villas, Explained"
+   },
+   {
+    "type": "p",
+    "text": "The most budget-friendly category — ideal for a 2-3 day stay."
+   },
+   {
+    "type": "p",
+    "text": "Right on the beach — good for relaxation."
+   },
+   {
+    "type": "p",
+    "text": "Best for couples' privacy — a great luxurious option for your first 2-3 days."
+   },
+   {
+    "type": "p",
+    "text": "The famous overwater stilted villa — best saved for your last 1-2 nights."
+   },
+   {
+    "type": "h3",
+    "text": "Resorts by Budget"
+   },
+   {
+    "type": "p",
+    "text": "Sun Island Resort, Adaaran Club Rannalhi, Medhufushi Island Resort, OBLU Xperience Ailafushi."
+   },
+   {
+    "type": "p",
+    "text": "Dusit Thani, Coco Bodu Hithi, Furaveri Island Resort, Adaaran Prestige Vadoo, Paradise Island Resort & Spa."
+   },
+   {
+    "type": "p",
+    "text": "Most resorts now offer dedicated vegetarian, Indian and Jain meal options — worth confirming when we book."
+   }
+  ]
+ },
+ "mauritius": {
+  "slug": "mauritius",
+  "name": "Mauritius",
+  "title": "Mauritius — it's a pleasure.",
+  "lead": "A volcanic island of lagoons and palm-fringed beaches, ringed by coral reefs, 2,400km off Africa's south-east coast.",
+  "chips": [
+   "Perfect for Honeymoon",
+   "Beautiful Beaches",
+   "Culture"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Perfect for Honeymoon Beautiful Beaches Culture"
+   },
+   {
+    "type": "p",
+    "text": "Perfect for Honeymoon"
+   },
+   {
+    "type": "p",
+    "text": "Beautiful Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Culture"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Mauritius"
+   },
+   {
+    "type": "h2",
+    "text": "An island known for its rare, varied flora and fauna."
+   },
+   {
+    "type": "p",
+    "text": "Mauritius is a volcanic island of lagoons and palm-fringed beaches with coral reefs surrounding most of the coastline — 1,865 square kilometers with 330km of coastline."
+   },
+   {
+    "type": "p",
+    "text": "It was once the only known home of the dodo, which, along with several other avian species, went extinct not long after the island's settlement."
+   },
+   {
+    "type": "p",
+    "text": "Honeymoon"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Culture"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Mauritius."
+   },
+   {
+    "type": "p",
+    "text": "A full-day North tour, a full-day South tour, and an island escape in between."
+   },
+   {
+    "type": "h3",
+    "text": "Île aux Cerfs"
+   },
+   {
+    "type": "p",
+    "text": "A privately-owned island in Mauritius' largest lagoon — 87 hectares of preserved white-sand beaches."
+   },
+   {
+    "type": "h3",
+    "text": "North Tour"
+   },
+   {
+    "type": "p",
+    "text": "Citadelle de Port-Louis, Aapravasi Ghat and Le Caudan — history and heritage in one guided day."
+   },
+   {
+    "type": "h3",
+    "text": "South Tour"
+   },
+   {
+    "type": "p",
+    "text": "Trou aux Cerfs crater, the Hindu Ganga Talao temple, Chamarel Waterfalls, and the famous 7 Coloured Earths."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Packages across 3, 4 & 5-star hotels."
+   },
+   {
+    "type": "p",
+    "text": "3-Star Hotels"
+   },
+   {
+    "type": "p",
+    "text": "4-Star Hotels"
+   },
+   {
+    "type": "p",
+    "text": "5-Star Hotels"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary and hotel options shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Mauritius Visa"
+   },
+   {
+    "type": "p",
+    "text": "Travellers do not need to register for a visa in advance. Simply provide the necessary documents at the airport and collect your visa on arrival from the relevant authority."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "May to December, when the weather is cool, dry and sunny."
+   },
+   {
+    "type": "p",
+    "text": "Don't trust Google Maps blindly — it isn't well optimized for Mauritius' locations."
+   },
+   {
+    "type": "p",
+    "text": "Mauritius follows left-hand driving, same as India."
+   }
+  ]
+ },
+ "saudi-arabia": {
+  "slug": "saudi-arabia",
+  "name": "Saudi Arabia",
+  "title": "Saudi Arabia — the incredible edge of the world.",
+  "lead": "Rich and diverse heritage, striking landscapes, and cities that blend ultramodern skylines with centuries of history.",
+  "chips": [
+   "Rich Heritage",
+   "Diverse Landscape",
+   "Cuisine"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Rich Heritage Diverse Landscape Cuisine"
+   },
+   {
+    "type": "p",
+    "text": "Rich Heritage"
+   },
+   {
+    "type": "p",
+    "text": "Diverse Landscape"
+   },
+   {
+    "type": "p",
+    "text": "Cuisine"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Saudi"
+   },
+   {
+    "type": "h2",
+    "text": "From gleaming skylines to desert legends."
+   },
+   {
+    "type": "p",
+    "text": "Ultramodern towers define Riyadh's skyline, hinting at the capital's sophisticated culture, shopping, and dining, while prayer times set the pace for daily life. Gleaming architecture blends with historic landmarks from the kingdom's earliest years."
+   },
+   {
+    "type": "p",
+    "text": "Beyond the capital, AlUla combines legendary heritage sites — including Hegra, Saudi's first UNESCO World Heritage Site — with outdoor adventure amid dramatic desert landscapes."
+   },
+   {
+    "type": "p",
+    "text": "Heritage"
+   },
+   {
+    "type": "p",
+    "text": "Landscape"
+   },
+   {
+    "type": "p",
+    "text": "Cuisine"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Saudi Arabia."
+   },
+   {
+    "type": "p",
+    "text": "Riyadh, Jeddah, and AlUla — three very different sides of the kingdom."
+   },
+   {
+    "type": "h3",
+    "text": "Edge of the World"
+   },
+   {
+    "type": "p",
+    "text": "Jebel Fihrayn — a towering plateau two hours from Riyadh, with endless views and awe-inspiring silence."
+   },
+   {
+    "type": "h3",
+    "text": "Al-Masmak Fortress"
+   },
+   {
+    "type": "p",
+    "text": "One of Riyadh's most historically important sites — 'Masmak' means 'strong', and local legend ties its fate to the Kingdom's."
+   },
+   {
+    "type": "h3",
+    "text": "Al-Diriyah & At-Turaif"
+   },
+   {
+    "type": "p",
+    "text": "A UNESCO World Heritage Site — once one of the largest cities on the Arabian Peninsula."
+   },
+   {
+    "type": "h3",
+    "text": "Jeddah Waterfront"
+   },
+   {
+    "type": "p",
+    "text": "One of the newest waterfronts in the world — a Lego-like seaside promenade perfect for a coastal stroll."
+   },
+   {
+    "type": "h3",
+    "text": "Elephant Rock, AlUla"
+   },
+   {
+    "type": "p",
+    "text": "A striking geological formation rising three storeys from golden desert sands."
+   },
+   {
+    "type": "h3",
+    "text": "Hegra, AlUla"
+   },
+   {
+    "type": "p",
+    "text": "Saudi Arabia's first UNESCO World Heritage Site — carved tombs dating from around the 2nd century BCE."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Riyadh & Jeddah packages."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (Riyadh + Jeddah)"
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (Riyadh only)"
+   },
+   {
+    "type": "p",
+    "text": "2N/3D (Jeddah only)"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Good to Know"
+   },
+   {
+    "type": "p",
+    "text": "Alcohol and its consumption are strictly prohibited in Saudi Arabia."
+   },
+   {
+    "type": "p",
+    "text": "Your visa must not be expired, and must have been used for at least one prior trip if applicable."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "October to February."
+   }
+  ]
+ },
+ "singapore": {
+  "slug": "singapore",
+  "name": "Singapore",
+  "title": "Singapore — passion made possible.",
+  "lead": "A country of food, art, culture, diversity, adventure, nature and history, all in one impossibly clean city.",
+  "chips": [
+   "Super Clean",
+   "Family Destination",
+   "Greenery"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Super Clean Family Destination Greenery"
+   },
+   {
+    "type": "p",
+    "text": "Super Clean"
+   },
+   {
+    "type": "p",
+    "text": "Family Destination"
+   },
+   {
+    "type": "p",
+    "text": "Greenery"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Singapore"
+   },
+   {
+    "type": "h2",
+    "text": "Where passion and possibilities meet."
+   },
+   {
+    "type": "p",
+    "text": "Singapore is much more than a destination. Foodies, explorers, collectors, socialisers, action seekers and cultural shapers can all experience its rich tapestry of art and culture, chase the excitement, and relish the food."
+   },
+   {
+    "type": "p",
+    "text": "It's a country of food, art, culture, diversity, adventure, nature, and history — what more could anyone ask for?"
+   },
+   {
+    "type": "p",
+    "text": "Super Clean"
+   },
+   {
+    "type": "p",
+    "text": "Family-Friendly"
+   },
+   {
+    "type": "p",
+    "text": "Greenery"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Singapore."
+   },
+   {
+    "type": "p",
+    "text": "The highlights our travelers keep coming back for."
+   },
+   {
+    "type": "h3",
+    "text": "Gardens by the Bay"
+   },
+   {
+    "type": "p",
+    "text": "Over 1.5 million plants — the Flower Dome, Cloud Forest, and Supertree Grove in one place."
+   },
+   {
+    "type": "h3",
+    "text": "Sentosa — 'State of Fun'"
+   },
+   {
+    "type": "p",
+    "text": "Cable cars, the Merlion Statue, Wings of Time show, S.E.A Aquarium and the Trick Eye Museum."
+   },
+   {
+    "type": "h3",
+    "text": "Universal Studios"
+   },
+   {
+    "type": "p",
+    "text": "Meet Minions and Elmo, then ride Battlestar Galactica — the world's tallest duelling roller coasters."
+   },
+   {
+    "type": "h3",
+    "text": "Night Safari"
+   },
+   {
+    "type": "p",
+    "text": "The world's first night zoo — a tram ride through 7 regions, home to 2,500+ animals."
+   },
+   {
+    "type": "h3",
+    "text": "Singapore City Tour"
+   },
+   {
+    "type": "p",
+    "text": "Chinatown, Marina Bay, the Merlion, and Little India — history and mystery in one walk."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Family & couple-friendly packages."
+   },
+   {
+    "type": "p",
+    "text": "3N/4D"
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (Singapore + Cruise)"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Singapore Visa"
+   },
+   {
+    "type": "p",
+    "text": "Original machine-readable passport (2 bio-page copies for West India applicants), valid 6+ months on arrival, with 3 blank pages for stamping."
+   },
+   {
+    "type": "p",
+    "text": "2 recent photographs (3.5cm x 5cm), a confirmed return air ticket within 30 days, and prior travel history documentation if applicable."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "Between February and April."
+   },
+   {
+    "type": "p",
+    "text": "Chewing gum in public — it's banned. Don't bring it."
+   },
+   {
+    "type": "p",
+    "text": "Don't spit or litter — it's a punishable offence, and the city stays spotless because of it."
+   }
+  ]
+ },
+ "sri-lanka": {
+  "slug": "sri-lanka",
+  "name": "Sri Lanka",
+  "title": "Sri Lanka — natural, simple, adaptable.",
+  "lead": "An ideal winter sun destination — energetic cities, sleepy white-sand beaches, ancient temples, and dramatic scenery.",
+  "chips": [
+   "Temples",
+   "Beauty",
+   "Beaches"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Temples Beauty Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beauty"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Sri Lanka"
+   },
+   {
+    "type": "h2",
+    "text": "A tropical alternative to the cold, dark days back home."
+   },
+   {
+    "type": "p",
+    "text": "Sri Lanka is a wonderful mixture of energetic urban life, long stretches of sleepy white-sanded beaches, ancient temples, dramatic scenery and delicious food."
+   },
+   {
+    "type": "p",
+    "text": "The island is rich in culture and covered in religious, historically significant sites — for culture lovers, the temples of Anuradhapura, a Buddhist pilgrimage site with wonderful stupas, are an absolute must."
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beauty"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Visit Spots"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do in Sri Lanka."
+   },
+   {
+    "type": "p",
+    "text": "From Kandy's sacred temples to Bentota's coastline."
+   },
+   {
+    "type": "h3",
+    "text": "Kandy Tooth Relic Temple"
+   },
+   {
+    "type": "p",
+    "text": "One of Sri Lankan Buddhism's most sacred sites, housing the left canine tooth relic of Lord Buddha."
+   },
+   {
+    "type": "h3",
+    "text": "Pinnawala Elephant Orphanage"
+   },
+   {
+    "type": "p",
+    "text": "A window into rural Sri Lanka, and one of the most memorable stops on any itinerary."
+   },
+   {
+    "type": "h3",
+    "text": "Nuwara Eliya"
+   },
+   {
+    "type": "p",
+    "text": "Tea estates on misty hillsides, the Ramboda Waterfall, and colonial-era British architecture."
+   },
+   {
+    "type": "h3",
+    "text": "Sigiriya & Dambulla Cave Temple"
+   },
+   {
+    "type": "p",
+    "text": "A UNESCO World Heritage Site — Ravana's ancient rock palace, one of Sri Lanka's seven listed sites."
+   },
+   {
+    "type": "h3",
+    "text": "Bentota"
+   },
+   {
+    "type": "p",
+    "text": "A resort town with pristine, palm-fringed beaches — great for water sports and the Kosgoda turtle hatchery."
+   },
+   {
+    "type": "h3",
+    "text": "Colombo"
+   },
+   {
+    "type": "p",
+    "text": "Warm hospitality, charming weather, and the lively Pettah Floating Market."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Kandy + Nuwara Eliya + Bentota packages."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Sri Lanka Visa"
+   },
+   {
+    "type": "p",
+    "text": "Visa on arrival is available for Indians. For short visits, travelers should obtain an ETA (Electronic Travel Authorization) online in advance."
+   },
+   {
+    "type": "p",
+    "text": "The ETA is initially valid for 30 days from arrival, and can be extended up to 6 months."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "A year-round destination — temperatures average between 22°C and 31°C throughout."
+   },
+   {
+    "type": "p",
+    "text": "Colombo's culture, climbing Adam's Peak, Galle's history, the ruins of Sigiriya, and the tea plantations."
+   }
+  ]
+ },
+ "thailand": {
+  "slug": "thailand",
+  "name": "Thailand",
+  "title": "Thailand — Bangkok, Pattaya, Phuket, Krabi.",
+  "lead": "Beautiful beaches, an international destination that still feels wonderfully inexpensive.",
+  "chips": [
+   "Beautiful Beaches",
+   "International",
+   "Inexpensive"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Beautiful Beaches International Inexpensive"
+   },
+   {
+    "type": "p",
+    "text": "Beautiful Beaches"
+   },
+   {
+    "type": "p",
+    "text": "International"
+   },
+   {
+    "type": "p",
+    "text": "Inexpensive"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Thailand"
+   },
+   {
+    "type": "h2",
+    "text": "A treasure cache of cultural attractions."
+   },
+   {
+    "type": "p",
+    "text": "Bangkok will never let you down — a city full of life, offering cultural and spiritual amenities in the same afternoon. Go from spa to resorts, shopping to partying all night, pubs to exotic Buddhist temples."
+   },
+   {
+    "type": "p",
+    "text": "Further south, Phuket and Krabi bring tropical beaches, hidden temples, local markets and a thumping club scene — mellow in the sun, thrive at night."
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "p",
+    "text": "International"
+   },
+   {
+    "type": "p",
+    "text": "Inexpensive"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Must-Do Experiences"
+   },
+   {
+    "type": "h2",
+    "text": "Things to do across Thailand."
+   },
+   {
+    "type": "p",
+    "text": "Bangkok, Pattaya, Phuket, and Krabi — each with its own personality."
+   },
+   {
+    "type": "h3",
+    "text": "Bangkok City Tour"
+   },
+   {
+    "type": "p",
+    "text": "Gleaming temples, a tuk tuk ride, the floating market, and delicious street food."
+   },
+   {
+    "type": "h3",
+    "text": "Dinner Cruise, Bangkok"
+   },
+   {
+    "type": "p",
+    "text": "A luxurious 5-star cruise on the Chao Phraya River, dazzling in the country of smiles."
+   },
+   {
+    "type": "h3",
+    "text": "Coral Island Tour, Pattaya"
+   },
+   {
+    "type": "p",
+    "text": "Parasailing, sea walking, glass-bottom boat snorkelling, jet skiing and banana boat riding."
+   },
+   {
+    "type": "h3",
+    "text": "Phi Phi & James Bond Islands, Phuket"
+   },
+   {
+    "type": "p",
+    "text": "A speedboat trip around the Phi Phi archipelago, plus the island made famous by 007."
+   },
+   {
+    "type": "h3",
+    "text": "Tiger Kingdom & Big Buddha, Phuket"
+   },
+   {
+    "type": "p",
+    "text": "Get up close with tigers, then visit the 148ft Big Buddha atop Nakkerad Hills."
+   },
+   {
+    "type": "h3",
+    "text": "4-Island & Jungle Tour, Krabi"
+   },
+   {
+    "type": "p",
+    "text": "Hong Island's coral reefs and sea caves, plus a 40°C hot stream waterfall in Khao Nor Chu Chi National Park."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Bangkok-Pattaya and Phuket-Krabi combos."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (Bangkok-Pattaya)"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (Bangkok-Pattaya)"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D (Bangkok-Pattaya)"
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (Phuket-Krabi)"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (Phuket-Krabi)"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D (Phuket-Krabi)"
+   },
+   {
+    "type": "p",
+    "text": "Every package includes private airport transfers, temple tours, and island/coral excursions with tickets. Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Thailand Visa"
+   },
+   {
+    "type": "p",
+    "text": "Indians get Visa on Arrival in Thailand — no need to pre-apply. Walk in just like entering any city in India."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "Between December and April."
+   },
+   {
+    "type": "p",
+    "text": "Always take your shoes off entering authentic restaurants, temples and local shops — following Thai culture matters."
+   }
+  ]
+ },
+ "vietnam": {
+  "slug": "vietnam",
+  "name": "Vietnam",
+  "title": "Vietnam — timeless charm.",
+  "lead": "Fascinating history, gorgeous landscapes, incredible food, and an energy that pulls you in from every angle.",
+  "chips": [
+   "Temples",
+   "Beauty",
+   "Beaches"
+  ],
+  "blocks": [
+   {
+    "type": "p",
+    "text": "Temples Beauty Beaches"
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beauty"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Why Explore Vietnam"
+   },
+   {
+    "type": "h2",
+    "text": "A trip you've never quite taken before."
+   },
+   {
+    "type": "p",
+    "text": "Vietnam is arguably one of the most beautiful countries in south-eastern Asia. Its fascinating history, gorgeous landscapes, tasty food, and vibrant energy awaken all your senses at once."
+   },
+   {
+    "type": "p",
+    "text": "The best approach: expect nothing, and let the thrill, serenity, and relaxation take over."
+   },
+   {
+    "type": "p",
+    "text": "Temples"
+   },
+   {
+    "type": "p",
+    "text": "Beauty"
+   },
+   {
+    "type": "p",
+    "text": "Beaches"
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Cities"
+   },
+   {
+    "type": "h2",
+    "text": "Where to go in Vietnam."
+   },
+   {
+    "type": "p",
+    "text": "Four cities, four completely different moods."
+   },
+   {
+    "type": "h3",
+    "text": "Ho Chi Minh City"
+   },
+   {
+    "type": "p",
+    "text": "Formerly Saigon — vibrating with energy and traffic, the economic heart of Vietnam."
+   },
+   {
+    "type": "h3",
+    "text": "Da Nang"
+   },
+   {
+    "type": "p",
+    "text": "Broad beaches, fantastic street food, and the fabled Hai Van Pass."
+   },
+   {
+    "type": "h3",
+    "text": "Hoi An"
+   },
+   {
+    "type": "p",
+    "text": "Where the bold march of progress slows to a leisurely amble through the Old Town."
+   },
+   {
+    "type": "h3",
+    "text": "Hanoi"
+   },
+   {
+    "type": "p",
+    "text": "Mouthwatering street food, fascinating history, and a genuinely diverse cultural mix."
+   },
+   {
+    "type": "h3",
+    "text": "Cu Chi Tunnels"
+   },
+   {
+    "type": "p",
+    "text": "Part of Vietnam's extensive underground wartime network — one of Ho Chi Minh City's most iconic sights."
+   },
+   {
+    "type": "h3",
+    "text": "Sapa & Ninh Binh"
+   },
+   {
+    "type": "p",
+    "text": "Rice terraces, limestone outcrops and caves — nicknamed 'Ha Long Bay on land'."
+   },
+   {
+    "type": "eyebrow",
+    "text": "Top Selling"
+   },
+   {
+    "type": "h2",
+    "text": "Hanoi, Halong Bay & Ho Chi Minh combos."
+   },
+   {
+    "type": "p",
+    "text": "4N/5D (3N Hanoi + 1N Halong Bay)"
+   },
+   {
+    "type": "p",
+    "text": "5N/6D (2N Hanoi + 1N Halong Bay + 2N HCMC)"
+   },
+   {
+    "type": "p",
+    "text": "6N/7D (Hanoi + Halong Bay + Hoi An + HCMC)"
+   },
+   {
+    "type": "p",
+    "text": "Full day-by-day itinerary shared on request."
+   },
+   {
+    "type": "h3",
+    "text": "Vietnam Visa"
+   },
+   {
+    "type": "p",
+    "text": "Getting a business or tourist visa is simple — it's a 3-step process, applied for online through Vietnam's official e-visa portal."
+   },
+   {
+    "type": "p",
+    "text": "It's electronically issued as a Single Entry Visa, and must be requested at least 2 days before your departure date."
+   },
+   {
+    "type": "h3",
+    "text": "Tips"
+   },
+   {
+    "type": "p",
+    "text": "Around March-April and October-December, when the weather is comfortable and festivals run across the country."
+   }
+  ]
+ }
+}

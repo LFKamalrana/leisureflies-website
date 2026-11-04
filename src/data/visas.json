@@ -1,0 +1,1324 @@
+{
+ "australia-new-zealand": {
+  "slug": "australia-new-zealand",
+  "route": "Visitor visa · India to Australia and New Zealand",
+  "name": "Australia & New Zealand",
+  "sub": "Both countries decide online and grant the visa electronically — there's no sticker in your passport. Both also want to see a properly planned trip, not just a set of bookings.",
+  "facts": [
+   {
+    "k": "Visa type",
+    "v": "Visitor / tourist, electronic"
+   },
+   {
+    "k": "Apply through",
+    "v": "ImmiAccount & Immigration NZ online"
+   },
+   {
+    "k": "Passport validity",
+    "v": "6 months minimum"
+   },
+   {
+    "k": "Checklist updated",
+    "v": "September 2026"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Everyone travelling",
+    "level": "h2",
+    "paras": [
+     "Required regardless of what you do for a living."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Original passport, valid at least 6 months beyond your travel dates",
+      "note": "Scanned copies of old passports help too — previous travel to Australia, New Zealand, the UK, the US or Schengen countries counts strongly in your favour.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Recent digital photograph",
+      "note": "Required for New Zealand and useful for Australia. 35 mm × 45 mm, plain light background, taken within the last 6 months. Full details in the photograph specification below.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Aadhaar card copy",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Confirmed return ticket itinerary",
+      "note": "A reservation is enough. Don't purchase before the visa is granted.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Hotel reservation vouchers covering your full stay",
+      "note": "",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Day-wise travel itinerary",
+      "note": "Both countries weigh this heavily, particularly for a self-drive or multi-island trip. Long unexplained gaps invite questions.",
+      "tags": [
+       "We prepare this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Covering letter explaining the purpose of your trip",
+      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Money and tax",
+    "level": "h2",
+    "paras": [
+     "Proof that you can fund the trip and that you have reason to return home."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
+      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our guidance from experience, not a published requirement. A consistent balance reads better than a recent deposit.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Income Tax Returns for the last 3 years, each with its computation page",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of your other savings and assets",
+      "note": "D-Mat account statements, LIC policies, mutual funds, fixed deposits, property papers. Include anything you've mentioned on the application form.",
+      "tags": []
+     },
+     {
+      "for": "salaried self-employed retired",
+      "title": "Chartered accountant's certificate of income and net worth",
+      "note": "",
+      "tags": [
+       "Recommended"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Proof of what you do",
+    "level": "h2",
+    "paras": [
+     "Your ties to India."
+    ],
+    "docs": [
+     {
+      "for": "salaried",
+      "title": "Original no-objection certificate or leave sanction letter from your employer",
+      "note": "On company letterhead, signed, confirming your position, approved leave dates and continued employment.",
+      "tags": []
+     },
+     {
+      "for": "salaried",
+      "title": "Salary slips for the last 3 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business GST certificate",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business registration or incorporation documents",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "School or college ID card, front and back",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "No-objection certificate from your school or college",
+      "note": "Required if children are accompanying you during term time.",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "Sponsor's documents, if a parent is funding the trip",
+      "note": "See the sponsor section below.",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Retirement proof showing your date of retirement",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Pension order or pension account statements",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Depending on your situation",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Marriage certificate",
+      "note": "",
+      "tags": [
+       "If travelling with your spouse"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Birth certificate",
+      "note": "",
+      "tags": [
+       "For each child travelling"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Consent letter from the non-travelling parent",
+      "note": "",
+      "tags": [
+       "If a child travels with one parent only"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "A few things that catch people out",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "Neither country puts a sticker in your passport. Your approval arrives by email and is linked electronically to the passport you applied with — so if you renew that passport before you fly, tell us immediately.",
+     "Australia may ask for a health examination or a police certificate depending on your history and how long you plan to stay.",
+     "New Zealand requires an NZeTA and an International Visitor Levy for eligible travellers, which is separate from the visitor visa. We'll tell you which route applies to you."
+    ]
+   },
+   {
+    "title": "Photograph specification",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "35 mm wide × 45 mm high, taken within the last 6 months.",
+     "Studio photograph on a plain light-grey or white background. No selfies, no scans of printed photos.",
+     "Full face, straight to camera, neutral expression, mouth closed, eyes open and clearly visible.",
+     "Head and shoulders in frame, evenly lit, no shadows and no red-eye.",
+     "No headgear unless worn daily for religious reasons, and it must not obscure the face.",
+     "No sunglasses. Ordinary spectacles are best removed to avoid any glare.",
+     "For online submission, supply the digital file as well as prints — typically JPEG, under 10 MB."
+    ]
+   },
+   {
+    "title": "If someone in Australia or New Zealand is inviting or funding your trip",
+    "level": "h3",
+    "paras": [
+     "Only needed when a relative or friend there is hosting you or covering part of your costs. Everything here comes from your sponsor."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Invitation letter, signed and dated",
+      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and which expenses they will cover.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Copy of the sponsor's passport, including visa or residence permit",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of their legal status, if they are not a citizen",
+      "note": "Residence permit, permanent residency evidence, or citizenship certificate.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of your relationship to them",
+      "note": "Birth certificate, marriage certificate, or family registration document.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's bank statements for the last 3 to 6 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
+      "note": "Stating their position, salary and length of service. If self-employed, business registration plus proof of income instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's tax documents for the last 1 to 2 years",
+      "note": "Notice of Assessment in Australia, or the IRD income summary in New Zealand.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of accommodation",
+      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "A recent utility bill as proof of residence",
+      "note": "",
+      "tags": [
+       "Optional"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Doing both countries in one trip?",
+    "level": "h2",
+    "paras": [
+     "Two separate visas, two separate files, one itinerary that has to make sense to both. We handle that combination regularly — send us your dates and we'll map it out."
+    ],
+    "docs": [],
+    "bullets": []
+   }
+  ]
+ },
+ "canada": {
+  "slug": "canada",
+  "route": "Visitor visa · India to Canada",
+  "name": "Canada",
+  "sub": "Bring every document on this list. Canadian visa officers refuse far more applications for thin paperwork than for anything a traveller has actually done wrong.",
+  "facts": [
+   {
+    "k": "Visa type",
+    "v": "Visitor visa (TRV)"
+   },
+   {
+    "k": "Apply through",
+    "v": "VFS Global, biometrics in person"
+   },
+   {
+    "k": "Passport validity",
+    "v": "6 months minimum"
+   },
+   {
+    "k": "Checklist updated",
+    "v": "September 2026"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Everyone travelling",
+    "level": "h2",
+    "paras": [
+     "Required regardless of what you do for a living."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Original passport, valid at least 6 months beyond your travel dates",
+      "note": "Carry all old and expired passports too, even cancelled ones. Previous travel history is one of the strongest things working in your favour.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Two recent photographs, 35 mm × 45 mm",
+      "note": "Taken within the last 6 months against a plain white or light background. Full face, neutral expression, ears and forehead visible, no headgear except where worn for religious reasons. See the photograph specification below.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Aadhaar card copy",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Confirmed return ticket itinerary",
+      "note": "A reservation is enough at the application stage — you should not buy a ticket before the visa is granted.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Hotel reservation vouchers covering your full stay",
+      "note": "There must be no unexplained gaps in your accommodation.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Day-wise travel itinerary",
+      "note": "A clear day-by-day plan showing where you'll be and when.",
+      "tags": [
+       "We prepare this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Covering letter explaining the purpose of your trip",
+      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Money and tax",
+    "level": "h2",
+    "paras": [
+     "The officer is deciding one thing above all: can you afford this trip, and will you come home afterwards. This is where that gets answered."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
+      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our own guidance based on what gets approved, not a figure published by the Canadian authorities. A steady balance built over months reads far better than a large sum deposited last week.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Income Tax Returns for the last 3 years, each with its computation page",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of your other savings and assets",
+      "note": "D-Mat account statements, LIC policies, mutual fund statements, fixed deposits, property papers. Include anything you have declared on the application form — a declared asset with no supporting document raises a question you don't want asked.",
+      "tags": []
+     },
+     {
+      "for": "salaried self-employed retired",
+      "title": "Chartered accountant's certificate of income and net worth",
+      "note": "",
+      "tags": [
+       "Recommended"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Proof of what you do",
+    "level": "h2",
+    "paras": [
+     "Your ties to India. Strong ties here are the single biggest factor in an approval."
+    ],
+    "docs": [
+     {
+      "for": "salaried",
+      "title": "Original no-objection certificate or leave sanction letter from your employer",
+      "note": "On company letterhead, signed, confirming your position, your approved leave dates and that your job is waiting for you.",
+      "tags": []
+     },
+     {
+      "for": "salaried",
+      "title": "Salary slips for the last 3 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business GST certificate",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business registration or incorporation documents",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "School or college ID card, front and back",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "Bonafide certificate or no-objection letter from your institution",
+      "note": "Confirming you are enrolled and that your leave of absence is approved.",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "Sponsor's documents, if a parent is funding the trip",
+      "note": "See the sponsor section below.",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Retirement proof showing your date of retirement",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Pension order or pension account statements",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Depending on your situation",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Marriage certificate",
+      "note": "",
+      "tags": [
+       "If travelling with your spouse"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Birth certificate",
+      "note": "",
+      "tags": [
+       "For each child travelling"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Consent letter from the non-travelling parent",
+      "note": "",
+      "tags": [
+       "If a child travels with one parent only"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Biometrics are compulsory",
+    "level": "h3",
+    "paras": [
+     "Almost every Indian applicant aged 14 to 79 must give fingerprints and a photograph in person at a VFS Global centre after submitting the application online. Biometrics stay valid for 10 years, so if you have given them for a Canadian application before, you may not need to repeat them. We book the appointment for you."
+    ],
+    "docs": [],
+    "bullets": []
+   },
+   {
+    "title": "Photograph specification",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "35 mm wide × 45 mm high, printed on matt or semi-matt paper, no border.",
+     "Taken within the last 6 months, in a studio. No selfies, no scanned or reprinted photographs.",
+     "Plain white or light-coloured background, evenly lit, no shadows.",
+     "Full face, looking straight at the camera, neutral expression, mouth closed, eyes open and clearly visible.",
+     "Face measured from chin to crown should be between 31 mm and 36 mm.",
+     "No headgear unless worn daily for religious reasons, and it must not cover any part of the face.",
+     "Spectacles are best removed. If worn, the frames must not cover the eyes and there must be no glare."
+    ]
+   },
+   {
+    "title": "If someone in Canada is inviting or funding your trip",
+    "level": "h3",
+    "paras": [
+     "Only needed when a relative or friend in Canada is hosting you or paying part of your costs. Everything here comes from your sponsor, not from you."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Invitation letter, signed and dated",
+      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and exactly which expenses they will cover.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Copy of the sponsor's passport",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of their status in Canada",
+      "note": "PR card, citizenship certificate, or a valid work or study permit.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of your relationship to them",
+      "note": "Birth certificate, marriage certificate, or a family registration document that connects you both.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's bank statements for the last 3 to 6 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
+      "note": "The employment letter should state their position, salary and length of service.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's tax documents for the last 1 to 2 years",
+      "note": "In Canada this means the T4 slip and Notice of Assessment. If the sponsor is self-employed, business registration plus proof of income instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of accommodation",
+      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "A recent utility bill as proof of residence",
+      "note": "",
+      "tags": [
+       "Optional"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Not sure about your file?",
+    "level": "h2",
+    "paras": [
+     "Send us a message and we'll tell you honestly whether your documents are ready, or what to fix before you apply. We've been filing visas from Chandigarh since 2010."
+    ],
+    "docs": [],
+    "bullets": []
+   }
+  ]
+ },
+ "europe": {
+  "slug": "europe",
+  "route": "Short-stay visa · India to the Schengen area",
+  "name": "Europe",
+  "sub": "One visa, twenty-nine countries. You apply to the country where you'll spend the most nights — or, if the nights are equal, wherever you land first.",
+  "facts": [
+   {
+    "k": "Visa type",
+    "v": "Schengen short-stay (Type C)"
+   },
+   {
+    "k": "Apply through",
+    "v": "Embassy or VFS of your main destination"
+   },
+   {
+    "k": "Insurance",
+    "v": "€30,000 medical cover, compulsory"
+   },
+   {
+    "k": "Checklist updated",
+    "v": "September 2026"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Everyone travelling",
+    "level": "h2",
+    "paras": [
+     "Required regardless of what you do for a living."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Original passport, valid at least 6 months beyond your travel dates",
+      "note": "It needs at least two blank pages and must have been issued within the last 10 years. Carry your old passports as well.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Two recent photographs, 35 mm × 45 mm",
+      "note": "Taken within the last 6 months against a plain light background. Full details in the photograph specification below.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Travel insurance with a minimum of €30,000 medical cover",
+      "note": "This is a hard Schengen requirement, not a recommendation. The policy must be valid in every Schengen country and must cover your entire stay, including repatriation. A cheap policy that falls short of €30,000 gets the whole application refused.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Confirmed return ticket itinerary",
+      "note": "A reservation is sufficient. Don't buy tickets before the visa is granted.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Hotel reservation vouchers covering every night of your stay",
+      "note": "Gaps between bookings are queried, so the dates must run continuously.",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Day-wise travel itinerary",
+      "note": "Especially important for multi-country trips — it's what proves your chosen embassy really is your main destination.",
+      "tags": [
+       "We prepare this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Covering letter explaining the purpose of your trip",
+      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Money and tax",
+    "level": "h2",
+    "paras": [
+     "Proof that you can fund the trip yourself and that you have reason to return."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
+      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our guidance from experience, not a published Schengen minimum. Consulates look at the pattern as much as the number — a balance that has been there for months carries more weight than a recent lump sum.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Income Tax Returns for the last 3 years, each with its computation page",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of other savings and assets",
+      "note": "D-Mat statements, LIC policies, mutual funds, fixed deposits, property papers.",
+      "tags": [
+       "Strengthens your file"
+      ]
+     },
+     {
+      "for": "salaried self-employed retired",
+      "title": "Chartered accountant's certificate of income and net worth",
+      "note": "",
+      "tags": [
+       "Recommended"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Proof of what you do",
+    "level": "h2",
+    "paras": [
+     "Your ties to India — the strongest argument that you intend to come back."
+    ],
+    "docs": [
+     {
+      "for": "salaried",
+      "title": "Original no-objection certificate or leave sanction letter from your employer",
+      "note": "On company letterhead, signed, confirming your position, approved leave dates and that your job continues after you return.",
+      "tags": []
+     },
+     {
+      "for": "salaried",
+      "title": "Salary slips for the last 3 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business GST certificate",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business registration or incorporation documents",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "School or college ID card, front and back",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "Bonafide certificate or no-objection letter from your institution",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "Sponsor's documents, if a parent is funding the trip",
+      "note": "See the sponsor section below.",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Retirement proof showing your date of retirement",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Pension order or pension account statements",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Depending on your situation",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Marriage certificate",
+      "note": "",
+      "tags": [
+       "If travelling with your spouse"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Birth certificate",
+      "note": "",
+      "tags": [
+       "For each child travelling"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Consent letter from the non-travelling parent",
+      "note": "",
+      "tags": [
+       "If a child travels with one parent only"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Which country do you apply to?",
+    "level": "h3",
+    "paras": [
+     "Apply to the embassy of the country where you'll spend the most nights. If you're spending equal time in two or more, apply to the one you enter first. Getting this wrong is a common reason for rejection on a multi-country trip, and it's the first thing we check when we plan your itinerary.",
+     "Biometrics are taken in person and remain valid for 59 months, so if you've given them for a Schengen visa in the last five years, you may be able to skip that step."
+    ],
+    "docs": [],
+    "bullets": []
+   },
+   {
+    "title": "Photograph specification",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "35 mm wide × 45 mm high, no border, matt or semi-matt finish.",
+     "Taken within the last 6 months, in a studio. Selfies and scanned reprints are rejected.",
+     "Plain light-grey or off-white background, evenly lit, no shadow behind the head.",
+     "Full face, straight to camera, neutral expression, mouth closed, eyes open and unobscured.",
+     "Face from chin to crown should fill roughly 70–80% of the frame height.",
+     "No headgear unless worn daily for religious reasons, and never covering the face.",
+     "Spectacles are best removed. If worn, frames must be thin, the eyes fully visible, and there must be no glare."
+    ]
+   },
+   {
+    "title": "If someone in Europe is inviting or funding your trip",
+    "level": "h3",
+    "paras": [
+     "Only needed when a relative, friend or company in Europe is hosting you or paying part of your costs. Everything here comes from your sponsor."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Invitation letter, signed and dated",
+      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and which expenses they will cover. Some countries require this on an official form obtained from their local municipality — we'll tell you if yours does.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Copy of the sponsor's passport, including their visa or residence permit",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of their legal status, if they are not a citizen",
+      "note": "Residence permit, long-stay visa, or citizenship certificate.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of your relationship to them",
+      "note": "Birth certificate, marriage certificate, or family registration document.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's bank statements for the last 3 to 6 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
+      "note": "Stating their position, salary and length of service. If self-employed, business registration plus proof of income instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Sponsor's tax return or annual income statement for the last 1 to 2 years",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Proof of accommodation",
+      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "A recent utility bill as proof of residence",
+      "note": "",
+      "tags": [
+       "Optional"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Planning more than one country?",
+    "level": "h2",
+    "paras": [
+     "Multi-country Europe trips are where most applications go wrong — wrong embassy, gaps in the hotel dates, insurance that doesn't cover the whole stay. Send us your plan and we'll build the file properly."
+    ],
+    "docs": [],
+    "bullets": []
+   }
+  ]
+ },
+ "georgia": {
+  "slug": "georgia",
+  "route": "e-Visa · India to Georgia",
+  "name": "Georgia",
+  "sub": "Everything is submitted online — no embassy visit, no biometrics, no original documents. The list is short, but the bank statement rules are unusually strict and that's where most refusals come from.",
+  "facts": [
+   {
+    "k": "Visa type",
+    "v": "e-Visa, ordinary (Category C)"
+   },
+   {
+    "k": "Apply through",
+    "v": "Online e-Visa portal"
+   },
+   {
+    "k": "Bank statement",
+    "v": "8 months, bank-downloaded PDF"
+   },
+   {
+    "k": "Checklist updated",
+    "v": "September 2026"
+   }
+  ],
+  "sections": [
+   {
+    "title": "What we need from you",
+    "level": "h2",
+    "paras": [
+     "All scans and digital files — nothing needs to be posted or handed over in person."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Scan of your passport's first and last pages",
+      "note": "A clear, flat scan. Photographs of the passport taken on a phone are rejected.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Digital passport-size photograph on a white background",
+      "note": "Without spectacles — see the specification below. Studio photograph only.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Unmasked Aadhaar card scan",
+      "note": "The full number must be visible. A masked Aadhaar downloaded from the UIDAI site will not do.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Mobile number and email address linked to your Aadhaar",
+      "note": "Not mandatory, but applications where the contact details match the Aadhaar record are approved noticeably more often.",
+      "tags": [
+       "Recommended"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Scan of your most recent sticker visa",
+      "note": "Any previous Schengen, UK, US, Canada, Australia or Japan visa. Strong travel history helps.",
+      "tags": [
+       "Optional"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Bank statement for the last 8 months, downloaded directly from your bank",
+      "note": "Read the rules below carefully — this is the item that decides most Georgia applications.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Your intended travel dates",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "The bank statement rules, exactly",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "It must be a PDF downloaded directly from your bank's website or mobile app . A scan, a printout, or a print-to-PDF of a printed statement is not accepted.",
+     "Statements emailed to you by the bank are not accepted either. Log in and download it yourself.",
+     "It must cover 8 months . If your bank won't produce that range in one file, two consecutive statements together are fine.",
+     "The name on the statement must match the name in your passport exactly.",
+     "If the file is password-protected, that's fine — send us the password separately, alongside the encrypted file.",
+     "Minimum balance of ₹2,00,000 per person , excluding fixed deposits. If you're sponsoring your spouse or family, the balance must be ₹2,00,000 multiplied by the number of travellers."
+    ]
+   },
+   {
+    "title": "Photograph specification",
+    "level": "h3",
+    "paras": [
+     "Your e-Visa can be refused purely on the photograph, with the fee lost. If in doubt, send us the file and we'll check it before submission."
+    ],
+    "docs": [],
+    "bullets": [
+     "Digital colour photograph, taken within the last 6 months, studio only.",
+     "Plain white background, no border and no frame.",
+     "Full face, front view, eyes open, neutral expression.",
+     "The face should measure roughly 30–35 mm from chin to crown, with a 5–10 mm margin above the head.",
+     "No selfies and no scanned or photographed prints.",
+     "No head covering except where worn for religious reasons.",
+     "Spectacles off. The official guidance permits glasses without glare, but removing them avoids the most common cause of rejection entirely."
+    ]
+   },
+   {
+    "title": "Send us your documents and we'll file it",
+    "level": "h2",
+    "paras": [
+     "Georgia is quick when the file is right and an expensive nuisance when it isn't. Share your scans on WhatsApp and we'll check every item before anything is submitted."
+    ],
+    "docs": [],
+    "bullets": []
+   }
+  ]
+ },
+ "singapore": {
+  "slug": "singapore",
+  "route": "Tourist visa · India to Singapore",
+  "name": "Singapore",
+  "sub": "A lighter file than most, and usually a quick turnaround. The one thing Singapore is unforgiving about is the photograph — get that right and the rest is straightforward.",
+  "facts": [
+   {
+    "k": "Visa type",
+    "v": "Tourist / social visit"
+   },
+   {
+    "k": "Apply through",
+    "v": "Authorised visa agent — that's us"
+   },
+   {
+    "k": "Passport validity",
+    "v": "6 months minimum"
+   },
+   {
+    "k": "Checklist updated",
+    "v": "September 2026"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Everyone travelling",
+    "level": "h2",
+    "paras": [
+     "Required regardless of what you do for a living."
+    ],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Original passport, valid at least 6 months beyond your travel dates",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Two recent photographs, 35 mm × 45 mm, white background",
+      "note": "The face must fill about 70–80% of the frame, on semi-matt paper, with ears and forehead fully visible. Singapore rejects photographs more often than any other country we file for, so read the full specification below before you go to the studio.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Completed Form 14A",
+      "note": "The official application form. Indian passport holders must submit through a Singapore-authorised agent or local contact — we file it on your behalf along with the letter of introduction.",
+      "tags": [
+       "We complete this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Confirmed return ticket itinerary",
+      "note": "",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Hotel reservation voucher",
+      "note": "",
+      "tags": [
+       "We arrange this"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Covering letter explaining the purpose of your trip",
+      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Money and tax",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
+      "note": "For a first-time traveller we recommend showing a closing balance of at least ₹1,00,000 . This is our guidance from experience, not a published minimum. If you already have international travel history, this matters less.",
+      "tags": []
+     },
+     {
+      "for": "all",
+      "title": "Income Tax Returns for the last 3 years, each with its computation page",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Proof of what you do",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "salaried",
+      "title": "Original no-objection certificate or leave sanction letter from your employer",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "salaried",
+      "title": "Salary slips for the last 3 months",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business GST certificate",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "self-employed",
+      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "School or college ID card, front and back",
+      "note": "",
+      "tags": []
+     },
+     {
+      "for": "student",
+      "title": "No-objection certificate from your school or college",
+      "note": "Required if children are accompanying you during term time.",
+      "tags": []
+     },
+     {
+      "for": "retired",
+      "title": "Retirement proof showing your date of retirement",
+      "note": "",
+      "tags": []
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Depending on your situation",
+    "level": "h2",
+    "paras": [],
+    "docs": [
+     {
+      "for": "all",
+      "title": "Marriage certificate",
+      "note": "",
+      "tags": [
+       "If travelling with your spouse"
+      ]
+     },
+     {
+      "for": "all",
+      "title": "Birth certificate",
+      "note": "",
+      "tags": [
+       "For each child travelling"
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Photograph specification — read this before your studio visit",
+    "level": "h3",
+    "paras": [],
+    "docs": [],
+    "bullets": [
+     "35 mm wide × 45 mm high, in colour, no border, matt or semi-matt finish.",
+     "Taken within the last 3 months. Scanned, reprinted or unclear photographs are rejected outright.",
+     "Plain white background, evenly lit, no shadow behind the head.",
+     "Full face, straight to camera. Ears and forehead must both be completely visible.",
+     "The face from chin to crown must measure between 25 mm and 35 mm, filling roughly 70–80% of the frame.",
+     "Neutral expression, mouth closed. Smiling with teeth showing is not accepted.",
+     "No headgear unless worn daily for religious or racial custom, and it must not hide any facial feature.",
+     "No spectacles or sunglasses. Hair must be tied back so the face outline is clear."
+    ]
+   },
+   {
+    "title": "One incomplete field can sink the whole file",
+    "level": "h3",
+    "paras": [
+     "Singapore treats an incomplete submission or an inaccurate declaration as grounds for outright rejection rather than a request for more information. Check every field against your passport — spelling, date of birth, passport number — before you hand the file over. We do this check with you before filing."
+    ],
+    "docs": [],
+    "bullets": []
+   },
+   {
+    "title": "We file Singapore visas as an authorised agent",
+    "level": "h2",
+    "paras": [
+     "Indian passport holders can't submit directly. Bring us your documents and we'll handle Form 14A, the letter of introduction and the submission."
+    ],
+    "docs": [],
+    "bullets": []
+   }
+  ]
+ }
+}

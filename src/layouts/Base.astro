@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+import WhatsAppIcon from '../components/WhatsAppIcon.astro';
+import { SITE, NAV, wa } from '../data/site.js';
+const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null } = Astro.props;
+const path = Astro.url.pathname;
+const full = title === SITE.name ? title : `${title} | ${SITE.name}`;
+const canonical = new URL(path, SITE.url).toString();
+const active = (href) => path === href || path.startsWith(href + '/');
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{full}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  {noindex && <meta name="robots" content="noindex">}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content={SITE.name}>
+  <meta property="og:title" content={full}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={new URL(image, SITE.url).toString()}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#12B5C2">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>}
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="LeisureFlies Travels home">
+      <img src="/img/logo-mark.png" alt="" width="46" height="46">
+      <span><b>{SITE.name}</b><small>{SITE.tagline}</small></span>
+    </a>
+    <ul class="links" id="links">
+      {NAV.map((n) => <li><a href={n.href} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+    </ul>
+    <a class="btn btn-wa" href={wa('Hi LeisureFlies, I would like to plan a trip.')} target="_blank" rel="noopener">
+      <WhatsAppIcon /><span>WhatsApp us</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top"><slot /></main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px"><img src="/img/logo-mark.png" alt="" width="46" height="46"><span><b style="color:#fff">{SITE.name}</b><small style="color:#A9CDD3">Pvt Ltd · {SITE.tagline}</small></span></div>
+        <p style="color:#A9CDD3;font-size:15px">{SITE.address[0]},<br>{SITE.address[1]}</p>
+        <img src="/img/iata.png" alt="IATA Accredited Travel Agent seal" width="84" height="84" style="margin-top:16px;border-radius:50%;background:#fff">
+      </div>
+      <div><h4>Call or WhatsApp</h4>{SITE.phones.map((p) => <a href={`tel:${p.tel}`}>{p.label}</a>)}</div>
+      <div><h4>Write to us</h4><a href={`mailto:${SITE.email}`}>{SITE.email}</a><p style="padding:4px 0">Hours: {SITE.hours}</p><a href={SITE.facebook} target="_blank" rel="noopener">Facebook</a><a href={SITE.instagram} target="_blank" rel="noopener">Instagram</a><a href={SITE.google} target="_blank" rel="noopener">Google reviews</a></div>
+      <div><h4>Explore</h4>{NAV.map((n) => <a href={n.href}>{n.label}</a>)}<a href="/legal">Privacy &amp; terms</a></div>
+    </div>
+    <div class="legal">© {new Date().getFullYear()} {SITE.legalName} · GST {SITE.gst} · IATA accredited travel agent</div>
+  </div>
+</footer>
+
+<a class="fab" href={wa('Hi LeisureFlies, I have a question.')} target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><WhatsAppIcon size={32} /></a>
+
+<script is:inline>
+(function(){
+  var btn=document.getElementById('menuBtn'),links=document.getElementById('links');
+  btn.addEventListener('click',function(){var o=links.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+})();
+</script>
+</body>
+</html>

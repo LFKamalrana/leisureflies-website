@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { wa } from '../data/site.js';
+const brands = ['Royal Caribbean', 'Celebrity', 'Silversea', 'Cordelia', 'Disney', 'Carnival', 'Genting Dream', 'NCL', 'MSC'];
+---
+<Base title="Cruise Bookings" description="Book Royal Caribbean, Celebrity, Silversea, Cordelia, Disney, Carnival, Genting Dream, NCL, MSC and more through LeisureFlies Travels, Chandigarh.">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / Cruises</div>
+    <div class="page-hero" style="min-height:300px">
+      <div class="in">
+        <div class="eyebrow" style="color:#D8FBFF">Cruises</div>
+        <h1 style="margin-top:8px">Almost every cruise line, one booking desk.</h1>
+        <p class="lead" style="margin-top:14px">Tell us when you want to sail and who is coming. We find the ship and handle the booking.</p>
+        <div class="hero-cta"><a class="btn btn-sun" href={wa('Hi LeisureFlies, please send me cruise options.')} target="_blank" rel="noopener">Ask about cruises</a></div>
+      </div>
+    </div>
+    <section class="sec-block">
+      <div class="eyebrow">Cruise lines we book</div>
+      <h2 style="margin-top:8px">Pick your ship.</h2>
+      <div class="brands" style="margin-top:22px">{brands.map((b) => <span>{b}</span>)}<span>and more</span></div>
+      <div class="prose"><p>If a cruise line is not on this list, ask us. We cover almost all of them.</p></div>
+    </section>
+    <section class="sec-block">
+      <div class="eyebrow">How we work</div>
+      <h2 style="margin-top:8px">From enquiry to boarding.</h2>
+      <div class="cards2">
+        <div class="info"><h3>Tell us the basics</h3><p>Your dates, how many people are travelling, and where you would like to sail from.</p></div>
+        <div class="info"><h3>We suggest sailings</h3><p>We compare ships and itineraries and send you options that fit.</p></div>
+        <div class="info"><h3>We book and guide</h3><p>We handle the booking, and can add flights, hotels and visas for the whole trip.</p></div>
+      </div>
+    </section>
+    <div class="cta-band">
+      <div><h2>Planning a cruise?</h2><p>Message us your dates and group size.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, please send me cruise options.')} target="_blank" rel="noopener">Ask on WhatsApp</a>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, wa } from '../data/site.js';
+---
+<Base title="About Us" description="LeisureFlies Travels Private Limited, an IATA accredited travel company founded in 2010 by Kamal Rana in Chandigarh. More than 20,000 passengers served.">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / About</div>
+    <section class="about" style="padding-block:clamp(24px,4vw,48px)">
+      <div class="photo-slot"><div>Photo of Kamal Rana and the team<br><small style="font-weight:600">to be added</small></div></div>
+      <div>
+        <div class="eyebrow">About us</div>
+        <h1 style="font-size:clamp(32px,4.8vw,52px);margin-top:8px">Founded by someone who has worked inside the travel trade.</h1>
+        <div class="prose">
+          <p>Established in 2010, Leisureflies Travels Private Limited is an IATA certified company founded by Kamal Rana.</p>
+          <p>Kamal has wide experience in the travel industry. Before starting this company he worked with renowned brands such as MakeMyTrip India and Affordable Holidays London.</p>
+          <p>We are growing and learning every day. With vast experience and a good team, we have served more than 20,000 passengers, which reflects our commitment to industry standards and excellence.</p>
+          <p>Our services include effective cost management strategies, travel policy implementation and management, and superior customer service. At Leisureflies Travels Private Limited, we have solutions for all your travel requirements.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><span class="num">2010</span><small>Established</small></div>
+          <div class="fact"><span class="num">20,000+</span><small>Passengers served</small></div>
+          <div class="fact"><span class="num">IATA</span><small>Accredited agent</small></div>
+        </div>
+        <div class="iata-row"><img src="/img/iata.png" alt="IATA Accredited Travel Agent seal"><p><b>IATA accredited.</b> Your tickets are issued by an agency that meets the industry's own standards. GST number {SITE.gst}.</p></div>
+      </div>
+    </section>
+    <section class="sec-block">
+      <div class="eyebrow">Key services</div>
+      <h2 style="margin-top:8px">What we do for you.</h2>
+      <div class="cards2">
+        <div class="info"><h3>Flight bookings</h3><p>International and domestic, at competitive prices, for a hassle free journey.</p></div>
+        <div class="info"><h3>Tours within India</h3><p>Exclusive, cost-effective tour packages tailored to your preferences.</p></div>
+        <div class="info"><h3>Hotel reservations</h3><p>Deluxe five-star and four-star hotels, carefully chosen to match your preferences.</p></div>
+        <div class="info"><h3>Rail and bus bookings</h3><p>Eurail and bus bookings for the USA, Europe, Japan and South Korea. We do not handle Indian rail or bus bookings.</p></div>
+        <div class="info"><h3>Tour packages</h3><p>Domestic and international packages, planned carefully so you can enjoy the holiday and share the photos.</p></div>
+        <div class="info"><h3>Cruises and visas</h3><p>Most major cruise lines, and complete visa services, which are our strength.</p></div>
+      </div>
+    </section>
+    <div class="cta-band">
+      <div><h2>Let's plan your next trip.</h2><p>Message us and a member of the team will reply during office hours, {SITE.hours}.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, I would like to plan a trip.')} target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</Base>

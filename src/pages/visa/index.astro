@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import visas from '../../data/visas.json';
+import { VISA_COUNTRIES, wa } from '../../data/site.js';
+---
+<Base title="Visa Services" description="Visa help from Chandigarh: Canada, Europe, Australia and New Zealand, Singapore and Georgia. Tick-off document checklists sorted by your situation.">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / Visa</div>
+    <section style="padding-bottom:20px">
+      <div class="eyebrow">Visa services</div>
+      <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">Visas, handled properly.</h1>
+      <p class="lead">Visa work is our strength. Pick your destination for a checklist sorted by whether you are salaried, self-employed, studying or retired, so you only see the documents that apply to you.</p>
+    </section>
+    <div class="cards2" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+      {VISA_COUNTRIES.map((c) => {
+        const v = visas[c.slug];
+        return (
+          <a class="info" href={`/visa/${c.slug}`} style="text-decoration:none;display:block">
+            <div class="eyebrow">{v.route}</div>
+            <h3 style="margin-top:8px;font-size:26px">{v.name}</h3>
+            <p>{v.sub}</p>
+            <p style="color:var(--turq-deep);font-weight:800;margin-top:14px">See the checklist →</p>
+          </a>
+        );
+      })}
+      <div class="info" style="background:var(--sky)">
+        <div class="eyebrow">Another country?</div>
+        <h3 style="margin-top:8px;font-size:26px">Ask us</h3>
+        <p>We handle more countries than the ones listed here. Message us with your destination and travel dates.</p>
+        <p style="margin-top:14px"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I need visa help for: ')} target="_blank" rel="noopener">Ask on WhatsApp</a></p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:20px;max-width:70ch">Visa rules change. We confirm current requirements with you before you apply, so treat these checklists as a starting point.</p>
+    <div class="cta-band">
+      <div><h2>Not sure about your file?</h2><p>Send us what you have. We tell you what is missing before you pay a fee or book an appointment.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, please check my visa file.')} target="_blank" rel="noopener">Send it on WhatsApp</a>
+    </div>
+  </div>
+</Base>

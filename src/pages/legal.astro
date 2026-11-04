@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import legal from '../data/legal.json';
+---
+<Base title="Privacy and Terms" description="Privacy policy and terms of service of LeisureFlies Travels Pvt Ltd.">
+  <div class="wrap" style="max-width:820px;padding-block:clamp(24px,4vw,56px)">
+    <h1 style="font-size:clamp(32px,4.8vw,52px)">{legal.title}</h1>
+    <div class="prose">
+      {(() => {
+        const out = []; let list = [];
+        const flush = () => { if (list.length) { out.push({ t: 'ul', items: list }); list = []; } };
+        for (const b of legal.blocks) {
+          if (b.type === 'li') { list.push(b.text); continue; }
+          flush(); out.push({ t: b.type, text: b.text });
+        }
+        flush();
+        return out.map((o) => o.t === 'ul' ? <ul style="color:var(--muted);max-width:68ch;margin-top:10px">{o.items.map((i) => <li>{i}</li>)}</ul>
+          : o.t === 'h2' ? <h2 style="font-size:30px;margin-top:34px">{o.text}</h2>
+          : o.t === 'h3' ? <h3 style="margin-top:22px">{o.text}</h3>
+          : <p>{o.text}</p>);
+      })()}
+    </div>
+  </div>
+</Base>
