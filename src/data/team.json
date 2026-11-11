@@ -1,77 +1,77 @@
 [
  {
   "photo": "01.jpg",
-  "name": "",
-  "role": ""
+  "name": "Kamal Rana",
+  "role": "Managing Director"
  },
  {
   "photo": "02.jpg",
-  "name": "",
-  "role": ""
+  "name": "Rohit Sharma",
+  "role": "Head Finance and Accounts"
  },
  {
   "photo": "03.jpg",
-  "name": "",
-  "role": ""
+  "name": "Bhavay Bajaj",
+  "role": "Assistant Team Leader - Holidays"
  },
  {
   "photo": "04.jpg",
-  "name": "",
-  "role": ""
+  "name": "Anjali",
+  "role": "Senior Ticketing Executive"
  },
  {
   "photo": "05.jpg",
-  "name": "",
-  "role": ""
+  "name": "Smriti",
+  "role": "Senior Ticketing Executive"
  },
  {
   "photo": "06.jpg",
-  "name": "",
-  "role": ""
+  "name": "Rahul Chauhan",
+  "role": "Senior Domestic Holidays"
  },
  {
   "photo": "07.jpg",
-  "name": "",
-  "role": ""
+  "name": "Vivek Bhardwaj",
+  "role": "Senior Holiday Consultant"
  },
  {
   "photo": "08.jpg",
-  "name": "",
-  "role": ""
+  "name": "Isha",
+  "role": "Account Assistant"
  },
  {
   "photo": "09.jpg",
-  "name": "",
-  "role": ""
- },
- {
-  "photo": "10.jpg",
-  "name": "",
-  "role": ""
- },
- {
-  "photo": "11.jpg",
-  "name": "",
-  "role": ""
- },
- {
-  "photo": "12.jpg",
-  "name": "",
-  "role": ""
- },
- {
-  "photo": "13.jpg",
-  "name": "",
-  "role": ""
- },
- {
-  "photo": "14.jpg",
-  "name": "",
-  "role": ""
+  "name": "Reena",
+  "role": "Account Assistant"
  },
  {
   "photo": "15.jpg",
-  "name": "",
-  "role": ""
+  "name": "Sushmita Sharma",
+  "role": "Senior Holiday Consultant (International)"
+ },
+ {
+  "photo": "10.jpg",
+  "name": "Neha Negi",
+  "role": "Senior Holiday Consultant (International)"
+ },
+ {
+  "photo": "11.jpg",
+  "name": "Susmita Sharma",
+  "role": "Senior Visa Consultant"
+ },
+ {
+  "photo": "12.jpg",
+  "name": "Rashmi",
+  "role": "Senior Visa Consultant"
+ },
+ {
+  "photo": "13.jpg",
+  "name": "Sejal",
+  "role": "Visa Executive"
+ },
+ {
+  "photo": "14.jpg",
+  "name": "Varsha",
+  "role": "Visa Executive"
  }
 ]

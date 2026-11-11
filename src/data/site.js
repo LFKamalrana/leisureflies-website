@@ -10,7 +10,7 @@ export const SITE = {
     { label: '+91 78372 30087', tel: '+917837230087' },
   ],
   email: 'info@leisureflies.com',
-  address: ['SCO 70, 2nd Floor, Sector 38-C', 'Chandigarh 160014'],
+  address: ['SCO 70, 2nd Floor, Sector 38-C', 'Chandigarh 160036'],
   hours: '10 am to 7 pm',
   gst: '04AABCL8211G1ZX',
   facebook: 'https://facebook.com/leisureflies',
