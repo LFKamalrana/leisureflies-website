@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import ArtScene from '../components/ArtScene.astro';
 import Offers from '../components/Offers.astro';
 import { SITE, DEST, FEATURED, VISA_COUNTRIES, wa } from '../data/site.js';
+import team from '../data/team.json';
 const schema = {
   '@context': 'https://schema.org', '@type': 'TravelAgency', name: SITE.legalName, url: SITE.url,
   logo: SITE.url + '/logo.png', image: SITE.url + '/og-image.jpg', telephone: '+919814910087', email: SITE.email,
@@ -169,7 +170,7 @@ const schema = {
 
 <section id="about" style="background:var(--sky)">
   <div class="wrap about">
-    <div class="photo-slot"><div>Photo of Kamal Rana and the team<br><small style="font-weight:600">to be added</small></div></div>
+    <a href="/about" class="mosaic" aria-label="Meet the LeisureFlies team">{team.slice(0, 4).map((m) => <img src={`/img/team/${m.photo}`} alt="LeisureFlies team member" loading="lazy" width="280" height="350" />)}</a>
     <div>
       <div class="eyebrow">About us</div>
       <h2 style="margin-top:8px">Founded by someone who has worked inside the travel trade.</h2>
