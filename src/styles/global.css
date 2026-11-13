@@ -272,3 +272,12 @@ footer a:hover{color:var(--sun)}
 .member img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;display:block}
 .member figcaption{padding:12px 14px;display:grid;gap:2px}
 .member figcaption span{color:var(--muted);font-size:14px;font-weight:700}
+
+/* Ad landing pages: sticky call + WhatsApp bar on phones */
+.lp-bar{display:none}
+@media (max-width:720px){
+  .lp-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--surface);box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+  .lp-bar a{flex:1;text-align:center;padding:13px;border-radius:999px;font:800 16px var(--body);text-decoration:none;background:var(--deep);color:#fff}
+  .lp-bar a.w{background:#25D366;color:#06351A}
+  .fab{bottom:84px}
+}

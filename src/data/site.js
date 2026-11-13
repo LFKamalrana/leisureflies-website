@@ -53,3 +53,8 @@ export const NAV = [
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
+
+// Paste your IDs here to switch tracking on. Leave empty to keep it off.
+// ga4: Google Analytics 4 Measurement ID, looks like G-XXXXXXXXXX
+// metaPixel: Meta (Facebook) Pixel ID, a 15 to 16 digit number
+export const TRACKING = { ga4: '', metaPixel: '' };

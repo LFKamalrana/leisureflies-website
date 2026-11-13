@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import WhatsAppIcon from '../components/WhatsAppIcon.astro';
+import Tracking from '../components/Tracking.astro';
 import { SITE, NAV, wa } from '../data/site.js';
 const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null } = Astro.props;
 const path = Astro.url.pathname;
@@ -30,6 +31,7 @@ const active = (href) => path === href || path.startsWith(href + '/');
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <Tracking />
   {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>}
 </head>
 <body>

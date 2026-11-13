@@ -1,0 +1,43 @@
+---
+import { TRACKING } from '../data/site.js';
+---
+{TRACKING.ga4 && <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${TRACKING.ga4}`}></script>}
+<script is:inline define:vars={{ ga4: TRACKING.ga4, pixel: TRACKING.metaPixel }}>
+window.dataLayer = window.dataLayer || [];
+window.gtag = function () { dataLayer.push(arguments); };
+if (ga4) { gtag('js', new Date()); gtag('config', ga4); }
+if (pixel) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src='https://connect.facebook.net/en_US/fbevents.js';s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script');
+  fbq('init', pixel); fbq('track', 'PageView');
+}
+(function () {
+  // Remember where the visitor came from, so WhatsApp chats show the source.
+  var ref = '';
+  try {
+    var q = new URLSearchParams(location.search);
+    var src = q.get('utm_source'), camp = q.get('utm_campaign');
+    if (src || camp) ref = [src, camp].filter(Boolean).join('/');
+    else if (q.get('gclid')) ref = 'google-ads';
+    else if (q.get('fbclid')) ref = 'facebook-ads';
+    if (ref) sessionStorage.setItem('lf_ref', ref); else ref = sessionStorage.getItem('lf_ref') || '';
+  } catch (e) {}
+  function track(name, fbName, params) {
+    try { if (window.gtag && ga4) gtag('event', name, params || {}); } catch (e) {}
+    try { if (window.fbq && pixel) fbq('track', fbName, params || {}); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('wa.me/') > -1) {
+      if (ref) { try { var u = new URL(h); u.searchParams.set('text', (u.searchParams.get('text') || '') + ' (via ' + ref + ')'); a.setAttribute('href', u.toString()); } catch (e) {} }
+      track('whatsapp_click', 'Contact', { page: location.pathname });
+    } else if (h.indexOf('tel:') === 0) {
+      track('phone_click', 'Contact', { page: location.pathname });
+    } else if (h.indexOf('mailto:') === 0) {
+      track('email_click', 'Contact', { page: location.pathname });
+    }
+  }, true);
+  document.addEventListener('submit', function () { track('generate_lead', 'Lead', { page: location.pathname }); }, true);
+})();
+</script>

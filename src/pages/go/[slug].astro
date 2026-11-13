@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import WhatsAppIcon from '../../components/WhatsAppIcon.astro';
+import raw from '../../data/destinations.json';
+import { DEST, SITE, wa } from '../../data/site.js';
+
+export function getStaticPaths() {
+  const LP = ['bali', 'maldives', 'dubai', 'thailand', 'singapore', 'vietnam', 'sri-lanka', 'mauritius'];
+  return LP.map((slug) => ({ params: { slug } }));
+}
+const { slug } = Astro.params;
+const d = raw[slug];
+const meta = DEST[slug];
+const ask = wa(`Hi LeisureFlies, I am interested in a ${meta.name} package. Travel dates: ___ Travellers: ___ Budget: ___`);
+const call = SITE.phones[0];
+---
+<Base title={`${meta.name} Packages from Chandigarh`} description={`${meta.name} holiday packages planned by an IATA accredited Chandigarh agency since 2010. Tell us your dates and budget on WhatsApp.`} image={`/img/hero-${slug}.jpg`} noindex={true}>
+  <div class="wrap">
+    <div class="page-hero" style="margin-top:18px">
+      <img src={`/img/hero-${slug}.jpg`} alt={meta.name} />
+      <div class="in">
+        <h1>{meta.name} packages, planned for you.</h1>
+        <p class="lead" style="margin-top:14px">{d.lead}</p>
+        {d.chips.length > 0 && <div class="chips">{d.chips.map((c) => <span>{c}</span>)}</div>}
+        <div class="hero-cta">
+          <a class="btn btn-wa" href={ask} target="_blank" rel="noopener"><WhatsAppIcon /><span>Get a free quote</span></a>
+          <a class="btn btn-line" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)" href={`tel:${call.tel}`}>Call {call.label}</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="sec-block">
+      <div class="eyebrow">Why LeisureFlies</div>
+      <h2 style="margin-top:8px">One team for the whole trip.</h2>
+      <div class="cards2">
+        <div class="info"><h3>IATA accredited</h3><p>Chandigarh's travel agency since 2010, with more than 20,000 passengers served.</p></div>
+        <div class="info"><h3>Found it cheaper?</h3><p>Send us the screenshot. For air tickets and hotels we match it and book it. <a href="/flights-hotels">See the conditions</a>.</p></div>
+        <div class="info"><h3>Flights, hotels and visa</h3><p>We book your flights, 4 and 5 star hotels and help with the visa, so you deal with one team.</p></div>
+      </div>
+    </section>
+
+    <section class="sec-block">
+      <div class="eyebrow">How it works</div>
+      <h2 style="margin-top:8px">Three simple steps.</h2>
+      <div class="cards2">
+        <div class="info"><h3>1. Message us</h3><p>Tell us your dates, who is travelling and your budget.</p></div>
+        <div class="info"><h3>2. Get your options</h3><p>We send a plan that fits, and change it until you are happy.</p></div>
+        <div class="info"><h3>3. Book and go</h3><p>We handle the bookings, so you can look forward to the trip.</p></div>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <div><h2>Planning {meta.name}?</h2><p>Message us on WhatsApp. We reply between {SITE.hours}.</p></div>
+      <a class="btn btn-sun" href={ask} target="_blank" rel="noopener">Ask on WhatsApp</a>
+    </div>
+    <p style="text-align:center;padding-bottom:90px"><a href={`/holidays/${slug}`}>See the full {meta.name} guide</a></p>
+  </div>
+  <div class="lp-bar"><a href={`tel:${call.tel}`}>Call</a><a class="w" href={ask} target="_blank" rel="noopener">WhatsApp</a></div>
+</Base>
