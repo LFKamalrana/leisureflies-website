@@ -6,7 +6,8 @@ import { SITE, NAV, wa } from '../data/site.js';
 const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null } = Astro.props;
 const path = Astro.url.pathname;
 const full = title === SITE.name ? title : `${title} | ${SITE.name}`;
-const canonical = new URL(path, SITE.url).toString();
+const canonicalPath = path === '/' ? '/' : path.replace(/\/+$/, '');
+const canonical = new URL(canonicalPath, SITE.url).toString();
 const active = (href) => path === href || path.startsWith(href + '/');
 ---
 <!doctype html>
