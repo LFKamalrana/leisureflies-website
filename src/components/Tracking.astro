@@ -38,6 +38,10 @@ if (pixel) {
       track('email_click', 'Contact', { page: location.pathname });
     }
   }, true);
-  document.addEventListener('submit', function () { track('generate_lead', 'Lead', { page: location.pathname }); }, true);
+  document.addEventListener('submit', function (event) {
+    if (event.target.id !== 'planner' && event.target.id !== 'enquiry') return;
+    var method = event.submitter && event.submitter.value === 'email' ? 'email' : 'whatsapp';
+    track('generate_lead', 'Lead', { page: location.pathname, method: method });
+  }, true);
 })();
 </script>
