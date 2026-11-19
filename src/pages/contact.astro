@@ -30,7 +30,7 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURICompo
           <div class="field"><label for="trav">Travellers</label><input id="trav" name="Travellers" type="number" min="1" value="2"></div>
           <div class="field"><label for="when">Travel dates</label><input id="when" name="Dates" placeholder="e.g. 10 to 17 December"></div>
           <div class="field full"><label for="msg">Anything else?</label><textarea id="msg" name="Message"></textarea></div>
-          <div class="full" style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn btn-wa" type="submit">Send on WhatsApp</button><button class="btn btn-line" type="button" id="mailBtn">Send by email instead</button></div><p class="note full">Your enquiry opens in WhatsApp or your email app, ready to send. Nothing is stored on this website.</p>
+          <div class="full" style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn btn-wa" type="submit">Send on WhatsApp</button><button class="btn btn-line" type="submit" value="email">Send by email instead</button></div><p class="note full">Your enquiry opens in WhatsApp or your email app, ready to send. Nothing is stored on this website.</p>
         </div>
       </form>
     </div>
@@ -43,10 +43,13 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURICompo
     var g=function(id){return document.getElementById(id).value.trim()};
     return 'Hi LeisureFlies, I would like a quote.\nName: '+g('name')+'\nPhone: '+g('phone')+(g('email')?'\nEmail: '+g('email'):'')+'\nInterested in: '+g('dest')+'\nTravellers: '+g('trav')+(g('when')?'\nDates: '+g('when'):'')+(g('msg')?'\nNote: '+g('msg'):'');
   }
-  f.addEventListener('submit',function(e){e.preventDefault();window.open('https://wa.me/919814910087?text='+encodeURIComponent(msg()),'_blank','noopener')});
-  document.getElementById('mailBtn').addEventListener('click',function(){
-    if(!f.reportValidity())return;
-    location.href='mailto:info@leisureflies.com?subject='+encodeURIComponent('Enquiry from leisureflies.com')+'&body='+encodeURIComponent(msg());
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(e.submitter && e.submitter.value === 'email'){
+      location.href='mailto:info@leisureflies.com?subject='+encodeURIComponent('Enquiry from leisureflies.com')+'&body='+encodeURIComponent(msg());
+      return;
+    }
+    window.open('https://wa.me/919814910087?text='+encodeURIComponent(msg()),'_blank','noopener');
   });
 })();
 </script>

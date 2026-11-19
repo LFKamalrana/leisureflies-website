@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/about_us.aspx", "destination": "/about", "permanent": true },
+    { "source": "/privacy_policy", "destination": "/legal", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/studio/:path*",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    }
+  ]
+}

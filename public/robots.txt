@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /thank-you
 
-Sitemap: https://leisureflies.com/sitemap.xml
+Sitemap: https://www.leisureflies.com/sitemap.xml

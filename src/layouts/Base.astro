@@ -6,7 +6,8 @@ import { SITE, NAV, wa } from '../data/site.js';
 const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null } = Astro.props;
 const path = Astro.url.pathname;
 const full = title === SITE.name ? title : `${title} | ${SITE.name}`;
-const canonical = new URL(path, SITE.url).toString();
+const canonicalPath = path === '/' ? '/' : path.replace(/\/+$/, '');
+const canonical = new URL(canonicalPath, SITE.url).toString();
 const active = (href) => path === href || path.startsWith(href + '/');
 ---
 <!doctype html>
@@ -61,9 +62,9 @@ const active = (href) => path === href || path.startsWith(href + '/');
         <p style="color:#A9CDD3;font-size:15px">{SITE.address[0]},<br>{SITE.address[1]}</p>
         <img src="/img/iata.png" alt="IATA Accredited Travel Agent seal" width="84" height="84" style="margin-top:16px;border-radius:50%;background:#fff">
       </div>
-      <div><h4>Call or WhatsApp</h4>{SITE.phones.map((p) => <a href={`tel:${p.tel}`}>{p.label}</a>)}</div>
-      <div><h4>Write to us</h4><a href={`mailto:${SITE.email}`}>{SITE.email}</a><p style="padding:4px 0">Hours: {SITE.hours}</p><a href={SITE.facebook} target="_blank" rel="noopener">Facebook</a><a href={SITE.instagram} target="_blank" rel="noopener">Instagram</a><a href={SITE.google} target="_blank" rel="noopener">Google reviews</a></div>
-      <div><h4>Explore</h4>{NAV.map((n) => <a href={n.href}>{n.label}</a>)}<a href="/legal">Privacy &amp; terms</a></div>
+      <div><h2>Call or WhatsApp</h2>{SITE.phones.map((p) => <a href={`tel:${p.tel}`}>{p.label}</a>)}</div>
+      <div><h2>Write to us</h2><a href={`mailto:${SITE.email}`}>{SITE.email}</a><p style="padding:4px 0">Hours: {SITE.hours}</p><a href={SITE.facebook} target="_blank" rel="noopener">Facebook</a><a href={SITE.instagram} target="_blank" rel="noopener">Instagram</a><a href={SITE.google} target="_blank" rel="noopener">Google reviews</a></div>
+      <div><h2>Explore</h2>{NAV.map((n) => <a href={n.href}>{n.label}</a>)}<a href="/legal">Privacy &amp; terms</a></div>
     </div>
     <div class="legal">© {new Date().getFullYear()} {SITE.legalName} · GST {SITE.gst} · IATA accredited travel agent</div>
   </div>

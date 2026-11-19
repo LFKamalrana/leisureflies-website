@@ -3,7 +3,7 @@ import react from '@astrojs/react';
 import sanity from '@sanity/astro';
 
 export default defineConfig({
-  site: 'https://leisureflies.com',
+  site: 'https://www.leisureflies.com',
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   integrations: [

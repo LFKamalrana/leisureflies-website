@@ -5,7 +5,7 @@ const { limit = 0, page = false } = Astro.props;
 <section id="offers" class="offers-sec" data-limit={limit} data-page={page ? '1' : '0'} hidden={!page}>
   <div class="wrap">
     <div class="head">
-      <div><div class="eyebrow">Latest offers</div><h2 style="margin-top:8px">Fresh deals from our desk.</h2>
+      <div><div class="eyebrow">Latest offers</div>{page ? <h1 style="margin-top:8px">Fresh deals from our desk.</h1> : <h2 style="margin-top:8px">Fresh deals from our desk.</h2>}
       <p class="lead">Limited-time packages and offers. Message us to book or to customise one.</p></div>
       {!page && <a class="btn btn-line" href="/offers">See all offers</a>}
     </div>

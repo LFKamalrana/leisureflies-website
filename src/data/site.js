@@ -2,7 +2,7 @@ export const SITE = {
   name: 'LeisureFlies Travels',
   legalName: 'LeisureFlies Travels Pvt Ltd',
   tagline: 'Your Travel Our Passion',
-  url: 'https://leisureflies.com',
+  url: 'https://www.leisureflies.com',
   waNumber: '919814910087',
   phones: [
     { label: '+91 98149 10087', tel: '+919814910087' },

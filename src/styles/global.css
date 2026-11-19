@@ -17,7 +17,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance;font-weight:600}
-h2{font-size:clamp(28px,4vw,42px)}
+h2,.offers-sec h1{font-size:clamp(28px,4vw,42px)}
 h3{font-size:22px}
 p{margin:0}
 .wrap{max-width:1160px;margin-inline:auto}
@@ -180,7 +180,7 @@ footer{background:var(--foot);color:#D6F1F4;margin-inline:calc(-1 * max(16px,env
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 @media (max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
-footer h4{font:600 18px var(--display);margin:0 0 12px;color:#fff}
+footer h2{font:600 18px var(--display);margin:0 0 12px;color:#fff}
 footer a{text-decoration:none;display:block;padding:4px 0}
 footer a:hover{color:var(--sun)}
 .legal{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:18px;font-size:14px;color:#A9CDD3}
