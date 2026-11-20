@@ -16,7 +16,7 @@ const sections = [];
 let cur = null, grp = null, pendingEyebrow = null;
 for (const b of d.blocks) {
   if (b.type === 'eyebrow') { pendingEyebrow = b.text; continue; }
-  if (b.type === 'h2') { cur = { eyebrow: pendingEyebrow, title: b.text, intro: [], groups: [] }; sections.push(cur); grp = null; pendingEyebrow = null; continue; }
+  if (b.type === 'h2') { cur = { eyebrow: pendingEyebrow, title: b.text, options: b.options ?? [], intro: [], groups: [] }; sections.push(cur); grp = null; pendingEyebrow = null; continue; }
   if (!cur) continue;
   if (b.type === 'h3') { grp = { title: b.text, paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
   if (!grp) { if (b.type === 'p' && b.text.length > 22) cur.intro.push(b.text); continue; }
@@ -24,11 +24,10 @@ for (const b of d.blocks) {
   else if (b.text.length <= 14 && !grp.paras.length && !grp.badge) grp.badge = b.text;
   else grp.paras.push(b.text);
 }
-const desc = d.lead.length > 150 ? d.lead.slice(0, 147) + '...' : d.lead;
 const heroImg = meta.photo ? `/img/hero-${slug}.jpg` : null;
 const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
 ---
-<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={desc} image={meta.photo ? `/img/hero-${slug}.jpg` : '/og-image.jpg'}>
+<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={meta.photo ? `/img/hero-${slug}.jpg` : '/og-image.jpg'}>
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/holidays">Holidays</a> / {meta.name}</div>
     <div class="page-hero">
@@ -45,6 +44,7 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
       <section class="sec-block" style="padding-block:clamp(28px,4vw,48px)">
         {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
         <h2 style="margin-top:8px">{s.title}</h2>
+        {s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
         {s.intro.length > 0 && <div class="prose">{s.intro.map((p) => <p>{p}</p>)}</div>}
         {s.groups.length > 0 && (
           <div class="cards2">
