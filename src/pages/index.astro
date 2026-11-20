@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import ArtScene from '../components/ArtScene.astro';
+import DestinationCard from '../components/DestinationCard.astro';
 import Offers from '../components/Offers.astro';
 import { SITE, DEST, FEATURED, VISA_COUNTRIES, wa } from '../data/site.js';
 import team from '../data/team.json';
@@ -82,6 +82,23 @@ const schema = {
   </div>
 </section>
 
+<section id="destinations">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Holiday packages</div><h2 style="margin-top:8px">Pick a place. We plan the rest.</h2>
+      <p class="lead">Every package is tailored to your dates, group and budget. Tell us what you need and we send a quote.</p></div>
+      <a class="btn btn-line" href="/contact">Ask for a custom plan</a>
+    </div>
+    <div class="cards">
+      {FEATURED.map((slug) => <DestinationCard slug={slug} />)}
+    </div>
+    <div class="more"><b>Also planning:</b>
+      {['singapore','vietnam','sri-lanka','mauritius','saudi-arabia','andaman'].map((s)=><a class="pill" href={`/holidays/${s}`}>{DEST[s].name}</a>)}
+      <a class="pill" href="/holidays">All holidays →</a>
+    </div>
+  </div>
+</section>
+
 <section id="sts" style="padding-top:0">
   <div class="wrap">
     <div class="sts">
@@ -106,29 +123,6 @@ const schema = {
 </section>
 
 <Offers limit={3} />
-
-<section id="destinations">
-  <div class="wrap">
-    <div class="head">
-      <div><div class="eyebrow">Holiday packages</div><h2 style="margin-top:8px">Pick a place. We plan the rest.</h2>
-      <p class="lead">Every package is tailored to your dates, group and budget. Tell us what you need and we send a quote.</p></div>
-      <a class="btn btn-line" href="/contact">Ask for a custom plan</a>
-    </div>
-    <div class="cards">
-      {FEATURED.map((slug)=>{const d=DEST[slug];return (
-        <a class={`card${d.photo ? "" : " art"}`} href={`/holidays/${slug}`}>
-          {d.photo ? <img src={`/img/${slug}.jpg`} alt={d.name} loading="lazy" /> : <ArtScene variant={d.art} />}
-          {d.tag && <span class="tag">{d.photo ? d.tag : 'Photo coming soon'}</span>}
-          {!d.photo && !d.tag && <span class="tag">Photo coming soon</span>}
-          <div class="txt"><h3>{d.name}</h3><span>See the plan →</span></div>
-        </a>)})}
-    </div>
-    <div class="more"><b>Also planning:</b>
-      {['singapore','vietnam','sri-lanka','mauritius','saudi-arabia','andaman'].map((s)=><a class="pill" href={`/holidays/${s}`}>{DEST[s].name}</a>)}
-      <a class="pill" href="/holidays">All holidays →</a>
-    </div>
-  </div>
-</section>
 
 <section class="svc" id="services">
   <div class="wrap">

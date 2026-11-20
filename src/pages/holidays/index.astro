@@ -1,8 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import ArtScene from '../../components/ArtScene.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
 import { DEST, wa } from '../../data/site.js';
-const items = Object.entries(DEST);
 ---
 <Base title="Holiday Packages from Chandigarh" description="Explore customized holiday packages from Chandigarh to Bali, Thailand, Dubai, Maldives, Kashmir, Kerala, Goa and more. Request a tailored travel quote.">
   <div class="wrap">
@@ -21,13 +20,7 @@ const items = Object.entries(DEST);
       </div>
     </section>
     <div class="cards" id="grid" style="padding-bottom:30px">
-      {items.map(([slug, d]) => (
-        <a class={`card${d.photo ? '' : ' art'}`} href={`/holidays/${slug}`} data-region={d.region} data-tag={d.tag || ''}>
-          {d.photo ? <img src={`/img/${slug}.jpg`} alt={d.name} loading="lazy" /> : <ArtScene variant={d.art} />}
-          <span class="tag">{d.photo ? (d.tag || (d.region === 'india' ? 'In India' : 'International')) : 'Photo coming soon'}</span>
-          <div class="txt"><h3>{d.name}</h3><span>See the plan →</span></div>
-        </a>
-      ))}
+      {Object.keys(DEST).map((slug) => <DestinationCard slug={slug} showRegion />)}
     </div>
     <p class="note" style="padding-bottom:10px">More destinations are on the way, including Malaysia, Almaty and Azerbaijan. Ask us if you want somewhere not listed.</p>
     <div class="cta-band">

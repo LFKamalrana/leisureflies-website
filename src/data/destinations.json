@@ -105,7 +105,15 @@
    },
    {
     "type": "h3",
-    "text": "Scuba Diving & Snorkelling"
+    "text": "Scuba Diving & Snorkelling",
+    "photos": [
+     {
+      "src": "/img/holidays/snorkelling.webp",
+      "alt": "Two snorkellers floating above the reef",
+      "width": 900,
+      "height": 600
+     }
+    ]
    },
    {
     "type": "p",
@@ -237,7 +245,15 @@
    },
    {
     "type": "h3",
-    "text": "Nusa Penida Island Tour"
+    "text": "Nusa Penida Island Tour",
+    "photos": [
+     {
+      "src": "/img/holidays/nusa-penida.webp",
+      "alt": "The natural rock arch at Broken Beach, Nusa Penida",
+      "width": 402,
+      "height": 196
+     }
+    ]
    },
    {
     "type": "p",
@@ -401,7 +417,11 @@
     "text": "Balinese babies aren't allowed to touch the ground for their first few months — they're considered little angels."
    }
   ],
-  "description": "Compare four to six nights in Ubud and Kuta. Explore Nusa Penida, Uluwatu Temple and Ubud’s villages, then ask our Chandigarh team for a Bali quote."
+  "description": "Compare four to six nights in Ubud and Kuta. Explore Nusa Penida, Uluwatu Temple and Ubud’s villages, then ask our Chandigarh team for a Bali quote.",
+  "heroPhoto": {
+   "src": "/img/holidays/bali-temple.webp",
+   "alt": "A lakeside temple reflected in the water at sunset in Bali"
+  }
  },
  "dubai": {
   "slug": "dubai",
@@ -493,7 +513,15 @@
    },
    {
     "type": "h3",
-    "text": "Desert Safari"
+    "text": "Desert Safari",
+    "photos": [
+     {
+      "src": "/img/holidays/desert-safari.webp",
+      "alt": "A four-wheel drive crossing an orange sand dune",
+      "width": 728,
+      "height": 469
+     }
+    ]
    },
    {
     "type": "p",
@@ -652,7 +680,15 @@
    },
    {
     "type": "h3",
-    "text": "Basilica of Bom Jesus"
+    "text": "Basilica of Bom Jesus",
+    "photos": [
+     {
+      "src": "/img/holidays/bom-jesus.webp",
+      "alt": "The red stone facade of the Basilica of Bom Jesus",
+      "width": 500,
+      "height": 325
+     }
+    ]
    },
    {
     "type": "p",
@@ -668,7 +704,15 @@
    },
    {
     "type": "h3",
-    "text": "Dudhsagar Falls"
+    "text": "Dudhsagar Falls",
+    "photos": [
+     {
+      "src": "/img/holidays/dudhsagar.webp",
+      "alt": "Dudhsagar Falls cascading through the wooded hillside",
+      "width": 900,
+      "height": 600
+     }
+    ]
    },
    {
     "type": "p",
@@ -832,7 +876,15 @@
    },
    {
     "type": "h3",
-    "text": "Paragliding in Manali"
+    "text": "Paragliding in Manali",
+    "photos": [
+     {
+      "src": "/img/holidays/paragliding.webp",
+      "alt": "A paraglider above layers of blue mountain ridges",
+      "width": 900,
+      "height": 600
+     }
+    ]
    },
    {
     "type": "p",
@@ -976,7 +1028,15 @@
    },
    {
     "type": "h3",
-    "text": "Dal Lake"
+    "text": "Dal Lake",
+    "photos": [
+     {
+      "src": "/img/holidays/dal-lake.webp",
+      "alt": "Colourful shikaras on still water at Dal Lake",
+      "width": 900,
+      "height": 600
+     }
+    ]
    },
    {
     "type": "p",
@@ -1151,7 +1211,15 @@
    },
    {
     "type": "h3",
-    "text": "Munnar Sightseeing"
+    "text": "Munnar Sightseeing",
+    "photos": [
+     {
+      "src": "/img/kerala.jpg",
+      "alt": "Tea gardens covering the hills around Munnar",
+      "width": 720,
+      "height": 540
+     }
+    ]
    },
    {
     "type": "p",
@@ -1167,7 +1235,15 @@
    },
    {
     "type": "h3",
-    "text": "Alleppey Houseboats"
+    "text": "Alleppey Houseboats",
+    "photos": [
+     {
+      "src": "/img/holidays/alleppey.webp",
+      "alt": "A houseboat crossing the palm-lined Alleppey backwaters",
+      "width": 900,
+      "height": 645
+     }
+    ]
    },
    {
     "type": "p",
@@ -1351,7 +1427,37 @@
    },
    {
     "type": "h3",
-    "text": "Villas, Explained"
+    "text": "Villas, Explained",
+    "photos": [
+     {
+      "src": "/img/holidays/garden-villa.webp",
+      "alt": "Garden villa",
+      "width": 900,
+      "height": 514,
+      "caption": "Garden villa"
+     },
+     {
+      "src": "/img/holidays/beach-villa.webp",
+      "alt": "Beach villa",
+      "width": 900,
+      "height": 636,
+      "caption": "Beach villa"
+     },
+     {
+      "src": "/img/holidays/water-villa.webp",
+      "alt": "Water villa",
+      "width": 494,
+      "height": 750,
+      "caption": "Water villa"
+     },
+     {
+      "src": "/img/holidays/pool-villa.webp",
+      "alt": "Villa with pool",
+      "width": 900,
+      "height": 600,
+      "caption": "Villa with pool"
+     }
+    ]
    },
    {
     "type": "p",
@@ -1473,7 +1579,21 @@
    },
    {
     "type": "h3",
-    "text": "South Tour"
+    "text": "South Tour",
+    "photos": [
+     {
+      "src": "/img/holidays/chamarel-earth.webp",
+      "alt": "The coloured earth at Chamarel",
+      "width": 364,
+      "height": 244
+     },
+     {
+      "src": "/img/holidays/mauritius-waterfall.webp",
+      "alt": "Water spilling over dark rocks on the South Tour",
+      "width": 504,
+      "height": 320
+     }
+    ]
    },
    {
     "type": "p",
@@ -1624,7 +1744,15 @@
    },
    {
     "type": "h3",
-    "text": "Elephant Rock, AlUla"
+    "text": "Elephant Rock, AlUla",
+    "photos": [
+     {
+      "src": "/img/saudi-arabia.jpg",
+      "alt": "The elephant-shaped sandstone formation at AlUla",
+      "width": 720,
+      "height": 540
+     }
+    ]
    },
    {
     "type": "p",
@@ -1747,7 +1875,15 @@
    },
    {
     "type": "h3",
-    "text": "Gardens by the Bay"
+    "text": "Gardens by the Bay",
+    "photos": [
+     {
+      "src": "/img/holidays/supertrees.webp",
+      "alt": "The illuminated Supertrees at Gardens by the Bay",
+      "width": 669,
+      "height": 432
+     }
+    ]
    },
    {
     "type": "p",
@@ -1918,7 +2054,15 @@
    },
    {
     "type": "h3",
-    "text": "Nuwara Eliya"
+    "text": "Nuwara Eliya",
+    "photos": [
+     {
+      "src": "/img/holidays/ramboda.webp",
+      "alt": "Ramboda Falls surrounded by green hills",
+      "width": 340,
+      "height": 326
+     }
+    ]
    },
    {
     "type": "p",
@@ -1934,7 +2078,15 @@
    },
    {
     "type": "h3",
-    "text": "Bentota"
+    "text": "Bentota",
+    "photos": [
+     {
+      "src": "/img/holidays/rafting.webp",
+      "alt": "Rafters paddling through white water",
+      "width": 525,
+      "height": 340
+     }
+    ]
    },
    {
     "type": "p",
@@ -2101,7 +2253,15 @@
    },
    {
     "type": "h3",
-    "text": "4-Island & Jungle Tour, Krabi"
+    "text": "4-Island & Jungle Tour, Krabi",
+    "photos": [
+     {
+      "src": "/img/holidays/krabi.webp",
+      "alt": "Long-tail boats beside the limestone cliffs in Krabi",
+      "width": 881,
+      "height": 655
+     }
+    ]
    },
    {
     "type": "p",
@@ -2227,7 +2387,15 @@
    },
    {
     "type": "h3",
-    "text": "Da Nang"
+    "text": "Da Nang",
+    "photos": [
+     {
+      "src": "/img/holidays/golden-bridge.webp",
+      "alt": "The Golden Bridge curving between giant stone hands",
+      "width": 900,
+      "height": 408
+     }
+    ]
    },
    {
     "type": "p",
@@ -2235,7 +2403,15 @@
    },
    {
     "type": "h3",
-    "text": "Hoi An"
+    "text": "Hoi An",
+    "photos": [
+     {
+      "src": "/img/holidays/hoi-an.webp",
+      "alt": "Warm lights reflected along the Hoi An waterfront",
+      "width": 512,
+      "height": 333
+     }
+    ]
    },
    {
     "type": "p",

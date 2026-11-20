@@ -1,0 +1,28 @@
+---
+import ArtScene from './ArtScene.astro';
+import { DEST } from '../data/site.js';
+
+const { slug, showRegion = false } = Astro.props;
+const destination = DEST[slug];
+const regionLabel = destination.region === 'india' ? 'In India' : 'International';
+const tag = destination.photo
+  ? destination.tag || (showRegion ? regionLabel : null)
+  : 'Photo coming soon';
+---
+<a class="card" href={`/holidays/${slug}`} data-region={destination.region} data-tag={destination.tag || ''}>
+  <div class="postcard-picture">
+    {destination.photo
+      ? <img src={destination.cardImage || `/img/${slug}.jpg`} alt="" loading="lazy" decoding="async" />
+      : <ArtScene variant={destination.art} wide={true} />}
+    {tag && <span class="tag">{tag}</span>}
+  </div>
+  <div class="postcard-caption">
+    <h3>{destination.name}</h3>
+    <span class="postcard-link">See the plan
+      <svg aria-hidden="true" viewBox="0 0 48 20" width="46" height="19">
+        <path d="M2 14q11 1 22-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" stroke-dasharray="1 4" />
+        <path class="postcard-plane" d="m23 8 5 1 7-3-6-4 2-1 9 3 4-1q3-1 3 1t-2 2l-5 2-5 9-2 1 2-8-7 2-5-2z" fill="currentColor" />
+      </svg>
+    </span>
+  </div>
+</a>

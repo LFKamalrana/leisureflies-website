@@ -30,11 +30,11 @@ export const DEST = {
   'sri-lanka':    { name: 'Sri Lanka',      region: 'international', photo: true },
   mauritius:      { name: 'Mauritius',      region: 'international', photo: true,  tag: 'Honeymoons' },
   'saudi-arabia': { name: 'Saudi Arabia',   region: 'international', photo: true },
-  kashmir:        { name: 'Kashmir',        region: 'india',         photo: true },
-  kerala:         { name: 'Kerala',         region: 'india',         photo: true },
+  kashmir:        { name: 'Kashmir',        region: 'india',         photo: true, cardImage: '/img/holidays/dal-lake.webp' },
+  kerala:         { name: 'Kerala',         region: 'india',         photo: true, cardImage: '/img/holidays/alleppey.webp' },
   goa:            { name: 'Goa',            region: 'india',         photo: true },
-  himachal:       { name: 'Himachal',       region: 'india',         photo: true },
-  andaman:        { name: 'Andaman',        region: 'india',         photo: true },
+  himachal:       { name: 'Himachal',       region: 'india',         photo: true, cardImage: '/img/holidays/paragliding.webp' },
+  andaman:        { name: 'Andaman',        region: 'india',         photo: true, cardImage: '/img/holidays/snorkelling.webp' },
 };
 export const FEATURED = ['bali', 'thailand', 'dubai', 'maldives', 'kashmir', 'kerala', 'goa', 'himachal'];
 export const VISA_COUNTRIES = [
