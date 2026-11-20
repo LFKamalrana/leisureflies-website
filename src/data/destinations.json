@@ -125,19 +125,12 @@
    },
    {
     "type": "h2",
-    "text": "Port Blair, Havelock & Neil Island packages."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (Port Blair + Havelock)"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (+ Neil Island)"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D (+ Neil Island)"
+    "text": "Port Blair, Havelock & Neil Island packages.",
+    "options": [
+     "4 nights / 5 days (Port Blair + Havelock)",
+     "5 nights / 6 days (+ Neil Island)",
+     "6 nights / 7 days (+ Neil Island)"
+    ]
    },
    {
     "type": "p",
@@ -167,7 +160,8 @@
     "type": "p",
     "text": "Barren Island, located right here in the Andaman Islands."
    }
-  ]
+  ],
+  "description": "Compare Andaman trips to Port Blair and Havelock, with longer routes adding Neil Island. Explore Radhanagar Beach and snorkelling, then ask for a quote."
  },
  "bali": {
   "slug": "bali",
@@ -295,19 +289,12 @@
    },
    {
     "type": "h2",
-    "text": "Ubud + Kuta packages."
-   },
-   {
-    "type": "p",
-    "text": "4 Nights / 5 Days"
-   },
-   {
-    "type": "p",
-    "text": "5 Nights / 6 Days"
-   },
-   {
-    "type": "p",
-    "text": "6 Nights / 7 Days"
+    "text": "Ubud + Kuta packages.",
+    "options": [
+     "4 nights / 5 days",
+     "5 nights / 6 days",
+     "6 nights / 7 days"
+    ]
    },
    {
     "type": "h3",
@@ -413,7 +400,8 @@
     "type": "p",
     "text": "Balinese babies aren't allowed to touch the ground for their first few months — they're considered little angels."
    }
-  ]
+  ],
+  "description": "Compare four to six nights in Ubud and Kuta. Explore Nusa Penida, Uluwatu Temple and Ubud’s villages, then ask our Chandigarh team for a Bali quote."
  },
  "dubai": {
   "slug": "dubai",
@@ -541,19 +529,12 @@
    },
    {
     "type": "h2",
-    "text": "Dubai city & Abu Dhabi combos."
-   },
-   {
-    "type": "p",
-    "text": "3N/4D"
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (+ Abu Dhabi & Ferrari World)"
+    "text": "Dubai city & Abu Dhabi combos.",
+    "options": [
+     "3 nights / 4 days",
+     "4 nights / 5 days",
+     "5 nights / 6 days (+ Abu Dhabi & Ferrari World)"
+    ]
    },
    {
     "type": "p",
@@ -583,7 +564,8 @@
     "type": "p",
     "text": "Don't consume alcohol or illicit substances outside licensed venues — follow local norms and enjoy the journey."
    }
-  ]
+  ],
+  "description": "Compare three to five nights in Dubai, from a dhow dinner cruise and desert safari to a longer trip with Abu Dhabi and Ferrari World. Request a tailored quote."
  },
  "goa": {
   "slug": "goa",
@@ -706,19 +688,12 @@
    },
    {
     "type": "h2",
-    "text": "North + South Goa packages."
-   },
-   {
-    "type": "p",
-    "text": "3 Nights / 4 Days"
-   },
-   {
-    "type": "p",
-    "text": "4 Nights / 5 Days"
-   },
-   {
-    "type": "p",
-    "text": "5 Nights / 6 Days"
+    "text": "North + South Goa packages.",
+    "options": [
+     "3 nights / 4 days",
+     "4 nights / 5 days",
+     "5 nights / 6 days"
+    ]
    },
    {
     "type": "p",
@@ -756,7 +731,8 @@
     "type": "p",
     "text": "Goan people can apply for a Portuguese passport alongside their Indian one."
    }
-  ]
+  ],
+  "description": "Plan three to five nights in North and South Goa. Compare beaches, Chapora Fort and Old Goa’s churches, then ask for a holiday quote for your dates."
  },
  "himachal": {
   "slug": "himachal",
@@ -884,23 +860,13 @@
    },
    {
     "type": "h2",
-    "text": "Shimla + Manali packages."
-   },
-   {
-    "type": "p",
-    "text": "3N/4D"
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D"
-   },
-   {
-    "type": "p",
-    "text": "9N/10D"
+    "text": "Shimla + Manali packages.",
+    "options": [
+     "3 nights / 4 days",
+     "4 nights / 5 days",
+     "6 nights / 7 days",
+     "9 nights / 10 days"
+    ]
    },
    {
     "type": "p",
@@ -938,7 +904,8 @@
     "type": "p",
     "text": "Christ Church (built 1857) is India's second-oldest church, after St. John's in Meerut."
    }
-  ]
+  ],
+  "description": "Explore Shimla and Manali itineraries from three to nine nights, with ideas for Kufri, the Kalka–Shimla toy train and Solang Valley. Ask for a tailored quote."
  },
  "kashmir": {
   "slug": "kashmir",
@@ -1061,19 +1028,12 @@
    },
    {
     "type": "h2",
-    "text": "Srinagar + Gulmarg + Pahalgam packages."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D"
+    "text": "Srinagar + Gulmarg + Pahalgam packages.",
+    "options": [
+     "4 nights / 5 days",
+     "5 nights / 6 days",
+     "6 nights / 7 days"
+    ]
    },
    {
     "type": "p",
@@ -1111,7 +1071,8 @@
     "type": "p",
     "text": "The Pir Panjal (Banihal) tunnel — 11,215m long, and Asia's fourth-longest."
    }
-  ]
+  ],
+  "description": "Compare four, five or six nights in Srinagar, Gulmarg and Pahalgam. See how a Dal Lake shikara ride fits into your Kashmir holiday and request a quote."
  },
  "kerala": {
   "slug": "kerala",
@@ -1226,19 +1187,12 @@
    },
    {
     "type": "h2",
-    "text": "Munnar + Thekkady + Alleppey packages."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (+ Cochin)"
-   },
-   {
-    "type": "p",
-    "text": "7N/8D (+ Cochin & Kovalam)"
+    "text": "Munnar + Thekkady + Alleppey packages.",
+    "options": [
+     "4 nights / 5 days",
+     "5 nights / 6 days (+ Cochin)",
+     "7 nights / 8 days (+ Cochin & Kovalam)"
+    ]
    },
    {
     "type": "p",
@@ -1276,7 +1230,8 @@
     "type": "p",
     "text": "Traditional Kerala houseboats are built entirely from wooden planks, without any iron nails."
    }
-  ]
+  ],
+  "description": "Plan a Kerala holiday through Munnar, Thekkady and Alleppey. Compare houseboat itineraries and longer stays with Kochi or Kovalam, then request a quote."
  },
  "maldives": {
   "slug": "maldives",
@@ -1383,19 +1338,12 @@
    },
    {
     "type": "h2",
-    "text": "How to pick the perfect resort."
-   },
-   {
-    "type": "p",
-    "text": "Transfers"
-   },
-   {
-    "type": "p",
-    "text": "Room Category"
-   },
-   {
-    "type": "p",
-    "text": "Meal Plan"
+    "text": "How to pick the perfect resort.",
+    "options": [
+     "Transfers",
+     "Room Category",
+     "Meal Plan"
+    ]
    },
    {
     "type": "p",
@@ -1437,7 +1385,8 @@
     "type": "p",
     "text": "Most resorts now offer dedicated vegetarian, Indian and Jain meal options — worth confirming when we book."
    }
-  ]
+  ],
+  "description": "Choose a Maldives resort by transfer, room type and meal plan. Compare beach and water villas, explore snorkelling or sunset fishing, and request a quote."
  },
  "mauritius": {
   "slug": "mauritius",
@@ -1536,19 +1485,12 @@
    },
    {
     "type": "h2",
-    "text": "Packages across 3, 4 & 5-star hotels."
-   },
-   {
-    "type": "p",
-    "text": "3-Star Hotels"
-   },
-   {
-    "type": "p",
-    "text": "4-Star Hotels"
-   },
-   {
-    "type": "p",
-    "text": "5-Star Hotels"
+    "text": "Packages across 3, 4 & 5-star hotels.",
+    "options": [
+     "3-Star Hotels",
+     "4-Star Hotels",
+     "5-Star Hotels"
+    ]
    },
    {
     "type": "p",
@@ -1578,7 +1520,8 @@
     "type": "p",
     "text": "Mauritius follows left-hand driving, same as India."
    }
-  ]
+  ],
+  "description": "Compare three-, four- and five-star hotel options for Mauritius. Explore Île aux Cerfs and north and south island tours before asking for a holiday quote."
  },
  "saudi-arabia": {
   "slug": "saudi-arabia",
@@ -1701,19 +1644,12 @@
    },
    {
     "type": "h2",
-    "text": "Riyadh & Jeddah packages."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (Riyadh + Jeddah)"
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (Riyadh only)"
-   },
-   {
-    "type": "p",
-    "text": "2N/3D (Jeddah only)"
+    "text": "Riyadh & Jeddah packages.",
+    "options": [
+     "4 nights / 5 days (Riyadh + Jeddah)",
+     "4 nights / 5 days (Riyadh only)",
+     "2 nights / 3 days (Jeddah only)"
+    ]
    },
    {
     "type": "p",
@@ -1739,7 +1675,8 @@
     "type": "p",
     "text": "October to February."
    }
-  ]
+  ],
+  "description": "Compare Riyadh and Jeddah separately or together. Explore Al-Masmak Fortress, the Edge of the World and Jeddah Waterfront, then request a Saudi holiday quote."
  },
  "singapore": {
   "slug": "singapore",
@@ -1854,19 +1791,12 @@
    },
    {
     "type": "h2",
-    "text": "Family & couple-friendly packages."
-   },
-   {
-    "type": "p",
-    "text": "3N/4D"
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (Singapore + Cruise)"
+    "text": "Family & couple-friendly packages.",
+    "options": [
+     "3 nights / 4 days",
+     "4 nights / 5 days",
+     "5 nights / 6 days (Singapore + Cruise)"
+    ]
    },
    {
     "type": "p",
@@ -1900,7 +1830,8 @@
     "type": "p",
     "text": "Don't spit or litter — it's a punishable offence, and the city stays spotless because of it."
    }
-  ]
+  ],
+  "description": "Plan three or four nights in Singapore, or add a cruise on a five-night trip. Explore Sentosa, Gardens by the Bay and the Night Safari, then request a quote."
  },
  "sri-lanka": {
   "slug": "sri-lanka",
@@ -2023,19 +1954,12 @@
    },
    {
     "type": "h2",
-    "text": "Kandy + Nuwara Eliya + Bentota packages."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D"
+    "text": "Kandy + Nuwara Eliya + Bentota packages.",
+    "options": [
+     "4 nights / 5 days",
+     "5 nights / 6 days",
+     "6 nights / 7 days"
+    ]
    },
    {
     "type": "p",
@@ -2065,7 +1989,8 @@
     "type": "p",
     "text": "Colombo's culture, climbing Adam's Peak, Galle's history, the ruins of Sigiriya, and the tea plantations."
    }
-  ]
+  ],
+  "description": "Compare Sri Lanka trips of four to six nights through Kandy, Nuwara Eliya and Bentota. Explore hill country and the coast, then request a quote for your dates."
  },
  "thailand": {
   "slug": "thailand",
@@ -2188,31 +2113,15 @@
    },
    {
     "type": "h2",
-    "text": "Bangkok-Pattaya and Phuket-Krabi combos."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (Bangkok-Pattaya)"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (Bangkok-Pattaya)"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D (Bangkok-Pattaya)"
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (Phuket-Krabi)"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (Phuket-Krabi)"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D (Phuket-Krabi)"
+    "text": "Bangkok-Pattaya and Phuket-Krabi combos.",
+    "options": [
+     "4 nights / 5 days (Bangkok-Pattaya)",
+     "5 nights / 6 days (Bangkok-Pattaya)",
+     "6 nights / 7 days (Bangkok-Pattaya)",
+     "4 nights / 5 days (Phuket-Krabi)",
+     "5 nights / 6 days (Phuket-Krabi)",
+     "6 nights / 7 days (Phuket-Krabi)"
+    ]
    },
    {
     "type": "p",
@@ -2238,7 +2147,8 @@
     "type": "p",
     "text": "Always take your shoes off entering authentic restaurants, temples and local shops — following Thai culture matters."
    }
-  ]
+  ],
+  "description": "Compare Bangkok and Pattaya with Phuket and Krabi on four- to six-night Thailand trips. Explore city tours and island excursions, then request a quote."
  },
  "vietnam": {
   "slug": "vietnam",
@@ -2361,19 +2271,12 @@
    },
    {
     "type": "h2",
-    "text": "Hanoi, Halong Bay & Ho Chi Minh combos."
-   },
-   {
-    "type": "p",
-    "text": "4N/5D (3N Hanoi + 1N Halong Bay)"
-   },
-   {
-    "type": "p",
-    "text": "5N/6D (2N Hanoi + 1N Halong Bay + 2N HCMC)"
-   },
-   {
-    "type": "p",
-    "text": "6N/7D (Hanoi + Halong Bay + Hoi An + HCMC)"
+    "text": "Hanoi, Halong Bay & Ho Chi Minh combos.",
+    "options": [
+     "4 nights / 5 days (3N Hanoi + 1N Halong Bay)",
+     "5 nights / 6 days (2N Hanoi + 1N Halong Bay + 2N HCMC)",
+     "6 nights / 7 days (Hanoi + Halong Bay + Hoi An + HCMC)"
+    ]
    },
    {
     "type": "p",
@@ -2399,6 +2302,7 @@
     "type": "p",
     "text": "Around March-April and October-December, when the weather is comfortable and festivals run across the country."
    }
-  ]
+  ],
+  "description": "Compare four- to six-night Vietnam routes through Hanoi, Halong Bay and Ho Chi Minh City, including a longer option with Hoi An. Ask for a tailored quote."
  }
 }
