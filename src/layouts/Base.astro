@@ -79,5 +79,25 @@ const active = (href) => path === href || path.startsWith(href + '/');
   links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
 })();
 </script>
+  <script>
+    function personaliseTripQuotes() {
+      let trip;
+      try { trip = JSON.parse(sessionStorage.getItem('lf_trip') || 'null'); } catch { return; }
+      if (!trip) return;
+      for (const link of document.querySelectorAll<HTMLAnchorElement>('a[data-trip-quote]')) {
+        const url = new URL(link.href);
+        const base = link.dataset.message || url.searchParams.get('text') || '';
+        link.dataset.message = base;
+        const details = [base];
+        if (/^[1-9]\d*$/.test(trip.travellers) && Number(trip.travellers) <= 60) details.push('Travellers: ' + trip.travellers);
+        if (trip.when) details.push('Travel dates: ' + trip.when);
+        if (trip.name) details.push('Name: ' + trip.name);
+        url.searchParams.set('text', details.join('\n'));
+        link.href = url.href;
+      }
+    }
+    personaliseTripQuotes();
+    window.addEventListener('pageshow', personaliseTripQuotes);
+  </script>
 </body>
 </html>

@@ -1,0 +1,34 @@
+---
+import { wa } from '../data/site.js';
+const trips = [
+  { nights: 4, stops: [['Munnar',2],['Thekkady',1],['Alleppey',1]] },
+  { nights: 5, stops: [['Kochi',1],['Munnar',2],['Thekkady',1],['Alleppey',1]] },
+  { nights: 7, stops: [['Kochi',1],['Munnar',2],['Thekkady',1],['Alleppey',1],['Kovalam',1]] },
+];
+const icons = { Kochi:'⛵', Munnar:'🌿', Thekkady:'🌳', Alleppey:'🛶', Kovalam:'🌴' };
+---
+<div class="route-picker" aria-label="Kerala route postcards">
+  {trips.map((trip,i) => (
+    <details name="kerala-route" open={i === 0}>
+      <summary>{trip.nights} nights / {trip.nights+1} days</summary>
+      <ol>{trip.stops.map(([place,n]) => <li>
+        <span class="stamp" aria-hidden="true">{icons[place]}</span>
+        <b>{place}</b><span>{n} {n === 1 ? 'night' : 'nights'}</span>
+      </li>)}</ol>
+      {trip.nights === 7 && <p>The overnight stop for the seventh night is confirmed with your quote.</p>}
+      <a class="btn btn-line" data-trip-quote href={wa('Hi LeisureFlies, please quote the '+trip.nights+'-night Kerala itinerary via '+trip.stops.map(([name])=>name).join(', ')+'.')} target="_blank" rel="noopener">Quote this route</a>
+    </details>
+  ))}
+</div>
+<style>
+  .route-picker {display:grid;gap:8px;margin-top:18px}
+  details {padding:12px 20px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+  summary {cursor:pointer;color:var(--ink);font:600 21px var(--display);padding:5px}
+  ol {display:flex;list-style:none;padding:0;max-width:850px;margin:24px 0 20px}
+  li {position:relative;display:grid;justify-items:center;flex:1;z-index:0}
+  li:not(:last-child)::after {position:absolute;content:'';top:25px;left:50%;width:100%;border-top:3px dotted #79bfc4;z-index:-1}
+  .stamp {display:grid;place-items:center;background:#fff4d8;border:2px solid #efc968;border-radius:50%;width:52px;height:52px;font-size:28px}
+  li b {margin-top:6px}li span:last-child,details p {color:var(--muted);font-size:15px}
+  .btn {margin:8px 0;font-size:15px}
+  @media(max-width:650px){ol{flex-direction:column;gap:14px}li{display:grid;grid-template-columns:52px 1fr;column-gap:12px;justify-items:start;align-items:center}.stamp{grid-row:span 2}li b{align-self:end;margin:0}li span:last-child{align-self:start}li:not(:last-child)::after{top:50%;left:25px;width:0;height:calc(100% + 15px);border-top:0;border-left:3px dotted #79bfc4}}
+</style>

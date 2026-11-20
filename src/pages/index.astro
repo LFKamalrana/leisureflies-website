@@ -1,4 +1,5 @@
 ---
+import ArtScene from '../components/ArtScene.astro';
 import Base from '../layouts/Base.astro';
 import DestinationCard from '../components/DestinationCard.astro';
 import Offers from '../components/Offers.astro';
@@ -185,15 +186,38 @@ const schema = {
     <div class="head"><div><div class="eyebrow">Google reviews</div><h2 style="margin-top:8px">What travellers say.</h2></div>
       <a class="btn btn-line" href="https://share.google/pRkmxrpVo126YOx9t" target="_blank" rel="noopener">Read all reviews on Google</a></div>
     <div class="rev">
-      <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Visited Phu Quoc with family. Wonderful itinerary, very cooperative team. Enjoyed the trip thoroughly."</p><div><b>Ajata Shatru Kapoor</b><br><small>Google review</small></div></div>
+      <article class="quote traveller-postcard">
+        <div class="postmark"><span aria-hidden="true"><ArtScene variant="beach" /></span> Phu Quoc, Vietnam</div>
+        <h3>A family holiday in Phu Quoc</h3>
+        <div class="stars" aria-label="5 stars">★★★★★</div><p>"Visited Phu Quoc with family. Wonderful itinerary, very cooperative team. Enjoyed the trip thoroughly."</p><div><b>Ajata Shatru Kapoor</b><br><small>Google review</small></div><a class="story-link" href="/holidays/vietnam">Explore Vietnam holidays →</a></article>
       <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Best arrangements by the team, and they take care of all group members very well. Wish to travel with you again soon."</p><div><b>Davinder Kalra</b><br><small>Google review</small></div></div>
       <div class="quote"><div class="stars" aria-label="5 stars">★★★★★</div><p>"It was a well planned, well organised tour at Pattaya and Bangkok. Indian food at every new destination was praise-worthy."</p><div><b>Er. Raman Kumar Verma</b><br><small>Google review</small></div></div>
     </div>
   </div>
 </section>
 </Base>
+<style>
+  .traveller-postcard{position:relative;background:#fff9ed;color:#174751;border:1px solid #e8d7ad}
+  .postmark{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:800;margin-bottom:14px}
+  .postmark span{display:block;width:56px;height:64px;overflow:hidden;background:#bdeff5;border:3px dashed #fff;border-radius:4px;box-shadow:0 0 0 1px #83b4a5;transform:rotate(-5deg)}
+  .postmark :global(svg){width:100%;height:100%;display:block}
+  .story-link{display:inline-block;margin-top:14px;color:#12636a;font-weight:800}
+  .traveller-postcard p,.traveller-postcard small{color:#42606a}
+</style>
 <script is:inline>
-  document.getElementById('planner').addEventListener('submit',function(e){
+  const tripPlanner = document.getElementById('planner');
+  function rememberTrip() {
+    const trip = {
+      travellers: document.getElementById('trav').value,
+      when: document.getElementById('when').value.trim(),
+      name: document.getElementById('who').value.trim()
+    };
+    try { sessionStorage.setItem('lf_trip', JSON.stringify(trip)); } catch {}
+  }
+  tripPlanner.addEventListener('input', rememberTrip);
+  tripPlanner.addEventListener('change', rememberTrip);
+  tripPlanner.addEventListener('submit', rememberTrip);
+  tripPlanner.addEventListener('submit',function(e){
     e.preventDefault();
     var d=document.getElementById('dest').value,t=document.getElementById('trav').value||'2',w=document.getElementById('when').value.trim(),n=document.getElementById('who').value.trim();
     var m='Hi LeisureFlies, I would like a quote for '+d+'.\nTravellers: '+t+(w?'\nTravel dates: '+w:'')+(n?'\nName: '+n:'');

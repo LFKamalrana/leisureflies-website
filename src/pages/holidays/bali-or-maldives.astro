@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import { wa } from '../../data/site.js';
+const choices = [
+  { name:'Bali', slug:'bali', image:'/img/holidays/bali-temple.webp', alt:'A Balinese temple reflected in the lake at sunset',
+    day:'Walk the rice terraces around Ubud, stop at a temple, then head to the coast for sunset.',
+    stay:'The Ubud + Kuta itineraries split the stay between two places. Allow time for the move and day trips.',
+    price:'The number of nights, hotel choices, private sightseeing and any island excursions shape the quote.' },
+  { name:'Maldives', slug:'maldives', image:'/img/maldives.jpg', alt:'Overwater villas beside a turquoise lagoon',
+    day:'Snorkel near your resort, take a kayak out, or leave an afternoon free for the beach.',
+    stay:'You can spend the whole trip on one resort island. A beach-to-water villa split gives you two room experiences.',
+    price:'The resort, villa category, meal plan and transfer by speedboat, domestic flight or seaplane shape the quote.' },
+];
+---
+<Base title="Bali or Maldives for your holiday?" description="Compare a Bali touring holiday with a Maldives resort stay. Explore daily activities, hotel changes and what shapes each quote.">
+  <div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/holidays">Holidays</a> / Bali or Maldives</div>
+  <section><div class="eyebrow">Compare holidays</div><h1>Bali or Maldives?</h1>
+    <p class="lead">Picture a day in each place, then choose the pace that feels like your holiday.</p>
+    <div class="comparison">{choices.map(c => <article class="info">
+      <img src={c.image} alt={c.alt} width="600" height="330" />
+      <h2>{c.name}</h2>
+      <dl><dt>A typical day</dt><dd>{c.day}</dd><dt>Where you stay</dt><dd>{c.stay}</dd><dt>What shapes the price</dt><dd>{c.price}</dd></dl>
+      <a href={'/holidays/'+c.slug}>Explore {c.name} packages →</a>
+    </article>)}</div>
+    <div class="cta-band"><div><h2>Which fits your dates and budget?</h2><p>Tell us who’s travelling and what you’d love to do.</p></div>
+      <a class="btn btn-wa" data-trip-quote href={wa('Hi LeisureFlies, please help us choose between Bali and Maldives.')} target="_blank" rel="noopener">Help us choose on WhatsApp</a></div>
+  </section></div>
+</Base>
+<style>
+  h1{font-size:clamp(38px,6vw,62px);margin-top:6px}.comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:24px}
+  article img{width:100%;height:auto;aspect-ratio:20/11;object-fit:cover;border-radius:12px;margin-bottom:16px}
+  h2{font-size:30px}dt{font-weight:800;margin-top:14px}dd{color:var(--muted);margin:3px 0}article a{font-weight:800}
+  @media(max-width:650px){.comparison{grid-template-columns:1fr}}
+</style>

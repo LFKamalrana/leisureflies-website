@@ -1,10 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import SectorFares from '../components/SectorFares.astro';
 import Offers from '../components/Offers.astro';
 import { wa } from '../data/site.js';
 ---
-<Base title="Latest Offers" description="Current holiday offers and packages from LeisureFlies Travels, Chandigarh. Message us on WhatsApp to book.">
-  <div class="wrap"><div class="crumbs"><a href="/">Home</a> / Offers</div></div>
+<Base title="Latest Offers" description="Explore fixed-departure flight fares, round trips and holiday offers. Select travel dates and check availability with LeisureFlies.">
+  <div class="wrap"><div class="crumbs"><a href="/">Home</a> / Offers</div><SectorFares /></div>
   <Offers page={true} />
   <div class="wrap"><div class="cta-band">
     <div><h2>Want something different?</h2><p>Tell us your dates and group and we build a package around you. Found a cheaper flight or hotel? Send the screenshot.</p></div>
