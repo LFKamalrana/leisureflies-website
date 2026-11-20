@@ -18,20 +18,20 @@ for (const b of d.blocks) {
   if (b.type === 'eyebrow') { pendingEyebrow = b.text; continue; }
   if (b.type === 'h2') { cur = { eyebrow: pendingEyebrow, title: b.text, options: b.options ?? [], intro: [], groups: [] }; sections.push(cur); grp = null; pendingEyebrow = null; continue; }
   if (!cur) continue;
-  if (b.type === 'h3') { grp = { title: b.text, paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
+  if (b.type === 'h3') { grp = { title: b.text, photos: b.photos ?? [], paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
   if (!grp) { if (b.type === 'p' && b.text.length > 22) cur.intro.push(b.text); continue; }
   if (b.type === 'li') grp.items.push(b.text);
   else if (b.text.length <= 14 && !grp.paras.length && !grp.badge) grp.badge = b.text;
   else grp.paras.push(b.text);
 }
-const heroImg = meta.photo ? `/img/hero-${slug}.jpg` : null;
+const heroImg = d.heroPhoto?.src ?? (meta.photo ? `/img/hero-${slug}.jpg` : null);
 const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
 ---
-<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={meta.photo ? `/img/hero-${slug}.jpg` : '/og-image.jpg'}>
+<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={heroImg || '/og-image.jpg'}>
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/holidays">Holidays</a> / {meta.name}</div>
     <div class="page-hero">
-      {heroImg ? <img src={heroImg} alt={`${meta.name}`} /> : <ArtScene variant={meta.art} wide={true} />}
+      {heroImg ? <img src={heroImg} alt={d.heroPhoto?.alt || meta.name} /> : <ArtScene variant={meta.art} wide={true} />}
       <div class="in">
         <h1>{d.title}</h1>
         <p class="lead" style="margin-top:14px">{d.lead}</p>
@@ -53,6 +53,16 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
                 {g.badge && <span class="badge-s">{g.badge}</span>}
                 <h3>{g.title}</h3>
                 {g.paras.map((p) => <p>{p}</p>)}
+                {g.photos.length > 0 && (
+                  <div class:list={['trip-photos', { 'trip-photos-multiple': g.photos.length > 1 }]}>
+                    {g.photos.map((photo) => (
+                      <figure>
+                        <img src={photo.src} alt={photo.caption ? '' : photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+                        {photo.caption && <figcaption>{photo.caption}</figcaption>}
+                      </figure>
+                    ))}
+                  </div>
+                )}
                 {g.items.length > 0 && <ul>{g.items.map((i) => <li>{i}</li>)}</ul>}
               </div>
             ))}
@@ -67,3 +77,11 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
     </div>
   </div>
 </Base>
+
+<style>
+  .trip-photos { display: grid; gap: 10px; margin-top: 16px; }
+  .trip-photos-multiple { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trip-photos figure { margin: 0; }
+  .trip-photos img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; }
+  .trip-photos figcaption { margin-top: 4px; color: var(--ink); font-size: 14px; font-weight: 800; }
+</style>
