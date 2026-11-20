@@ -6,7 +6,9 @@ const money = (n) => n == null ? 'Ask for fare' : '₹' + n.toLocaleString('en-I
 const day = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const dateLabel = (s) => day.format(new Date(s + 'T12:00:00Z'));
 const routes = new Map();
-for (const fare of fares) {
+const hasPrice = (offer) => offer.groups.some(group => group.fare != null && group.dates.length);
+const orderedFares = [...fares.filter(hasPrice), ...fares.filter(offer => !hasPrice(offer))];
+for (const fare of orderedFares) {
   const key = fare.origin + ' → ' + fare.destination;
   if (!routes.has(key)) routes.set(key, []);
   routes.get(key).push(fare);
@@ -38,7 +40,7 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
             const [depart, back] = pair.split('/');
             const label = dateLabel(depart) + (back ? ' – ' + dateLabel(back) : '');
             return { depart, label, price: money(group.fare), amount: group.fare };
-          })).sort((a,b) => a.depart.localeCompare(b.depart));
+          })).sort((a,b) => Number(a.amount == null) - Number(b.amount == null) || a.depart.localeCompare(b.depart));
           const description = route + ', ' + o.airline + ', ' + o.kind + (o.schedule ? ' (' + o.schedule + ')' : '');
           return <article class="fare-option" data-kind={o.kind} data-description={description}>
             <div><h3>{o.airline}</h3><p>{o.kind}{o.schedule && ' · ' + o.schedule}</p>
@@ -64,6 +66,14 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
   const to = board.querySelector<HTMLSelectElement>('#fare-to')!;
   const routes = [...board.querySelectorAll<HTMLDetailsElement>('.fare-route')];
   const clock = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
+  // An offer or route can become enquiry-only when its last priced departure expires.
+  function keepPricedFirst(items: NodeListOf<HTMLElement>) {
+    let firstUnpriced: HTMLElement | null = null;
+    for (const item of items) {
+      if (!item.querySelector('option[data-amount]')) firstUnpriced ??= item;
+      else if (firstUnpriced) firstUnpriced.before(item);
+    }
+  }
   function filterRoutes() {
     let visible = 0;
     for (const route of routes) {
@@ -92,7 +102,9 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
         summary = kind + ' from ₹' + Number(lowest.dataset.amount).toLocaleString('en-IN');
       }
       route.querySelector('[data-route-price]')!.textContent = summary;
+      keepPricedFirst(route.querySelectorAll<HTMLElement>('.fare-option'));
     }
+    keepPricedFirst(board.querySelectorAll<HTMLElement>('.fare-route'));
     filterRoutes();
   }
   function updateEnquiry(offer: HTMLElement) {
