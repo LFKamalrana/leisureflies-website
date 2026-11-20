@@ -1,0 +1,134 @@
+---
+import fares from '../data/departures.json';
+import { wa } from '../data/site.js';
+
+const money = (n) => n == null ? 'Ask for fare' : '₹' + n.toLocaleString('en-IN');
+const day = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const dateLabel = (s) => day.format(new Date(s + 'T12:00:00Z'));
+const routes = new Map();
+for (const fare of fares) {
+  const key = fare.origin + ' → ' + fare.destination;
+  if (!routes.has(key)) routes.set(key, []);
+  routes.get(key).push(fare);
+}
+function priceSummary(offers) {
+  const prices = offers.flatMap(offer => offer.groups.filter(g => g.fare != null).map(g => ({ fare:g.fare, kind:offer.kind })));
+  if (!prices.length) return 'Ask for fare';
+  const lowest = prices.reduce((a,b) => a.fare <= b.fare ? a : b);
+  return lowest.kind + ' from ' + money(lowest.fare);
+}
+const origins = [...new Set(fares.map(f => f.origin))].sort();
+const destinations = [...new Set(fares.map(f => f.destination))].sort();
+---
+<section class="fare-board" aria-labelledby="departures-title">
+  <div class="eyebrow">Offers</div>
+  <h1 id="departures-title">Fixed departure fares</h1>
+  <p class="lead">Choose your route and travel dates. Prices are in Indian rupees per person. We confirm seats and the final price before you book.</p>
+  <div class="fare-filters" hidden>
+    <label>Flying from<select id="fare-from"><option value="">All departure cities</option>{origins.map(city => <option>{city}</option>)}</select></label>
+    <label>Flying to<select id="fare-to"><option value="">All destinations</option>{destinations.map(city => <option>{city}</option>)}</select></label>
+    <span data-count aria-live="polite"></span>
+  </div>
+  <div class="fare-list">
+    {[...routes].map(([route, offers]) => (
+      <details class="fare-route" data-origin={offers[0].origin} data-destination={offers[0].destination}>
+        <summary><span>{route}</span><small data-route-price>{priceSummary(offers)}</small></summary>
+        {offers.map(o => {
+          const dates = o.groups.flatMap(group => group.dates.map(pair => {
+            const [depart, back] = pair.split('/');
+            const label = dateLabel(depart) + (back ? ' – ' + dateLabel(back) : '');
+            return { depart, label, price: money(group.fare), amount: group.fare };
+          })).sort((a,b) => a.depart.localeCompare(b.depart));
+          const description = route + ', ' + o.airline + ', ' + o.kind + (o.schedule ? ' (' + o.schedule + ')' : '');
+          return <article class="fare-option" data-kind={o.kind} data-description={description}>
+            <div><h3>{o.airline}</h3><p>{o.kind}{o.schedule && ' · ' + o.schedule}</p>
+            {o.baggage && <p>Baggage allowance · {o.baggage}</p>}
+            {o.note && <p>{o.note}</p>}
+            {o.kind !== 'Package' && <small>Non-refundable · Changes are not permitted.</small>}</div>
+            <div class="fare-choice">
+              <label>{o.kind === 'One way' ? 'Departure and fare' : 'Departure, return and price'}
+                <select>{dates.map(d => <option value={d.depart} data-amount={d.amount}>{d.label} · {d.price}</option>)}</select>
+              </label>
+              <a class="btn btn-line" href={wa('Hi LeisureFlies, please check availability for ' + description + '.')} target="_blank" rel="noopener">Check on WhatsApp</a>
+            </div>
+          </article>;
+        })}
+      </details>
+    ))}
+  </div>
+  <p class="note" data-no-fares hidden>No upcoming departures match this route. <a href={wa('Hi LeisureFlies, please help me find a flight.')} target="_blank" rel="noopener">Ask us for a fare</a>.</p>
+</section>
+<script>
+  const board = document.querySelector<HTMLElement>('.fare-board')!;
+  const from = board.querySelector<HTMLSelectElement>('#fare-from')!;
+  const to = board.querySelector<HTMLSelectElement>('#fare-to')!;
+  const routes = [...board.querySelectorAll<HTMLDetailsElement>('.fare-route')];
+  const clock = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
+  function filterRoutes() {
+    let visible = 0;
+    for (const route of routes) {
+      route.hidden = !route.querySelector('.fare-option:not([hidden])') ||
+        (!!from.value && from.value !== route.dataset.origin) || (!!to.value && to.value !== route.dataset.destination);
+      if (!route.hidden) visible++;
+    }
+    board.querySelector('[data-count]')!.textContent = visible + (visible === 1 ? ' route' : ' routes');
+    board.querySelector<HTMLElement>('[data-no-fares]')!.hidden = visible !== 0;
+    if (visible === 1) routes.find(route => !route.hidden)!.open = true;
+  }
+  function refreshDepartures() {
+    const today = clock.format(new Date());
+    for (const offer of board.querySelectorAll<HTMLElement>('.fare-option')) {
+      const select = offer.querySelector('select')!;
+      for (const option of [...select.options]) if (option.value < today) option.remove();
+      offer.hidden = !select.options.length;
+      if (!offer.hidden) updateEnquiry(offer);
+    }
+    for (const route of routes) {
+      const prices = [...route.querySelectorAll<HTMLOptionElement>('.fare-option option[data-amount]')];
+      let summary = 'Ask for fare';
+      if (prices.length) {
+        const lowest = prices.reduce((a,b) => Number(a.dataset.amount) <= Number(b.dataset.amount) ? a : b);
+        const kind = lowest.closest<HTMLElement>('.fare-option')!.dataset.kind;
+        summary = kind + ' from ₹' + Number(lowest.dataset.amount).toLocaleString('en-IN');
+      }
+      route.querySelector('[data-route-price]')!.textContent = summary;
+    }
+    filterRoutes();
+  }
+  function updateEnquiry(offer: HTMLElement) {
+    const selected = offer.querySelector('select')!.selectedOptions[0];
+    const link = offer.querySelector('a')!;
+    const url = new URL(link.href);
+    url.searchParams.set('text', 'Hi LeisureFlies, please confirm ' + offer.dataset.description + ' for ' + selected.textContent + '.');
+    link.href = url.href;
+  }
+  board.addEventListener('change', event => {
+    const target = event.target as HTMLSelectElement;
+    const offer = target.closest<HTMLElement>('.fare-option');
+    if (offer) updateEnquiry(offer);
+    else filterRoutes();
+  });
+  refreshDepartures();
+  window.addEventListener('pageshow', refreshDepartures);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshDepartures(); });
+  board.querySelector<HTMLElement>('.fare-filters')!.hidden = false;
+</script>
+<style>
+  .fare-board {padding-bottom:20px}
+  h1 {font-size:clamp(36px,5vw,56px);margin-top:8px}
+  .fare-filters {display:flex;align-items:end;gap:14px;flex-wrap:wrap;margin:26px 0 18px}
+  .fare-board [hidden] {display:none}
+  label {display:grid;gap:5px;font-weight:800;font-size:14px}
+  select {width:100%;min-width:0;padding:9px 11px;border:1px solid var(--line);border-radius:11px;color:var(--ink);background:var(--surface);font:inherit}
+  [data-count] {color:var(--muted);padding-bottom:10px}
+  .fare-list {display:grid;gap:9px;margin-top:18px}
+  .fare-route {background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:clip}
+  summary {cursor:pointer;padding:14px 20px;font:600 21px var(--display)}
+  summary::marker {color:var(--turq-deep);font-size:.8em}
+  summary small {font:800 14px var(--body);color:var(--ink);background:var(--sky);border-radius:8px;padding:3px 8px;margin-left:12px}
+  summary:focus-visible {outline:3px solid var(--sun);outline-offset:-4px}
+  .fare-option {display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,340px);gap:16px;padding:18px 20px;border-top:1px dashed var(--line)}
+  .fare-option p,.fare-option small {color:var(--muted);font-size:15px;margin-top:4px}
+  .fare-choice a {margin-top:10px;font-size:14px;padding:9px 14px}
+  @media(max-width:650px){.fare-option{grid-template-columns:1fr}summary small{display:table;margin:4px 0 0 16px}.fare-filters label{flex:1 1 135px}}
+</style>

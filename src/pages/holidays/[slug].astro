@@ -1,4 +1,5 @@
 ---
+import KeralaRoute from '../../components/KeralaRoute.astro';
 import Base from '../../layouts/Base.astro';
 import ArtScene from '../../components/ArtScene.astro';
 import raw from '../../data/destinations.json';
@@ -44,7 +45,8 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
       <section class="sec-block" style="padding-block:clamp(28px,4vw,48px)">
         {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
         <h2 style="margin-top:8px">{s.title}</h2>
-        {s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
+        {slug === 'kerala' && s.options.length > 0 && <KeralaRoute />}
+        {slug !== 'kerala' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
         {s.intro.length > 0 && <div class="prose">{s.intro.map((p) => <p>{p}</p>)}</div>}
         {s.groups.length > 0 && (
           <div class="cards2">
@@ -64,6 +66,8 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
                   </div>
                 )}
                 {g.items.length > 0 && <ul>{g.items.map((i) => <li>{i}</li>)}</ul>}
+                {slug === 'bali' && g.title.startsWith('Ubud + Kuta') &&
+                  <a class="btn btn-line itinerary-quote" data-trip-quote href={wa('Hi LeisureFlies, please quote the Bali itinerary ' + g.title + '.')} target="_blank" rel="noopener">Quote this itinerary</a>}
               </div>
             ))}
           </div>
@@ -71,6 +75,7 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
       </section>
     ))}
 
+    {['bali','maldives'].includes(slug) && <p class="prose"><a href="/holidays/bali-or-maldives">Bali or Maldives? Compare the two holidays →</a></p>}
     <div class="cta-band">
       <div><h2>Ready to plan your {meta.name} trip?</h2><p>Tell us your dates and who is travelling. We reply with a quote built around you. Found a lower price elsewhere on flights or hotels? Send the screenshot and we match it.</p></div>
       <a class="btn btn-sun" href={ask} target="_blank" rel="noopener">Request a free quote</a>
@@ -79,6 +84,7 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
 </Base>
 
 <style>
+  .itinerary-quote {margin-top:14px;font-size:15px}
   .trip-photos { display: grid; gap: 10px; margin-top: 16px; }
   .trip-photos-multiple { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .trip-photos figure { margin: 0; }
