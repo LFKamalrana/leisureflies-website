@@ -5,22 +5,25 @@ import { wa } from '../data/site.js';
 const money = (n) => n == null ? 'Ask for fare' : '₹' + n.toLocaleString('en-IN');
 const day = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const dateLabel = (s) => day.format(new Date(s + 'T12:00:00Z'));
-const routes = new Map();
 const hasPrice = (offer) => offer.groups.some(group => group.fare != null && group.dates.length);
-const orderedFares = [...fares.filter(hasPrice), ...fares.filter(offer => !hasPrice(offer))];
-for (const fare of orderedFares) {
-  const key = fare.origin + ' → ' + fare.destination;
-  if (!routes.has(key)) routes.set(key, []);
-  routes.get(key).push(fare);
+function groupByRoute(offers) {
+  const routes = new Map();
+  for (const fare of offers) {
+    const key = fare.validUntil ? fare.airline + ' offers' : fare.origin + ' → ' + fare.destination;
+    if (!routes.has(key)) routes.set(key, []);
+    routes.get(key).push(fare);
+  }
+  return [...routes];
 }
+const routes = [...groupByRoute(fares.filter(hasPrice)), ...groupByRoute(fares.filter(o => !hasPrice(o)))];
 function priceSummary(offers) {
   const prices = offers.flatMap(offer => offer.groups.filter(g => g.fare != null).map(g => ({ fare:g.fare, kind:offer.kind })));
   if (!prices.length) return 'Ask for fare';
   const lowest = prices.reduce((a,b) => a.fare <= b.fare ? a : b);
   return lowest.kind + ' from ' + money(lowest.fare);
 }
-const origins = [...new Set(fares.map(f => f.origin))].sort();
-const destinations = [...new Set(fares.map(f => f.destination))].sort();
+const origins = [...new Set(fares.map(f => f.origin).filter(Boolean))].sort();
+const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))].sort();
 ---
 <section class="fare-board" aria-labelledby="departures-title">
   <div class="eyebrow">Offers</div>
@@ -33,10 +36,10 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
   </div>
   <div class="fare-list">
     {[...routes].map(([route, offers]) => (
-      <details class="fare-route" data-origin={offers[0].origin} data-destination={offers[0].destination}>
+      <details class="fare-route" data-route={route} data-origin={offers[0].origin} data-destination={offers[0].destination}>
         <summary><span>{route}</span><small data-route-price>{priceSummary(offers)}</small></summary>
         {offers.map(o => {
-          const dates = o.groups.flatMap(group => group.dates.map(pair => {
+          const dates = o.validUntil ? [{ depart:o.validUntil, label:'Through ' + dateLabel(o.validUntil), price:money(null), amount:null }] : o.groups.flatMap(group => group.dates.map(pair => {
             const [depart, back] = pair.split('/');
             const label = dateLabel(depart) + (back ? ' – ' + dateLabel(back) : '');
             return { depart, label, price: money(group.fare), amount: group.fare };
@@ -46,9 +49,9 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
             <div><h3>{o.airline}</h3><p>{o.kind}{o.schedule && ' · ' + o.schedule}</p>
             {o.baggage && <p>Baggage allowance · {o.baggage}</p>}
             {o.note && <p>{o.note}</p>}
-            {o.kind !== 'Package' && <small>Non-refundable · Changes are not permitted.</small>}</div>
+            {o.kind !== 'Package' && o.termsConfirmed !== false && <small>Non-refundable · Changes are not permitted.</small>}</div>
             <div class="fare-choice">
-              <label>{o.kind === 'One way' ? 'Departure and fare' : 'Departure, return and price'}
+              <label>{o.validUntil ? 'Offer validity' : o.kind === 'One way' ? 'Departure and fare' : 'Departure, return and price'}
                 <select>{dates.map(d => <option value={d.depart} data-amount={d.amount}>{d.label} · {d.price}</option>)}</select>
               </label>
               <a class="btn btn-line" href={wa('Hi LeisureFlies, please check availability for ' + description + '.')} target="_blank" rel="noopener">Check on WhatsApp</a>
@@ -75,15 +78,16 @@ const destinations = [...new Set(fares.map(f => f.destination))].sort();
     }
   }
   function filterRoutes() {
-    let visible = 0;
+    const visibleRoutes = new Set<string>();
     for (const route of routes) {
       route.hidden = !route.querySelector('.fare-option:not([hidden])') ||
         (!!from.value && from.value !== route.dataset.origin) || (!!to.value && to.value !== route.dataset.destination);
-      if (!route.hidden) visible++;
+      if (!route.hidden && route.dataset.origin) visibleRoutes.add(route.dataset.route!);
     }
-    board.querySelector('[data-count]')!.textContent = visible + (visible === 1 ? ' route' : ' routes');
-    board.querySelector<HTMLElement>('[data-no-fares]')!.hidden = visible !== 0;
-    if (visible === 1) routes.find(route => !route.hidden)!.open = true;
+    board.querySelector('[data-count]')!.textContent = visibleRoutes.size + (visibleRoutes.size === 1 ? ' route' : ' routes');
+    const matching = routes.filter(route => !route.hidden);
+    board.querySelector<HTMLElement>('[data-no-fares]')!.hidden = matching.length > 0;
+    if (visibleRoutes.size === 1) matching.forEach(route => { route.open = true; });
   }
   function refreshDepartures() {
     const today = clock.format(new Date());
