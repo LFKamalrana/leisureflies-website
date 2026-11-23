@@ -1,0 +1,150 @@
+.visa-pages {
+  --visa-link: #09646c;
+  --visa-panel: #10474d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .visa-pages { --visa-link: #8ae4df; }
+}
+:root[data-theme="dark"] .visa-pages { --visa-link: #8ae4df; }
+.visa-pages [hidden] { display: none !important; }
+.visa-pages h1 { margin-top: 10px; font-size: clamp(36px, 5.1vw, 64px); }
+.visa-pages .eyebrow { color: var(--visa-link); }
+.visa-pages .lead { font-size: clamp(17px, 1.6vw, 20px); }
+.visa-intro, .visa-guide-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(22px, 5vw, 72px);
+  padding-block: clamp(20px, 3.6vw, 50px);
+}
+.visa-reviewed { margin-top: 20px; color: var(--muted); font-size: 14px; }
+.visa-reviewed time, .visa-reviewed a { font-weight: 800; }
+.visa-feature { position: relative; display: block; overflow: hidden; border-radius: 26px; }
+.visa-feature img { width: 100%; height: clamp(200px, 19vw, 260px); object-fit: cover; object-position: 50% 45%; }
+.visa-feature > span {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 14px;
+  border-radius: 18px;
+  background: #08323be8;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+.visa-feature:hover > span { text-decoration: underline; }
+.visa-directory { padding-block: 18px 0; }
+.visa-directory-head, .visa-check-head, .visa-detail-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px 32px;
+}
+.visa-directory-head { margin-bottom: 20px; }
+.visa-directory-head h2, .visa-check-head h2, .visa-guidance h2 { font-size: clamp(27px, 3vw, 36px); }
+.visa-directory-head p, .visa-check-head p { margin-top: 8px; max-width: 65ch; color: var(--muted); }
+.visa-search label, .visa-profile label { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 800; }
+.visa-search input, .visa-profile select {
+  max-width: 100%;
+  padding: 10px 14px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--muted);
+  border-radius: 12px;
+  font: 700 16px var(--body);
+}
+.visa-search input { width: 260px; }
+.visa-search input::placeholder { color: var(--muted); opacity: 1; }
+.visa-columns, .visa-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) 92px;
+  gap: 12px 24px;
+  align-items: center;
+  padding: 16px clamp(14px, 2.4vw, 30px);
+}
+.visa-columns { background: var(--visa-panel); color: white; border-radius: 18px 18px 0 0; padding-block: 10px; font-size: 14px; font-weight: 800; }
+.visa-rows { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 18px 18px; background: var(--surface); }
+.visa-rows > li { border-bottom: 1px solid var(--line); }
+.visa-rows > li:last-child { border-bottom: 0; }
+.visa-row { text-decoration: none; }
+.visa-row:hover, .visa-row:focus-visible { background: var(--sky); }
+.visa-row:focus-visible { position: relative; outline-offset: -3px; }
+.visa-row-name h3 { font-size: clamp(19px, 2vw, 25px); }
+.visa-row-name > span, .visa-row-price > small { display: block; margin-top: 3px; color: var(--muted); font-size: 14px; }
+.visa-row-link { justify-self: end; color: var(--visa-link); font-size: 15px; font-weight: 800; }
+.visa-rates { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.visa-rates li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; }
+.visa-rates strong { font-size: 21px; line-height: 1.3; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.visa-rates li > span { font-size: 14px; }
+.visa-unquoted { font-weight: 800; }
+.visa-empty { padding: 22px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.visa-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.visa-guide-head { align-items: start; }
+.visa-quote { border-radius: 24px; padding: clamp(20px, 2.8vw, 32px); background: var(--visa-panel); color: white; }
+.visa-quote h2 { margin-bottom: 12px; font: 800 15px var(--body); }
+.visa-quote .visa-rates { gap: 9px; }
+.visa-quote .visa-rates strong { font: 600 clamp(28px, 3vw, 39px) var(--display); }
+.visa-quote p { margin-top: 9px; line-height: 1.5; font-size: 15px; }
+.visa-quote .visa-quote-caption { font-weight: 800; }
+.visa-quote .btn { margin-top: 18px; padding: 10px 20px; }
+.visa-checklist { padding: 18px 0 0; }
+.visa-check-head { align-items: center; }
+.visa-tools, .visa-check-controls, .visa-profile, .visa-related { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
+.visa-tools button { border: 1px solid var(--line); border-radius: 20px; background: var(--surface); color: var(--visa-link); padding: 9px 15px; font: 800 15px var(--body); cursor: pointer; }
+.visa-tools button:disabled { color: var(--muted); opacity: .65; cursor: default; }
+.visa-tools .visa-print { background: var(--visa-panel); color: white; }
+.visa-check-controls { margin-top: 18px; padding: 12px 16px; border-radius: 14px; background: var(--sky); }
+.visa-profile label { margin: 0; }
+.visa-profile select { width: auto; padding: 6px 10px; }
+.visa-progress { font-size: 15px; font-weight: 800; }
+.visa-check-group { margin-top: 30px; max-width: 92ch; }
+.visa-check-group h3 { font-size: clamp(22px, 2.4vw, 29px); }
+.visa-check-group .docs { margin-top: 13px; gap: 7px; }
+.visa-check-group .docs li { padding: 12px 16px; border-radius: 12px; }
+.visa-check-group .docs label { font-weight: 600; }
+.visa-check-group .docs small { display: block; color: var(--visa-link); font-size: 13px; font-weight: 800; }
+.visa-check-group .docs input { accent-color: var(--visa-link); }
+.visa-guidance { margin-top: 34px; padding: clamp(20px, 3vw, 30px); border-radius: 18px; background: var(--sky); scroll-margin-top: 90px; }
+.visa-guidance p { margin-top: 10px; max-width: 78ch; }
+.visa-guidance ul { margin: 12px 0 0; padding-left: 21px; }
+.visa-guidance li + li { margin-top: 6px; }
+.visa-guidance a, .visa-related a, .visa-back, .visa-detail-foot > a:first-child { font-weight: 800; color: var(--visa-link); }
+.visa-related { margin-top: 18px; }
+.visa-detail-foot { margin-block: 28px 48px; align-items: center; }
+.visa-pair { padding-top: 28px; }
+.visa-pair-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 26px 0; }
+.visa-pair-card { display: grid; gap: 10px; padding: 24px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); text-decoration: none; }
+.visa-pair-card h2 { font-size: 30px; }
+.visa-pair-card > span { color: var(--visa-link); font-weight: 800; }
+.visa-pair-card:hover > span { text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .visa-intro, .visa-guide-head, .visa-pair-grid { grid-template-columns: 1fr; }
+  .visa-intro, .visa-guide-head { gap: 18px; }
+  .visa-feature, body:has(.visa-pages) > .fab { display: none; }
+  .visa-reviewed { margin-top: 12px; }
+  .visa-search, .visa-search input { width: 100%; }
+  .visa-directory-head { gap: 12px; }
+  .visa-columns, .visa-row { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) 14px; gap: 8px; padding-inline: 12px; }
+  .visa-row-link > span:first-child { display: none; }
+  .visa-rates strong { font-size: 19px; }
+  .visa-columns { font-size: 12px; }
+  .visa-row-price li { display: grid; gap: 0; }
+  .visa-row-price small, .visa-row-price li > span { font-size: 13px; }
+}
+@media print {
+  .visa-pages { --visa-link: #153e41; }
+  .visa-pages .crumbs, .visa-pages .visa-feature, .visa-pages .visa-search, .visa-pages .visa-related { display: none; }
+  .visa-guide-head, .visa-intro { display: block; padding: 0; }
+  .visa-pages h1 { font-size: 28pt; }
+  .visa-pages .lead, .visa-reviewed { margin-top: 6px; }
+  .visa-quote { margin-top: 12px; border: 1px solid #aaa; padding: 10px; color: black; background: white; break-inside: avoid; }
+  .visa-check-controls, .visa-guidance { background: white; color: black; padding: 0; }
+  .visa-check-group { margin-top: 14px; }
+  .visa-check-group h3, .visa-guidance h2 { break-after: avoid; }
+  .visa-check-group .docs { gap: 0; }
+  .visa-check-group .docs li { border: 0; padding: 4px 0; background: white; color: black; }
+  .visa-check-group .docs input { print-color-adjust: exact; }
+}

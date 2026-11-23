@@ -1,39 +1,89 @@
 ---
 import Base from '../../layouts/Base.astro';
-import visas from '../../data/visas.json';
-import { VISA_COUNTRIES, wa } from '../../data/site.js';
+import VisaRates from '../../components/VisaRates.astro';
+import { guides, reviewDate, reviewLabel } from '../../data/visa';
+import { wa } from '../../data/site.js';
+import '../../styles/visa.css';
+
+const destinations = Object.entries(guides).sort(([, a], [, b]) =>
+  Number(Boolean(b.rates.length)) - Number(Boolean(a.rates.length)) || a.name.localeCompare(b.name)
+);
+const enquiry = wa('Hi LeisureFlies, I would like a visa quote. My destination and travel dates are ');
 ---
-<Base title="Visa Assistance in Chandigarh" description="Visa documentation assistance in Chandigarh for Canada, Europe, Australia, New Zealand, Singapore and Georgia. Explore checklists and ask our team for help.">
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / Visa</div>
-    <section style="padding-bottom:20px">
-      <div class="eyebrow">Visa services</div>
-      <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">Visas, handled properly.</h1>
-      <p class="lead">Visa work is our strength. Pick your destination for a checklist sorted by whether you are salaried, self-employed, studying or retired, so you only see the documents that apply to you.</p>
-    </section>
-    <div class="cards2" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
-      {VISA_COUNTRIES.map((c) => {
-        const v = visas[c.slug];
-        return (
-          <a class="info" href={`/visa/${c.slug}`} style="text-decoration:none;display:block">
-            <div class="eyebrow">{v.route}</div>
-            <h3 style="margin-top:8px;font-size:26px">{v.name}</h3>
-            <p>{v.sub}</p>
-            <p style="color:var(--turq-deep);font-weight:800;margin-top:14px">See the checklist →</p>
-          </a>
-        );
-      })}
-      <div class="info" style="background:var(--sky)">
-        <div class="eyebrow">Another country?</div>
-        <h3 style="margin-top:8px;font-size:26px">Ask us</h3>
-        <p>We handle more countries than the ones listed here. Message us with your destination and travel dates.</p>
-        <p style="margin-top:14px"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I need visa help for: ')} target="_blank" rel="noopener">Ask on WhatsApp</a></p>
+<Base title="Visa Rates and Document Checklists in Chandigarh" description="Compare LeisureFlies visa rates per person and prepare the documents for your trip. Country guides for Indian passport holders include official application links.">
+  <div class="wrap visa-pages">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Visa</nav>
+    <section class="visa-intro">
+      <div>
+        <div class="eyebrow">For Indian passport holders</div>
+        <h1>Visa rates &amp; checklists</h1>
+        <p class="lead">Compare LeisureFlies rates and find the documents to prepare for your destination.</p>
+        <p class="visa-reviewed">Rates reviewed <time datetime={reviewDate}>{reviewLabel}</time></p>
       </div>
-    </div>
-    <p class="note" style="margin-top:20px;max-width:70ch">Visa rules change. We confirm current requirements with you before you apply, so treat these checklists as a starting point.</p>
+      <a class="visa-feature" href="/visa/singapore">
+        <img src="/img/singapore.jpg" width="720" height="540" alt="Marina Bay in Singapore at dusk" />
+        <span>Singapore checklist <span aria-hidden="true">→</span></span>
+      </a>
+    </section>
+
+    <section class="visa-directory" aria-labelledby="dest-title">
+      <div class="visa-directory-head">
+        <div>
+          <h2 id="dest-title">Find your destination</h2>
+          <p>Rates are in Indian rupees per person. We confirm the itemised total before you pay.</p>
+        </div>
+        <div class="visa-search" role="search" id="visa-search" hidden>
+          <label for="visa-query">Search destinations</label>
+          <input type="search" id="visa-query" aria-controls="visa-destinations" placeholder="Country or abbreviation" autocomplete="off" />
+        </div>
+      </div>
+      <div id="visa-destinations">
+        <div class="visa-columns" aria-hidden="true"><span>Destination and visa type</span><span>Rate per person</span><span></span></div>
+        <ul class="visa-rows" role="list">
+          {destinations.map(([slug, v]) => (
+            <li data-destination={`${v.name} ${slug} ${v.aliases ?? ''} ${v.type}`}>
+              <a class="visa-row" href={`/visa/${slug}`}>
+                <div class="visa-row-name"><h3>{v.name}</h3><span>{v.type}</span></div>
+                <div class="visa-row-price">
+                  <VisaRates rates={v.rates} />
+                  {v.rateCaption && <small>{v.rateCaption}</small>}
+                </div>
+                <span class="visa-row-link"><span>Checklist </span><span aria-hidden="true">→</span></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p class="visa-empty" id="visa-empty" hidden>No matching destination. Try a different name or <a href={enquiry}>ask the visa team</a>.</p>
+      <span class="visa-sr" role="status" id="visa-results"></span>
+    </section>
     <div class="cta-band">
-      <div><h2>Not sure about your file?</h2><p>Send us what you have. We tell you what is missing before you pay a fee or book an appointment.</p></div>
-      <a class="btn btn-sun" href={wa('Hi LeisureFlies, please check my visa file.')} target="_blank" rel="noopener">Send it on WhatsApp</a>
+      <div><h2>Need a quote for your trip?</h2><p>Tell us your destination, travel dates and how many people are applying. Our Chandigarh visa team will check the route and the charges that apply.</p></div>
+      <a class="btn btn-sun" href={enquiry} target="_blank" rel="noopener">Ask the visa team</a>
     </div>
   </div>
 </Base>
+<script>
+  const search = document.querySelector<HTMLInputElement>('#visa-query')!;
+  const rows = [...document.querySelectorAll<HTMLElement>('[data-destination]')];
+  const empty = document.querySelector<HTMLElement>('#visa-empty')!;
+  const results = document.querySelector<HTMLElement>('#visa-results')!;
+  const normalise = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f.]/g, '').toLowerCase().trim();
+  function filterDestinations() {
+    const term = normalise(search.value);
+    let count = 0;
+    for (const row of rows) {
+      const destination = normalise(row.dataset.destination ?? '');
+      const matches = term.length === 2
+        ? destination.split(/[^a-z0-9]+/).some((word) => word.startsWith(term))
+        : destination.includes(term);
+      row.hidden = !matches;
+      if (!row.hidden) count++;
+    }
+    empty.hidden = count !== 0;
+    results.textContent = `${count} ${count === 1 ? 'destination' : 'destinations'} found`;
+  }
+  document.querySelector<HTMLElement>('#visa-search')!.hidden = false;
+  search.addEventListener('input', filterDestinations);
+  filterDestinations();
+</script>

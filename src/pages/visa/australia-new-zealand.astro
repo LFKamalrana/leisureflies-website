@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import VisaRates from '../../components/VisaRates.astro';
+import { guides } from '../../data/visa';
+import '../../styles/visa.css';
+const countries = ['australia', 'new-zealand'];
+---
+<Base title="Australia and New Zealand Visitor Visa Checklists" description="Compare the separate Australia and New Zealand visitor visa rates and open the right checklist for each part of your trip.">
+  <div class="wrap visa-pages">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/visa">Visa</a> / Australia &amp; New Zealand</nav>
+    <section class="visa-pair">
+      <div class="eyebrow">Visitor visas from India</div>
+      <h1>Australia &amp; New Zealand</h1>
+      <p class="lead">Each country has its own entry rules and application. If you are visiting both, check the documents for each leg of your trip. The rates below are per person for each destination.</p>
+      <div class="visa-pair-grid">
+        {countries.map((slug) => <a class="visa-pair-card" href={`/visa/${slug}`}>
+          <h2>{guides[slug].name}</h2>
+          <p>{guides[slug].type}</p>
+          <VisaRates rates={guides[slug].rates} />
+          <span>View checklist <span aria-hidden="true">→</span></span>
+        </a>)}
+      </div>
+      <a class="visa-back" href="/visa">← All visa rates and checklists</a>
+    </section>
+  </div>
+</Base>

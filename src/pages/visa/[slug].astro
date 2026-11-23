@@ -1,80 +1,106 @@
 ---
 import Base from '../../layouts/Base.astro';
-import visas from '../../data/visas.json';
+import VisaRates from '../../components/VisaRates.astro';
+import { guides, reviewDate, reviewLabel } from '../../data/visa';
 import { wa } from '../../data/site.js';
-export function getStaticPaths() { return Object.keys(visas).map((slug) => ({ params: { slug } })); }
-const { slug } = Astro.params;
-const v = visas[slug];
-const hasProfiles = v.sections.some((s) => s.docs.some((x) => x.for !== 'all'));
-// A final section with only paragraphs is the closing call to action.
-const last = v.sections[v.sections.length - 1];
-const closing = last && !last.docs.length && !last.bullets.length ? last : null;
-const body = closing ? v.sections.slice(0, -1) : v.sections;
-const profiles = [['salaried', 'Salaried'], ['self-employed', 'Self-employed'], ['student', 'A student'], ['retired', 'Retired']];
----
-<Base title={`${v.name} Visa Assistance in Chandigarh`} description={v.sub.length > 155 ? v.sub.slice(0, 152) + '...' : v.sub}>
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / <a href="/visa">Visa</a> / {v.name}</div>
-    <div class="passcard">
-      <div class="main">
-        <div class="eyebrow">{v.route}</div>
-        <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">{v.name}</h1>
-        <p class="lead">{v.sub}</p>
-        <dl>{v.facts.map((f) => <div><dt>{f.k}</dt><dd>{f.v}</dd></div>)}</dl>
-      </div>
-      <aside class="stub no-print">
-        <div><div class="eyebrow" style="color:#D8FBFF">Your progress</div><div class="count"><span id="done">0</span><small> / <span id="total">0</span></small></div></div>
-        <p style="font-size:15px;opacity:.95">Tick items as you collect them. Nothing is saved. Print the page when you are done.</p>
-        <button type="button" id="clear">Clear all ticks</button>
-      </aside>
-    </div>
+import '../../styles/visa.css';
 
-    {hasProfiles && (
-      <div class="profile no-print"><b>Show me the documents for someone who is:</b>
-        <div class="filters" id="profiles" style="margin:0">
-          {profiles.map(([k, l], i) => <button type="button" data-p={k} aria-pressed={i === 0 ? 'true' : 'false'}>{l}</button>)}
+export function getStaticPaths() {
+  return Object.entries(guides).map(([slug, guide]) => ({ params: { slug }, props: { guide } }));
+}
+const { guide } = Astro.props;
+const sections = guide.sections.map((s) => ({
+  title: s.title,
+  items: s.docs?.map((text) => ({ text, profile: '' })) ??
+    Object.entries(s.profiles ?? {}).flatMap(([profile, items]) => items.map((text) => ({ text, profile }))),
+}));
+const profiles = Object.keys(guide.sections.find((s) => s.profiles)?.profiles ?? {});
+const enquiry = wa(`Hi LeisureFlies, please confirm the visa rate and checklist for ${guide.name}. My travel dates are `);
+---
+<Base title={`${guide.name} Visa Rate and Document Checklist`} description={`Prepare for your ${guide.name} visa application from India. See the LeisureFlies quote, document checklist and official application guidance.`}>
+  <div class="wrap visa-pages visa-detail">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/visa">Visa</a> / {guide.name}</nav>
+    <section class="visa-guide-head">
+      <div>
+        <div class="eyebrow">{guide.type}</div>
+        <h1>{guide.name} visa checklist</h1>
+        <p class="lead">{guide.intro}</p>
+        <p class="visa-reviewed">Reviewed <time datetime={reviewDate}>{reviewLabel}</time> · <a href="#official-guidance">Official guidance</a></p>
+      </div>
+      <aside class="visa-quote" aria-label="LeisureFlies quote per person">
+        <h2>LeisureFlies rate per person</h2>
+        <VisaRates rates={guide.rates} />
+        {guide.rateCaption && <p class="visa-quote-caption">{guide.rateCaption}</p>}
+        {guide.rateNote && <p>{guide.rateNote}</p>}
+        {!guide.rates.length && <p>Ask for the current price for your dates and application centre.</p>}
+        <a class="btn btn-sun no-print" href={enquiry} target="_blank" rel="noopener">{guide.rates.length ? 'Confirm my quote' : 'Request my quote'}</a>
+      </aside>
+    </section>
+    <section class="visa-checklist" aria-labelledby="checklist-title">
+      <div class="visa-check-head">
+        <div><h2 id="checklist-title">Documents to prepare</h2><p>Tick the items that apply to your trip. Print or save a copy before you leave.</p></div>
+        <div class="visa-tools no-print" data-check-tools hidden>
+          <button type="button" class="visa-print" id="visa-print">Print checklist</button>
+          <button type="button" id="visa-clear" disabled>Clear ticks</button>
         </div>
       </div>
-    )}
-
-    {body.map((s) => (
-      <section class="sec-block">
-        {s.level === 'h2' ? <h2>{s.title}</h2> : <h3 style="font-size:26px">{s.title}</h3>}
-        {s.paras.length > 0 && <div class="prose">{s.paras.map((p) => <p>{p}</p>)}</div>}
-        {s.docs.length > 0 && (
+      <div class="visa-check-controls" data-check-tools hidden>
+        {profiles.length > 0 && <div class="visa-profile no-print">
+          <label for="visa-profile">Applicant profile</label>
+          <select id="visa-profile"><option value="">All profiles</option>{profiles.map((p) => <option value={p}>{p}</option>)}</select>
+        </div>}
+        <span class="visa-progress" id="visa-progress" role="status"></span>
+      </div>
+      {sections.map((s) => (
+        <div class="visa-check-group">
+          <h3>{s.title}</h3>
           <ul class="docs">
-            {s.docs.map((x) => (
-              <li data-for={x.for}>
-                <label><input type="checkbox" /><span>{x.title}</span></label>
-                {(x.tags.length > 0 || x.note) && <p class="n">{x.tags.map((t) => <span class="tag-we">{t}</span>)}{x.note}</p>}
-              </li>
-            ))}
+            {s.items.map((item) => <li data-profile={item.profile}>
+              <label><input type="checkbox" /><span>{item.profile && <small>{item.profile}</small>}{item.text}</span></label>
+            </li>)}
           </ul>
-        )}
-        {s.bullets.length > 0 && <div class="info" style="margin-top:18px"><ul style="margin:0">{s.bullets.map((b) => <li>{b}</li>)}</ul></div>}
-      </section>
-    ))}
-
-    <div class="cta-band">
-      <div><h2>{closing ? closing.title : 'Need a hand with your file?'}</h2><p>{closing && closing.paras.length ? closing.paras[0] : 'Send us your documents and we tell you what is missing.'}</p></div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-sun" href={wa(`Hi LeisureFlies, I need help with my ${v.name} visa.`)} target="_blank" rel="noopener">Message us on WhatsApp</a></div>
-    </div>
+        </div>
+      ))}
+    </section>
+    <section class="visa-guidance" id="official-guidance" aria-labelledby="official-title">
+      <h2 id="official-title">Official guidance</h2>
+      {guide.timing && <p>{guide.timing}</p>}
+      <ul>{guide.sources.map((s) => <li><a href={s.url}>{s.label}</a></li>)}</ul>
+    </section>
+    {guide.related?.length && <nav class="visa-related" aria-label="Related checklists">
+      <b>Related checklists</b>
+      {guide.related.map((slug) => <a href={`/visa/${slug}`}>{guides[slug].name} <span aria-hidden="true">→</span></a>)}
+    </nav>}
+    <div class="visa-detail-foot no-print"><a href="/visa">← All visa rates and checklists</a><a class="btn btn-line" href={enquiry} target="_blank" rel="noopener">Ask about this application</a></div>
   </div>
 </Base>
-<script is:inline>
-(function(){
-  var boxes=[].slice.call(document.querySelectorAll('.docs input')),profile='salaried';
-  var hasProfiles=!!document.getElementById('profiles');
-  function visible(li){var f=li.dataset.for||'all';return !hasProfiles||f.indexOf('all')>-1||f.split(' ').indexOf(profile)>-1}
-  function refresh(){
-    var total=0,done=0;
-    document.querySelectorAll('.docs li').forEach(function(li){var show=visible(li);li.hidden=!show;if(show){total++;if(li.querySelector('input').checked)done++}});
-    document.getElementById('done').textContent=done;document.getElementById('total').textContent=total;
+<script>
+  const items = [...document.querySelectorAll<HTMLElement>('.visa-checklist li[data-profile]')];
+  const boxes = items.map((item) => item.querySelector<HTMLInputElement>('input')!);
+  const profile = document.querySelector<HTMLSelectElement>('#visa-profile');
+  const clear = document.querySelector<HTMLButtonElement>('#visa-clear')!;
+  const progress = document.querySelector<HTMLElement>('#visa-progress')!;
+  function refresh() {
+    const selected = profile?.value;
+    let total = 0;
+    let ticked = 0;
+    items.forEach((item, index) => {
+      item.hidden = Boolean(selected && item.dataset.profile && item.dataset.profile !== selected);
+      if (item.hidden) return;
+      total++;
+      if (boxes[index].checked) ticked++;
+    });
+    progress.textContent = `${selected ? selected + ' · ' : ''}${ticked} of ${total} items ticked`;
+    clear.disabled = !boxes.some((box) => box.checked);
   }
-  boxes.forEach(function(b){b.addEventListener('change',refresh)});
-  var pr=document.getElementById('profiles');
-  if(pr)pr.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;profile=b.dataset.p;pr.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});refresh()});
-  document.getElementById('clear').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});refresh()});
+  document.querySelectorAll<HTMLElement>('[data-check-tools]').forEach((el) => { el.hidden = false; });
+  profile?.addEventListener('change', refresh);
+  boxes.forEach((box) => box.addEventListener('change', refresh));
+  clear.addEventListener('click', () => {
+    boxes.forEach((box) => { box.checked = false; });
+    refresh();
+  });
+  document.querySelector('#visa-print')!.addEventListener('click', () => window.print());
+  window.addEventListener('pageshow', refresh);
   refresh();
-})();
 </script>

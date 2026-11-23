@@ -1,0 +1,15 @@
+---
+import type { VisaRate } from '../data/visa';
+interface Props { rates: VisaRate[] }
+const { rates } = Astro.props;
+const rupees = new Intl.NumberFormat('en-IN', {
+  style: 'currency', currency: 'INR', maximumFractionDigits: 0, minimumFractionDigits: 0,
+});
+---
+{rates.length ? (
+  <ul class="visa-rates" role="list">
+    {rates.map(({ amount, label }) => (
+      <li><strong>{rupees.format(amount)}</strong>{label && <span>{label}</span>}</li>
+    ))}
+  </ul>
+) : <span class="visa-unquoted">Quote on request</span>}
