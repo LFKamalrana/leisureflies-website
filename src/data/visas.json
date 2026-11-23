@@ -1,1324 +1,894 @@
 {
- "australia-new-zealand": {
-  "slug": "australia-new-zealand",
-  "route": "Visitor visa · India to Australia and New Zealand",
-  "name": "Australia & New Zealand",
-  "sub": "Both countries decide online and grant the visa electronically — there's no sticker in your passport. Both also want to see a properly planned trip, not just a set of bookings.",
-  "facts": [
-   {
-    "k": "Visa type",
-    "v": "Visitor / tourist, electronic"
-   },
-   {
-    "k": "Apply through",
-    "v": "ImmiAccount & Immigration NZ online"
-   },
-   {
-    "k": "Passport validity",
-    "v": "6 months minimum"
-   },
-   {
-    "k": "Checklist updated",
-    "v": "September 2026"
-   }
-  ],
-  "sections": [
-   {
-    "title": "Everyone travelling",
-    "level": "h2",
-    "paras": [
-     "Required regardless of what you do for a living."
+  "australia": {
+    "name": "Australia",
+    "type": "Visitor visa · Tourist stream (subclass 600)",
+    "intro": "For a holiday or a visit to family in Australia. Apply from outside Australia through ImmiAccount and follow the document list for your application.",
+    "rates": [
+      {
+        "amount": 22000
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Original passport, valid at least 6 months beyond your travel dates",
-      "note": "Scanned copies of old passports help too — previous travel to Australia, New Zealand, the UK, the US or Schengen countries counts strongly in your favour.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Recent digital photograph",
-      "note": "Required for New Zealand and useful for Australia. 35 mm × 45 mm, plain light background, taken within the last 6 months. Full details in the photograph specification below.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Aadhaar card copy",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Confirmed return ticket itinerary",
-      "note": "A reservation is enough. Don't purchase before the visa is granted.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Hotel reservation vouchers covering your full stay",
-      "note": "",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Day-wise travel itinerary",
-      "note": "Both countries weigh this heavily, particularly for a self-drive or multi-island trip. Long unexplained gaps invite questions.",
-      "tags": [
-       "We prepare this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Covering letter explaining the purpose of your trip",
-      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
-      "tags": []
-     }
+    "sections": [
+      {
+        "title": "Identity and itinerary",
+        "docs": [
+          "A clear colour copy of your passport identity page. Include previous visas or travel stamps where relevant.",
+          "Your intended dates, places to visit and accommodation or host details.",
+          "A letter explaining your visit and your plans after returning to India."
+        ]
+      },
+      {
+        "title": "How you will cover the trip",
+        "docs": [
+          "Itemised personal bank statements showing savings and regular income. Home Affairs gives three months as an example.",
+          "Evidence of any other funds you will rely on, such as tax records, investments or business income."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "If someone is hosting or paying for you",
+        "docs": [
+          "A signed invitation giving your host’s address, your relationship, the dates and who will pay for what.",
+          "If your host is funding the visit, proof of their funds and, where requested, their identity and residence status.",
+          "If you are applying with a child, check the destination’s requirements for birth records, custody or parental consent."
+        ]
+      }
     ],
-    "bullets": []
-   },
-   {
-    "title": "Money and tax",
-    "level": "h2",
-    "paras": [
-     "Proof that you can fund the trip and that you have reason to return home."
+    "sources": [
+      {
+        "label": "Australian Home Affairs · visitor application documents",
+        "url": "https://immi.homeaffairs.gov.au/check-twice-submit-once/visitor-visa"
+      },
+      {
+        "label": "Australian Home Affairs · Tourist stream",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas"
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
-      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our guidance from experience, not a published requirement. A consistent balance reads better than a recent deposit.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Income Tax Returns for the last 3 years, each with its computation page",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of your other savings and assets",
-      "note": "D-Mat account statements, LIC policies, mutual funds, fixed deposits, property papers. Include anything you've mentioned on the application form.",
-      "tags": []
-     },
-     {
-      "for": "salaried self-employed retired",
-      "title": "Chartered accountant's certificate of income and net worth",
-      "note": "",
-      "tags": [
-       "Recommended"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Proof of what you do",
-    "level": "h2",
-    "paras": [
-     "Your ties to India."
-    ],
-    "docs": [
-     {
-      "for": "salaried",
-      "title": "Original no-objection certificate or leave sanction letter from your employer",
-      "note": "On company letterhead, signed, confirming your position, approved leave dates and continued employment.",
-      "tags": []
-     },
-     {
-      "for": "salaried",
-      "title": "Salary slips for the last 3 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business GST certificate",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business registration or incorporation documents",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "School or college ID card, front and back",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "No-objection certificate from your school or college",
-      "note": "Required if children are accompanying you during term time.",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "Sponsor's documents, if a parent is funding the trip",
-      "note": "See the sponsor section below.",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Retirement proof showing your date of retirement",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Pension order or pension account statements",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Depending on your situation",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Marriage certificate",
-      "note": "",
-      "tags": [
-       "If travelling with your spouse"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Birth certificate",
-      "note": "",
-      "tags": [
-       "For each child travelling"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Consent letter from the non-travelling parent",
-      "note": "",
-      "tags": [
-       "If a child travels with one parent only"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "A few things that catch people out",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "Neither country puts a sticker in your passport. Your approval arrives by email and is linked electronically to the passport you applied with — so if you renew that passport before you fly, tell us immediately.",
-     "Australia may ask for a health examination or a police certificate depending on your history and how long you plan to stay.",
-     "New Zealand requires an NZeTA and an International Visitor Levy for eligible travellers, which is separate from the visitor visa. We'll tell you which route applies to you."
+    "related": [
+      "new-zealand"
     ]
-   },
-   {
-    "title": "Photograph specification",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "35 mm wide × 45 mm high, taken within the last 6 months.",
-     "Studio photograph on a plain light-grey or white background. No selfies, no scans of printed photos.",
-     "Full face, straight to camera, neutral expression, mouth closed, eyes open and clearly visible.",
-     "Head and shoulders in frame, evenly lit, no shadows and no red-eye.",
-     "No headgear unless worn daily for religious reasons, and it must not obscure the face.",
-     "No sunglasses. Ordinary spectacles are best removed to avoid any glare.",
-     "For online submission, supply the digital file as well as prints — typically JPEG, under 10 MB."
+  },
+  "canada": {
+    "name": "Canada",
+    "type": "Visitor visa · Temporary resident visa",
+    "intro": "Your reason for visiting determines the checklist in your online IRCC account. For a holiday or family visit, start with your passport, travel plans and evidence of how you will fund the trip.",
+    "rates": [
+      {
+        "amount": 27000
+      }
+    ],
+    "sections": [
+      {
+        "title": "Personal and travel documents",
+        "docs": [
+          "A copy of your current passport identity page, plus any pages the application portal requests.",
+          "Previous visas and entry or exit stamps that show your travel history.",
+          "Proposed dates, accommodation and a short itinerary. If you will stay with family, give their address and the purpose of your visit."
+        ]
+      },
+      {
+        "title": "Funds and ties to India",
+        "docs": [
+          "Bank statements with your name, account details and about six months of activity to show how you will pay for the trip.",
+          "Tax returns or evidence of other savings, if they explain the funds shown in your application."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "If someone is hosting or paying for you",
+        "docs": [
+          "A signed invitation giving your host’s address, your relationship, the dates and who will pay for what.",
+          "If your host is funding the visit, proof of their funds and, where requested, their identity and residence status.",
+          "If you are applying with a child, check the destination’s requirements for birth records, custody or parental consent."
+        ]
+      },
+      {
+        "title": "After submitting the application",
+        "docs": [
+          "If IRCC sends a biometrics instruction letter, take it and your passport to the collection appointment.",
+          "Follow the passport submission instructions if IRCC requests your original passport."
+        ]
+      }
+    ],
+    "timing": "Processing times vary. Check IRCC’s current estimate for visitor applications from India when choosing travel dates.",
+    "sources": [
+      {
+        "label": "IRCC · visitor visa and supporting documents",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html"
+      },
+      {
+        "label": "IRCC · check processing times",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html"
+      }
     ]
-   },
-   {
-    "title": "If someone in Australia or New Zealand is inviting or funding your trip",
-    "level": "h3",
-    "paras": [
-     "Only needed when a relative or friend there is hosting you or covering part of your costs. Everything here comes from your sponsor."
+  },
+  "china": {
+    "name": "China",
+    "type": "Business visa · M category",
+    "intro": "This quote covers a sticker visa for a commercial visit. The invitation from your Chinese business partner and the covering letter from your company should describe the same business activity and dates.",
+    "rates": [
+      {
+        "amount": 17500
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Invitation letter, signed and dated",
-      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and which expenses they will cover.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Copy of the sponsor's passport, including visa or residence permit",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of their legal status, if they are not a citizen",
-      "note": "Residence permit, permanent residency evidence, or citizenship certificate.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of your relationship to them",
-      "note": "Birth certificate, marriage certificate, or family registration document.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's bank statements for the last 3 to 6 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
-      "note": "Stating their position, salary and length of service. If self-employed, business registration plus proof of income instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's tax documents for the last 1 to 2 years",
-      "note": "Notice of Assessment in Australia, or the IRD income summary in New Zealand.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of accommodation",
-      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "A recent utility bill as proof of residence",
-      "note": "",
-      "tags": [
-       "Optional"
-      ]
-     }
+    "sections": [
+      {
+        "title": "Passport and application",
+        "docs": [
+          "The completed Chinese visa application with your own email address and phone number.",
+          "Your passport with more than six months’ validity and at least two blank visa pages, plus its information pages. Include previous passports issued within the past five years.",
+          "Two recent colour photographs with a white background, 33 mm wide by 48 mm high, taken within six months. Include copies of any Chinese visas obtained in the past three years."
+        ]
+      },
+      {
+        "title": "From your company in India",
+        "docs": [
+          "A signed letter on company letterhead giving your role, the company’s activities and year of establishment, the specific purpose of the visit and the exact dates.",
+          "A proposed return itinerary and details of the meetings or trade event."
+        ]
+      },
+      {
+        "title": "From your business partner in China",
+        "docs": [
+          "An invitation stating the purpose, dates and contact details, signed by hand and bearing the inviting company’s official seal.",
+          "A copy of the inviting company’s business licence and the inviter’s or legal representative’s ID. Follow the embassy’s Chinese handwritten endorsement, signature and date instructions for both copies."
+        ]
+      }
     ],
-    "bullets": []
-   },
-   {
-    "title": "Doing both countries in one trip?",
-    "level": "h2",
-    "paras": [
-     "Two separate visas, two separate files, one itinerary that has to make sense to both. We handle that combination regularly — send us your dates and we'll map it out."
-    ],
-    "docs": [],
-    "bullets": []
-   }
-  ]
- },
- "canada": {
-  "slug": "canada",
-  "route": "Visitor visa · India to Canada",
-  "name": "Canada",
-  "sub": "Bring every document on this list. Canadian visa officers refuse far more applications for thin paperwork than for anything a traveller has actually done wrong.",
-  "facts": [
-   {
-    "k": "Visa type",
-    "v": "Visitor visa (TRV)"
-   },
-   {
-    "k": "Apply through",
-    "v": "VFS Global, biometrics in person"
-   },
-   {
-    "k": "Passport validity",
-    "v": "6 months minimum"
-   },
-   {
-    "k": "Checklist updated",
-    "v": "September 2026"
-   }
-  ],
-  "sections": [
-   {
-    "title": "Everyone travelling",
-    "level": "h2",
-    "paras": [
-     "Required regardless of what you do for a living."
-    ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Original passport, valid at least 6 months beyond your travel dates",
-      "note": "Carry all old and expired passports too, even cancelled ones. Previous travel history is one of the strongest things working in your favour.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Two recent photographs, 35 mm × 45 mm",
-      "note": "Taken within the last 6 months against a plain white or light background. Full face, neutral expression, ears and forehead visible, no headgear except where worn for religious reasons. See the photograph specification below.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Aadhaar card copy",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Confirmed return ticket itinerary",
-      "note": "A reservation is enough at the application stage — you should not buy a ticket before the visa is granted.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Hotel reservation vouchers covering your full stay",
-      "note": "There must be no unexplained gaps in your accommodation.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Day-wise travel itinerary",
-      "note": "A clear day-by-day plan showing where you'll be and when.",
-      "tags": [
-       "We prepare this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Covering letter explaining the purpose of your trip",
-      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Money and tax",
-    "level": "h2",
-    "paras": [
-     "The officer is deciding one thing above all: can you afford this trip, and will you come home afterwards. This is where that gets answered."
-    ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
-      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our own guidance based on what gets approved, not a figure published by the Canadian authorities. A steady balance built over months reads far better than a large sum deposited last week.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Income Tax Returns for the last 3 years, each with its computation page",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of your other savings and assets",
-      "note": "D-Mat account statements, LIC policies, mutual fund statements, fixed deposits, property papers. Include anything you have declared on the application form — a declared asset with no supporting document raises a question you don't want asked.",
-      "tags": []
-     },
-     {
-      "for": "salaried self-employed retired",
-      "title": "Chartered accountant's certificate of income and net worth",
-      "note": "",
-      "tags": [
-       "Recommended"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Proof of what you do",
-    "level": "h2",
-    "paras": [
-     "Your ties to India. Strong ties here are the single biggest factor in an approval."
-    ],
-    "docs": [
-     {
-      "for": "salaried",
-      "title": "Original no-objection certificate or leave sanction letter from your employer",
-      "note": "On company letterhead, signed, confirming your position, your approved leave dates and that your job is waiting for you.",
-      "tags": []
-     },
-     {
-      "for": "salaried",
-      "title": "Salary slips for the last 3 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business GST certificate",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business registration or incorporation documents",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "School or college ID card, front and back",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "Bonafide certificate or no-objection letter from your institution",
-      "note": "Confirming you are enrolled and that your leave of absence is approved.",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "Sponsor's documents, if a parent is funding the trip",
-      "note": "See the sponsor section below.",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Retirement proof showing your date of retirement",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Pension order or pension account statements",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Depending on your situation",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Marriage certificate",
-      "note": "",
-      "tags": [
-       "If travelling with your spouse"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Birth certificate",
-      "note": "",
-      "tags": [
-       "For each child travelling"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Consent letter from the non-travelling parent",
-      "note": "",
-      "tags": [
-       "If a child travels with one parent only"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Biometrics are compulsory",
-    "level": "h3",
-    "paras": [
-     "Almost every Indian applicant aged 14 to 79 must give fingerprints and a photograph in person at a VFS Global centre after submitting the application online. Biometrics stay valid for 10 years, so if you have given them for a Canadian application before, you may not need to repeat them. We book the appointment for you."
-    ],
-    "docs": [],
-    "bullets": []
-   },
-   {
-    "title": "Photograph specification",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "35 mm wide × 45 mm high, printed on matt or semi-matt paper, no border.",
-     "Taken within the last 6 months, in a studio. No selfies, no scanned or reprinted photographs.",
-     "Plain white or light-coloured background, evenly lit, no shadows.",
-     "Full face, looking straight at the camera, neutral expression, mouth closed, eyes open and clearly visible.",
-     "Face measured from chin to crown should be between 31 mm and 36 mm.",
-     "No headgear unless worn daily for religious reasons, and it must not cover any part of the face.",
-     "Spectacles are best removed. If worn, the frames must not cover the eyes and there must be no glare."
+    "sources": [
+      {
+        "label": "Chinese Embassy in India · visa documents and M visa instructions",
+        "url": "https://in.china-embassy.gov.cn/eng/lsfw/tzts/202408/t20240820_11476941.htm"
+      },
+      {
+        "label": "Chinese Embassy in India · where to submit",
+        "url": "https://in.china-embassy.gov.cn/eng/lsfw/qz/202610/t20261022_12044936.htm"
+      }
     ]
-   },
-   {
-    "title": "If someone in Canada is inviting or funding your trip",
-    "level": "h3",
-    "paras": [
-     "Only needed when a relative or friend in Canada is hosting you or paying part of your costs. Everything here comes from your sponsor, not from you."
+  },
+  "dubai": {
+    "name": "Dubai (UAE)",
+    "aliases": "United Arab Emirates",
+    "type": "Tourist e-visa",
+    "intro": "These options cover a pre-arranged UAE tourist visa for travel to Dubai. Tell us your intended stay and number of entries so we can confirm the right option.",
+    "rates": [
+      {
+        "label": "Standard",
+        "amount": 9500
+      },
+      {
+        "label": "Express",
+        "amount": 10500
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Invitation letter, signed and dated",
-      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and exactly which expenses they will cover.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Copy of the sponsor's passport",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of their status in Canada",
-      "note": "PR card, citizenship certificate, or a valid work or study permit.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of your relationship to them",
-      "note": "Birth certificate, marriage certificate, or a family registration document that connects you both.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's bank statements for the last 3 to 6 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
-      "note": "The employment letter should state their position, salary and length of service.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's tax documents for the last 1 to 2 years",
-      "note": "In Canada this means the T4 slip and Notice of Assessment. If the sponsor is self-employed, business registration plus proof of income instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of accommodation",
-      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "A recent utility bill as proof of residence",
-      "note": "",
-      "tags": [
-       "Optional"
-      ]
-     }
+    "sections": [
+      {
+        "title": "Passport and photograph",
+        "docs": [
+          "A clear colour scan of your passport identity and address pages and a scan of the outer cover for file preparation.",
+          "A recent colour photograph against a white background.",
+          "Check that your passport will be valid for at least six months on arrival."
+        ]
+      },
+      {
+        "title": "Travel and stay",
+        "docs": [
+          "Your return or onward flight itinerary.",
+          "A hotel voucher covering your stay, or your host’s details if you will stay privately.",
+          "For file preparation, have your PAN card available if requested for your booking. Confirm the document handover method with the visa team."
+        ]
+      }
     ],
-    "bullets": []
-   },
-   {
-    "title": "Not sure about your file?",
-    "level": "h2",
-    "paras": [
-     "Send us a message and we'll tell you honestly whether your documents are ready, or what to fix before you apply. We've been filing visas from Chandigarh since 2010."
-    ],
-    "docs": [],
-    "bullets": []
-   }
-  ]
- },
- "europe": {
-  "slug": "europe",
-  "route": "Short-stay visa · India to the Schengen area",
-  "name": "Europe",
-  "sub": "One visa, twenty-nine countries. You apply to the country where you'll spend the most nights — or, if the nights are equal, wherever you land first.",
-  "facts": [
-   {
-    "k": "Visa type",
-    "v": "Schengen short-stay (Type C)"
-   },
-   {
-    "k": "Apply through",
-    "v": "Embassy or VFS of your main destination"
-   },
-   {
-    "k": "Insurance",
-    "v": "€30,000 medical cover, compulsory"
-   },
-   {
-    "k": "Checklist updated",
-    "v": "September 2026"
-   }
-  ],
-  "sections": [
-   {
-    "title": "Everyone travelling",
-    "level": "h2",
-    "paras": [
-     "Required regardless of what you do for a living."
-    ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Original passport, valid at least 6 months beyond your travel dates",
-      "note": "It needs at least two blank pages and must have been issued within the last 10 years. Carry your old passports as well.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Two recent photographs, 35 mm × 45 mm",
-      "note": "Taken within the last 6 months against a plain light background. Full details in the photograph specification below.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Travel insurance with a minimum of €30,000 medical cover",
-      "note": "This is a hard Schengen requirement, not a recommendation. The policy must be valid in every Schengen country and must cover your entire stay, including repatriation. A cheap policy that falls short of €30,000 gets the whole application refused.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Confirmed return ticket itinerary",
-      "note": "A reservation is sufficient. Don't buy tickets before the visa is granted.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Hotel reservation vouchers covering every night of your stay",
-      "note": "Gaps between bookings are queried, so the dates must run continuously.",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Day-wise travel itinerary",
-      "note": "Especially important for multi-country trips — it's what proves your chosen embassy really is your main destination.",
-      "tags": [
-       "We prepare this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Covering letter explaining the purpose of your trip",
-      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Money and tax",
-    "level": "h2",
-    "paras": [
-     "Proof that you can fund the trip yourself and that you have reason to return."
-    ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
-      "note": "We recommend showing a closing balance of at least ₹4,00,000 per person . This is our guidance from experience, not a published Schengen minimum. Consulates look at the pattern as much as the number — a balance that has been there for months carries more weight than a recent lump sum.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Income Tax Returns for the last 3 years, each with its computation page",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of other savings and assets",
-      "note": "D-Mat statements, LIC policies, mutual funds, fixed deposits, property papers.",
-      "tags": [
-       "Strengthens your file"
-      ]
-     },
-     {
-      "for": "salaried self-employed retired",
-      "title": "Chartered accountant's certificate of income and net worth",
-      "note": "",
-      "tags": [
-       "Recommended"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Proof of what you do",
-    "level": "h2",
-    "paras": [
-     "Your ties to India — the strongest argument that you intend to come back."
-    ],
-    "docs": [
-     {
-      "for": "salaried",
-      "title": "Original no-objection certificate or leave sanction letter from your employer",
-      "note": "On company letterhead, signed, confirming your position, approved leave dates and that your job continues after you return.",
-      "tags": []
-     },
-     {
-      "for": "salaried",
-      "title": "Salary slips for the last 3 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business GST certificate",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business registration or incorporation documents",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "School or college ID card, front and back",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "Bonafide certificate or no-objection letter from your institution",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "Sponsor's documents, if a parent is funding the trip",
-      "note": "See the sponsor section below.",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Retirement proof showing your date of retirement",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Pension order or pension account statements",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Depending on your situation",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Marriage certificate",
-      "note": "",
-      "tags": [
-       "If travelling with your spouse"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Birth certificate",
-      "note": "",
-      "tags": [
-       "For each child travelling"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Consent letter from the non-travelling parent",
-      "note": "",
-      "tags": [
-       "If a child travels with one parent only"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Which country do you apply to?",
-    "level": "h3",
-    "paras": [
-     "Apply to the embassy of the country where you'll spend the most nights. If you're spending equal time in two or more, apply to the one you enter first. Getting this wrong is a common reason for rejection on a multi-country trip, and it's the first thing we check when we plan your itinerary.",
-     "Biometrics are taken in person and remain valid for 59 months, so if you've given them for a Schengen visa in the last five years, you may be able to skip that step."
-    ],
-    "docs": [],
-    "bullets": []
-   },
-   {
-    "title": "Photograph specification",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "35 mm wide × 45 mm high, no border, matt or semi-matt finish.",
-     "Taken within the last 6 months, in a studio. Selfies and scanned reprints are rejected.",
-     "Plain light-grey or off-white background, evenly lit, no shadow behind the head.",
-     "Full face, straight to camera, neutral expression, mouth closed, eyes open and unobscured.",
-     "Face from chin to crown should fill roughly 70–80% of the frame height.",
-     "No headgear unless worn daily for religious reasons, and never covering the face.",
-     "Spectacles are best removed. If worn, frames must be thin, the eyes fully visible, and there must be no glare."
+    "timing": "Our standard estimate is 7–8 working days after submission. Express handling is estimated at 24–48 working hours. UAE immigration sets the decision date.",
+    "sources": [
+      {
+        "label": "Dubai immigration · tourist entry permit",
+        "url": "https://gdrfad.gov.ae/en/services/f9e586fe-0642-11ec-0320-0050569629e8"
+      },
+      {
+        "label": "Dubai immigration · visa on arrival eligibility for Indian citizens",
+        "url": "https://www.gdrfad.gov.ae/en/services/727c91b1-52eb-11ea-0320-0050569629e8"
+      }
     ]
-   },
-   {
-    "title": "If someone in Europe is inviting or funding your trip",
-    "level": "h3",
-    "paras": [
-     "Only needed when a relative, friend or company in Europe is hosting you or paying part of your costs. Everything here comes from your sponsor."
+  },
+  "europe": {
+    "name": "Europe (Schengen)",
+    "aliases": "Schengen area European Union tourism",
+    "type": "Short-stay visa · Type C",
+    "intro": "For a tourist trip across one or more Schengen countries. Apply through your main destination, taking account of the purpose and length of stay. If the stays are equal and there is no main destination, use the country you enter first.",
+    "rates": [
+      {
+        "amount": 8000
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Invitation letter, signed and dated",
-      "note": "Stating the purpose of your visit, their relationship to you, how long you'll stay, and which expenses they will cover. Some countries require this on an official form obtained from their local municipality — we'll tell you if yours does.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Copy of the sponsor's passport, including their visa or residence permit",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of their legal status, if they are not a citizen",
-      "note": "Residence permit, long-stay visa, or citizenship certificate.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of your relationship to them",
-      "note": "Birth certificate, marriage certificate, or family registration document.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's bank statements for the last 3 to 6 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's pay slips for the last 3 months, and an employment letter",
-      "note": "Stating their position, salary and length of service. If self-employed, business registration plus proof of income instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Sponsor's tax return or annual income statement for the last 1 to 2 years",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Proof of accommodation",
-      "note": "Rental agreement or property ownership papers. If they will not be hosting you, a hotel booking instead.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "A recent utility bill as proof of residence",
-      "note": "",
-      "tags": [
-       "Optional"
-      ]
-     }
+    "rateCaption": "Appointment and LeisureFlies service fee only.",
+    "rateNote": "Pay the consular fee directly at your VFS appointment, or through the official portal if your destination requires online payment. Travel insurance is extra and depends on your age and trip length.",
+    "sections": [
+      {
+        "title": "Passport, form and insurance",
+        "docs": [
+          "A passport issued within the past 10 years, with two blank pages and at least three months’ validity after you plan to leave the Schengen area.",
+          "A completed, signed application and a recent photograph in the format your destination requests.",
+          "Travel medical insurance for every Schengen country and every day of the trip, with at least €30,000 cover for emergency treatment, hospital care and repatriation."
+        ]
+      },
+      {
+        "title": "Itinerary and accommodation",
+        "docs": [
+          "A covering letter with the purpose of travel, dates and anyone travelling with you.",
+          "Return transport reservations and a day-by-day route. For a multi-country trip, include travel between destinations.",
+          "Accommodation for each night, or an invitation and address from a private host."
+        ]
+      },
+      {
+        "title": "Evidence of funds",
+        "docs": [
+          "Recent personal bank statements showing regular activity and enough funds for your plans.",
+          "Income tax records or other evidence of income requested on your main destination’s checklist. The required evidence varies by country."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "If someone is hosting or paying for you",
+        "docs": [
+          "A signed invitation giving your host’s address, your relationship, the dates and who will pay for what.",
+          "If your host is funding the visit, proof of their funds and, where requested, their identity and residence status.",
+          "If you are applying with a child, check the destination’s requirements for birth records, custody or parental consent."
+        ]
+      }
     ],
-    "bullets": []
-   },
-   {
-    "title": "Planning more than one country?",
-    "level": "h2",
-    "paras": [
-     "Multi-country Europe trips are where most applications go wrong — wrong embassy, gaps in the hotel dates, insurance that doesn't cover the whole stay. Send us your plan and we'll build the file properly."
+    "timing": "The usual decision time is 15 calendar days after a complete application is lodged. It can extend to 45 days. Allow additional time to find an appointment.",
+    "sources": [
+      {
+        "label": "European Commission · applying for a Schengen visa",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen/schengen-visas/applying-schengen-visa_en"
+      }
     ],
-    "docs": [],
-    "bullets": []
-   }
-  ]
- },
- "georgia": {
-  "slug": "georgia",
-  "route": "e-Visa · India to Georgia",
-  "name": "Georgia",
-  "sub": "Everything is submitted online — no embassy visit, no biometrics, no original documents. The list is short, but the bank statement rules are unusually strict and that's where most refusals come from.",
-  "facts": [
-   {
-    "k": "Visa type",
-    "v": "e-Visa, ordinary (Category C)"
-   },
-   {
-    "k": "Apply through",
-    "v": "Online e-Visa portal"
-   },
-   {
-    "k": "Bank statement",
-    "v": "8 months, bank-downloaded PDF"
-   },
-   {
-    "k": "Checklist updated",
-    "v": "September 2026"
-   }
-  ],
-  "sections": [
-   {
-    "title": "What we need from you",
-    "level": "h2",
-    "paras": [
-     "All scans and digital files — nothing needs to be posted or handed over in person."
-    ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Scan of your passport's first and last pages",
-      "note": "A clear, flat scan. Photographs of the passport taken on a phone are rejected.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Digital passport-size photograph on a white background",
-      "note": "Without spectacles — see the specification below. Studio photograph only.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Unmasked Aadhaar card scan",
-      "note": "The full number must be visible. A masked Aadhaar downloaded from the UIDAI site will not do.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Mobile number and email address linked to your Aadhaar",
-      "note": "Not mandatory, but applications where the contact details match the Aadhaar record are approved noticeably more often.",
-      "tags": [
-       "Recommended"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Scan of your most recent sticker visa",
-      "note": "Any previous Schengen, UK, US, Canada, Australia or Japan visa. Strong travel history helps.",
-      "tags": [
-       "Optional"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Bank statement for the last 8 months, downloaded directly from your bank",
-      "note": "Read the rules below carefully — this is the item that decides most Georgia applications.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Your intended travel dates",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "The bank statement rules, exactly",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "It must be a PDF downloaded directly from your bank's website or mobile app . A scan, a printout, or a print-to-PDF of a printed statement is not accepted.",
-     "Statements emailed to you by the bank are not accepted either. Log in and download it yourself.",
-     "It must cover 8 months . If your bank won't produce that range in one file, two consecutive statements together are fine.",
-     "The name on the statement must match the name in your passport exactly.",
-     "If the file is password-protected, that's fine — send us the password separately, alongside the encrypted file.",
-     "Minimum balance of ₹2,00,000 per person , excluding fixed deposits. If you're sponsoring your spouse or family, the balance must be ₹2,00,000 multiplied by the number of travellers."
+    "related": [
+      "iceland",
+      "norway"
     ]
-   },
-   {
-    "title": "Photograph specification",
-    "level": "h3",
-    "paras": [
-     "Your e-Visa can be refused purely on the photograph, with the fee lost. If in doubt, send us the file and we'll check it before submission."
+  },
+  "georgia": {
+    "name": "Georgia",
+    "type": "Short-stay e-visa",
+    "intro": "Use the Georgian e-visa portal to check your passport and travel purpose. Its questions determine which supporting documents apply to you.",
+    "rates": [
+      {
+        "amount": 8000
+      }
     ],
-    "docs": [],
-    "bullets": [
-     "Digital colour photograph, taken within the last 6 months, studio only.",
-     "Plain white background, no border and no frame.",
-     "Full face, front view, eyes open, neutral expression.",
-     "The face should measure roughly 30–35 mm from chin to crown, with a 5–10 mm margin above the head.",
-     "No selfies and no scanned or photographed prints.",
-     "No head covering except where worn for religious reasons.",
-     "Spectacles off. The official guidance permits glasses without glare, but removing them avoids the most common cause of rejection entirely."
+    "sections": [
+      {
+        "title": "Identity and application",
+        "docs": [
+          "A clear passport identity-page scan and a recent digital biometric photograph.",
+          "Your intended dates and the supporting visa or residence permit if requested for your circumstances."
+        ]
+      },
+      {
+        "title": "Your trip to Georgia",
+        "docs": [
+          "Proof of accommodation for the whole stay and a return or onward travel reservation.",
+          "Travel and health insurance valid for your visit.",
+          "Evidence of sufficient funds for the trip, such as a recent bank statement. Have the supporting documents available for border checks."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Embassy of Georgia in India · e-visa and border documents",
+        "url": "https://india.mfa.gov.ge/en/e-visa-portal"
+      },
+      {
+        "label": "Georgia e-visa portal · documents by nationality",
+        "url": "https://www.evisa.gov.ge/geovisa/countries/index.html"
+      }
     ]
-   },
-   {
-    "title": "Send us your documents and we'll file it",
-    "level": "h2",
-    "paras": [
-     "Georgia is quick when the file is right and an expensive nuisance when it isn't. Share your scans on WhatsApp and we'll check every item before anything is submitted."
+  },
+  "iceland": {
+    "name": "Iceland",
+    "type": "Schengen checklist · Tourism and visits",
+    "intro": "Use this country checklist when Iceland is your main Schengen destination. Include each overnight stop and the transport between them.",
+    "rates": [],
+    "sections": [
+      {
+        "title": "Application and travel",
+        "docs": [
+          "A passport issued within the past 10 years, with two blank pages and at least three months’ validity after you plan to leave the Schengen area.",
+          "The online Iceland application confirmation, signed Schengen application and a recent 35 × 45 mm photograph.",
+          "Travel medical insurance for every Schengen country and every day of the trip, with at least €30,000 cover for emergency treatment, hospital care and repatriation.",
+          "Return flight reservation with your name and booking reference, plus transport reservations between Schengen countries.",
+          "Accommodation for every stop and a covering letter naming your travel companions and dates."
+        ]
+      },
+      {
+        "title": "Funds and sponsorship",
+        "docs": [
+          "Personal bank statements for the past three months, stamped and signed as the India checklist specifies, and Indian tax acknowledgements for the last two assessment years.",
+          "If sponsored, include the signed sponsorship letter, sponsor’s ID and evidence of funds. For a private visit, check Iceland’s invitation and guarantee forms."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Employment contract, approved leave and three months of payslips."
+          ],
+          "Self-employed": [
+            "Company registration or GST details, business statements and tax evidence."
+          ],
+          "Student": [
+            "A current enrolment certificate from your school or college."
+          ],
+          "Retired": [
+            "Three months of pension statements or evidence of regular retirement income."
+          ]
+        }
+      },
+      {
+        "title": "Children and business visits",
+        "docs": [
+          "For a child travelling alone or with one parent, prepare parental consent or sole-custody evidence and copies of the parents’ ID as applicable.",
+          "For a business visit, include the Icelandic host’s invitation and employer’s letter with matching dates and purpose."
+        ]
+      }
     ],
-    "docs": [],
-    "bullets": []
-   }
-  ]
- },
- "singapore": {
-  "slug": "singapore",
-  "route": "Tourist visa · India to Singapore",
-  "name": "Singapore",
-  "sub": "A lighter file than most, and usually a quick turnaround. The one thing Singapore is unforgiving about is the photograph — get that right and the rest is straightforward.",
-  "facts": [
-   {
-    "k": "Visa type",
-    "v": "Tourist / social visit"
-   },
-   {
-    "k": "Apply through",
-    "v": "Authorised visa agent — that's us"
-   },
-   {
-    "k": "Passport validity",
-    "v": "6 months minimum"
-   },
-   {
-    "k": "Checklist updated",
-    "v": "September 2026"
-   }
-  ],
-  "sections": [
-   {
-    "title": "Everyone travelling",
-    "level": "h2",
-    "paras": [
-     "Required regardless of what you do for a living."
+    "sources": [
+      {
+        "label": "Embassy of Iceland in New Delhi · application checklist",
+        "url": "https://assets.ctfassets.net/xxg4p8gt3sg6/5GB0qqwP5MRZwmm7C6rU2m/efaa632d3c30cfdc0362ffca1ec1b7c2/Tourism-Business-VFF-IND-09.07.2025.pdf"
+      },
+      {
+        "label": "Government of Iceland · Schengen applications",
+        "url": "https://island.is/en/get-a-visa"
+      }
     ],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Original passport, valid at least 6 months beyond your travel dates",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Two recent photographs, 35 mm × 45 mm, white background",
-      "note": "The face must fill about 70–80% of the frame, on semi-matt paper, with ears and forehead fully visible. Singapore rejects photographs more often than any other country we file for, so read the full specification below before you go to the studio.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Completed Form 14A",
-      "note": "The official application form. Indian passport holders must submit through a Singapore-authorised agent or local contact — we file it on your behalf along with the letter of introduction.",
-      "tags": [
-       "We complete this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Confirmed return ticket itinerary",
-      "note": "",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Hotel reservation voucher",
-      "note": "",
-      "tags": [
-       "We arrange this"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Covering letter explaining the purpose of your trip",
-      "note": "If you are travelling on business, this goes on your company letterhead and must state your name, passport number, the purpose of travel, and the passport details of everyone travelling with you.",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Money and tax",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Savings account statement for the last 6 months, up to date, bank-stamped and signed",
-      "note": "For a first-time traveller we recommend showing a closing balance of at least ₹1,00,000 . This is our guidance from experience, not a published minimum. If you already have international travel history, this matters less.",
-      "tags": []
-     },
-     {
-      "for": "all",
-      "title": "Income Tax Returns for the last 3 years, each with its computation page",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Proof of what you do",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "salaried",
-      "title": "Original no-objection certificate or leave sanction letter from your employer",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "salaried",
-      "title": "Salary slips for the last 3 months",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business GST certificate",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business bank statement for the last 6 months, up to date, stamped and signed",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "self-employed",
-      "title": "Business Income Tax Returns for the last 3 years, with computation pages",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "School or college ID card, front and back",
-      "note": "",
-      "tags": []
-     },
-     {
-      "for": "student",
-      "title": "No-objection certificate from your school or college",
-      "note": "Required if children are accompanying you during term time.",
-      "tags": []
-     },
-     {
-      "for": "retired",
-      "title": "Retirement proof showing your date of retirement",
-      "note": "",
-      "tags": []
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Depending on your situation",
-    "level": "h2",
-    "paras": [],
-    "docs": [
-     {
-      "for": "all",
-      "title": "Marriage certificate",
-      "note": "",
-      "tags": [
-       "If travelling with your spouse"
-      ]
-     },
-     {
-      "for": "all",
-      "title": "Birth certificate",
-      "note": "",
-      "tags": [
-       "For each child travelling"
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   {
-    "title": "Photograph specification — read this before your studio visit",
-    "level": "h3",
-    "paras": [],
-    "docs": [],
-    "bullets": [
-     "35 mm wide × 45 mm high, in colour, no border, matt or semi-matt finish.",
-     "Taken within the last 3 months. Scanned, reprinted or unclear photographs are rejected outright.",
-     "Plain white background, evenly lit, no shadow behind the head.",
-     "Full face, straight to camera. Ears and forehead must both be completely visible.",
-     "The face from chin to crown must measure between 25 mm and 35 mm, filling roughly 70–80% of the frame.",
-     "Neutral expression, mouth closed. Smiling with teeth showing is not accepted.",
-     "No headgear unless worn daily for religious or racial custom, and it must not hide any facial feature.",
-     "No spectacles or sunglasses. Hair must be tied back so the face outline is clear."
+    "related": [
+      "europe"
     ]
-   },
-   {
-    "title": "One incomplete field can sink the whole file",
-    "level": "h3",
-    "paras": [
-     "Singapore treats an incomplete submission or an inaccurate declaration as grounds for outright rejection rather than a request for more information. Check every field against your passport — spelling, date of birth, passport number — before you hand the file over. We do this check with you before filing."
+  },
+  "japan": {
+    "name": "Japan",
+    "type": "Tourist visa · Sightseeing without a guarantor",
+    "intro": "For a self-funded sightseeing trip using the New Delhi tourist checklist. If someone in Japan is guaranteeing your trip, ask for the checklist for that route.",
+    "rates": [
+      {
+        "amount": 5500
+      }
     ],
-    "docs": [],
-    "bullets": []
-   },
-   {
-    "title": "We file Singapore visas as an authorised agent",
-    "level": "h2",
-    "paras": [
-     "Indian passport holders can't submit directly. Bring us your documents and we'll handle Form 14A, the letter of introduction and the submission."
+    "rateCaption": "Standalone visa service.",
+    "sections": [
+      {
+        "title": "Application and itinerary",
+        "docs": [
+          "Current passport and any old passports, plus A4 copies of the first and last pages of the current passport.",
+          "A signed visa application and a recent passport photograph on a white background.",
+          "A covering letter, flight or cruise schedule and day-by-day itinerary with accommodation and contact details in Japan."
+        ]
+      },
+      {
+        "title": "Who is paying for the trip",
+        "docs": [
+          "Your latest income tax return. If unavailable, the New Delhi checklist accepts six months of bank statements.",
+          "For a student or dependant supported by a parent or spouse, prepare the sponsor’s consent, financial evidence and proof of relationship.",
+          "For travel with dependants, include relationship documents such as a marriage or birth certificate."
+        ]
+      }
     ],
-    "docs": [],
-    "bullets": []
-   }
-  ]
- }
+    "timing": "The embassy advises applying well ahead of travel. Application volume can affect the decision date.",
+    "sources": [
+      {
+        "label": "Japan visa application centre · New Delhi tourist checklist",
+        "url": "https://www.vfsglobal.com/one-pager/japan/india/delhi/pdf/Tourism-Visa.pdf"
+      },
+      {
+        "label": "Embassy of Japan in India · visa guidance",
+        "url": "https://www.in.emb-japan.go.jp/itpr_en/Visa.html"
+      }
+    ]
+  },
+  "new-zealand": {
+    "name": "New Zealand",
+    "aliases": "NZ",
+    "type": "Visitor Visa",
+    "intro": "For a holiday or a family visit in New Zealand. The application asks how you will support yourself during your stay and how you will leave at the end.",
+    "rates": [
+      {
+        "amount": 44000
+      }
+    ],
+    "sections": [
+      {
+        "title": "Identity and plans",
+        "docs": [
+          "A clear copy of the identity pages of each traveller’s passport and a recent photograph that meets Immigration New Zealand’s specifications.",
+          "Your day-by-day itinerary, planned accommodation and any invitation from family or friends.",
+          "An onward ticket, evidence of funds to buy one, or evidence that an eligible sponsor will cover onward travel."
+        ]
+      },
+      {
+        "title": "Money and supporting evidence",
+        "docs": [
+          "Evidence of savings and income, such as recent statements or payslips showing salary credits. The India checklist gives three months as an example.",
+          "Income tax returns where relevant. The India visitor checklist gives the last two years as an example.",
+          "If using formal sponsorship, prepare the sponsorship information Immigration New Zealand requests and evidence of the sponsor’s eligibility."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "Family and translations",
+        "docs": [
+          "For family members included in the application, prepare marriage or birth records showing the relationship.",
+          "Provide English translations of supporting documents issued in another language, following Immigration New Zealand’s translation requirements."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Immigration New Zealand · Visitor Visa",
+        "url": "https://www.immigration.govt.nz/visas/visitor-visa/"
+      },
+      {
+        "label": "Immigration New Zealand · India checklist for visits under six months",
+        "url": "https://www.immigration.govt.nz/assets/inz/documents/checklists/india/inz-11223.pdf"
+      }
+    ],
+    "related": [
+      "australia"
+    ]
+  },
+  "norway": {
+    "name": "Norway",
+    "type": "Schengen checklist · Tourist visits",
+    "intro": "When Norway is your main destination, register with the Norwegian Directorate of Immigration (UDI) online before handing in your documents.",
+    "rates": [],
+    "rateNote": "Pay the consular fee through UDI when registering online. The application centre collects its separate service fee.",
+    "sections": [
+      {
+        "title": "Before your appointment",
+        "docs": [
+          "A passport issued within the past 10 years, with two blank pages and at least three months’ validity after you plan to leave the Schengen area.",
+          "Current and previous passports, copies of the identity and used passport pages, and a recent passport photograph.",
+          "The signed application printout from the UDI portal and appointment confirmation.",
+          "Travel medical insurance for every Schengen country and every day of the trip, with at least €30,000 cover for emergency treatment, hospital care and repatriation."
+        ]
+      },
+      {
+        "title": "Itinerary, accommodation and funds",
+        "docs": [
+          "Return transport reservations, accommodation for every country and a daily itinerary. The embassy advises waiting for the visa before buying flights.",
+          "For an organised tour or cruise, take the booking itinerary and payment confirmation.",
+          "Personal bank statements for the last three months and work, school or leave evidence as relevant."
+        ]
+      },
+      {
+        "title": "Other documents for your circumstances",
+        "docs": [
+          "For a child travelling alone or with one parent, bring legalised consent from the absent parent or parents, or sole-custody evidence.",
+          "If using a representative, check whether to include the UDI power-of-attorney form.",
+          "Prepare A4 copies and arrange authorised translations for documents in languages other than English or Norwegian."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Norwegian Embassy in India · visitor documents and payment",
+        "url": "https://www.norway.no/en/india/services-info/visitors-visa-res-permit/visitors-visa/"
+      }
+    ],
+    "related": [
+      "europe"
+    ]
+  },
+  "singapore": {
+    "name": "Singapore",
+    "type": "Tourist or social visit",
+    "intro": "Prepare your signed application and photograph first. Applications from abroad can go through the relevant Singapore mission or an appointed visa agent. A qualifying local contact can also apply online.",
+    "rates": [
+      {
+        "amount": 5500
+      }
+    ],
+    "sections": [
+      {
+        "title": "Application essentials",
+        "docs": [
+          "Completed Form 14A signed by the applicant.",
+          "A copy of the passport biodata page. The passport must be valid for at least six months from entry into Singapore.",
+          "A recent passport-sized colour photograph taken within three months, on a plain white background. For a print, use 35 mm wide by 45 mm high.",
+          "If requested, a letter of introduction from a qualifying Singapore contact or the other supporting documents specified by the mission."
+        ]
+      },
+      {
+        "title": "For your travel file",
+        "docs": [
+          "Your return itinerary and hotel or host details, with consistent travel dates.",
+          "For a first visit, have recent bank statements and income evidence available if requested. The amount needed depends on the trip."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "Family travel",
+        "docs": [
+          "A marriage or birth certificate where needed to document a relationship or sponsorship.",
+          "If your child is travelling without both parents, tell us who is accompanying them so we can check the consent documents."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Singapore Immigration & Checkpoints Authority · Indian passport holders",
+        "url": "https://www.ica.gov.sg/information-and-e-services/entry-and-departure/entering-singapore/visa-guidelines/visa-guideline-detail/india"
+      }
+    ]
+  },
+  "south-korea": {
+    "name": "South Korea",
+    "aliases": "Republic of Korea",
+    "type": "Tourist visa · C-3-9",
+    "intro": "This short-stay tourist checklist follows the New Delhi application centre. If your address falls under another Korean consulate, use that centre’s current forms.",
+    "rates": [
+      {
+        "amount": 10000
+      }
+    ],
+    "rateCaption": "Standalone visa service.",
+    "sections": [
+      {
+        "title": "Application documents",
+        "docs": [
+          "Original passport with at least six months’ validity.",
+          "Complete the Korea Visa Portal form, print and sign it. Prepare a recent photograph to the application centre’s specifications.",
+          "The health condition report and declaration on the New Delhi centre’s current checklist.",
+          "Your planned itinerary and travel details. Check the latest centre instructions before submitting."
+        ]
+      },
+      {
+        "title": "Bank and tax evidence",
+        "docs": [
+          "Your personal bank statements for the last six months.",
+          "For individual applicants, two years of income tax returns. Business applicants should prepare three years of personal returns. If returns are unavailable, include an explanation."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Employment certificate and six months of payslips."
+          ],
+          "Self-employed": [
+            "Company registration certificate and the MSME record or business profile form. Company tax returns may also support the file."
+          ],
+          "Student": [
+            "A bonafide certificate confirming current enrolment."
+          ],
+          "Retired": [
+            "Have pension or other income evidence available if the centre asks how you will fund the visit."
+          ]
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Korea Visa Application Centre in New Delhi · C-3-9 checklist",
+        "url": "https://www.visaforkorea-id.com/assets/pdfs/C-3-9_Checklist.pdf"
+      },
+      {
+        "label": "Korea Visa Application Centre in New Delhi · forms and updates",
+        "url": "https://www.visaforkorea-id.com/visa-type.html"
+      }
+    ]
+  },
+  "turkey": {
+    "name": "Türkiye (Turkey)",
+    "aliases": "Turkiye Istanbul",
+    "type": "Tourist visa · Electronic or sticker",
+    "intro": "Check e-visa eligibility before choosing a rate. For Indian ordinary passport holders, the supporting visa or residence permit you hold can determine which route is available.",
+    "rates": [
+      {
+        "label": "E-visa · if eligible",
+        "amount": 6500
+      },
+      {
+        "label": "Sticker visa",
+        "amount": 29000
+      }
+    ],
+    "sections": [
+      {
+        "title": "If you qualify for the e-visa",
+        "docs": [
+          "Your current passport and travel dates. Check every eligibility condition shown by the official e-visa portal.",
+          "A qualifying visa or residence permit from a Schengen country, the USA, the UK or Ireland, valid when you enter Türkiye. The embassy excludes electronic visas as supporting documents.",
+          "If the supporting visa is in an old passport, have both the old passport and your current passport ready."
+        ]
+      },
+      {
+        "title": "If applying for a sticker visa in New Delhi",
+        "docs": [
+          "A signed application, original passport with blank pages and recent biometric photographs meeting the centre’s specifications. Have local address proof if your passport was issued in another jurisdiction.",
+          "A signed covering letter with dates, purpose, companions and who pays. Include return flight reservations, accommodation or a host invitation, and travel insurance for the full stay.",
+          "Recent personal bank statements and tax returns. If someone sponsors you, include their letter, financial evidence, ID and proof of relationship."
+        ]
+      },
+      {
+        "title": "Work or study evidence for the sticker application",
+        "profiles": {
+          "Salaried": [
+            "Employer leave letter, recent payslips and salary-account statements."
+          ],
+          "Self-employed": [
+            "Company registration and GST evidence, with notarisation where the centre requires it."
+          ],
+          "Student": [
+            "School or college ID and leave approval or holiday confirmation."
+          ],
+          "Retired": [
+            "Retirement documents and statements showing income."
+          ]
+        }
+      },
+      {
+        "title": "Children applying for a sticker visa",
+        "docs": [
+          "Check the New Delhi centre’s consent and notarisation instructions for each child, including when both parents travel. Prepare the parents’ passport copies and any relevant custody papers."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Turkish Embassy in New Delhi · e-visa eligibility for Indian travellers",
+        "url": "https://newdelhi-emb.mfa.gov.tr/Mission/ShowAnnouncement/361514"
+      },
+      {
+        "label": "Turkish Ministry of Foreign Affairs · sticker visas and travel documents",
+        "url": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+      }
+    ]
+  },
+  "uk": {
+    "name": "United Kingdom",
+    "aliases": "UK Great Britain England Scotland Wales Northern Ireland London",
+    "type": "Standard Visitor visa",
+    "intro": "For a holiday or family visit to the UK. Your documents should show what you plan to do, how you will pay and why you will return to India.",
+    "rates": [
+      {
+        "amount": 27000
+      }
+    ],
+    "sections": [
+      {
+        "title": "Application and visit details",
+        "docs": [
+          "A passport valid for your whole stay, with a blank page for the visa if needed.",
+          "Your completed Standard Visitor application and visa application centre appointment details.",
+          "Planned dates, where you expect to stay and an estimate of your trip costs. UK guidance lists hotel and flight bookings as less useful evidence for a tourist visit."
+        ]
+      },
+      {
+        "title": "Finances and ties to India",
+        "docs": [
+          "Recent bank statements showing income, regular activity and the source of funds you plan to spend.",
+          "Evidence of your circumstances, such as salary records, tax records, pension income or ownership of a business. Match the figures you give on your form."
+        ]
+      },
+      {
+        "title": "Work, study or retirement",
+        "profiles": {
+          "Salaried": [
+            "Leave approval or an employment letter showing your role and return date.",
+            "Recent payslips showing your regular income."
+          ],
+          "Self-employed": [
+            "Business registration or GST certificate showing your link to the business.",
+            "Business bank statements or tax returns showing trading income."
+          ],
+          "Student": [
+            "School or college ID and an enrolment or leave letter.",
+            "If a parent is paying, evidence of their income and your relationship."
+          ],
+          "Retired": [
+            "Pension statements or a retirement letter showing your regular income."
+          ]
+        }
+      },
+      {
+        "title": "If someone is hosting or paying",
+        "docs": [
+          "An invitation or letter explaining who will cover travel and living expenses and how you know the sponsor.",
+          "Evidence that your sponsor can cover the costs. If they are in the UK, include evidence of their lawful UK status."
+        ]
+      },
+      {
+        "title": "Children and translations",
+        "docs": [
+          "Proof of the parent or guardian relationship and consent where needed for a child’s travel or care arrangements.",
+          "A full translation that can be independently verified for documents in languages other than English or Welsh."
+        ]
+      }
+    ],
+    "timing": "UKVI says a Standard Visitor decision usually takes three weeks after your appointment. Allow time to book the appointment and respond to any document requests.",
+    "sources": [
+      {
+        "label": "UK Visas and Immigration · Standard Visitor application",
+        "url": "https://www.gov.uk/standard-visitor/apply-standard-visitor-visa"
+      },
+      {
+        "label": "UK Visas and Immigration · supporting documents",
+        "url": "https://www.gov.uk/government/publications/visitor-visa-guide-to-supporting-documents/guide-to-supporting-documents-visiting-the-uk"
+      }
+    ]
+  },
+  "usa": {
+    "name": "United States",
+    "aliases": "USA US America United States of America",
+    "type": "Visitor visa · B-2 or B-1/B-2",
+    "intro": "For a holiday or a visit to family in the United States. Each traveller needs an individual application, including children.",
+    "rates": [
+      {
+        "amount": 30000
+      }
+    ],
+    "rateNote": "We can help arrange an earlier interview appointment if a slot opens. A separate service charge applies. The consulate controls appointment availability.",
+    "sections": [
+      {
+        "title": "To start your file",
+        "docs": [
+          "Have your own email address and phone number ready for the application.",
+          "Prepare clear copies of your passport’s first and last pages. Keep the original passport for your appointment.",
+          "Prepare your intended travel dates, previous travel and employment details for the DS-160."
+        ]
+      },
+      {
+        "title": "For the appointment",
+        "docs": [
+          "Your valid passport, DS-160 confirmation page and appointment confirmation.",
+          "Fee receipt if required and a printed photograph meeting US specifications if the online photo upload failed.",
+          "Evidence of your purpose of travel, your ties to India and how you will cover your expenses, if requested by the consular officer."
+        ]
+      }
+    ],
+    "timing": "Interview availability and visa processing are separate. An earlier interview does not determine when a decision or passport will be ready.",
+    "sources": [
+      {
+        "label": "US Department of State · visitor visas and interview documents",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html"
+      },
+      {
+        "label": "US Department of State · global visa wait times",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html"
+      }
+    ]
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "aliases": "Viet Nam",
+    "type": "Tourist e-visa",
+    "intro": "The online application uses your passport image, a separate portrait and the details of your trip. Check the spelling of your full name and the passport number before submitting.",
+    "rates": [
+      {
+        "amount": 5000
+      }
+    ],
+    "rateCaption": "Standalone visa service.",
+    "sections": [
+      {
+        "title": "Files to prepare",
+        "docs": [
+          "A clear colour scan of the full passport biodata page, with all edges visible and text legible.",
+          "A recent, front-facing 4 × 6 cm colour portrait against a white background, with eyes visible and no glasses. Follow the portal’s current upload instructions."
+        ]
+      },
+      {
+        "title": "Trip details",
+        "docs": [
+          "Your planned arrival and departure dates and the entry and exit points you intend to use.",
+          "Your intended address in Vietnam and an email address you can access to check the result.",
+          "After approval, review the name, passport number, visa dates and entry conditions before travelling."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Vietnam Immigration Department · national e-visa portal",
+        "url": "https://evisa.gov.vn/"
+      }
+    ]
+  }
 }
