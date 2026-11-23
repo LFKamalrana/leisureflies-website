@@ -15,7 +15,10 @@ function groupByRoute(offers) {
   }
   return [...routes];
 }
-const routes = [...groupByRoute(fares.filter(hasPrice)), ...groupByRoute(fares.filter(o => !hasPrice(o)))];
+const sections = ['Domestic', 'International'].map(name => {
+  const offers = fares.filter(fare => (fare.domestic ? 'Domestic' : 'International') === name);
+  return { name, routes: [...groupByRoute(offers.filter(hasPrice)), ...groupByRoute(offers.filter(o => !hasPrice(o)))] };
+}).filter(section => section.routes.length);
 function priceSummary(offers) {
   const prices = offers.flatMap(offer => offer.groups.filter(g => g.fare != null).map(g => ({ fare:g.fare, kind:offer.kind })));
   if (!prices.length) return 'Ask for fare';
@@ -34,8 +37,10 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
     <label>Flying to<select id="fare-to"><option value="">All destinations</option>{destinations.map(city => <option>{city}</option>)}</select></label>
     <span data-count aria-live="polite"></span>
   </div>
-  <div class="fare-list">
-    {[...routes].map(([route, offers]) => (
+  {sections.map(section => <section class="fare-section" aria-label={section.name + ' flights'}>
+    <h2>{section.name} flights</h2>
+    <div class="fare-list">
+    {section.routes.map(([route, offers]) => (
       <details class="fare-route" data-route={route} data-origin={offers[0].origin} data-destination={offers[0].destination}>
         <summary><span>{route}</span><small data-route-price>{priceSummary(offers)}</small></summary>
         {offers.map(o => {
@@ -60,7 +65,8 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
         })}
       </details>
     ))}
-  </div>
+    </div>
+  </section>)}
   <p class="note" data-no-fares hidden>No upcoming departures match this route. <a href={wa('Hi LeisureFlies, please help me find a flight.')} target="_blank" rel="noopener">Ask us for a fare</a>.</p>
 </section>
 <script>
@@ -68,6 +74,7 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
   const from = board.querySelector<HTMLSelectElement>('#fare-from')!;
   const to = board.querySelector<HTMLSelectElement>('#fare-to')!;
   const routes = [...board.querySelectorAll<HTMLDetailsElement>('.fare-route')];
+  const sections = board.querySelectorAll<HTMLElement>('.fare-section');
   const clock = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
   // An offer or route can become enquiry-only when its last priced departure expires.
   function keepPricedFirst(items: NodeListOf<HTMLElement>) {
@@ -86,6 +93,7 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
     }
     board.querySelector('[data-count]')!.textContent = visibleRoutes.size + (visibleRoutes.size === 1 ? ' route' : ' routes');
     const matching = routes.filter(route => !route.hidden);
+    for (const section of sections) section.hidden = !section.querySelector('.fare-route:not([hidden])');
     board.querySelector<HTMLElement>('[data-no-fares]')!.hidden = matching.length > 0;
     if (visibleRoutes.size === 1) matching.forEach(route => { route.open = true; });
   }
@@ -108,7 +116,7 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
       route.querySelector('[data-route-price]')!.textContent = summary;
       keepPricedFirst(route.querySelectorAll<HTMLElement>('.fare-option'));
     }
-    keepPricedFirst(board.querySelectorAll<HTMLElement>('.fare-route'));
+    for (const section of sections) keepPricedFirst(section.querySelectorAll<HTMLElement>('.fare-route'));
     filterRoutes();
   }
   function updateEnquiry(offer: HTMLElement) {
@@ -138,6 +146,7 @@ const destinations = [...new Set(fares.map(f => f.destination).filter(Boolean))]
   select {width:100%;min-width:0;padding:9px 11px;border:1px solid var(--line);border-radius:11px;color:var(--ink);background:var(--surface);font:inherit}
   [data-count] {color:var(--muted);padding-bottom:10px}
   .fare-list {display:grid;gap:9px;margin-top:18px}
+  .fare-section {margin-top:28px}
   .fare-route {background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:clip}
   summary {cursor:pointer;padding:14px 20px;font:600 21px var(--display)}
   summary::marker {color:var(--turq-deep);font-size:.8em}

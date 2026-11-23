@@ -1,5 +1,76 @@
 [
   {
+    "origin": "Chandigarh",
+    "destination": "Goa",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1753 · IXC 11:00 → GOX 13:45",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 9100,
+        "dates": [
+          "2026-12-02"
+        ]
+      },
+      {
+        "fare": 8450,
+        "dates": [
+          "2026-12-14"
+        ]
+      },
+      {
+        "fare": 8600,
+        "dates": [
+          "2026-12-16"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Goa",
+    "destination": "Chandigarh",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1754 · GOI 14:30 → IXC 17:15",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 9100,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 8600,
+        "dates": [
+          "2026-12-17",
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Goa",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5008 · GOI 22:30 → DEL 01:05 (+1 day)",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 6600,
+        "dates": [
+          "2026-11-26",
+          "2026-11-27"
+        ]
+      }
+    ]
+  },
+  {
     "origin": "Vancouver",
     "destination": "Delhi",
     "airline": "Turkish Airlines",
