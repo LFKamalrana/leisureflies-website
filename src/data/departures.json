@@ -14181,7 +14181,8 @@
       {
         "fare": 13429,
         "dates": [
-          "2026-12-18"
+          "2026-12-18",
+          "2026-12-23"
         ]
       },
       {
@@ -14210,7 +14211,8 @@
       {
         "fare": 14137,
         "dates": [
-          "2026-12-18"
+          "2026-12-18",
+          "2026-12-23"
         ]
       },
       {
@@ -24490,6 +24492,224 @@
     ]
   },
   {
+    "origin": "Gorakhpur",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1820 · GOP 17:20 → DEL 19:00",
+    "termsConfirmed": false,
+    "baggage": "15 Kg checked + 7 Kg cabin",
+    "groups": [
+      {
+        "fare": 7156,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 7884,
+        "dates": [
+          "2026-12-10"
+        ]
+      },
+      {
+        "fare": 8040,
+        "dates": [
+          "2026-12-07"
+        ]
+      },
+      {
+        "fare": 8196,
+        "dates": [
+          "2026-12-20"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Guwahati",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6133 · GAU 18:20 → DEL 21:05",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 11842.24,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 11908.8,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 15708.96,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 15799.44,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Guwahati",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6150 · GAU 14:20 → DEL 17:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 11613.44,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 15396.96,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Guwahati",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6317 · GAU 21:10 → DEL 00:10+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 11613.44,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 15396.96,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Guwahati",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6791 · GAU 18:20 → DEL 21:05",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 12759.52,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 16956.96,
+        "dates": [
+          "2026-12-30"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Hyderabad",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 108 · HYD 09:55 → IXC 12:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 18516.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Hyderabad",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 108 · HYD 09:55 → IXC 12:30",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 9758.08,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 10458,
+        "dates": [
+          "2026-12-21"
+        ]
+      },
+      {
+        "fare": 10943.68,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 12416.32,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 12642,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 12872.88,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 16488.96,
+        "dates": [
+          "2026-12-23"
+        ]
+      }
+    ]
+  },
+  {
     "origin": "Hyderabad",
     "destination": "Chandigarh",
     "airline": "IndiGo",
@@ -24500,9 +24720,33 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 9983.76,
+        "dates": [
+          "2026-12-31"
+        ]
+      },
+      {
         "fare": 10094,
         "dates": [
           "2026-12-04"
+        ]
+      },
+      {
+        "fare": 10458,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 10701.36,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 13179.68,
+        "dates": [
+          "2026-12-31"
         ]
       }
     ]
@@ -24548,6 +24792,12 @@
         ]
       },
       {
+        "fare": 8452,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
         "fare": 10092.96,
         "dates": [
           "2026-12-23"
@@ -24557,6 +24807,18 @@
         "fare": 10248.96,
         "dates": [
           "2026-12-23"
+        ]
+      },
+      {
+        "fare": 11069,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 12467,
+        "dates": [
+          "2026-12-24"
         ]
       }
     ]
@@ -24576,6 +24838,12 @@
         "dates": [
           "2026-12-06"
         ]
+      },
+      {
+        "fare": 7789.36,
+        "dates": [
+          "2026-12-13"
+        ]
       }
     ]
   },
@@ -24589,6 +24857,12 @@
     "termsConfirmed": false,
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
+      {
+        "fare": 7667.68,
+        "dates": [
+          "2026-12-13"
+        ]
+      },
       {
         "fare": 7789.36,
         "dates": [
@@ -24611,6 +24885,12 @@
         "fare": 6080.64,
         "dates": [
           "2026-12-06"
+        ]
+      },
+      {
+        "fare": 7441,
+        "dates": [
+          "2026-12-13"
         ]
       }
     ]
@@ -24834,6 +25114,177 @@
         "dates": [
           "2026-11-28"
         ]
+      },
+      {
+        "fare": 7214.24,
+        "dates": [
+          "2026-12-01"
+        ]
+      },
+      {
+        "fare": 8603.68,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 9320.24,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9345.2,
+        "dates": [
+          "2026-12-15"
+        ]
+      },
+      {
+        "fare": 11301.44,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 12276.96,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 12549.44,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 12826.08,
+        "dates": [
+          "2026-12-12"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Leh",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2356 · IXL 09:45 → IXC 10:50",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 5164,
+        "dates": [
+          "2026-12-03"
+        ]
+      },
+      {
+        "fare": 5230.96,
+        "dates": [
+          "2026-12-03"
+        ]
+      },
+      {
+        "fare": 5631.36,
+        "dates": [
+          "2026-12-03"
+        ]
+      },
+      {
+        "fare": 8000,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8038.96,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8579.76,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8974.96,
+        "dates": [
+          "2026-12-31"
+        ]
+      },
+      {
+        "fare": 9000,
+        "dates": [
+          "2026-12-31"
+        ]
+      },
+      {
+        "fare": 9320.24,
+        "dates": [
+          "2026-12-19",
+          "2026-12-22",
+          "2026-12-24",
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 9500,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 9562.56,
+        "dates": [
+          "2026-12-31"
+        ]
+      },
+      {
+        "fare": 9598.96,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 12276.96,
+        "dates": [
+          "2026-12-19",
+          "2026-12-22",
+          "2026-12-24",
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 15181.68,
+        "dates": [
+          "2026-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Leh",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2356 · IXL 09:45 → IXC 10:50",
+    "termsConfirmed": false,
+    "baggage": "15kg checked + 7kg cabin",
+    "groups": [
+      {
+        "fare": 9340,
+        "dates": [
+          "2026-12-08",
+          "2026-12-17",
+          "2026-12-19",
+          "2026-12-24"
+        ]
       }
     ]
   },
@@ -24851,6 +25302,67 @@
         "fare": 9028,
         "dates": [
           "2026-11-26"
+        ]
+      },
+      {
+        "fare": 9860,
+        "dates": [
+          "2026-11-30"
+        ]
+      },
+      {
+        "fare": 10380,
+        "dates": [
+          "2026-12-01",
+          "2026-12-06"
+        ]
+      },
+      {
+        "fare": 11915.04,
+        "dates": [
+          "2026-12-25"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Chandigarh",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 471 · BOM 06:00 → IXC 08:20",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 10323.84,
+        "dates": [
+          "2026-12-04"
+        ]
+      },
+      {
+        "fare": 10466.32,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 11273.36,
+        "dates": [
+          "2026-12-04"
+        ]
+      },
+      {
+        "fare": 13836.96,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 14935.2,
+        "dates": [
+          "2026-12-04"
         ]
       }
     ]
@@ -24870,6 +25382,72 @@
         "dates": [
           "2026-11-29"
         ]
+      },
+      {
+        "fare": 9285.92,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 9288,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9583.36,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 10140.8,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 10143.92,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 11053.92,
+        "dates": [
+          "2026-12-28"
+        ]
+      },
+      {
+        "fare": 12072.08,
+        "dates": [
+          "2026-12-28"
+        ]
+      },
+      {
+        "fare": 13393.92,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 13397.04,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 13836.96,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 16020.96,
+        "dates": [
+          "2026-12-28"
+        ]
       }
     ]
   },
@@ -24884,6 +25462,77 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 9422.16,
+        "dates": [
+          "2026-12-11"
+        ]
+      },
+      {
+        "fare": 9688.4,
+        "dates": [
+          "2026-12-10"
+        ]
+      },
+      {
+        "fare": 9801.76,
+        "dates": [
+          "2026-12-17",
+          "2026-12-28",
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 9873.52,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 10289.52,
+        "dates": [
+          "2026-12-11"
+        ]
+      },
+      {
+        "fare": 10293.68,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 10368.56,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 10528.72,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 10581.76,
+        "dates": [
+          "2026-12-10"
+        ]
+      },
+      {
+        "fare": 10703.44,
+        "dates": [
+          "2026-12-17",
+          "2026-12-28",
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 10783.52,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
         "fare": 10815.76,
         "dates": [
           "2026-12-19"
@@ -24893,6 +25542,1021 @@
         "fare": 10919.76,
         "dates": [
           "2026-12-19"
+        ]
+      },
+      {
+        "fare": 10924.96,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 11242.16,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 11323.28,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 11499.04,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 12314.4,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 13448,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 13596.72,
+        "dates": [
+          "2026-12-11"
+        ]
+      },
+      {
+        "fare": 13992.96,
+        "dates": [
+          "2026-12-10"
+        ]
+      },
+      {
+        "fare": 14159.36,
+        "dates": [
+          "2026-12-17",
+          "2026-12-28",
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 14267.52,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 14460.96,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 14891.52,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 15001.76,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 15240.96,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 17892.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2443, AI 9636 · BOM 09:50 → DEL 09:35+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 14497.36,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2489, AI 1823 · BOM 19:50 → DEL 12:50+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 18713.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2491, AI 2722 · BOM 11:15 → DEL 16:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 26389.76,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2517, AI 2768 · BOM 05:05 → DEL 18:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 25113.68,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2527, AI 2708 · BOM 17:00 → DEL 23:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 25113.68,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2531, AI 2520 · BOM 15:05 → DEL 21:45 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 23185.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2591, AI 9582 · BOM 06:05 → DEL 12:00 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16205.04,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2615, AI 9582 · BOM 13:50 → DEL 12:00+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 14787.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2617, AI 2541 · BOM 11:35 → DEL 17:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 23185.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2623, AI 428 · BOM 11:00 → DEL 17:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 22854.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2625, AI 2466 · BOM 06:25 → DEL 10:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 24513.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2632, AI 428 · BOM 12:00 → DEL 17:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 22854.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2639, AI 2546 · BOM 06:10 → DEL 13:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16571.12,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2659, AI 1879 · BOM 14:35 → DEL 22:20 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 21286.48,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2681, AI 2403 · BOM 11:25 → DEL 17:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 21286.48,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2683, AI 1113 · BOM 05:00 → DEL 10:40 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 19997.92,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2739, AI 2836 · BOM 08:00 → DEL 14:10 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 27142.72,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2741, AI 438 · BOM 07:40 → DEL 11:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 20145.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2749, AI 1865 · BOM 17:35 → DEL 23:35 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 20007.28,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2783, AI 1879 · BOM 16:45 → DEL 22:20 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 21286.48,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2785, AI 1823 · BOM 06:40 → DEL 12:50 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 18713.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2787, AI 9904 · BOM 06:35 → DEL 13:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 22648.88,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2812, AI 9547 · BOM 02:05 → DEL 08:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 17892.96,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2821, AI 2526 · BOM 06:40 → DEL 12:45 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 27142.72,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2863, AI 428 · BOM 09:55 → DEL 17:30 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 22854.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2997, AI 2966 · BOM 10:10 → DEL 17:20 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 19997.92,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 413, AI 2578 · BOM 21:15 → DEL 08:35+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16571.12,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 435, AI 2504 · BOM 18:10 → DEL 01:10+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 27176,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 9565, AI 2510 · BOM 20:35 → DEL 01:50+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 17086.96,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 9629, AI 2546 · BOM 09:50 → DEL 13:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16236.24,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 9861, AI 2578 · BOM 19:40 → DEL 08:35+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 13590.48,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1111 · BOM 07:00 → DEL 09:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7903.76,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 8274,
+        "dates": [
+          "2026-12-12"
+        ]
+      },
+      {
+        "fare": 8366.56,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 8722.24,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8759.68,
+        "dates": [
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1113 · BOM 13:00 → DEL 15:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8025.44,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 8112.8,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 9039.44,
+        "dates": [
+          "2026-12-05"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1115 · BOM 18:35 → DEL 21:00",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8820,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 8924,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9400.32,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1117 · BOM 15:05 → DEL 17:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1806 · BOM 10:10 → DEL 12:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7916.24,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1846 · BOM 20:55 → DEL 23:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8820,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 8924,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9400.32,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 102 · BOM 21:15 → DEL 23:30",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2049, 6E 6867 · BOM 07:10 → DEL 11:35 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 14662.72,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2051, 6E 6809 · BOM 11:10 → DEL 16:25 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 19604.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 219, 6E 2042 · BOM 18:20 → DEL 22:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7419.12,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2347, 6E 6788 · BOM 09:15 → DEL 13:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 8085.76,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 241, 6E 6492 · BOM 12:45 → DEL 18:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 17253.36,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 273, 6E 730 · BOM 17:20 → DEL 22:10 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 294, 6E 2035 · BOM 07:05 → DEL 11:40 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 19449.84,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 301 · BOM 07:00 → DEL 09:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8157.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 310 · BOM 10:45 → DEL 13:00",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 313 · BOM 16:00 → DEL 18:20",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 315 · BOM 17:30 → DEL 19:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
         ]
       }
     ]
@@ -24908,6 +26572,12 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
         "fare": 9340,
         "dates": [
           "2026-12-04"
@@ -24917,6 +26587,757 @@
         "fare": 9837.12,
         "dates": [
           "2026-12-04"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 330 · BOM 20:30 → DEL 22:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 333 · BOM 07:45 → DEL 09:55",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8157.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 349 · BOM 15:15 → DEL 17:20",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 359 · BOM 14:30 → DEL 16:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5030, 6E 6380 · BOM 17:15 → DEL 22:25 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 20583.44,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5059, 6E 2263 · BOM 16:45 → DEL 21:05 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5156, 6E 6464 · BOM 15:40 → DEL 20:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 8986.4,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5179, 6E 709 · BOM 02:35 → DEL 07:25 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7664.56,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5238, 6E 2376 · BOM 18:05 → DEL 23:35 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5283, 6E 2384 · BOM 21:45 → DEL 01:55+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 11584.32,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5318, 6E 6043 · BOM 10:10 → DEL 15:20 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 12165.68,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5326, 6E 192 · BOM 19:45 → DEL 00:55+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 18539.84,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5386, 6E 710 · BOM 15:05 → DEL 20:05 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16631.44,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6027, 6E 6229 · BOM 16:30 → DEL 21:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 12682.56,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6028 · BOM 12:15 → DEL 14:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6045 · BOM 02:50 → DEL 05:05",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6049 · BOM 19:45 → DEL 22:00",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 9860,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9964,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10492.32,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10900,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6052 · BOM 10:00 → DEL 12:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7884,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6082 · BOM 16:45 → DEL 18:55",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8861.6,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 11652.96,
+        "dates": [
+          "2026-12-18"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 615 · BOM 13:00 → DEL 15:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 632, 6E 983 · BOM 04:20 → DEL 09:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 12515.12,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6352, 6E 2263 · BOM 15:40 → DEL 21:05 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6362, 6E 889 · BOM 05:30 → DEL 10:50 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16631.44,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6365, 6E 711 · BOM 12:00 → DEL 16:55 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16276.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 643, 6E 5003 · BOM 14:25 → DEL 19:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 21673.36,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 651 · BOM 22:30 → DEL 00:35+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 656 · BOM 05:00 → DEL 07:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6613 · BOM 18:15 → DEL 20:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7614.64,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 8316.64,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 8747.2,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 8861.6,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 8976,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10911.44,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 11496.96,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 11652.96,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 11808.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6827 · BOM 11:30 → DEL 13:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7665.6,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6937, 6E 6841 · BOM 12:35 → DEL 17:40 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 16478.56,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 762 · BOM 06:00 → DEL 08:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8157.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 795, 6E 932 · BOM 19:15 → DEL 00:05+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 911, 6E 980 · BOM 14:05 → DEL 18:45 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7091.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "SpiceJet",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "SG 212 · BOM 13:10 → DEL 15:30",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7414.96,
+        "dates": [
+          "2026-11-28"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "SpiceJet",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "SG 511 · BOM 23:20 → DEL 01:40+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 6032.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "SpiceJet",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "SG 613 · BOM 22:30 → DEL 00:50+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 6032.8,
+        "dates": [
+          "2026-11-26"
+        ]
+      },
+      {
+        "fare": 7414.96,
+        "dates": [
+          "2026-11-28",
+          "2026-11-29"
+        ]
+      },
+      {
+        "fare": 7466.96,
+        "dates": [
+          "2026-11-30"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "airline": "SpiceJet",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "SG 670 · BOM 23:55 → DEL 02:20+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 6032.8,
+        "dates": [
+          "2026-11-26"
         ]
       }
     ]
@@ -24932,9 +27353,45 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 11186,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
         "fare": 12035.68,
         "dates": [
           "2026-12-19"
+        ]
+      },
+      {
+        "fare": 12287.36,
+        "dates": [
+          "2026-12-25"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 494 · NMI 11:35 → IXC 13:45",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 10763.76,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10867.76,
+        "dates": [
+          "2026-12-24"
         ]
       }
     ]
@@ -24960,6 +27417,336 @@
         "dates": [
           "2026-12-19"
         ]
+      },
+      {
+        "fare": 9962.96,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 10066.96,
+        "dates": [
+          "2026-12-20"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 2021 · NMI 06:05 → DEL 08:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8759.68,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 8943.76,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9366,
+        "dates": [
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2009, 6E 2228 · NMI 10:05 → DEL 14:05 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 10772.08,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5290 · NMI 17:10 → DEL 19:20",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8072.24,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6020, 6E 2288 · NMI 11:15 → DEL 16:15 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 7637.52,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 7013, 6E 6867 · NMI 06:50 → DEL 11:35 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 15214.96,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Navi Mumbai",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 7017, 6E 932 · NMI 19:15 → DEL 00:05+1 · 1 Stop",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 8631.76,
+        "dates": [
+          "2026-11-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5336, 6E 5162 · PAT 13:15 → IXC 19:40 · 1 Stop",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 11496.96,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 11652.96,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 13056.96,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5336/5162, 6E 5162 · PAT 13:15 → IXC 19:40 · 1 Stop",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8747.2,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 8861.6,
+        "dates": [
+          "2026-12-20"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6485 · PAT 13:05 → IXC 15:00",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 7714.48,
+        "dates": [
+          "2026-12-28"
+        ]
+      },
+      {
+        "fare": 7829.92,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8048.32,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 8498.64,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 8861.6,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10092.96,
+        "dates": [
+          "2026-12-28"
+        ]
+      },
+      {
+        "fare": 10248.96,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 10546.4,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 11160,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 11591.6,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 11594.72,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 11652.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2001 · PAT 08:35 → DEL 10:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8300,
+        "dates": [
+          "2026-12-02",
+          "2026-12-06"
+        ]
+      },
+      {
+        "fare": 8404,
+        "dates": [
+          "2026-12-02",
+          "2026-12-06"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2244 · PAT 20:25 → DEL 22:10",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 9398.24,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2244 · PAT 20:25 → DEL 22:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8820,
+        "dates": [
+          "2026-12-27"
+        ]
       }
     ]
   },
@@ -24974,9 +27761,69 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 7728,
+        "dates": [
+          "2026-12-14"
+        ]
+      },
+      {
+        "fare": 7884,
+        "dates": [
+          "2026-12-14"
+        ]
+      },
+      {
+        "fare": 8308.32,
+        "dates": [
+          "2026-12-14"
+        ]
+      },
+      {
+        "fare": 8404,
+        "dates": [
+          "2026-11-30"
+        ]
+      },
+      {
+        "fare": 8820,
+        "dates": [
+          "2026-11-30"
+        ]
+      },
+      {
+        "fare": 9400.32,
+        "dates": [
+          "2026-11-30"
+        ]
+      },
+      {
         "fare": 9600,
         "dates": [
           "2026-11-29"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Patna",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6519 · PAT 10:00 → DEL 11:55",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8300,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 8404,
+        "dates": [
+          "2026-12-05"
         ]
       }
     ]
@@ -24992,9 +27839,34 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 6790.96,
+        "dates": [
+          "2026-11-28",
+          "2026-11-30"
+        ]
+      },
+      {
         "fare": 6998.96,
         "dates": [
           "2026-11-29"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Port Blair",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2614 · IXZ 08:20 → DEL 12:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 17588.24,
+        "dates": [
+          "2026-12-06"
         ]
       }
     ]
@@ -25014,6 +27886,66 @@
         "dates": [
           "2026-11-30"
         ]
+      },
+      {
+        "fare": 16932,
+        "dates": [
+          "2026-12-06"
+        ]
+      },
+      {
+        "fare": 17345.92,
+        "dates": [
+          "2026-11-29"
+        ]
+      },
+      {
+        "fare": 17917.92,
+        "dates": [
+          "2026-12-06"
+        ]
+      },
+      {
+        "fare": 18180,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 19228.32,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 23196.96,
+        "dates": [
+          "2026-11-29"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Port Blair",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2936 · IXZ 11:40 → DEL 15:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 22579.2,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 25856.24,
+        "dates": [
+          "2026-12-28"
+        ]
       }
     ]
   },
@@ -25028,9 +27960,21 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 15591.44,
+        "dates": [
+          "2026-12-09"
+        ]
+      },
+      {
         "fare": 15948.16,
         "dates": [
           "2026-11-30"
+        ]
+      },
+      {
+        "fare": 17042.24,
+        "dates": [
+          "2026-12-06"
         ]
       },
       {
@@ -25040,9 +27984,34 @@
         ]
       },
       {
+        "fare": 18568.96,
+        "dates": [
+          "2026-12-16",
+          "2026-12-17"
+        ]
+      },
+      {
+        "fare": 19719.2,
+        "dates": [
+          "2026-12-15"
+        ]
+      },
+      {
+        "fare": 23050.32,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
         "fare": 23196.96,
         "dates": [
           "2026-11-28"
+        ]
+      },
+      {
+        "fare": 24444.96,
+        "dates": [
+          "2026-12-06"
         ]
       }
     ]
@@ -25085,6 +28054,24 @@
   },
   {
     "origin": "Pune",
+    "destination": "Amritsar",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6111 · PNQ 13:35 → ATQ 15:55",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 11800.64,
+        "dates": [
+          "2026-12-21"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
     "destination": "Chandigarh",
     "airline": "IndiGo",
     "kind": "One way",
@@ -25097,6 +28084,74 @@
         "fare": 10458,
         "dates": [
           "2026-12-04"
+        ]
+      },
+      {
+        "fare": 10466.32,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 10588,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 11613.44,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 12980,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 13836.96,
+        "dates": [
+          "2026-12-29",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 14616.96,
+        "dates": [
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 15396.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 16644.96,
+        "dates": [
+          "2026-12-25"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 242 · PNQ 04:15 → IXC 06:30",
+    "termsConfirmed": false,
+    "baggage": "15kg checked + 7kg cabin",
+    "groups": [
+      {
+        "fare": 9237.04,
+        "dates": [
+          "2026-12-29"
         ]
       }
     ]
@@ -25124,9 +28179,27 @@
         ]
       },
       {
+        "fare": 9111.2,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 10581.76,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
         "fare": 11964.96,
         "dates": [
           "2026-12-04"
+        ]
+      },
+      {
+        "fare": 13992.96,
+        "dates": [
+          "2026-12-18"
         ]
       }
     ]
@@ -25142,15 +28215,637 @@
     "baggage": "15 kg checked + 7 kg cabin",
     "groups": [
       {
+        "fare": 8848.08,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9664.48,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9793.44,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
         "fare": 10276,
         "dates": [
           "2026-12-04"
         ]
       },
       {
+        "fare": 10696.16,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
         "fare": 10819.92,
         "dates": [
           "2026-12-04"
+        ]
+      },
+      {
+        "fare": 12744.96,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 14148.96,
+        "dates": [
+          "2026-12-24"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "AI 2972 · PNQ 19:05 → DEL 21:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8920.88,
+        "dates": [
+          "2026-12-06"
+        ]
+      },
+      {
+        "fare": 9396.16,
+        "dates": [
+          "2026-12-06"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "Akasa Air",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "QP 1804 · PNQ 21:00 → DEL 23:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 9132,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9236,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9727.92,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9860,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9964,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 10492.32,
+        "dates": [
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2126 · PNQ 19:15 → DEL 21:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 9434.64,
+        "dates": [
+          "2026-12-18"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2126 · PNQ 19:15 → DEL 21:25+1",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8427.92,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 12432.96,
+        "dates": [
+          "2026-12-18"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2285 · PNQ 14:25 → DEL 16:35",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8222,
+        "dates": [
+          "2026-12-28",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 8748.24,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 8979.12,
+        "dates": [
+          "2026-12-28",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 9554.24,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 10466.32,
+        "dates": [
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 11813.12,
+        "dates": [
+          "2026-12-28",
+          "2026-12-30"
+        ]
+      },
+      {
+        "fare": 12595.2,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 13836.96,
+        "dates": [
+          "2026-12-29"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2375 · PNQ 07:30 → DEL 09:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8366.56,
+        "dates": [
+          "2026-12-21"
+        ]
+      },
+      {
+        "fare": 8759.68,
+        "dates": [
+          "2026-12-21"
+        ]
+      },
+      {
+        "fare": 8934.4,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 8943.76,
+        "dates": [
+          "2026-12-18",
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9175.68,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 9356.64,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9366,
+        "dates": [
+          "2026-12-18",
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9609.36,
+        "dates": [
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 9637.44,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9752.88,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9868.32,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10094,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 10492.32,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 10588,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10701.36,
+        "dates": [
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2419 · PNQ 05:05 → DEL 07:15",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8828.32,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 8943.76,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9244.32,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9366,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9406.56,
+        "dates": [
+          "2026-12-19",
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10103.36,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10215.68,
+        "dates": [
+          "2026-12-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 5277 · PNQ 21:35 → DEL 23:55",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8007.76,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 8222,
+        "dates": [
+          "2026-12-20",
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8979.12,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9058.16,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9069.6,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 9778.88,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9893.28,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 11813.12,
+        "dates": [
+          "2026-12-20",
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 11936.88,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 12900.96,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 13056.96,
+        "dates": [
+          "2026-12-18"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6431 · PNQ 12:10 → DEL 14:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8828.32,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 8943.76,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9151.76,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9244.32,
+        "dates": [
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9366,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9398.24,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9584.4,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9637.44,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10345.68,
+        "dates": [
+          "2026-12-25"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Pune",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 6861 · PNQ 08:40 → DEL 10:50",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8366.56,
+        "dates": [
+          "2026-12-21"
+        ]
+      },
+      {
+        "fare": 8759.68,
+        "dates": [
+          "2026-12-21"
+        ]
+      },
+      {
+        "fare": 8934.4,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 8943.76,
+        "dates": [
+          "2026-12-05",
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9356.64,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9366,
+        "dates": [
+          "2026-12-05",
+          "2026-12-18"
+        ]
+      },
+      {
+        "fare": 9398.24,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 9402.4,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9406.56,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9637.44,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 9847.52,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 9851.68,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 9868.32,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 10336.32,
+        "dates": [
+          "2026-12-19"
+        ]
+      },
+      {
+        "fare": 10588,
+        "dates": [
+          "2026-12-25"
         ]
       }
     ]
@@ -25215,6 +28910,36 @@
     "airline": "IndiGo",
     "kind": "One way",
     "domestic": true,
+    "schedule": "6E 2286 · IXR 17:20 → DEL 19:25",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 8007.76,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8747.2,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 11496.96,
+        "dates": [
+          "2026-12-26"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Ranchi",
+    "destination": "Delhi",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
     "schedule": "6E 6274 · IXR 20:35 → DEL 22:35",
     "termsConfirmed": false,
     "baggage": "15 kg checked + 7 kg cabin",
@@ -25262,9 +28987,102 @@
         ]
       },
       {
+        "fare": 7789.36,
+        "dates": [
+          "2026-12-13"
+        ]
+      },
+      {
+        "fare": 7832,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
         "fare": 8040,
         "dates": [
           "2026-12-06"
+        ]
+      },
+      {
+        "fare": 8524.64,
+        "dates": [
+          "2026-12-20"
+        ]
+      },
+      {
+        "fare": 8716,
+        "dates": [
+          "2026-12-13",
+          "2026-12-20",
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 8747.2,
+        "dates": [
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 9291.12,
+        "dates": [
+          "2026-12-13",
+          "2026-12-27"
+        ]
+      },
+      {
+        "fare": 11496.96,
+        "dates": [
+          "2026-12-27"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Srinagar",
+    "destination": "Chandigarh",
+    "airline": "IndiGo",
+    "kind": "One way",
+    "domestic": true,
+    "schedule": "6E 2148 · SXR 17:35 → IXC 18:40",
+    "termsConfirmed": false,
+    "baggage": "15 kg checked + 7 kg cabin",
+    "groups": [
+      {
+        "fare": 6688,
+        "dates": [
+          "2026-12-23"
+        ]
+      },
+      {
+        "fare": 6697.36,
+        "dates": [
+          "2026-12-24"
+        ]
+      },
+      {
+        "fare": 6894.96,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 6900,
+        "dates": [
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 7728,
+        "dates": [
+          "2026-12-26"
+        ]
+      },
+      {
+        "fare": 8308.32,
+        "dates": [
+          "2026-12-26"
         ]
       }
     ]
@@ -25289,6 +29107,12 @@
         "fare": 8963.52,
         "dates": [
           "2026-12-21"
+        ]
+      },
+      {
+        "fare": 10380,
+        "dates": [
+          "2026-12-28"
         ]
       }
     ]
@@ -25426,13 +29250,15 @@
       {
         "fare": 9577.12,
         "dates": [
-          "2026-12-05"
+          "2026-12-05",
+          "2026-12-06"
         ]
       },
       {
         "fare": 12626.4,
         "dates": [
-          "2026-12-05"
+          "2026-12-05",
+          "2026-12-06"
         ]
       },
       {
