@@ -29271,128 +29271,16 @@
   },
   {
     "origin": "Delhi",
-    "destination": "Milan",
-    "airline": "Air India",
-    "kind": "One way",
-    "baggage": "2 × 23 kg + 7 kg",
-    "termsConfirmed": false,
-    "groups": [
-      {
-        "fare": 43000,
-        "dates": [
-          "2026-12-10",
-          "2026-12-12",
-          "2026-12-13"
-        ]
-      },
-      {
-        "fare": 38000,
-        "dates": [
-          "2026-12-17",
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-22",
-          "2026-12-24",
-          "2026-12-26"
-        ]
-      },
-      {
-        "fare": 41860,
-        "dates": [
-          "2026-12-25"
-        ]
-      },
-      {
-        "fare": 45500,
-        "dates": [
-          "2026-12-27"
-        ]
-      },
-      {
-        "fare": 48000,
-        "dates": [
-          "2026-12-31"
-        ]
-      }
-    ]
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Rome",
-    "airline": "ITA Airways",
-    "kind": "One way",
-    "baggage": "2 × 23 kg + 7 kg",
-    "termsConfirmed": false,
-    "groups": [
-      {
-        "fare": 37000,
-        "dates": [
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04",
-          "2026-12-05",
-          "2026-12-06",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17",
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30"
-        ]
-      }
-    ],
-    "note": "Add-on sectors available."
-  },
-  {
-    "origin": "Amritsar",
     "destination": "Melbourne",
-    "airline": "Scoot",
+    "airline": "Singapore Airlines",
     "kind": "One way",
-    "baggage": "20 kg + 10 kg",
-    "termsConfirmed": false,
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ227",
     "groups": [
       {
-        "fare": 37000,
+        "fare": 36000,
         "dates": [
-          "2026-12-06",
-          "2026-12-11",
-          "2026-12-13"
-        ]
-      },
-      {
-        "fare": 38000,
-        "dates": [
-          "2026-12-16",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 48000,
-        "dates": [
-          "2026-12-18",
-          "2026-12-20",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-27",
-          "2026-12-28"
+          "2026-11-29"
         ]
       }
     ]
@@ -29400,59 +29288,124 @@
   {
     "origin": "Delhi",
     "destination": "Melbourne",
-    "airline": "Air India",
+    "airline": "Singapore Airlines",
     "kind": "One way",
-    "baggage": "30 kg + 7 kg",
-    "termsConfirmed": false,
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ247",
     "groups": [
       {
-        "fare": 27000,
-        "dates": [
-          "2026-12-02"
-        ]
-      },
-      {
-        "fare": 30500,
+        "fare": 34000,
         "dates": [
           "2026-12-04"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Sydney",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ231",
+    "groups": [
       {
-        "fare": 33500,
+        "fare": 36000,
         "dates": [
-          "2026-12-07",
-          "2026-12-09",
-          "2026-12-11"
+          "2026-12-02",
+          "2026-12-07"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Adelaide",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ279",
+    "groups": [
+      {
+        "fare": 86000,
+        "dates": [
+          "2027-01-11"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Brisbane",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ255",
+    "groups": [
+      {
+        "fare": 39000,
+        "dates": [
+          "2026-12-01"
         ]
       },
       {
-        "fare": 35500,
+        "fare": 43000,
         "dates": [
-          "2026-12-16",
-          "2026-12-20"
+          "2026-12-06"
         ]
       },
       {
-        "fare": 37500,
+        "fare": 86000,
         "dates": [
-          "2026-12-18"
+          "2027-01-19"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Perth",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ403 / SQ213",
+    "groups": [
       {
-        "fare": 36500,
+        "fare": 33000,
         "dates": [
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-25"
+          "2026-12-08"
         ]
-      },
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Auckland",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ285",
+    "groups": [
       {
-        "fare": 46000,
+        "fare": 91000,
         "dates": [
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29"
+          "2027-01-19"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Christchurch",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ401 / SQ297",
+    "groups": [
+      {
+        "fare": 96000,
+        "dates": [
+          "2027-01-11"
         ]
       }
     ]
@@ -29462,11 +29415,13 @@
     "destination": "Toronto",
     "airline": "Qatar Airways",
     "kind": "One way",
+    "baggage": "2 pieces",
+    "schedule": "ATQ 04:10 → DOH 06:00 · DOH 08:30 → YYZ 14:30",
+    "termsConfirmed": false,
     "groups": [
       {
         "fare": 84000,
         "dates": [
-          "2027-01-18",
           "2027-01-19",
           "2027-01-20",
           "2027-01-23",
@@ -29482,6 +29437,7 @@
           "2027-02-15",
           "2027-02-16",
           "2027-02-17",
+          "2027-02-18",
           "2027-02-19",
           "2027-02-20",
           "2027-02-21",
@@ -29508,21 +29464,21 @@
           "2027-03-19",
           "2027-03-21",
           "2027-03-23",
+          "2027-03-25",
           "2027-03-27",
           "2027-03-29",
           "2027-03-31"
         ]
       }
-    ],
-    "baggage": "2 pieces",
-    "schedule": "ATQ 04:10 → DOH 06:00 · DOH 08:30 → YYZ 14:30",
-    "termsConfirmed": false
+    ]
   },
   {
     "origin": "Delhi",
     "destination": "Vancouver",
     "airline": "Philippine Airlines",
     "kind": "One way",
+    "baggage": "2 pieces",
+    "termsConfirmed": false,
     "groups": [
       {
         "fare": 84000,
@@ -29534,634 +29490,15 @@
           "2027-02-25"
         ]
       }
-    ],
-    "baggage": "2 pieces",
-    "termsConfirmed": false
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Dubai",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 26900,
-        "dates": [
-          "2026-11-28",
-          "2026-11-29",
-          "2026-11-30",
-          "2026-12-01",
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04",
-          "2026-12-05",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 30900,
-        "dates": [
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "AI 917 · 09:50 → 12:45"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Dubai",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 26900,
-        "dates": [
-          "2026-11-28",
-          "2026-11-30",
-          "2026-12-01",
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04",
-          "2026-12-05",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 30900,
-        "dates": [
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "AI 995 · 19:20 → 22:05"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Dubai",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 26900,
-        "dates": [
-          "2026-11-30",
-          "2026-12-01",
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04",
-          "2026-12-05",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 30900,
-        "dates": [
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "AI 915 · 16:10 → 19:00"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Dubai",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 26900,
-        "dates": [
-          "2026-11-28",
-          "2026-11-29",
-          "2026-11-30",
-          "2026-12-01",
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04",
-          "2026-12-05",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 30900,
-        "dates": [
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "AI 929 · 07:30 → 10:15"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Bali",
-    "airline": "Malaysia Airlines",
-    "kind": "Round trip",
-    "groups": [
-      {
-        "fare": 50999,
-        "dates": [
-          "2027-01-16/2027-01-23",
-          "2027-02-10/2027-02-17"
-        ]
-      },
-      {
-        "fare": 53999,
-        "dates": [
-          "2027-01-20/2027-01-27",
-          "2027-01-23/2027-01-30"
-        ]
-      },
-      {
-        "fare": 52999,
-        "dates": [
-          "2027-01-30/2027-02-06"
-        ]
-      },
-      {
-        "fare": 49999,
-        "dates": [
-          "2027-02-17/2027-02-24",
-          "2027-02-20/2027-02-27",
-          "2027-02-27/2027-03-06"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "Via Kuala Lumpur · MH191 / MH715 out · MH714 / MH190 back"
-  },
-  {
-    "origin": "Amritsar",
-    "destination": "Bali",
-    "airline": "Malaysia Airlines",
-    "kind": "Round trip",
-    "groups": [
-      {
-        "fare": 53999,
-        "dates": [
-          "2026-12-10/2026-12-17"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "Via Kuala Lumpur · MH119 / MH715 out · MH714 / MH118 back"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Rome",
-    "airline": "ITA Airways",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 52000,
-        "dates": [
-          "2027-01-01",
-          "2027-01-21",
-          "2027-01-22",
-          "2027-01-23",
-          "2027-01-24",
-          "2027-01-25"
-        ]
-      },
-      {
-        "fare": 72000,
-        "dates": [
-          "2027-01-02",
-          "2027-01-03",
-          "2027-01-04",
-          "2027-01-05",
-          "2027-01-06",
-          "2027-01-07",
-          "2027-01-08",
-          "2027-01-09",
-          "2027-01-10"
-        ]
-      },
-      {
-        "fare": 67000,
-        "dates": [
-          "2027-01-11",
-          "2027-01-12",
-          "2027-01-13",
-          "2027-01-14",
-          "2027-01-15"
-        ]
-      },
-      {
-        "fare": 62000,
-        "dates": [
-          "2027-01-16",
-          "2027-01-17",
-          "2027-01-18",
-          "2027-01-19",
-          "2027-01-20"
-        ]
-      },
-      {
-        "fare": 47000,
-        "dates": [
-          "2027-01-26",
-          "2027-01-27",
-          "2027-01-28",
-          "2027-01-29",
-          "2027-01-30",
-          "2027-01-31"
-        ]
-      }
-    ],
-    "baggage": "46 kg + 7 kg",
-    "schedule": "DEL 03:00 → FCO 08:10"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Calgary",
-    "airline": "Lufthansa",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 82000,
-        "dates": [
-          "2026-12-18"
-        ]
-      },
-      {
-        "fare": 84000,
-        "dates": [
-          "2026-12-28"
-        ]
-      }
-    ],
-    "baggage": "23 kg + 7 kg",
-    "schedule": "DEL 03:35 → FRA 07:55 · FRA 13:30 → YYC 16:20"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Phuket",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 19500,
-        "dates": [
-          "2027-01-16",
-          "2027-01-26",
-          "2027-01-29",
-          "2027-02-02",
-          "2027-02-06",
-          "2027-02-10",
-          "2027-02-13",
-          "2027-02-19",
-          "2027-02-21",
-          "2027-02-23",
-          "2027-02-27",
-          "2027-03-02",
-          "2027-03-06",
-          "2027-03-09",
-          "2027-03-13",
-          "2027-03-16",
-          "2027-03-20",
-          "2027-03-23",
-          "2027-03-27",
-          "2027-03-30"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "DEL 00:25 → HKT 06:35"
-  },
-  {
-    "origin": "Phuket",
-    "destination": "Delhi",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 26000,
-        "dates": [
-          "2027-01-03"
-        ]
-      },
-      {
-        "fare": 21000,
-        "dates": [
-          "2027-01-21",
-          "2027-01-31",
-          "2027-02-07",
-          "2027-02-11",
-          "2027-02-16",
-          "2027-02-24",
-          "2027-02-26",
-          "2027-02-28",
-          "2027-03-04",
-          "2027-03-07",
-          "2027-03-11",
-          "2027-03-14",
-          "2027-03-18",
-          "2027-03-25",
-          "2027-03-28"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "HKT 22:30 → DEL 01:55"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Bangkok",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 15500,
-        "dates": [
-          "2026-12-05",
-          "2026-12-06",
-          "2026-12-10",
-          "2026-12-12",
-          "2026-12-13"
-        ]
-      },
-      {
-        "fare": 17000,
-        "dates": [
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 18000,
-        "dates": [
-          "2026-12-19",
-          "2026-12-20",
-          "2026-12-24",
-          "2026-12-26",
-          "2026-12-29"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "DEL 20:55 → DMK 02:40"
-  },
-  {
-    "origin": "Bangkok",
-    "destination": "Delhi",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 18000,
-        "dates": [
-          "2026-12-13",
-          "2026-12-15"
-        ]
-      },
-      {
-        "fare": 19000,
-        "dates": [
-          "2026-12-17",
-          "2026-12-20",
-          "2026-12-22",
-          "2026-12-24",
-          "2026-12-27",
-          "2026-12-29"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "DMK 16:45 → DEL 19:40"
-  },
-  {
-    "origin": "Amritsar",
-    "destination": "Kuala Lumpur",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 15800,
-        "dates": [
-          "2026-12-04",
-          "2026-12-05"
-        ]
-      },
-      {
-        "fare": 16800,
-        "dates": [
-          "2026-12-09",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-16",
-          "2026-12-18",
-          "2026-12-19"
-        ]
-      },
-      {
-        "fare": 19800,
-        "dates": [
-          "2026-12-23",
-          "2026-12-25",
-          "2026-12-26",
-          "2026-12-28",
-          "2026-12-30"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "ATQ 22:30 → KUL 06:50"
-  },
-  {
-    "origin": "Kuala Lumpur",
-    "destination": "Amritsar",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 22800,
-        "dates": [
-          "2026-12-18",
-          "2026-12-23",
-          "2026-12-25",
-          "2026-12-28",
-          "2026-12-30"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "KUL 17:45 → ATQ 21:30"
-  },
-  {
-    "origin": "Amritsar",
-    "destination": "Melbourne",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 40900,
-        "dates": [
-          "2026-12-16",
-          "2026-12-21",
-          "2026-12-23",
-          "2026-12-28",
-          "2026-12-30"
-        ]
-      },
-      {
-        "fare": 64000,
-        "dates": [
-          "2027-01-04",
-          "2027-01-06",
-          "2027-01-11",
-          "2027-01-18",
-          "2027-01-20",
-          "2027-01-25",
-          "2027-01-27"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "ATQ 22:30 → KUL 06:50 · KUL 12:45 → MEL 23:45",
-    "note": "Optional extras per passenger: 10 kg baggage ₹8,500, 20 kg baggage ₹15,500, meal ₹1,200."
-  },
-  {
-    "origin": "Melbourne",
-    "destination": "Amritsar",
-    "airline": "AirAsia",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 99000,
-        "dates": [
-          "2026-12-19"
-        ]
-      },
-      {
-        "fare": 84000,
-        "dates": [
-          "2026-12-26",
-          "2026-12-28"
-        ]
-      },
-      {
-        "fare": 69000,
-        "dates": [
-          "2027-01-04",
-          "2027-01-09",
-          "2027-01-11",
-          "2027-01-16",
-          "2027-01-18"
-        ]
-      },
-      {
-        "fare": 54000,
-        "dates": [
-          "2027-01-23",
-          "2027-01-25",
-          "2027-01-30"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "MEL 06:15 → KUL 11:35 · KUL 17:55 → ATQ 21:30",
-    "note": "Optional extras per passenger: 10 kg baggage ₹8,500, 20 kg baggage ₹15,500, meal ₹1,200."
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Melbourne",
     "airline": "Scoot",
     "kind": "One way",
+    "baggage": "20 kg + 7 kg",
+    "schedule": "Via Singapore · ATQ 15:45 → MEL 12:10",
     "groups": [
       {
         "fare": 34400,
@@ -30189,22 +29526,16 @@
           "2026-12-27"
         ]
       }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "Via Singapore · ATQ 15:45 → MEL 12:10"
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Sydney",
     "airline": "Scoot",
     "kind": "One way",
+    "baggage": "20 kg + 7 kg",
+    "schedule": "Via Singapore · ATQ 15:45 → SYD 12:10",
     "groups": [
-      {
-        "fare": 23900,
-        "dates": [
-          "2026-11-25"
-        ]
-      },
       {
         "fare": 28900,
         "dates": [
@@ -30239,15 +29570,15 @@
           "2026-12-30"
         ]
       }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "Via Singapore · ATQ 15:45 → SYD 12:10"
+    ]
   },
   {
     "origin": "Melbourne",
     "destination": "Amritsar",
     "airline": "Scoot",
     "kind": "One way",
+    "baggage": "20 kg + 7 kg",
+    "schedule": "Via Singapore · MEL 22:35 → ATQ 14:30",
     "groups": [
       {
         "fare": 72000,
@@ -30255,270 +29586,85 @@
           "2026-12-02"
         ]
       }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "Via Singapore · MEL 22:35 → ATQ 14:30"
+    ]
   },
   {
     "origin": "Delhi",
-    "destination": "Kuwait City",
-    "airline": "Jazeera Airways",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 19700,
-        "dates": [
-          "2026-12-15",
-          "2026-12-22",
-          "2026-12-29"
-        ]
-      },
-      {
-        "fare": 19200,
-        "dates": [
-          "2026-12-16",
-          "2026-12-25"
-        ]
-      }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "DEL 07:45 → KWI 10:05"
-  },
-  {
-    "origin": "Chandigarh",
-    "destination": "Abu Dhabi",
-    "airline": "IndiGo",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 23500,
-        "dates": [
-          "2026-12-01",
-          "2026-12-08",
-          "2026-12-10",
-          "2026-12-12",
-          "2026-12-15",
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 21500,
-        "dates": [
-          "2026-12-09",
-          "2026-12-14",
-          "2026-12-16",
-          "2026-12-18"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg"
-  },
-  {
-    "origin": "Toronto",
-    "destination": "Amritsar",
-    "airline": "Qatar Airways",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 122000,
-        "dates": [
-          "2026-12-01",
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31",
-          "2027-01-01",
-          "2027-01-03",
-          "2027-01-04",
-          "2027-01-17",
-          "2027-01-23",
-          "2027-01-24",
-          "2027-01-28",
-          "2027-01-30",
-          "2027-01-31"
-        ]
-      }
-    ],
-    "baggage": "2 pieces + 7 kg"
-  },
-  {
-    "origin": "Toronto",
-    "destination": "Delhi",
-    "airline": "Qatar Airways",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 107000,
-        "dates": [
-          "2026-12-07",
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29",
-          "2026-12-30",
-          "2026-12-31",
-          "2027-01-01",
-          "2027-01-04"
-        ]
-      }
-    ],
-    "baggage": "2 pieces + 7 kg"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Bali",
+    "destination": "Phuket",
     "airline": "Air India",
     "kind": "One way",
+    "baggage": "25 kg + 7 kg",
+    "schedule": "DEL 00:25 → HKT 06:35",
     "groups": [
       {
-        "fare": 31000,
+        "fare": 19500,
         "dates": [
-          "2026-12-27",
-          "2026-12-28"
+          "2027-01-16",
+          "2027-01-26",
+          "2027-02-02",
+          "2027-02-06",
+          "2027-02-10",
+          "2027-02-13",
+          "2027-02-19",
+          "2027-02-21",
+          "2027-02-23",
+          "2027-02-27",
+          "2027-03-02",
+          "2027-03-06",
+          "2027-03-09",
+          "2027-03-13",
+          "2027-03-16",
+          "2027-03-20",
+          "2027-03-23",
+          "2027-03-27",
+          "2027-03-30"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Phuket",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "25 kg + 7 kg",
+    "schedule": "HKT 22:30 → DEL 01:55",
+    "groups": [
+      {
+        "fare": 26000,
+        "dates": [
+          "2027-01-03"
         ]
       },
       {
-        "fare": 26500,
+        "fare": 21000,
         "dates": [
-          "2027-01-03",
-          "2027-01-09",
-          "2027-01-16",
-          "2027-01-17",
-          "2027-01-18",
-          "2027-01-23",
-          "2027-01-24",
-          "2027-01-25",
-          "2027-01-30",
-          "2027-02-01",
-          "2027-02-06",
+          "2027-01-21",
+          "2027-01-31",
           "2027-02-07",
-          "2027-02-08",
-          "2027-02-13",
-          "2027-02-14",
-          "2027-02-15",
-          "2027-02-20",
-          "2027-02-21",
-          "2027-02-22",
-          "2027-02-27",
+          "2027-02-11",
+          "2027-02-16",
+          "2027-02-24",
+          "2027-02-26",
           "2027-02-28",
-          "2027-03-01",
-          "2027-03-13",
+          "2027-03-04",
+          "2027-03-07",
+          "2027-03-11",
           "2027-03-14",
-          "2027-03-21",
-          "2027-03-27",
+          "2027-03-18",
+          "2027-03-25",
           "2027-03-28"
         ]
       }
-    ],
-    "baggage": "20 kg + 7 kg",
-    "schedule": "DEL 03:15 → DPS 13:50"
-  },
-  {
-    "origin": "Edmonton",
-    "destination": "Delhi",
-    "airline": "KLM",
-    "kind": "One way",
-    "baggage": "2 pieces",
-    "groups": [
-      {
-        "fare": 87000,
-        "dates": [
-          "2026-12-01"
-        ]
-      }
-    ],
-    "schedule": "YEG 18:05 → AMS 09:55 · AMS 12:30 → DEL 01:10",
-    "note": "Meal included."
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Melbourne",
-    "airline": "Air India",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": 25900,
-        "dates": [
-          "2026-11-30"
-        ]
-      },
-      {
-        "fare": 30000,
-        "dates": [
-          "2026-12-01"
-        ]
-      },
-      {
-        "fare": 32000,
-        "dates": [
-          "2026-12-02",
-          "2026-12-03",
-          "2026-12-04"
-        ]
-      },
-      {
-        "fare": 35500,
-        "dates": [
-          "2026-12-05"
-        ]
-      },
-      {
-        "fare": 37000,
-        "dates": [
-          "2026-12-06",
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11"
-        ]
-      },
-      {
-        "fare": 39500,
-        "dates": [
-          "2026-12-12",
-          "2026-12-13",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17",
-          "2026-12-18",
-          "2026-12-19",
-          "2026-12-20"
-        ]
-      },
-      {
-        "fare": 41500,
-        "dates": [
-          "2026-12-21",
-          "2026-12-22",
-          "2026-12-23",
-          "2026-12-24",
-          "2026-12-25"
-        ]
-      },
-      {
-        "fare": 50000,
-        "dates": [
-          "2026-12-26",
-          "2026-12-27",
-          "2026-12-28",
-          "2026-12-29"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "DEL 03:00 → MEL 19:40"
+    ]
   },
   {
     "origin": "Vancouver",
     "destination": "Delhi",
     "airline": "Turkish Airlines",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
+    "schedule": "YVR 19:10 → IST 17:10 · IST 20:15 → DEL 04:50",
     "groups": [
       {
         "fare": 97000,
@@ -30539,15 +29685,15 @@
           "2026-12-02"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg",
-    "schedule": "YVR 19:10 → IST 17:10 · IST 20:15 → DEL 04:50"
+    ]
   },
   {
     "origin": "Montreal",
     "destination": "Delhi",
     "airline": "Turkish Airlines",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
+    "schedule": "Via Istanbul",
     "groups": [
       {
         "fare": 92000,
@@ -30562,40 +29708,35 @@
           "2026-12-09"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg",
-    "schedule": "Via Istanbul"
+    ]
   },
   {
     "origin": "Vancouver",
     "destination": "Delhi",
     "airline": "Air France",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
     "groups": [
       {
         "fare": 92000,
         "dates": [
           "2026-12-03"
         ]
-      },
-      {
-        "fare": 97000,
-        "dates": [
-          "2026-12-10"
-        ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg"
+    ]
   },
   {
     "origin": "Toronto",
     "destination": "Delhi",
     "airline": "Turkish Airlines",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
+    "schedule": "YYZ 22:00 → IST 14:50 · IST 20:15 → DEL 04:50",
     "groups": [
       {
         "fare": 97000,
         "dates": [
+          "2026-12-03",
           "2026-12-06",
           "2026-12-07",
           "2027-01-04",
@@ -30605,15 +29746,14 @@
           "2027-01-10"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg",
-    "schedule": "YYZ 22:00 → IST 14:50 · IST 20:15 → DEL 04:50"
+    ]
   },
   {
     "origin": "Toronto",
     "destination": "Delhi",
     "airline": "KLM",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
     "groups": [
       {
         "fare": 97000,
@@ -30633,14 +29773,14 @@
           "2027-01-18"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg"
+    ]
   },
   {
     "origin": "Edmonton",
     "destination": "Delhi",
     "airline": "KLM",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
     "groups": [
       {
         "fare": 97000,
@@ -30656,14 +29796,14 @@
           "2026-12-15"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg"
+    ]
   },
   {
     "origin": "Toronto",
     "destination": "Delhi",
     "airline": "Air France",
     "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
     "groups": [
       {
         "fare": 97000,
@@ -30672,14 +29812,42 @@
           "2026-12-08"
         ]
       }
-    ],
-    "baggage": "2 pieces + 7 kg"
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "London",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
+    "schedule": "DEL 05:55 → LHR 11:30",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 38000,
+        "dates": [
+          "2026-12-07",
+          "2026-12-25"
+        ]
+      },
+      {
+        "fare": 34000,
+        "dates": [
+          "2026-12-11",
+          "2026-12-17",
+          "2026-12-23",
+          "2026-12-29"
+        ]
+      }
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Toronto",
     "airline": "Qatar Airways",
     "kind": "One way",
+    "baggage": "46 kg + 7 kg",
+    "schedule": "ATQ 04:10 → DOH 06:00 · DOH 08:30 → YYZ 14:30",
     "groups": [
       {
         "fare": 89000,
@@ -30700,215 +29868,19 @@
           "2027-01-29"
         ]
       }
-    ],
-    "baggage": "46 kg + 7 kg",
-    "schedule": "ATQ 04:10 → DOH 06:00 · DOH 08:30 → YYZ 14:30"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Bali",
-    "airline": "Air India",
-    "kind": "Round trip",
-    "groups": [
-      {
-        "fare": 53999,
-        "dates": [
-          "2027-01-16/2027-01-22"
-        ]
-      },
-      {
-        "fare": 55999,
-        "dates": [
-          "2027-01-23/2027-01-29",
-          "2027-01-30/2027-02-05"
-        ]
-      }
-    ],
-    "baggage": "25 kg + 7 kg",
-    "schedule": "Out 03:15 → 13:50 · Back 15:10 → 20:45"
-  },
-  {
-    "origin": "Delhi",
-    "destination": "Bali",
-    "airline": "Singapore Airlines",
-    "kind": "Round trip",
-    "groups": [
-      {
-        "fare": 53999,
-        "dates": [
-          "2027-01-19/2027-01-26",
-          "2027-01-22/2027-01-29",
-          "2027-01-30/2027-02-06",
-          "2027-02-04/2027-02-11",
-          "2027-02-05/2027-02-12",
-          "2027-02-09/2027-02-16",
-          "2027-02-12/2027-02-19",
-          "2027-02-13/2027-02-20",
-          "2027-02-19/2027-02-26",
-          "2027-02-25/2027-03-04",
-          "2027-02-26/2027-03-05",
-          "2027-03-04/2027-03-11",
-          "2027-03-05/2027-03-12",
-          "2027-03-09/2027-03-16",
-          "2027-03-12/2027-03-19",
-          "2027-03-25/2027-04-01",
-          "2027-03-26/2027-04-02"
-        ]
-      }
-    ],
-    "baggage": "25 kg + 7 kg",
-    "schedule": "Via Singapore · SQ403 / SQ934 out · SQ947 / SQ402 back"
-  },
-  {
-    "origin": "Milan",
-    "destination": "Delhi",
-    "airline": "Air India",
-    "kind": "One way",
-    "baggage": "2 × 23 kg + 7 kg",
-    "termsConfirmed": false,
-    "groups": [
-      {
-        "fare": 55000,
-        "dates": [
-          "2026-12-01"
-        ]
-      },
-      {
-        "fare": 58000,
-        "dates": [
-          "2026-12-03"
-        ]
-      },
-      {
-        "fare": 72040,
-        "dates": [
-          "2026-12-17"
-        ]
-      },
-      {
-        "fare": 65770,
-        "dates": [
-          "2026-12-31"
-        ]
-      },
-      {
-        "fare": 63490,
-        "dates": [
-          "2027-01-01",
-          "2027-01-03"
-        ]
-      },
-      {
-        "fare": 54940,
-        "dates": [
-          "2027-01-05",
-          "2027-01-07",
-          "2027-01-09",
-          "2027-01-10"
-        ]
-      },
-      {
-        "fare": 49240,
-        "dates": [
-          "2027-01-12"
-        ]
-      },
-      {
-        "fare": 43540,
-        "dates": [
-          "2027-01-14",
-          "2027-01-15",
-          "2027-01-16"
-        ]
-      },
-      {
-        "fare": 42400,
-        "dates": [
-          "2027-01-17"
-        ]
-      },
-      {
-        "fare": 40120,
-        "dates": [
-          "2027-01-19"
-        ]
-      },
-      {
-        "fare": 38980,
-        "dates": [
-          "2027-01-20",
-          "2027-01-21"
-        ]
-      },
-      {
-        "fare": 37840,
-        "dates": [
-          "2027-01-22",
-          "2027-01-23",
-          "2027-01-24",
-          "2027-01-25",
-          "2027-01-26",
-          "2027-01-27",
-          "2027-01-28"
-        ]
-      }
     ]
   },
   {
     "origin": "Amritsar",
-    "destination": "Sydney",
-    "airline": "Scoot",
+    "destination": "Toronto",
+    "airline": "Qatar Airways",
     "kind": "One way",
-    "baggage": "20 kg + 10 kg",
-    "termsConfirmed": false,
+    "baggage": "2 pieces + 7 kg",
     "groups": [
       {
-        "fare": 21000,
+        "fare": 96000,
         "dates": [
-          "2026-11-29"
-        ]
-      },
-      {
-        "fare": 41000,
-        "dates": [
-          "2026-12-13"
-        ]
-      },
-      {
-        "fare": 56000,
-        "dates": [
-          "2026-12-27"
-        ]
-      }
-    ]
-  },
-  {
-    "origin": "Amritsar",
-    "destination": "Birmingham",
-    "airline": "Air India",
-    "kind": "One way",
-    "baggage": "2 × 23 kg + 7 kg",
-    "termsConfirmed": false,
-    "groups": [
-      {
-        "fare": 70000,
-        "dates": [
-          "2026-12-04"
-        ]
-      },
-      {
-        "fare": 68000,
-        "dates": [
-          "2026-12-09"
-        ]
-      },
-      {
-        "fare": 56000,
-        "dates": [
-          "2026-12-16",
-          "2026-12-20",
-          "2026-12-23",
-          "2026-12-25"
+          "2026-12-19"
         ]
       }
     ]
@@ -30916,60 +29888,271 @@
   {
     "origin": "Delhi",
     "destination": "Milan",
-    "airline": "Turkmenistan Airlines",
+    "airline": "Air India",
     "kind": "One way",
-    "baggage": "2 × 20 kg + 5 kg",
+    "baggage": "2 pieces + 7 kg",
     "termsConfirmed": false,
     "groups": [
       {
-        "fare": 41690,
+        "fare": 44000,
         "dates": [
-          "2026-12-02",
-          "2026-12-05",
-          "2026-12-09",
+          "2026-12-10",
+          "2026-12-11",
           "2026-12-12",
-          "2026-12-19",
+          "2026-12-13",
+          "2026-12-15"
+        ]
+      },
+      {
+        "fare": 39000,
+        "dates": [
+          "2026-12-17",
+          "2026-12-18",
+          "2026-12-20",
+          "2026-12-22",
+          "2026-12-24",
+          "2026-12-25",
           "2026-12-26",
-          "2026-12-30",
-          "2027-02-04",
-          "2027-02-10",
-          "2027-02-11",
-          "2027-02-18",
-          "2027-02-24",
-          "2027-02-25"
+          "2026-12-27",
+          "2026-12-29",
+          "2026-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Milan",
+    "destination": "Delhi",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "2 pieces + 7 kg",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 44000,
+        "dates": [
+          "2026-12-01",
+          "2026-12-03"
         ]
       },
       {
-        "fare": 39510,
+        "fare": 51000,
         "dates": [
+          "2026-12-04",
+          "2026-12-05"
+        ]
+      },
+      {
+        "fare": 54000,
+        "dates": [
+          "2026-12-06",
+          "2026-12-08"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Chandigarh",
+    "destination": "Rome",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "2 × 23 kg",
+    "note": "Infant fare ₹5,000 with 10 kg baggage.",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 42000,
+        "dates": [
+          "2026-12-07",
+          "2026-12-09",
+          "2026-12-11",
+          "2026-12-14",
           "2026-12-16",
-          "2026-12-23"
+          "2026-12-18",
+          "2026-12-21",
+          "2026-12-23",
+          "2026-12-25",
+          "2026-12-28",
+          "2026-12-30"
         ]
       },
       {
-        "fare": 82160,
+        "fare": 53000,
         "dates": [
-          "2027-01-06"
+          "2027-01-01"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Amritsar",
+    "destination": "Rome",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "2 × 23 kg",
+    "note": "Infant fare ₹5,000 with 10 kg baggage.",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 42000,
+        "dates": [
+          "2026-12-07",
+          "2026-12-09",
+          "2026-12-11",
+          "2026-12-14",
+          "2026-12-16",
+          "2026-12-18",
+          "2026-12-21",
+          "2026-12-23",
+          "2026-12-25",
+          "2026-12-28",
+          "2026-12-30"
         ]
       },
       {
-        "fare": 67340,
+        "fare": 53000,
         "dates": [
-          "2027-01-13",
-          "2027-01-14",
-          "2027-01-21"
+          "2027-01-01"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Rome",
+    "airline": "ITA Airways",
+    "kind": "One way",
+    "baggage": "2 × 23 kg + 7 kg",
+    "note": "Add-on sector ₹5,000 extra.",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 38000,
+        "dates": [
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-07",
+          "2026-12-08",
+          "2026-12-09",
+          "2026-12-10",
+          "2026-12-11",
+          "2026-12-12",
+          "2026-12-13",
+          "2026-12-14",
+          "2026-12-15",
+          "2026-12-16",
+          "2026-12-17",
+          "2026-12-18",
+          "2026-12-19",
+          "2026-12-20",
+          "2026-12-21",
+          "2026-12-22",
+          "2026-12-23",
+          "2026-12-24",
+          "2026-12-25",
+          "2026-12-26",
+          "2026-12-27",
+          "2026-12-28",
+          "2026-12-29",
+          "2026-12-30",
+          "2026-12-31"
         ]
       },
       {
-        "fare": 42260,
+        "fare": 53000,
         "dates": [
-          "2027-02-03"
+          "2027-01-08"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Rome",
+    "airline": "Air India",
+    "kind": "One way",
+    "baggage": "2 × 23 kg",
+    "note": "Infant fare ₹5,000 with 10 kg baggage.",
+    "termsConfirmed": false,
+    "groups": [
+      {
+        "fare": 35000,
+        "dates": [
+          "2026-12-06",
+          "2026-12-07",
+          "2026-12-09",
+          "2026-12-11",
+          "2026-12-13",
+          "2026-12-14",
+          "2026-12-16",
+          "2026-12-18",
+          "2026-12-21",
+          "2026-12-23",
+          "2026-12-25",
+          "2026-12-28",
+          "2026-12-30"
         ]
       },
       {
-        "fare": 39980,
+        "fare": 46000,
         "dates": [
-          "2027-02-17"
+          "2027-01-01"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Rome",
+    "destination": "Delhi",
+    "airline": "ITA Airways",
+    "kind": "One way",
+    "baggage": "2 × 23 kg + 7 kg",
+    "note": "Add-on sector ₹5,000 extra. Infant fare ₹7,000 with 10 kg baggage. Infant add-on sector ₹1,500 extra.",
+    "groups": [
+      {
+        "fare": 57500,
+        "dates": [
+          "2026-11-27",
+          "2026-11-29",
+          "2026-11-30",
+          "2026-12-01",
+          "2026-12-02",
+          "2026-12-03",
+          "2026-12-04",
+          "2026-12-05",
+          "2026-12-06",
+          "2026-12-07",
+          "2026-12-08"
+        ]
+      },
+      {
+        "fare": 66000,
+        "dates": [
+          "2026-12-19",
+          "2026-12-23",
+          "2026-12-29"
+        ]
+      },
+      {
+        "fare": 53000,
+        "dates": [
+          "2027-01-07"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "Delhi",
+    "destination": "Adelaide",
+    "airline": "Singapore Airlines",
+    "kind": "One way",
+    "baggage": "30 kg",
+    "schedule": "SQ403 / SQ277",
+    "groups": [
+      {
+        "fare": null,
+        "dates": [
+          "2026-11-26"
         ]
       }
     ]
@@ -30979,6 +30162,9 @@
     "destination": "Toronto",
     "airline": "Qatar Airways",
     "kind": "One way",
+    "baggage": "2 pieces",
+    "schedule": "DEL 03:45 → DOH 05:35 · DOH 08:20 → YYZ 14:30",
+    "termsConfirmed": false,
     "groups": [
       {
         "fare": null,
@@ -31000,16 +30186,14 @@
           "2027-03-10"
         ]
       }
-    ],
-    "baggage": "2 pieces",
-    "schedule": "DEL 03:45 → DOH 05:35 · DOH 08:20 → YYZ 14:30",
-    "termsConfirmed": false
+    ]
   },
   {
     "origin": "Delhi",
     "destination": "Toronto",
     "airline": "LOT Polish Airlines",
     "kind": "One way",
+    "termsConfirmed": false,
     "groups": [
       {
         "fare": null,
@@ -31026,14 +30210,14 @@
           "2027-03-30"
         ]
       }
-    ],
-    "termsConfirmed": false
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Melbourne",
     "airline": "AirAsia",
     "kind": "One way",
+    "termsConfirmed": false,
     "groups": [
       {
         "fare": null,
@@ -31062,38 +30246,39 @@
           "2027-03-22"
         ]
       }
-    ],
-    "termsConfirmed": false
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Abu Dhabi",
     "airline": "Air India Express",
     "kind": "One way",
+    "baggage": "30 kg + 7 kg",
     "groups": [
       {
         "fare": null,
         "dates": [
-          "2026-12-01",
-          "2026-12-05",
           "2026-12-06",
           "2026-12-08",
           "2026-12-12",
           "2026-12-13",
+          "2026-12-15",
           "2026-12-19",
           "2026-12-20",
+          "2026-12-22",
           "2026-12-26",
-          "2026-12-27"
+          "2026-12-27",
+          "2026-12-29"
         ]
       }
-    ],
-    "baggage": "30 kg + 7 kg"
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Dubai",
     "airline": "Air India Express",
     "kind": "One way",
+    "baggage": "30 kg + 7 kg",
     "groups": [
       {
         "fare": null,
@@ -31122,6 +30307,7 @@
           "2026-12-23",
           "2026-12-24",
           "2026-12-25",
+          "2026-12-26",
           "2026-12-27",
           "2026-12-28",
           "2026-12-29",
@@ -31129,14 +30315,14 @@
           "2026-12-31"
         ]
       }
-    ],
-    "baggage": "30 kg + 7 kg"
+    ]
   },
   {
     "origin": "Amritsar",
     "destination": "Sharjah",
     "airline": "Air India Express",
     "kind": "One way",
+    "baggage": "30 kg + 7 kg",
     "groups": [
       {
         "fare": null,
@@ -31172,34 +30358,6 @@
           "2026-12-31"
         ]
       }
-    ],
-    "baggage": "30 kg + 7 kg"
-  },
-  {
-    "origin": "Amritsar",
-    "destination": "Sharjah",
-    "airline": "IndiGo",
-    "kind": "One way",
-    "groups": [
-      {
-        "fare": null,
-        "dates": [
-          "2026-12-07",
-          "2026-12-08",
-          "2026-12-09",
-          "2026-12-10",
-          "2026-12-11",
-          "2026-12-12",
-          "2026-12-14",
-          "2026-12-15",
-          "2026-12-16",
-          "2026-12-17",
-          "2026-12-18",
-          "2026-12-19"
-        ]
-      }
-    ],
-    "baggage": "30 kg + 7 kg",
-    "schedule": "6E 1427 · ATQ 03:00 → SHJ 08:10"
+    ]
   }
 ]
