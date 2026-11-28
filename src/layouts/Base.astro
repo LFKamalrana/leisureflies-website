@@ -3,7 +3,7 @@ import '../styles/global.css';
 import WhatsAppIcon from '../components/WhatsAppIcon.astro';
 import Tracking from '../components/Tracking.astro';
 import { SITE, NAV, wa } from '../data/site.js';
-const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null } = Astro.props;
+const { title, description = 'Holidays, flights, hotels, cruises and visas from Chandigarh. IATA accredited, since 2010.', image = '/og-image.jpg', noindex = false, schema = null, whatsappHref } = Astro.props;
 const path = Astro.url.pathname;
 const full = title === SITE.name ? title : `${title} | ${SITE.name}`;
 const canonicalPath = path === '/' ? '/' : path.replace(/\/+$/, '');
@@ -45,7 +45,7 @@ const active = (href) => path === href || path.startsWith(href + '/');
     <ul class="links" id="links">
       {NAV.map((n) => <li><a href={n.href} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
     </ul>
-    <a class="btn btn-wa" href={wa('Hi LeisureFlies, I would like to plan a trip.')} target="_blank" rel="noopener">
+    <a class="btn btn-wa" href={whatsappHref ?? wa('Hi LeisureFlies, I would like to plan a trip.')} target="_blank" rel="noopener">
       <WhatsAppIcon /><span>WhatsApp us</span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
@@ -70,7 +70,7 @@ const active = (href) => path === href || path.startsWith(href + '/');
   </div>
 </footer>
 
-<a class="fab" href={wa('Hi LeisureFlies, I have a question.')} target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><WhatsAppIcon size={32} /></a>
+<a class="fab" href={whatsappHref ?? wa('Hi LeisureFlies, I have a question.')} target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><WhatsAppIcon size={32} /></a>
 
 <script is:inline>
 (function(){

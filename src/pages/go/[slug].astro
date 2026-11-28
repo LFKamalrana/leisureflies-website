@@ -14,7 +14,7 @@ const meta = DEST[slug];
 const ask = wa(`Hi LeisureFlies, I am interested in a ${meta.name} package. Travel dates: ___ Travellers: ___ Budget: ___`);
 const call = SITE.phones[0];
 ---
-<Base title={`${meta.name} Packages from Chandigarh`} description={`${meta.name} holiday packages from an IATA-accredited travel company based in Chandigarh since 2010. Tell us your dates and budget on WhatsApp.`} image={`/img/hero-${slug}.jpg`} noindex={true}>
+<Base title={`${meta.name} Packages from Chandigarh`} description={`${meta.name} holiday packages from an IATA-accredited travel company based in Chandigarh since 2010. Tell us your dates and budget on WhatsApp.`} image={`/img/hero-${slug}.jpg`} noindex={true} whatsappHref={ask}>
   <div class="wrap">
     <div class="page-hero" style="margin-top:18px">
       <img src={`/img/hero-${slug}.jpg`} alt={meta.name} />
