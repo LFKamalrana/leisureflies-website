@@ -9,6 +9,7 @@ import { guides } from '../../data/visa';
 import { thailandPlanNote, thailandRoutes } from '../../data/thailandPackages';
 import { dubaiPlanNote, dubaiRoutes } from '../../data/dubaiPackages';
 import { kashmirPlanNote, kashmirRoutes } from '../../data/kashmirPackages';
+import { baliPlanNote, baliRoutes } from '../../data/baliPackages';
 
 export function getStaticPaths() {
   return Object.keys(raw).map((slug) => ({ params: { slug } }));
@@ -17,6 +18,7 @@ const { slug } = Astro.params;
 const d = raw[slug];
 const meta = DEST[slug];
 const comparison = {
+  bali: { routes: baliRoutes, note: baliPlanNote },
   thailand: { routes: thailandRoutes, note: thailandPlanNote },
   dubai: { routes: dubaiRoutes, note: dubaiPlanNote },
   kashmir: { routes: kashmirRoutes, note: kashmirPlanNote },
@@ -32,7 +34,7 @@ for (const b of d.blocks) {
   if (b.type === 'eyebrow') { pendingEyebrow = b.text; continue; }
   if (b.type === 'h2') { cur = { eyebrow: pendingEyebrow, title: b.text, options: b.options ?? [], intro: [], groups: [] }; sections.push(cur); grp = null; pendingEyebrow = null; continue; }
   if (!cur) continue;
-  if (b.type === 'h3') { grp = { title: b.text, photos: b.photos ?? [], quoteItinerary: b.quoteItinerary, quoteVillas: b.quoteVillas, paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
+  if (b.type === 'h3') { grp = { title: b.text, photos: b.photos ?? [], quoteVillas: b.quoteVillas, paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
   if (!grp) { if (b.type === 'p' && b.text.length > 22) cur.intro.push(b.text); continue; }
   if (b.type === 'li') grp.items.push(b.text);
   else if (b.text.length <= 14 && !grp.paras.length && !grp.badge) grp.badge = b.text;
@@ -64,7 +66,7 @@ const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this $
         {slug === 'kerala' && s.options.length > 0 && <KeralaRoute />}
         {showComparison && <PackageComparison destination={meta.name} routes={comparison.routes} note={comparison.note} quoteOption={quoteOption} />}
         {slug === 'maldives' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
-        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !showComparison && !s.groups.some(g => g.quoteItinerary) && (
+        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !showComparison && (
           <ul class="package-options">{s.options.map((option) => <li>
             <strong>{option}</strong>
             <a class="btn btn-line" data-trip-quote href={quoteOption(option)} aria-label={`Enquire on WhatsApp about ${meta.name}, ${option}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
@@ -90,8 +92,6 @@ const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this $
                   </div>
                 )}
                 {g.items.length > 0 && <ul>{g.items.map((i) => <li>{i}</li>)}</ul>}
-                {g.quoteItinerary &&
-                  <a class="btn btn-line itinerary-quote" data-trip-quote href={quoteOption(g.title)} aria-label={`Quote this itinerary on WhatsApp, ${g.title}`} target="_blank" rel="noopener">Quote this itinerary</a>}
               </div>
             ))}
           </div>

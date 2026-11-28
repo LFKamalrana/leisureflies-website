@@ -241,7 +241,7 @@
    },
    {
     "type": "p",
-    "text": "The tours our travelers ask for most, built into every LeisureFlies Bali package."
+    "text": "Explore the island’s most requested experiences below. The package comparison shows which tours come with each stay."
    },
    {
     "type": "h3",
@@ -305,87 +305,12 @@
    },
    {
     "type": "h2",
-    "text": "Ubud + Kuta packages.",
+    "text": "Compare Ubud and Kuta packages",
     "options": [
      "4 nights / 5 days",
      "5 nights / 6 days",
      "6 nights / 7 days"
     ]
-   },
-   {
-    "type": "h3",
-    "text": "Ubud + Kuta — 4 nights / 5 days",
-    "quoteItinerary": true
-   },
-   {
-    "type": "p",
-    "text": "Most Booked"
-   },
-   {
-    "type": "li",
-    "text": "Full day tour of watersports & Uluwatu Temple — private"
-   },
-   {
-    "type": "li",
-    "text": "Kintamani tour with Mount Batur, Cantik Coffee Plantation, Tegalalang Rice Terraces, Tukad Cepung Falls — private"
-   },
-   {
-    "type": "li",
-    "text": "Bedugul tour with Beratan Temple, Bali Botanical Garden, photo stop at Handara Gate & Twin Lake View Point — private"
-   },
-   {
-    "type": "li",
-    "text": "Return airport transfers on private basis"
-   },
-   {
-    "type": "h3",
-    "text": "Ubud + Kuta — 5 nights / 6 days",
-    "quoteItinerary": true
-   },
-   {
-    "type": "li",
-    "text": "Nusa Penida day west tour from North Kuta hotel with lunch — SIC"
-   },
-   {
-    "type": "li",
-    "text": "Ubud tour with Alas Harum, Tegalalang Rice Terraces, Tibumana Falls — private"
-   },
-   {
-    "type": "li",
-    "text": "Full day tour of Lempuyang Temple and Amed Beach — private"
-   },
-   {
-    "type": "li",
-    "text": "Full day tour of Garuda Wisnu Kencana Cultural Park, Melasti Beach, Uluwatu Temple with Kecak Dance — private"
-   },
-   {
-    "type": "li",
-    "text": "Return airport transfers on private basis"
-   },
-   {
-    "type": "h3",
-    "text": "Ubud + Kuta — 6 nights / 7 days",
-    "quoteItinerary": true
-   },
-   {
-    "type": "li",
-    "text": "Full day tour of watersports & Uluwatu Temple — private"
-   },
-   {
-    "type": "li",
-    "text": "Full day tour with Tanah Lot Temple, Alas Kedaton Monkey Forest, Taman Ayun Temple — private"
-   },
-   {
-    "type": "li",
-    "text": "Kintamani tour with Mount Batur, Cantik Coffee Plantation, Tegalalang Rice Terraces, Tukad Cepung Falls — private"
-   },
-   {
-    "type": "li",
-    "text": "Ubud shopping tour with Ubud Art Market, Celuk & Mas villages — private"
-   },
-   {
-    "type": "li",
-    "text": "Return airport transfers on private basis"
    },
    {
     "type": "h3",
