@@ -1,29 +1,46 @@
 ---
-import { wa } from '../data/site.js';
-import { thailandPlanNote, thailandRoutes } from '../data/thailandPackages';
+interface PackageOption {
+  nights: number;
+  nightsByCity: string;
+  difference: string;
+  days: string[];
+  inclusions: string[];
+  exclusions: string[];
+  confirm?: string[];
+  quoteRoute?: string;
+}
+
+interface Props {
+  destination: string;
+  note: string;
+  routes: { slug: string; name: string; quoteRoute: string; packages: PackageOption[] }[];
+  quoteOption: (choice: string) => string;
+}
+
+const { destination, note, routes, quoteOption } = Astro.props;
 ---
 
-{thailandPlanNote && <p class="plan-note">{thailandPlanNote}</p>}
-<nav class="route-links" aria-label="Thailand package routes">
-  {thailandRoutes.map(route => <a href={`#${route.slug}`}>{route.name}</a>)}
-</nav>
+{note && <p class="plan-note">{note}</p>}
+{routes.length > 1 && <nav class="route-links" aria-label={`${destination} package routes`}>
+  {routes.map(route => <a href={`#${route.slug}`}>{route.name}</a>)}
+</nav>}
 
-{thailandRoutes.map(route => (
+{routes.map(route => (
   <section class="route" id={route.slug} aria-labelledby={`${route.slug}-name`}>
     <h3 id={`${route.slug}-name`}>{route.name}</h3>
     <div class="trips">
       {route.packages.map(trip => {
         const duration = `${trip.nights} nights / ${trip.nights + 1} days`;
-        const choice = `${duration} (${route.quoteRoute})`;
+        const choice = `${duration} (${trip.quoteRoute ?? route.quoteRoute})`;
         const tripId = `${route.slug}-${trip.nights}-nights`;
-        const message = `Hi LeisureFlies, please quote this Thailand holiday option.\n${choice}`;
+        const tripName = `${trip.quoteRoute ?? route.name}, ${duration}`;
         return (
           <article class="trip" id={tripId} aria-labelledby={`${tripId}-name`}>
             <h4 id={`${tripId}-name`}>{duration}</h4>
             {trip.nightsByCity && <p class="city-nights">{trip.nightsByCity}</p>}
             <p class="difference">{trip.difference}</p>
             <details>
-              <summary aria-label={`Sample day-wise plan for ${route.name}, ${duration}`}>Sample day-wise plan</summary>
+              <summary aria-label={`Sample day-wise plan for ${tripName}`}>Sample day-wise plan</summary>
               <ol class="days" role="list">
                 {trip.days.map((description, index) => (
                   <li><span class="day-number">Day {index + 1}</span><span>{description}</span></li>
@@ -31,14 +48,14 @@ import { thailandPlanNote, thailandRoutes } from '../data/thailandPackages';
               </ol>
             </details>
             <details>
-              <summary aria-label={`Inclusions and exclusions for ${route.name}, ${duration}`}>Inclusions and exclusions</summary>
+              <summary aria-label={`Inclusions and exclusions for ${tripName}`}>Inclusions and exclusions</summary>
               <div class="terms">
                 {trip.inclusions.length > 0 && <div><h5>Included</h5><ul>{trip.inclusions.map(item => <li>{item}</li>)}</ul></div>}
                 {trip.exclusions.length > 0 && <div><h5>Excluded</h5><ul>{trip.exclusions.map(item => <li>{item}</li>)}</ul></div>}
                 {trip.confirm && trip.confirm.length > 0 && <div><h5>Confirm with your quote</h5><ul>{trip.confirm.map(item => <li>{item}</li>)}</ul></div>}
               </div>
             </details>
-            <a class="btn btn-line quote" data-trip-quote href={wa(message)} aria-label={`Enquire on WhatsApp about ${route.name}, ${duration}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
+            <a class="btn btn-line quote" data-trip-quote href={quoteOption(choice)} aria-label={`Enquire on WhatsApp about ${tripName}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
           </article>
         );
       })}

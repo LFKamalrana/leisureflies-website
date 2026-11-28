@@ -1,11 +1,13 @@
 ---
 import KeralaRoute from '../../components/KeralaRoute.astro';
-import ThailandPackages from '../../components/ThailandPackages.astro';
+import PackageComparison from '../../components/PackageComparison.astro';
 import Base from '../../layouts/Base.astro';
 import ArtScene from '../../components/ArtScene.astro';
 import raw from '../../data/destinations.json';
 import { DEST, wa } from '../../data/site.js';
 import { guides } from '../../data/visa';
+import { thailandPlanNote, thailandRoutes } from '../../data/thailandPackages';
+import { dubaiPlanNote, dubaiRoutes } from '../../data/dubaiPackages';
 
 export function getStaticPaths() {
   return Object.keys(raw).map((slug) => ({ params: { slug } }));
@@ -13,6 +15,10 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const d = raw[slug];
 const meta = DEST[slug];
+const comparison = {
+  thailand: { routes: thailandRoutes, note: thailandPlanNote },
+  dubai: { routes: dubaiRoutes, note: dubaiPlanNote },
+}[slug];
 const entry = d.entry;
 const visaGuide = guides[slug];
 const entrySources = entry?.sources ?? visaGuide?.sources ?? [];
@@ -48,15 +54,15 @@ const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this $
     </div>
 
     {sections.map((s) => {
-      const compareThailand = slug === 'thailand' && s.options.length > 0;
+      const showComparison = comparison && s.options.length > 0;
       return (
       <section class="sec-block" id={s.options.length ? 'holiday-options' : undefined} style="padding-block:clamp(28px,4vw,48px)">
         {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
         <h2 style="margin-top:8px">{s.title}</h2>
         {slug === 'kerala' && s.options.length > 0 && <KeralaRoute />}
-        {compareThailand && <ThailandPackages />}
+        {showComparison && <PackageComparison destination={meta.name} routes={comparison.routes} note={comparison.note} quoteOption={quoteOption} />}
         {slug === 'maldives' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
-        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !compareThailand && !s.groups.some(g => g.quoteItinerary) && (
+        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !showComparison && !s.groups.some(g => g.quoteItinerary) && (
           <ul class="package-options">{s.options.map((option) => <li>
             <strong>{option}</strong>
             <a class="btn btn-line" data-trip-quote href={quoteOption(option)} aria-label={`Enquire on WhatsApp about ${meta.name}, ${option}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
