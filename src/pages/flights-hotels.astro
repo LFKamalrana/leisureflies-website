@@ -1,29 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
+import FlightHotelQuote from '../components/FlightHotelQuote.astro';
 import { wa } from '../data/site.js';
+import { priceMatchConditions, priceMatchIntro, priceMatchSteps } from '../data/priceMatch.js';
 ---
-<Base title="Flights and Hotels: Send the Screenshot Program" description="Found a lower price on flights or hotels? Send us the screenshot of the final payment page and we match it and book it. The STS Program from LeisureFlies Travels.">
+<Base title="Flight and Hotel Quotes" description="Get a flight or hotel quote for your dates from LeisureFlies in Chandigarh. Found a lower public price? Check the price-match terms and send your screenshot.">
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / Flights &amp; Hotels</div>
-    <section style="padding-bottom:20px">
+    <section style="padding-block:16px">
+      <h1 style="font-size:clamp(34px,5.4vw,62px)">Flights &amp; hotels</h1>
+      <p class="lead">Tell us where and when you want to travel. If you already have a lower price for the same booking, you can request a price match.</p>
+      <div class="hero-cta"><a class="btn btn-sun" href="#quote">Get a flight or hotel quote</a><a class="btn btn-line" href="#price-match">Request a price match</a></div>
+    </section>
+    <FlightHotelQuote />
+    <section id="price-match" style="padding-bottom:20px;scroll-margin-top:80px">
       <div class="sts" style="margin-top:10px">
         <div class="bubble" aria-hidden="true"></div>
         <span class="badge">STS PROGRAM · AIR TICKETS &amp; HOTELS</span>
-        <h1 style="font-size:clamp(34px,5.4vw,62px)">Found it cheaper? Send the Screenshot.</h1>
-        <p class="lead" style="margin-top:14px;font-size:19px">We have published a Send the Screenshot (STS) Program for air tickets and hotels. If you find a lower price on an authentic, renowned travel website, we match it and book it.</p>
-        <div class="hero-cta"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Start on WhatsApp</a></div>
+        <h2 style="font-size:clamp(30px,4.5vw,50px)">Found it cheaper? Send the Screenshot.</h2>
+        <p class="lead" style="margin-top:14px;font-size:19px">{priceMatchIntro}</p>
+        <div class="hero-cta"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Request a price match</a></div>
       </div>
     </section>
 
     <section class="sec-block">
       <div class="eyebrow">How it works</div>
-      <h2 style="margin-top:8px">Four steps. Four minutes.</h2>
+      <h2 style="margin-top:8px">How to request a price match</h2>
       <div class="sts" style="margin-top:22px;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);border:1px solid var(--line)">
         <ol class="steps">
-          <li>Message us on WhatsApp. Your 4 minutes start from this message.</li>
-          <li>Send a screenshot of the final payment page of any authentic, renowned travel website. It must show the time stamp.</li>
-          <li>Send your ID and payment together with the screenshot.</li>
-          <li>We guarantee to match the same price and book it for you.</li>
+          {priceMatchSteps.map(step => <li>{step}</li>)}
         </ol>
       </div>
     </section>
@@ -31,10 +36,8 @@ import { wa } from '../data/site.js';
     <section class="sec-block">
       <div class="eyebrow">The conditions</div>
       <h2 style="margin-top:8px">Read these before you send.</h2>
-      <div class="cards2">
-        <div class="info"><h3>Air tickets</h3><ul><li>Screenshot of the final payment page of an authentic, renowned travel website.</li><li>Sent within 4 minutes of messaging us.</li><li>Time stamp visible on the screenshot.</li><li>Sent along with your ID and payment.</li></ul></div>
-        <div class="info"><h3>Hotels</h3><p>The same conditions apply to hotels as to air tickets.</p></div>
-        <div class="info"><h3>No holds</h3><p>We cannot hold a booking while you decide. Send the screenshot, your ID and the payment together so we can book straight away.</p></div>
+      <div class="prose"><ul>{priceMatchConditions.map(condition => <li>{condition}</li>)}</ul>
+        <p><a href="/legal#price-match">Read the full price-match terms</a></p>
       </div>
     </section>
 
@@ -48,8 +51,8 @@ import { wa } from '../data/site.js';
     </section>
 
     <div class="cta-band">
-      <div><h2>Have a screenshot ready?</h2><p>Open WhatsApp and send it with your ID and payment. The 4-minute clock starts when you message us.</p></div>
-      <a class="btn btn-sun" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Start on WhatsApp</a>
+      <div><h2>Have a screenshot ready?</h2><p>Send the final payment page for the flight or hotel you want us to check.</p></div>
+      <a class="btn btn-sun" href={wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.')} target="_blank" rel="noopener">Request a price match</a>
     </div>
   </div>
 </Base>

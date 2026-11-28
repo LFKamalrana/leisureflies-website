@@ -23,6 +23,7 @@ const call = SITE.phones[0];
         <p class="lead" style="margin-top:14px">{d.lead}</p>
         {d.chips.length > 0 && <div class="chips">{d.chips.map((c) => <span>{c}</span>)}</div>}
         <div class="hero-cta">
+          <a class="btn btn-sun" href={`/holidays/${slug}#holiday-options`}>{slug === 'maldives' ? 'Choose a villa' : slug === 'mauritius' ? 'Choose a hotel category' : 'Choose an itinerary'}</a>
           <a class="btn btn-wa" href={ask} target="_blank" rel="noopener"><WhatsAppIcon /><span>Get a free quote</span></a>
           <a class="btn btn-line" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)" href={`tel:${call.tel}`}>Call {call.label}</a>
         </div>
@@ -34,7 +35,7 @@ const call = SITE.phones[0];
       <h2 style="margin-top:8px">One team for the whole trip.</h2>
       <div class="cards2">
         <div class="info"><h3>IATA accredited</h3><p>Our Chandigarh-based travel company has served more than 20,000 passengers since 2010.</p></div>
-        <div class="info"><h3>Found it cheaper?</h3><p>Send us the screenshot. For air tickets and hotels we match it and book it. <a href="/flights-hotels">See the conditions</a>.</p></div>
+        <div class="info"><h3>Found it cheaper?</h3><p>If the same flight or hotel is available for less, you can <a href="/flights-hotels#price-match">request a price match</a>.</p></div>
         <div class="info"><h3>Flights, hotels and entry requirements</h3><p>We book your flights and hotels and help you prepare your travel documents.</p><a href={`/holidays/${slug}#entry-requirements`}>Check entry requirements for Indian passport holders</a></div>
       </div>
     </section>

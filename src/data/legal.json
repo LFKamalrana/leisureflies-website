@@ -3,7 +3,7 @@
  "blocks": [
   {
    "type": "p",
-   "text": "LeisureFlies Travels Pvt Ltd · Last updated: September 2026"
+   "text": "LeisureFlies Travels Pvt Ltd · Updated 28 November 2026"
   },
   {
    "type": "h2",
@@ -123,35 +123,11 @@
   },
   {
    "type": "h2",
-   "text": "Price Match Guarantee — Full Terms"
+   "text": "Flight and Hotel Price-Match Terms",
+   "id": "price-match"
   },
   {
-   "type": "li",
-   "text": "The screenshot must be sent to us within 5 minutes of receiving our quote — fares and prices are dynamic and can change minute to minute."
-  },
-  {
-   "type": "li",
-   "text": "The screenshot must clearly show the date and time stamp , destination/service, exact travel dates, and total price."
-  },
-  {
-   "type": "li",
-   "text": "Must be for the exact same product — same class/category, same hotel star rating, same inclusions, same travel dates."
-  },
-  {
-   "type": "li",
-   "text": "Must be from a legitimate, publicly bookable source — not a private, negotiated, or expired offer."
-  },
-  {
-   "type": "li",
-   "text": "Subject to availability at the time of price match."
-  },
-  {
-   "type": "li",
-   "text": "Not applicable once a booking has already been confirmed and paid for."
-  },
-  {
-   "type": "li",
-   "text": "Final discretion rests with LeisureFlies Travels Pvt Ltd."
+   "type": "price-match-terms"
   },
   {
    "type": "h2",

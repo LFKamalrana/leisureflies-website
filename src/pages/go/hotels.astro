@@ -1,38 +1,35 @@
 ---
 import Base from '../../layouts/Base.astro';
-import WhatsAppIcon from '../../components/WhatsAppIcon.astro';
 import { SITE, wa } from '../../data/site.js';
+import { priceMatchSteps } from '../../data/priceMatch.js';
 const ask = wa('Hi LeisureFlies, I want a hotel booking. City: ___ Dates: ___ Guests: ___');
 const sts = wa('Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer for a hotel.');
 const call = SITE.phones[0];
 ---
-<Base title="4 and 5 Star Hotels: We Match the Price" description="4 and 5 star hotel bookings from an IATA-accredited travel company in Chandigarh. Found it cheaper? Send the screenshot and we match it." noindex={true}>
+<Base title="4 and 5 Star Hotel Bookings and Price Matching" description="Get a 4 or 5 star hotel quote from an IATA-accredited travel company in Chandigarh, or request a price match on an eligible room." noindex={true}>
   <div class="wrap">
     <section style="padding-block:20px">
       <div class="sts" style="margin-top:10px">
         <div class="bubble" aria-hidden="true"></div>
         <span class="badge">STS PROGRAM · HOTELS</span>
         <h1 style="font-size:clamp(34px,5.4vw,62px)">Found the hotel cheaper? Send the Screenshot.</h1>
-        <p class="lead" style="margin-top:14px;font-size:19px">Tell us the hotel and dates. If you find a lower price on an authentic, renowned travel website, we match it and book it.</p>
+        <p class="lead" style="margin-top:14px;font-size:19px">Tell us your hotel and dates for a quote. Found a lower public price for the same room and inclusions? Send a screenshot of the final payment page with the timestamp and total visible.</p>
         <div class="hero-cta">
-          <a class="btn btn-wa" href={ask} target="_blank" rel="noopener"><WhatsAppIcon /><span>Get a hotel quote</span></a>
-          <a class="btn btn-sun" href={sts} target="_blank" rel="noopener">Use the STS offer</a>
+          <a class="btn btn-line" href="/flights-hotels?service=hotel#quote">Get a hotel quote</a>
+          <a class="btn btn-sun" href={sts} target="_blank" rel="noopener">Request a price match</a>
         </div>
       </div>
     </section>
 
     <section class="sec-block">
       <div class="eyebrow">How it works</div>
-      <h2 style="margin-top:8px">Four steps. Four minutes.</h2>
+      <h2 style="margin-top:8px">How to request a price match</h2>
       <div class="sts" style="margin-top:22px;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);border:1px solid var(--line)">
         <ol class="steps">
-          <li>Message us on WhatsApp. Your 4 minutes start from this message.</li>
-          <li>Send a screenshot of the final payment page of any authentic, renowned travel website. It must show the time stamp.</li>
-          <li>Send your ID and payment together with the screenshot.</li>
-          <li>We guarantee to match the same price and book it for you.</li>
+          {priceMatchSteps.map(step => <li>{step}</li>)}
         </ol>
       </div>
-      <p style="margin-top:14px"><b>Please note:</b> we cannot hold a booking while you decide. <a href="/flights-hotels">Read all the conditions</a>.</p>
+      <p style="margin-top:14px"><a href="/flights-hotels#price-match">Read the price-match conditions</a></p>
     </section>
 
     <section class="sec-block">

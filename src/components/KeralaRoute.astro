@@ -8,17 +8,23 @@ const trips = [
 const icons = { Kochi:'⛵', Munnar:'🌿', Thekkady:'🌳', Alleppey:'🛶', Kovalam:'🌴' };
 ---
 <div class="route-picker" aria-label="Kerala route postcards">
-  {trips.map((trip,i) => (
+  {trips.map((trip,i) => {
+    const duration = `${trip.nights} nights / ${trip.nights + 1} days`;
+    const route = trip.stops.map(([place, nights]) => `${place} (${nights} ${nights === 1 ? 'night' : 'nights'})`).join(' → ');
+    const note = trip.nights === 7 ? 'The overnight stop for the seventh night is confirmed with your quote.' : '';
+    const message = [`Hi LeisureFlies, please quote this Kerala itinerary. ${duration}.`, route, note].filter(Boolean).join('\n');
+    return (
     <details name="kerala-route" open={i === 0}>
-      <summary>{trip.nights} nights / {trip.nights+1} days</summary>
+      <summary>{duration}</summary>
       <ol>{trip.stops.map(([place,n]) => <li>
         <span class="stamp" aria-hidden="true">{icons[place]}</span>
         <b>{place}</b><span>{n} {n === 1 ? 'night' : 'nights'}</span>
       </li>)}</ol>
-      {trip.nights === 7 && <p>The overnight stop for the seventh night is confirmed with your quote.</p>}
-      <a class="btn btn-line" data-trip-quote href={wa('Hi LeisureFlies, please quote the '+trip.nights+'-night Kerala itinerary via '+trip.stops.map(([name])=>name).join(', ')+'.')} target="_blank" rel="noopener">Quote this route</a>
+      {note && <p>{note}</p>}
+      <a class="btn btn-line" data-trip-quote href={wa(message)} aria-label={`Quote this Kerala route on WhatsApp, ${duration}`} target="_blank" rel="noopener">Quote this route</a>
     </details>
-  ))}
+    );
+  })}
 </div>
 <style>
   .route-picker {display:grid;gap:8px;margin-top:18px}

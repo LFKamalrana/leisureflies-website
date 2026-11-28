@@ -136,8 +136,8 @@
     "text": "Port Blair, Havelock & Neil Island packages.",
     "options": [
      "4 nights / 5 days (Port Blair + Havelock)",
-     "5 nights / 6 days (+ Neil Island)",
-     "6 nights / 7 days (+ Neil Island)"
+     "5 nights / 6 days (Port Blair + Havelock + Neil Island)",
+     "6 nights / 7 days (Port Blair + Havelock + Neil Island)"
     ]
    },
    {
@@ -314,7 +314,8 @@
    },
    {
     "type": "h3",
-    "text": "Ubud + Kuta — 4N/5D"
+    "text": "Ubud + Kuta — 4 nights / 5 days",
+    "quoteItinerary": true
    },
    {
     "type": "p",
@@ -338,7 +339,8 @@
    },
    {
     "type": "h3",
-    "text": "Ubud + Kuta — 5N/6D"
+    "text": "Ubud + Kuta — 5 nights / 6 days",
+    "quoteItinerary": true
    },
    {
     "type": "li",
@@ -362,7 +364,8 @@
    },
    {
     "type": "h3",
-    "text": "Ubud + Kuta — 6N/7D"
+    "text": "Ubud + Kuta — 6 nights / 7 days",
+    "quoteItinerary": true
    },
    {
     "type": "li",
@@ -571,9 +574,9 @@
     "type": "h2",
     "text": "Dubai city & Abu Dhabi combos.",
     "options": [
-     "3 nights / 4 days",
-     "4 nights / 5 days",
-     "5 nights / 6 days (+ Abu Dhabi & Ferrari World)"
+     "3 nights / 4 days (Dubai city)",
+     "4 nights / 5 days (Dubai city)",
+     "5 nights / 6 days (Dubai city + Abu Dhabi & Ferrari World)"
     ]
    },
    {
@@ -594,7 +597,11 @@
    },
    {
     "type": "p",
-    "text": "Don't consume alcohol or illicit substances outside licensed venues — follow local norms and enjoy the journey."
+    "text": "In Dubai, visitors aged 21 or over can drink alcohol at licensed venues such as hotel bars and restaurants."
+   },
+   {
+    "type": "p",
+    "text": "Possessing or using illegal drugs is prohibited throughout the UAE."
    }
   ],
   "description": "Compare three to five nights in Dubai, from a dhow dinner cruise and desert safari to a longer trip with Abu Dhabi and Ferrari World. Request a tailored quote.",
@@ -743,9 +750,9 @@
     "type": "h2",
     "text": "North + South Goa packages.",
     "options": [
-     "3 nights / 4 days",
-     "4 nights / 5 days",
-     "5 nights / 6 days"
+     "3 nights / 4 days (North + South Goa)",
+     "4 nights / 5 days (North + South Goa)",
+     "5 nights / 6 days (North + South Goa)"
     ]
    },
    {
@@ -919,10 +926,10 @@
     "type": "h2",
     "text": "Shimla + Manali packages.",
     "options": [
-     "3 nights / 4 days",
-     "4 nights / 5 days",
-     "6 nights / 7 days",
-     "9 nights / 10 days"
+     "3 nights / 4 days (Shimla + Manali)",
+     "4 nights / 5 days (Shimla + Manali)",
+     "6 nights / 7 days (Shimla + Manali)",
+     "9 nights / 10 days (Shimla + Manali)"
     ]
    },
    {
@@ -1095,9 +1102,9 @@
     "type": "h2",
     "text": "Srinagar + Gulmarg + Pahalgam packages.",
     "options": [
-     "4 nights / 5 days",
-     "5 nights / 6 days",
-     "6 nights / 7 days"
+     "4 nights / 5 days (Srinagar + Gulmarg + Pahalgam)",
+     "5 nights / 6 days (Srinagar + Gulmarg + Pahalgam)",
+     "6 nights / 7 days (Srinagar + Gulmarg + Pahalgam)"
     ]
    },
    {
@@ -1433,6 +1440,7 @@
    {
     "type": "h3",
     "text": "Villas, Explained",
+    "quoteVillas": true,
     "photos": [
      {
       "src": "/img/holidays/garden-villa.webp",
@@ -2152,9 +2160,9 @@
     "type": "h2",
     "text": "Kandy + Nuwara Eliya + Bentota packages.",
     "options": [
-     "4 nights / 5 days",
-     "5 nights / 6 days",
-     "6 nights / 7 days"
+     "4 nights / 5 days (Kandy + Nuwara Eliya + Bentota)",
+     "5 nights / 6 days (Kandy + Nuwara Eliya + Bentota)",
+     "6 nights / 7 days (Kandy + Nuwara Eliya + Bentota)"
     ]
    },
    {
