@@ -10,7 +10,7 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURICompo
       <div class="eyebrow">Contact</div>
       <h1 style="font-size:clamp(34px,5vw,56px);margin-top:8px">Tell us where you want to go.</h1>
       <p class="lead">The quickest way to reach us is WhatsApp. You can also call, write, or fill in the form and we will come back to you during office hours.</p>
-      <div class="hero-cta"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I would like a quote.')} target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <div class="hero-cta"><a class="btn btn-wa" href={wa('Hi LeisureFlies, I would like a quote.')} target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn btn-line" href="/flights-hotels#quote">Get a flight or hotel quote</a></div>
     </section>
     <div class="contact-grid">
       <div class="contact-list">
@@ -26,8 +26,8 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURICompo
           <div class="field"><label for="name">Your name</label><input id="name" name="Name" required autocomplete="name"></div>
           <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="Phone" type="tel" required autocomplete="tel"></div>
           <div class="field"><label for="email">Email</label><input id="email" name="Email" type="email" autocomplete="email"></div>
-          <div class="field"><label for="dest">Destination</label><select id="dest" name="Destination">{Object.values(DEST).map((d) => <option>{d.name}</option>)}<option>Visa help</option><option>Flights or hotels</option><option>Cruise</option><option>Somewhere else</option></select></div>
-          <div class="field"><label for="trav">Travellers</label><input id="trav" name="Travellers" type="number" min="1" value="2"></div>
+          <div class="field"><label for="dest">Destination or service</label><select id="dest" name="Destination"><option value="">Choose if known</option>{Object.values(DEST).map((d) => <option>{d.name}</option>)}<option>Visa help</option><option>Flights or hotels</option><option>Cruise</option><option>Somewhere else</option></select></div>
+          <div class="field"><label for="trav">Travellers</label><input id="trav" name="Travellers" type="number" min="1" placeholder="e.g. 2"></div>
           <div class="field"><label for="when">Travel dates</label><input id="when" name="Dates" placeholder="e.g. 10 to 17 December"></div>
           <div class="field full"><label for="msg">Anything else?</label><textarea id="msg" name="Message"></textarea></div>
           <div class="full" style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn btn-wa" type="submit">Send on WhatsApp</button><button class="btn btn-line" type="submit" value="email">Send by email instead</button></div><p class="note full">Your enquiry opens in WhatsApp or your email app, ready to send. Nothing is stored on this website.</p>
@@ -41,7 +41,7 @@ const maps = 'https://www.google.com/maps/search/?api=1&query=' + encodeURICompo
   var f=document.getElementById('enquiry');
   function msg(){
     var g=function(id){return document.getElementById(id).value.trim()};
-    return 'Hi LeisureFlies, I would like a quote.\nName: '+g('name')+'\nPhone: '+g('phone')+(g('email')?'\nEmail: '+g('email'):'')+'\nInterested in: '+g('dest')+'\nTravellers: '+g('trav')+(g('when')?'\nDates: '+g('when'):'')+(g('msg')?'\nNote: '+g('msg'):'');
+    return 'Hi LeisureFlies, I would like a quote.\nName: '+g('name')+'\nPhone: '+g('phone')+(g('email')?'\nEmail: '+g('email'):'')+(g('dest')?'\nInterested in: '+g('dest'):'')+(g('trav')?'\nTravellers: '+g('trav'):'')+(g('when')?'\nDates: '+g('when'):'')+(g('msg')?'\nNote: '+g('msg'):'');
   }
   f.addEventListener('submit',function(e){
     e.preventDefault();

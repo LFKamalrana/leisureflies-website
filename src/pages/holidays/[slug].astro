@@ -23,7 +23,7 @@ for (const b of d.blocks) {
   if (b.type === 'eyebrow') { pendingEyebrow = b.text; continue; }
   if (b.type === 'h2') { cur = { eyebrow: pendingEyebrow, title: b.text, options: b.options ?? [], intro: [], groups: [] }; sections.push(cur); grp = null; pendingEyebrow = null; continue; }
   if (!cur) continue;
-  if (b.type === 'h3') { grp = { title: b.text, photos: b.photos ?? [], paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
+  if (b.type === 'h3') { grp = { title: b.text, photos: b.photos ?? [], quoteItinerary: b.quoteItinerary, quoteVillas: b.quoteVillas, paras: [], items: [], badge: null }; cur.groups.push(grp); continue; }
   if (!grp) { if (b.type === 'p' && b.text.length > 22) cur.intro.push(b.text); continue; }
   if (b.type === 'li') grp.items.push(b.text);
   else if (b.text.length <= 14 && !grp.paras.length && !grp.badge) grp.badge = b.text;
@@ -31,6 +31,7 @@ for (const b of d.blocks) {
 }
 const heroImg = d.heroPhoto?.src ?? (meta.photo ? `/img/hero-${slug}.jpg` : null);
 const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
+const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this ${meta.name} holiday option.\n${option}`);
 ---
 <Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={heroImg || '/og-image.jpg'}>
   <div class="wrap">
@@ -41,16 +42,22 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
         <h1>{d.title}</h1>
         <p class="lead" style="margin-top:14px">{d.lead}</p>
         {d.chips.length > 0 && <div class="chips">{d.chips.map((c) => <span>{c}</span>)}</div>}
-        <div class="hero-cta"><a class="btn btn-wa" href={ask} target="_blank" rel="noopener">Get a free quote</a><a class="btn btn-line" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)" href="/holidays">All holidays</a></div>
+        <div class="hero-cta"><a class="btn btn-sun" href="#holiday-options">{slug === 'maldives' ? 'Choose a villa' : slug === 'mauritius' ? 'Choose a hotel category' : 'Choose an itinerary'}</a><a class="btn btn-wa" href={ask} target="_blank" rel="noopener">Get a custom quote</a></div>
       </div>
     </div>
 
     {sections.map((s) => (
-      <section class="sec-block" style="padding-block:clamp(28px,4vw,48px)">
+      <section class="sec-block" id={s.options.length ? 'holiday-options' : undefined} style="padding-block:clamp(28px,4vw,48px)">
         {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
         <h2 style="margin-top:8px">{s.title}</h2>
         {slug === 'kerala' && s.options.length > 0 && <KeralaRoute />}
-        {slug !== 'kerala' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
+        {slug === 'maldives' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
+        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !s.groups.some(g => g.quoteItinerary) && (
+          <ul class="package-options">{s.options.map((option) => <li>
+            <strong>{option}</strong>
+            <a class="btn btn-line" data-trip-quote href={quoteOption(option)} aria-label={`Enquire on WhatsApp about ${meta.name}, ${option}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </li>)}</ul>
+        )}
         {s.intro.length > 0 && <div class="prose">{s.intro.map((p) => <p>{p}</p>)}</div>}
         {s.groups.length > 0 && (
           <div class="cards2">
@@ -65,13 +72,14 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
                       <figure>
                         <img src={photo.src} alt={photo.caption ? '' : photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
                         {photo.caption && <figcaption>{photo.caption}</figcaption>}
+                        {g.quoteVillas && <a class="btn btn-line itinerary-quote" data-trip-quote href={quoteOption(photo.caption)} aria-label={`Enquire about this villa on WhatsApp, ${photo.caption}`} target="_blank" rel="noopener">Enquire about this villa</a>}
                       </figure>
                     ))}
                   </div>
                 )}
                 {g.items.length > 0 && <ul>{g.items.map((i) => <li>{i}</li>)}</ul>}
-                {slug === 'bali' && g.title.startsWith('Ubud + Kuta') &&
-                  <a class="btn btn-line itinerary-quote" data-trip-quote href={wa('Hi LeisureFlies, please quote the Bali itinerary ' + g.title + '.')} target="_blank" rel="noopener">Quote this itinerary</a>}
+                {g.quoteItinerary &&
+                  <a class="btn btn-line itinerary-quote" data-trip-quote href={quoteOption(g.title)} aria-label={`Quote this itinerary on WhatsApp, ${g.title}`} target="_blank" rel="noopener">Quote this itinerary</a>}
               </div>
             ))}
           </div>
@@ -90,17 +98,22 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
 
     {['bali','maldives'].includes(slug) && <p class="prose"><a href="/holidays/bali-or-maldives">Bali or Maldives? Compare the two holidays →</a></p>}
     <div class="cta-band">
-      <div><h2>Ready to plan your {meta.name} trip?</h2><p>Tell us your dates and who is travelling. We reply with a quote built around you. Found a lower price elsewhere on flights or hotels? Send the screenshot and we match it.</p></div>
+      <div><h2>Ready to plan your {meta.name} trip?</h2><p>Tell us your dates and who is travelling. We reply with a quote built around you. Found a lower price for the same flight or hotel? <a href="/flights-hotels#price-match">Check the price-match terms</a>.</p></div>
       <a class="btn btn-sun" href={ask} target="_blank" rel="noopener">Request a free quote</a>
     </div>
   </div>
 </Base>
 
 <style>
+  #holiday-options {scroll-margin-top:80px}
+  .package-options {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:12px;list-style:none;padding:0;margin:20px 0}
+  .package-options li {display:flex;flex-direction:column;align-items:start;justify-content:space-between;gap:14px;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+  .package-options .btn {font-size:15px}
   .itinerary-quote {margin-top:14px;font-size:15px}
   .trip-photos { display: grid; gap: 10px; margin-top: 16px; }
   .trip-photos-multiple { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .trip-photos figure { margin: 0; }
   .trip-photos img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 12px; }
   .trip-photos figcaption { margin-top: 4px; color: var(--ink); font-size: 14px; font-weight: 800; }
+  @media(max-width:500px){.trip-photos .itinerary-quote {width:100%;padding:10px 12px}}
 </style>

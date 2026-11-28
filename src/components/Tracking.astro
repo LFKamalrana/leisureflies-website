@@ -39,6 +39,10 @@ if (pixel) {
     }
   }, true);
   document.addEventListener('submit', function (event) {
+    if (event.target.id === 'travel-quote') {
+      track('whatsapp_click', 'Contact', { page: location.pathname, service: event.target.elements.service.value });
+      return;
+    }
     if (event.target.id !== 'planner' && event.target.id !== 'enquiry') return;
     var method = event.submitter && event.submitter.value === 'email' ? 'email' : 'whatsapp';
     track('generate_lead', 'Lead', { page: location.pathname, method: method });

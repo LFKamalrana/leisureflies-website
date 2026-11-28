@@ -3,6 +3,7 @@ import ArtScene from '../components/ArtScene.astro';
 import Base from '../layouts/Base.astro';
 import DestinationCard from '../components/DestinationCard.astro';
 import Offers from '../components/Offers.astro';
+import { priceMatchIntro, priceMatchSteps } from '../data/priceMatch.js';
 import { SITE, DEST, FEATURED, VISA_COUNTRIES, wa } from '../data/site.js';
 import team from '../data/team.json';
 const schema = {
@@ -74,8 +75,8 @@ const schema = {
 
     <form class="planner" id="planner" aria-label="Plan a trip on WhatsApp">
       <div class="field"><label for="dest">Where to?</label>
-        <select id="dest">{Object.values(DEST).map((d)=><option>{d.name}</option>)}<option>Somewhere else</option></select></div>
-      <div class="field"><label for="trav">Travellers</label><input id="trav" type="number" min="1" max="60" value="2" inputmode="numeric"></div>
+        <select id="dest"><option value="">Help me choose</option>{Object.values(DEST).map((d)=><option>{d.name}</option>)}<option>Somewhere else</option></select></div>
+      <div class="field"><label for="trav">Travellers</label><input id="trav" type="number" min="1" max="60" placeholder="e.g. 2" inputmode="numeric"></div>
       <div class="field"><label for="when">When?</label><input id="when" type="text" placeholder="e.g. December"></div>
       <div class="field"><label for="who">Your name</label><input id="who" type="text" placeholder="Optional" autocomplete="name"></div>
       <button class="btn btn-wa" type="submit">Plan on WhatsApp</button>
@@ -108,15 +109,11 @@ const schema = {
         <div>
           <span class="badge">STS PROGRAM · AIR TICKETS &amp; HOTELS</span>
           <h2>Found it cheaper? Send the Screenshot.</h2>
-          <p class="lead" style="margin-top:14px;font-size:19px">Show us a lower price on the final payment page of an authentic, renowned travel website. We guarantee to match it, and we book it for you.</p>
-          <div class="hero-cta"><a class="btn btn-wa" href={wa("Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.")} target="_blank" rel="noopener">Start on WhatsApp</a><a class="btn btn-line" href="/flights-hotels" style="margin-left:0">Read the rules</a></div>
-          <small>Same conditions apply to hotels. We cannot hold a booking, so send everything together.</small>
+          <p class="lead" style="margin-top:14px;font-size:19px">{priceMatchIntro}</p>
+          <div class="hero-cta"><a class="btn btn-wa" href={wa("Hi LeisureFlies, I want to use the Send the Screenshot (STS) offer.")} target="_blank" rel="noopener">Request a price match</a><a class="btn btn-line" href="/flights-hotels#price-match" style="margin-left:0">Read the rules</a></div>
         </div>
         <ol class="steps">
-          <li>Message us on WhatsApp. Your 4 minutes start here.</li>
-          <li>Send a screenshot of the final payment page within 4 minutes. The time stamp must be visible.</li>
-          <li>Send your ID and payment with it.</li>
-          <li>We match the price and book it.</li>
+          {priceMatchSteps.map(step => <li>{step}</li>)}
         </ol>
       </div>
     </div>
@@ -219,8 +216,8 @@ const schema = {
   tripPlanner.addEventListener('submit', rememberTrip);
   tripPlanner.addEventListener('submit',function(e){
     e.preventDefault();
-    var d=document.getElementById('dest').value,t=document.getElementById('trav').value||'2',w=document.getElementById('when').value.trim(),n=document.getElementById('who').value.trim();
-    var m='Hi LeisureFlies, I would like a quote for '+d+'.\nTravellers: '+t+(w?'\nTravel dates: '+w:'')+(n?'\nName: '+n:'');
+    var d=document.getElementById('dest').value,t=document.getElementById('trav').value,w=document.getElementById('when').value.trim(),n=document.getElementById('who').value.trim();
+    var m=(d?'Hi LeisureFlies, I would like a quote for '+d+'.':'Hi LeisureFlies, please help me choose a destination.')+(t?'\nTravellers: '+t:'')+(w?'\nTravel dates: '+w:'')+(n?'\nName: '+n:'');
     window.open('https://wa.me/919814910087?text='+encodeURIComponent(m),'_blank','noopener');
   });
 </script>

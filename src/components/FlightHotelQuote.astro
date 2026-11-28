@@ -1,0 +1,108 @@
+---
+import { wa } from '../data/site.js';
+const locationPattern = /.*\S.*/.source;
+---
+<section id="quote" aria-labelledby="quote-heading">
+  <h2 id="quote-heading">Get a flight or hotel quote</h2>
+  <form id="travel-quote" class="planner" hidden>
+    <fieldset class="service-choice">
+      <legend>What would you like to book?</legend>
+      <label><input type="radio" name="service" value="flight" checked> Flight</label>
+      <label><input type="radio" name="service" value="hotel"> Hotel</label>
+    </fieldset>
+
+    <fieldset class="form" id="flight-fields">
+      <legend class="sr-only">Flight details</legend>
+      <div class="field"><label for="flight-from">Flying from</label><input id="flight-from" name="origin" placeholder="Departure city or airport" pattern={locationPattern} required></div>
+      <div class="field"><label for="flight-to">Flying to</label><input id="flight-to" name="destination" placeholder="Arrival city or airport" pattern={locationPattern} required></div>
+      <div class="field"><label for="flight-depart">Departure date</label><input type="date" id="flight-depart" name="departure" required></div>
+      <div class="field"><label for="flight-return">Return date (optional)</label><input type="date" id="flight-return" name="return"></div>
+    </fieldset>
+
+    <fieldset class="form" id="hotel-fields" hidden disabled>
+      <legend class="sr-only">Hotel details</legend>
+      <div class="field full"><label for="hotel-destination">City or hotel name</label><input id="hotel-destination" name="hotel" placeholder="e.g. Jaipur" pattern={locationPattern} required></div>
+      <div class="field"><label for="hotel-check-in">Check-in</label><input type="date" id="hotel-check-in" name="checkIn" required></div>
+      <div class="field"><label for="hotel-check-out">Check-out</label><input type="date" id="hotel-check-out" name="checkOut" required></div>
+      <div class="field"><label for="hotel-rooms">Rooms</label><input type="number" id="hotel-rooms" name="rooms" min="1" value="1" required></div>
+    </fieldset>
+
+    <div class="form">
+      <div class="field"><label for="quote-travellers">Number of travellers</label><input type="number" id="quote-travellers" name="travellers" min="1" placeholder="e.g. 2" required></div>
+    </div>
+    <div class="hero-cta"><button type="submit" class="btn btn-wa">Continue on WhatsApp</button></div>
+    <p class="note">Review your request in WhatsApp, then send it to the LeisureFlies team.</p>
+  </form>
+  <noscript>
+    <div class="hero-cta">
+      <a class="btn btn-line" href={wa('Hi LeisureFlies, I would like a flight quote.')} target="_blank" rel="noopener">Ask for a flight quote on WhatsApp</a>
+      <a class="btn btn-line" href={wa('Hi LeisureFlies, I would like a hotel quote.')} target="_blank" rel="noopener">Ask for a hotel quote on WhatsApp</a>
+    </div>
+  </noscript>
+</section>
+
+<script>
+  import { wa } from '../data/site.js';
+
+  const form = document.querySelector<HTMLFormElement>('#travel-quote')!;
+  const flightFields = form.querySelector<HTMLFieldSetElement>('#flight-fields')!;
+  const hotelFields = form.querySelector<HTMLFieldSetElement>('#hotel-fields')!;
+  const input = (name: string) => form.elements.namedItem(name) as HTMLInputElement;
+  const hotelChoice = form.querySelector<HTMLInputElement>('[value="hotel"]')!;
+  const calendar = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit' });
+
+  function updateFields() {
+    flightFields.disabled = flightFields.hidden = hotelChoice.checked;
+    hotelFields.disabled = hotelFields.hidden = !hotelChoice.checked;
+    const today = calendar.format(new Date());
+    input('departure').min = input('checkIn').min = today;
+    input('return').min = input('departure').value || today;
+    const firstNight = input('checkIn').valueAsDate || new Date(today + 'T00:00:00Z');
+    firstNight.setUTCDate(firstNight.getUTCDate() + 1);
+    input('checkOut').min = firstNight.toISOString().slice(0, 10);
+  }
+  if (new URLSearchParams(location.search).get('service') === 'hotel') hotelChoice.checked = true;
+  updateFields();
+  form.hidden = false;
+  form.addEventListener('input', updateFields);
+  form.addEventListener('change', updateFields);
+  form.addEventListener('focusin', updateFields);
+  window.addEventListener('pageshow', updateFields);
+
+  const formatter = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const date = (name: string) => formatter.format(new Date(input(name).value + 'T12:00:00Z'));
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    updateFields();
+    if (!form.reportValidity()) return;
+    const lines = hotelChoice.checked ? [
+      'Hi LeisureFlies, I would like a hotel quote.',
+      'City or hotel: ' + input('hotel').value.trim(),
+      'Check-in: ' + date('checkIn'),
+      'Check-out: ' + date('checkOut'),
+      'Rooms: ' + input('rooms').value,
+    ] : [
+      'Hi LeisureFlies, I would like a flight quote.',
+      'From: ' + input('origin').value.trim(),
+      'To: ' + input('destination').value.trim(),
+      'Departure: ' + date('departure'),
+      input('return').value ? 'Return: ' + date('return') : 'One way',
+    ];
+    lines.push('Travellers: ' + input('travellers').value);
+    window.open(wa(lines.join('\n')), '_blank', 'noopener');
+  });
+</script>
+
+<style>
+  #quote { padding-block: clamp(20px, 4vw, 40px); scroll-margin-top: 80px; }
+  #quote [hidden] { display: none; }
+  .planner { display: block; margin-top: 16px; max-width: 760px; }
+  fieldset { border: 0; padding: 0; min-inline-size: 0; }
+  .field { min-width: 0; }
+  .service-choice legend { font-weight: 800; margin-bottom: 8px; }
+  .service-choice label { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--line); border-radius: 10px; }
+  .service-choice label:has(:checked) { background: var(--sky); }
+  .service-choice input { accent-color: var(--turq-deep); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .note { margin-top: 12px; }
+</style>
