@@ -1,5 +1,6 @@
 ---
 import KeralaRoute from '../../components/KeralaRoute.astro';
+import ThailandPackages from '../../components/ThailandPackages.astro';
 import Base from '../../layouts/Base.astro';
 import ArtScene from '../../components/ArtScene.astro';
 import raw from '../../data/destinations.json';
@@ -30,10 +31,10 @@ for (const b of d.blocks) {
   else grp.paras.push(b.text);
 }
 const heroImg = d.heroPhoto?.src ?? (meta.photo ? `/img/hero-${slug}.jpg` : null);
-const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
+const ask = wa(`Hi LeisureFlies, I’m interested in your ${meta.name} holiday packages. Please send me an itinerary and a quote.`);
 const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this ${meta.name} holiday option.\n${option}`);
 ---
-<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={heroImg || '/og-image.jpg'}>
+<Base title={`${meta.name} Holiday Packages from Chandigarh`} description={d.description || d.lead} image={heroImg || '/og-image.jpg'} whatsappHref={ask}>
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> / <a href="/holidays">Holidays</a> / {meta.name}</div>
     <div class="page-hero">
@@ -46,13 +47,16 @@ const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this $
       </div>
     </div>
 
-    {sections.map((s) => (
+    {sections.map((s) => {
+      const compareThailand = slug === 'thailand' && s.options.length > 0;
+      return (
       <section class="sec-block" id={s.options.length ? 'holiday-options' : undefined} style="padding-block:clamp(28px,4vw,48px)">
         {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
         <h2 style="margin-top:8px">{s.title}</h2>
         {slug === 'kerala' && s.options.length > 0 && <KeralaRoute />}
+        {compareThailand && <ThailandPackages />}
         {slug === 'maldives' && s.options.length > 0 && <ul class="prose">{s.options.map((option) => <li>{option}</li>)}</ul>}
-        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !s.groups.some(g => g.quoteItinerary) && (
+        {s.options.length > 0 && slug !== 'kerala' && slug !== 'maldives' && !compareThailand && !s.groups.some(g => g.quoteItinerary) && (
           <ul class="package-options">{s.options.map((option) => <li>
             <strong>{option}</strong>
             <a class="btn btn-line" data-trip-quote href={quoteOption(option)} aria-label={`Enquire on WhatsApp about ${meta.name}, ${option}`} target="_blank" rel="noopener">Enquire on WhatsApp</a>
@@ -85,7 +89,8 @@ const quoteOption = (option: string) => wa(`Hi LeisureFlies, please quote this $
           </div>
         )}
       </section>
-    ))}
+      );
+    })}
 
     {entry && <section class="sec-block" id="entry-requirements">
       <h2>Entry requirements for Indian passport holders</h2>
