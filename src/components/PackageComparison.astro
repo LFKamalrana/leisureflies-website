@@ -8,6 +8,7 @@ interface PackageOption {
   exclusions: string[];
   confirm?: string[];
   quoteRoute?: string;
+  quoteLabel?: string;
 }
 
 interface Props {
@@ -31,7 +32,7 @@ const { destination, note, routes, quoteOption } = Astro.props;
     <div class="trips">
       {route.packages.map(trip => {
         const duration = `${trip.nights} nights / ${trip.nights + 1} days`;
-        const choice = `${duration} (${trip.quoteRoute ?? route.quoteRoute})`;
+        const choice = trip.quoteLabel ?? `${duration} (${trip.quoteRoute ?? route.quoteRoute})`;
         const tripId = `${route.slug}-${trip.nights}-nights`;
         const tripName = `${trip.quoteRoute ?? route.name}, ${duration}`;
         return (
