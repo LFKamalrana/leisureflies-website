@@ -1,26 +1,27 @@
 ---
 import { wa } from '../data/site.js';
-const trips = [
-  { nights: 4, stops: [['Munnar',2],['Thekkady',1],['Alleppey',1]] },
-  { nights: 5, stops: [['Kochi',1],['Munnar',2],['Thekkady',1],['Alleppey',1]] },
-  { nights: 7, stops: [['Kochi',1],['Munnar',2],['Thekkady',1],['Alleppey',1],['Kovalam',1]] },
-];
+import { keralaPackages, keralaInclusions, keralaExclusions, keralaConfirm } from '../data/keralaPackages';
 const icons = { Kochi:'⛵', Munnar:'🌿', Thekkady:'🌳', Alleppey:'🛶', Kovalam:'🌴' };
 ---
 <div class="route-picker" aria-label="Kerala route postcards">
-  {trips.map((trip,i) => {
+  {keralaPackages.map((trip,i) => {
     const duration = `${trip.nights} nights / ${trip.nights + 1} days`;
     const route = trip.stops.map(([place, nights]) => `${place} (${nights} ${nights === 1 ? 'night' : 'nights'})`).join(' → ');
-    const note = trip.nights === 7 ? 'The overnight stop for the seventh night is confirmed with your quote.' : '';
-    const message = [`Hi LeisureFlies, please quote this Kerala itinerary. ${duration}.`, route, note].filter(Boolean).join('\n');
+    const message = `Hi LeisureFlies, please quote this Kerala itinerary. ${duration}.\n${route}`;
     return (
-    <details name="kerala-route" open={i === 0}>
-      <summary>{duration}</summary>
-      <ol>{trip.stops.map(([place,n]) => <li>
+    <details name="kerala-route" id={`kerala-${trip.nights}-nights`} open={i === 0}>
+      <summary>{duration}<span class="difference">{trip.difference}</span></summary>
+      <ol class="stops" aria-label="Overnight stops">{trip.stops.map(([place,n]) => <li>
         <span class="stamp" aria-hidden="true">{icons[place]}</span>
         <b>{place}</b><span>{n} {n === 1 ? 'night' : 'nights'}</span>
       </li>)}</ol>
-      {note && <p>{note}</p>}
+      <h3>Sample day-wise plan</h3>
+      <ol class="days">{trip.days.map((day, index) => <li><b>Day {index + 1}</b><span>{day}</span></li>)}</ol>
+      <div class="terms">
+        <div><h3>Included</h3><ul><li>{trip.nights} nights across the stops shown above.</li>{keralaInclusions.map(item => <li>{item}</li>)}</ul></div>
+        <div><h3>Excluded</h3><ul>{keralaExclusions.map(item => <li>{item}</li>)}{trip.nights === 7 && <li>Kovalam watersports and equipment hire unless added to your booking.</li>}</ul></div>
+      </div>
+      <h3>Confirm with your quote</h3><p>{keralaConfirm}</p>
       <a class="btn btn-line" data-trip-quote href={wa(message)} aria-label={`Quote this Kerala route on WhatsApp, ${duration}`} target="_blank" rel="noopener">Quote this route</a>
     </details>
     );
@@ -30,11 +31,17 @@ const icons = { Kochi:'⛵', Munnar:'🌿', Thekkady:'🌳', Alleppey:'🛶', Ko
   .route-picker {display:grid;gap:8px;margin-top:18px}
   details {padding:12px 20px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
   summary {cursor:pointer;color:var(--ink);font:600 21px var(--display);padding:5px}
-  ol {display:flex;list-style:none;padding:0;max-width:850px;margin:24px 0 20px}
-  li {position:relative;display:grid;justify-items:center;flex:1;z-index:0}
-  li:not(:last-child)::after {position:absolute;content:'';top:25px;left:50%;width:100%;border-top:3px dotted #79bfc4;z-index:-1}
+  .difference {display:block;margin-top:6px;font:400 16px/1.5 var(--body);color:var(--muted)}
+  .stops {display:flex;list-style:none;padding:0;max-width:850px;margin:24px 0 20px}
+  .stops li {position:relative;display:grid;justify-items:center;flex:1;z-index:0}
+  .stops li:not(:last-child)::after {position:absolute;content:'';top:25px;left:50%;width:100%;border-top:3px dotted #79bfc4;z-index:-1}
   .stamp {display:grid;place-items:center;background:#fff4d8;border:2px solid #efc968;border-radius:50%;width:52px;height:52px;font-size:28px}
-  li b {margin-top:6px}li span:last-child,details p {color:var(--muted);font-size:15px}
+  .stops li b {margin-top:6px}.stops li span:last-child,details p {color:var(--muted);font-size:15px}
+  h3 {font:700 18px/1.4 var(--display);margin:16px 0 6px}
+  .days {padding:0;margin:0;list-style:none;max-width:84ch}
+  .days li {display:grid;grid-template-columns:max-content 1fr;gap:12px;padding:6px 0;line-height:1.5}
+  .terms {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .terms ul {padding-inline-start:20px;margin:0}.terms li {margin:4px 0}
   .btn {margin:8px 0;font-size:15px}
-  @media(max-width:650px){ol{flex-direction:column;gap:14px}li{display:grid;grid-template-columns:52px 1fr;column-gap:12px;justify-items:start;align-items:center}.stamp{grid-row:span 2}li b{align-self:end;margin:0}li span:last-child{align-self:start}li:not(:last-child)::after{top:50%;left:25px;width:0;height:calc(100% + 15px);border-top:0;border-left:3px dotted #79bfc4}}
+  @media(max-width:650px){.stops{flex-direction:column;gap:14px}.stops li{grid-template-columns:52px 1fr;column-gap:12px;justify-items:start;align-items:center}.stamp{grid-row:span 2}.stops li b{align-self:end;margin:0}.stops li span:last-child{align-self:start}.stops li:not(:last-child)::after{top:50%;left:25px;width:0;height:calc(100% + 15px);border-top:0;border-left:3px dotted #79bfc4}.terms{grid-template-columns:1fr;gap:0}}
 </style>
