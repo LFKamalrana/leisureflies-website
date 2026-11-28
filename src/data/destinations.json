@@ -386,11 +386,7 @@
    },
    {
     "type": "h3",
-    "text": "Indonesia Visa"
-   },
-   {
-    "type": "p",
-    "text": "Getting a visa for Indonesia is refreshingly simple — Indian travelers don't need to apply in advance. A Visa on Arrival is purchased directly at the immigration hall on landing in Bali (or anywhere in Indonesia), and it's valid for 30 days."
+    "text": "Tips"
    },
    {
     "type": "p",
@@ -421,6 +417,22 @@
   "heroPhoto": {
    "src": "/img/holidays/bali-temple.webp",
    "alt": "A lakeside temple reflected in the water at sunset in Bali"
+  },
+  "entry": {
+   "advice": [
+    "For a holiday of up to 30 days, you can apply online for an Indonesian electronic visa on arrival (e-VOA). You can also obtain the visa at designated entry points, including Bali’s Ngurah Rai International Airport.",
+    "Complete the All Indonesia arrival declaration before landing. Most foreign tourists visiting Bali also pay the provincial tourist levy."
+   ],
+   "sources": [
+    {
+     "label": "Indonesian embassy visa and Bali levy guidance",
+     "url": "https://kemlu.go.id/doha/pelayanan-perwakilan/visa/visa-saat-kedatangan"
+    },
+    {
+     "label": "All Indonesia arrival declaration",
+     "url": "https://allindonesia.imigrasi.go.id/"
+    }
+   ]
   }
  },
  "dubai": {
@@ -570,14 +582,6 @@
    },
    {
     "type": "h3",
-    "text": "Dubai Visa"
-   },
-   {
-    "type": "p",
-    "text": "Only soft copies required: a scanned colour copy of your passport's first & last page, a passport-size photo on white background, and your PAN card. The e-visa is issued digitally and can be printed."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -593,7 +597,12 @@
     "text": "Don't consume alcohol or illicit substances outside licensed venues — follow local norms and enjoy the journey."
    }
   ],
-  "description": "Compare three to five nights in Dubai, from a dhow dinner cruise and desert safari to a longer trip with Abu Dhabi and Ferrari World. Request a tailored quote."
+  "description": "Compare three to five nights in Dubai, from a dhow dinner cruise and desert safari to a longer trip with Abu Dhabi and Ferrari World. Request a tailored quote.",
+  "entry": {
+   "advice": [
+    "Arrange a UAE tourist visa before flying to Dubai unless you qualify for a visa on arrival. Eligibility depends on the visas or residence permits you hold and how long they remain valid. Check your documents with UAE immigration before booking."
+   ]
+  }
  },
  "goa": {
   "slug": "goa",
@@ -770,10 +779,6 @@
    {
     "type": "p",
     "text": "Goa celebrates both 15th August and 19th December, marking its freedom from Portuguese rule."
-   },
-   {
-    "type": "p",
-    "text": "Goan people can apply for a Portuguese passport alongside their Indian one."
    }
   ],
   "description": "Plan three to five nights in North and South Goa. Compare beaches, Chapora Fort and Old Goa’s churches, then ask for a holiday quote for your dates."
@@ -1492,7 +1497,23 @@
     "text": "Most resorts now offer dedicated vegetarian, Indian and Jain meal options — worth confirming when we book."
    }
   ],
-  "description": "Choose a Maldives resort by transfer, room type and meal plan. Compare beach and water villas, explore snorkelling or sunset fishing, and request a quote."
+  "description": "Choose a Maldives resort by transfer, room type and meal plan. Compare beach and water villas, explore snorkelling or sunset fishing, and request a quote.",
+  "entry": {
+   "advice": [
+    "Tourists receive a visa on arrival if they meet Maldives Immigration’s entry requirements. For a resort holiday, carry your confirmed return ticket, proof of a prepaid stay at a registered property and evidence of funds for your trip.",
+    "Submit the free IMUGA Traveller Declaration within 96 hours before arrival."
+   ],
+   "sources": [
+    {
+     "label": "Maldives Immigration tourist visa requirements",
+     "url": "https://www.immigration.gov.mv/visa/tourist-visa"
+    },
+    {
+     "label": "IMUGA Traveller Declaration",
+     "url": "https://imuga.immigration.gov.mv/traveller"
+    }
+   ]
+  }
  },
  "mauritius": {
   "slug": "mauritius",
@@ -1618,14 +1639,6 @@
    },
    {
     "type": "h3",
-    "text": "Mauritius Visa"
-   },
-   {
-    "type": "p",
-    "text": "Travellers do not need to register for a visa in advance. Simply provide the necessary documents at the airport and collect your visa on arrival from the relevant authority."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -1641,7 +1654,22 @@
     "text": "Mauritius follows left-hand driving, same as India."
    }
   ],
-  "description": "Compare three-, four- and five-star hotel options for Mauritius. Explore Île aux Cerfs and north and south island tours before asking for a holiday quote."
+  "description": "Compare three-, four- and five-star hotel options for Mauritius. Explore Île aux Cerfs and north and south island tours before asking for a holiday quote.",
+  "entry": {
+   "advice": [
+    "You can visit Mauritius for tourism without a visa. At the border, have your valid passport, return ticket, confirmed accommodation or host sponsorship, and proof of funds for your stay ready."
+   ],
+   "sources": [
+    {
+     "label": "Mauritius visa requirements by nationality (PDF)",
+     "url": "https://passport.govmu.org/passport/wp-content/uploads/2021/03/Visa-Requirement-Country-2025.pdf"
+    },
+    {
+     "label": "Mauritius Immigration entry requirements",
+     "url": "https://passport.govmu.org/passport/?page_id=587"
+    }
+   ]
+  }
  },
  "saudi-arabia": {
   "slug": "saudi-arabia",
@@ -1792,10 +1820,6 @@
     "text": "Alcohol and its consumption are strictly prohibited in Saudi Arabia."
    },
    {
-    "type": "p",
-    "text": "Your visa must not be expired, and must have been used for at least one prior trip if applicable."
-   },
-   {
     "type": "h3",
     "text": "Tips"
    },
@@ -1804,7 +1828,23 @@
     "text": "October to February."
    }
   ],
-  "description": "Compare Riyadh and Jeddah separately or together. Explore Al-Masmak Fortress, the Edge of the World and Jeddah Waterfront, then request a Saudi holiday quote."
+  "description": "Compare Riyadh and Jeddah separately or together. Explore Al-Masmak Fortress, the Edge of the World and Jeddah Waterfront, then request a Saudi holiday quote.",
+  "entry": {
+   "advice": [
+    "You need a Saudi tourist visa. Check your eligibility with KSA Visa before booking. A qualifying visa or residence permit from another country can affect how you apply.",
+    "Indian passport holders can also apply through an approved provider when booking an eligible package that includes flights and accommodation."
+   ],
+   "sources": [
+    {
+     "label": "KSA Visa tourist visa options",
+     "url": "https://ksavisa.sa/visa/tourism/details"
+    },
+    {
+     "label": "Visit Saudi package visa eligibility",
+     "url": "https://www.visitsaudi.com/en/campaigns/package-visa"
+    }
+   ]
+  }
  },
  "singapore": {
   "slug": "singapore",
@@ -1940,18 +1980,6 @@
    },
    {
     "type": "h3",
-    "text": "Singapore Visa"
-   },
-   {
-    "type": "p",
-    "text": "Original machine-readable passport (2 bio-page copies for West India applicants), valid 6+ months on arrival, with 3 blank pages for stamping."
-   },
-   {
-    "type": "p",
-    "text": "2 recent photographs (3.5cm x 5cm), a confirmed return air ticket within 30 days, and prior travel history documentation if applicable."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -1967,7 +1995,23 @@
     "text": "Don't spit or litter — it's a punishable offence, and the city stays spotless because of it."
    }
   ],
-  "description": "Plan three or four nights in Singapore, or add a cruise on a five-night trip. Explore Sentosa, Gardens by the Bay and the Night Safari, then request a quote."
+  "description": "Plan three or four nights in Singapore, or add a cruise on a five-night trip. Explore Sentosa, Gardens by the Bay and the Night Safari, then request a quote.",
+  "entry": {
+   "advice": [
+    "Apply for a tourist visa before you travel. You need a signed Form 14A and a passport valid for at least six months on arrival. For an application through New Delhi, prepare two recent colour photos measuring 35 × 45 mm.",
+    "Submit the free SG Arrival Card separately within the three-day window that includes your arrival date."
+   ],
+   "sources": [
+    {
+     "label": "Singapore High Commission visa and photo requirements",
+     "url": "https://new-delhi.mfa.gov.sg/consular-services/visa-information/"
+    },
+    {
+     "label": "Official SG Arrival Card",
+     "url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card"
+    }
+   ]
+  }
  },
  "sri-lanka": {
   "slug": "sri-lanka",
@@ -2119,18 +2163,6 @@
    },
    {
     "type": "h3",
-    "text": "Sri Lanka Visa"
-   },
-   {
-    "type": "p",
-    "text": "Visa on arrival is available for Indians. For short visits, travelers should obtain an ETA (Electronic Travel Authorization) online in advance."
-   },
-   {
-    "type": "p",
-    "text": "The ETA is initially valid for 30 days from arrival, and can be extended up to 6 months."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -2142,7 +2174,22 @@
     "text": "Colombo's culture, climbing Adam's Peak, Galle's history, the ruins of Sigiriya, and the tea plantations."
    }
   ],
-  "description": "Compare Sri Lanka trips of four to six nights through Kandy, Nuwara Eliya and Bentota. Explore hill country and the coast, then request a quote for your dates."
+  "description": "Compare Sri Lanka trips of four to six nights through Kandy, Nuwara Eliya and Bentota. Explore hill country and the coast, then request a quote for your dates.",
+  "entry": {
+   "advice": [
+    "Obtain an Electronic Travel Authorization (ETA) online before travelling to Sri Lanka. For an Indian passport holder visiting as a tourist, the 30-day ETA is free of charge."
+   ],
+   "sources": [
+    {
+     "label": "Sri Lanka’s official ETA application",
+     "url": "https://eta.gov.lk/slvisa/"
+    },
+    {
+     "label": "Sri Lanka Immigration notice for tourists (PDF)",
+     "url": "https://www.immigration.gov.lk/content/files/visa/Free%20Tourist%20Visas%20for%20Nationals%20of%2040%20Selected%20Countries.pdf"
+    }
+   ]
+  }
  },
  "thailand": {
   "slug": "thailand",
@@ -2289,14 +2336,6 @@
    },
    {
     "type": "h3",
-    "text": "Thailand Visa"
-   },
-   {
-    "type": "p",
-    "text": "Indians get Visa on Arrival in Thailand — no need to pre-apply. Walk in just like entering any city in India."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -2308,7 +2347,23 @@
     "text": "Always take your shoes off entering authentic restaurants, temples and local shops — following Thai culture matters."
    }
   ],
-  "description": "Compare Bangkok and Pattaya with Phuket and Krabi on four- to six-night Thailand trips. Explore city tours and island excursions, then request a quote."
+  "description": "Compare Bangkok and Pattaya with Phuket and Krabi on four- to six-night Thailand trips. Explore city tours and island excursions, then request a quote.",
+  "entry": {
+   "advice": [
+    "You can visit Thailand for tourism without a visa for up to 30 days. For a longer trip, check the visa requirements with the Royal Thai Embassy before departure.",
+    "Complete the free Thailand Digital Arrival Card (TDAC) online within the three-day window that includes your arrival date."
+   ],
+   "sources": [
+    {
+     "label": "Royal Thai Embassy visa exemption for Indian tourists",
+     "url": "https://newdelhi.thaiembassy.org/en/content/the-revision-of-thailand-s-visa-exemption-and-voa"
+    },
+    {
+     "label": "Official Thailand Digital Arrival Card",
+     "url": "https://tdac.immigration.go.th/arrival-card/"
+    }
+   ]
+  }
  },
  "vietnam": {
   "slug": "vietnam",
@@ -2460,18 +2515,6 @@
    },
    {
     "type": "h3",
-    "text": "Vietnam Visa"
-   },
-   {
-    "type": "p",
-    "text": "Getting a business or tourist visa is simple — it's a 3-step process, applied for online through Vietnam's official e-visa portal."
-   },
-   {
-    "type": "p",
-    "text": "It's electronically issued as a Single Entry Visa, and must be requested at least 2 days before your departure date."
-   },
-   {
-    "type": "h3",
     "text": "Tips"
    },
    {
@@ -2479,6 +2522,12 @@
     "text": "Around March-April and October-December, when the weather is comfortable and festivals run across the country."
    }
   ],
-  "description": "Compare four- to six-night Vietnam routes through Hanoi, Halong Bay and Ho Chi Minh City, including a longer option with Hoi An. Ask for a tailored quote."
+  "description": "Compare four- to six-night Vietnam routes through Hanoi, Halong Bay and Ho Chi Minh City, including a longer option with Hoi An. Ask for a tailored quote.",
+  "entry": {
+   "advice": [
+    "Apply for your e-visa before departure. Vietnam issues single-entry and multiple-entry e-visas for up to 90 days. Choose the option that covers your itinerary, including any return to Vietnam after visiting another country.",
+    "Allow time for processing and any corrections. Check the dates, passport details and approved entry point on your e-visa before you travel."
+   ]
+  }
  }
 }

@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import ArtScene from '../../components/ArtScene.astro';
 import raw from '../../data/destinations.json';
 import { DEST, wa } from '../../data/site.js';
+import { guides } from '../../data/visa';
 
 export function getStaticPaths() {
   return Object.keys(raw).map((slug) => ({ params: { slug } }));
@@ -11,6 +12,9 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const d = raw[slug];
 const meta = DEST[slug];
+const entry = d.entry;
+const visaGuide = guides[slug];
+const entrySources = entry?.sources ?? visaGuide?.sources ?? [];
 
 // Group the flat content blocks into sections -> intro paragraphs + titled groups.
 const sections = [];
@@ -74,6 +78,15 @@ const ask = wa(`Hi LeisureFlies, please send me a ${meta.name} package.`);
         )}
       </section>
     ))}
+
+    {entry && <section class="sec-block" id="entry-requirements">
+      <h2>Entry requirements for Indian passport holders</h2>
+      <div class="prose">
+        {entry.advice.map((paragraph) => <p>{paragraph}</p>)}
+        {visaGuide && <p><a href={`/visa/${slug}`}>{meta.name} visa fees and document checklist</a></p>}
+        <ul>{entrySources.map((source) => <li><a href={source.url}>{source.label}</a></li>)}</ul>
+      </div>
+    </section>}
 
     {['bali','maldives'].includes(slug) && <p class="prose"><a href="/holidays/bali-or-maldives">Bali or Maldives? Compare the two holidays →</a></p>}
     <div class="cta-band">
