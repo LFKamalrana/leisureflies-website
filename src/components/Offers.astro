@@ -1,42 +1,138 @@
 ---
-// Latest offers, loaded in the browser from Sanity so new offers appear without redeploying the site.
 const { limit = 0, page = false } = Astro.props;
 ---
-<section id="offers" class="offers-sec" data-limit={limit} data-page={page ? '1' : '0'} hidden>
+<section id="offers" class="offers-sec" data-limit={limit} hidden={page}>
   <div class="wrap">
-    <div class="head">
-      <div><div class="eyebrow">Latest offers</div><h2 style="margin-top:8px">{page ? 'More holiday offers' : 'Fresh deals from our desk.'}</h2>
-      <p class="lead">Limited-time packages and offers. Message us to book or to customise one.</p></div>
-      {!page && <a class="btn btn-line" href="/offers">See all offers</a>}
+    {!page && <div id="flight-highlights">
+      <div class="head">
+        <div><h2>Flight offers</h2>
+        <p class="lead">Choose a fixed departure by route and travel date. Fares are per person, subject to seat availability.</p></div>
+        <a class="btn btn-line" href="/offers">See all flight offers</a>
+      </div>
+      <div class="cards2" data-flight-grid hidden></div>
+      <p class="note" data-no-flights hidden>There are no upcoming fixed departures listed. <a href="/contact">Ask us about your route.</a></p>
+    </div>}
+    <div id="holiday-offers" hidden>
+      <h2>Holiday offers</h2>
+      <div class="cards2" data-holiday-grid></div>
     </div>
-    <div class="cards2 offer-grid" id="offerGrid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))"></div>
-    <p class="note" id="offerEmpty" hidden>No offers are listed right now. Message us on WhatsApp for the latest deals.</p>
   </div>
+  <template data-offer-card>
+    <article class="info offer">
+      <span class="tagline"></span>
+      <h3></h3>
+      <p data-description></p>
+      <p class="price"></p>
+      <p class="until"></p>
+      <a class="btn btn-wa" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+    </article>
+  </template>
 </section>
-<script is:inline>
-(function(){
-  var sec=document.getElementById('offers'),grid=document.getElementById('offerGrid'),empty=document.getElementById('offerEmpty');
-  var limit=parseInt(sec.dataset.limit||'0',10),isPage=sec.dataset.page==='1';
-  var P='xaf8quzi',D='production';
-  var today=new Date().toISOString().slice(0,10);
-  var q='*[_type=="offer" && (!defined(validUntil) || validUntil >= $today)] | order(_createdAt desc)'+(limit?'[0...'+limit+']':'')+'{title,destination,summary,priceNote,validUntil,"img":image.asset->url}';
-  var url='https://'+P+'.apicdn.sanity.io/v2025-01-01/data/query/'+D+'?query='+encodeURIComponent(q)+'&%24today='+encodeURIComponent('"'+today+'"');
-  function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML}
-  function fmt(d){try{return new Date(d+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}catch(e){return d}}
-  fetch(url).then(function(r){return r.json()}).then(function(j){
-    var list=j.result||[];
-    if(!list.length){if(isPage){empty.hidden=false}return}
-    grid.innerHTML=list.map(function(o){
-      var msg='Hi LeisureFlies, I am interested in this offer: '+o.title+(o.destination?' ('+o.destination+')':'');
-      return '<article class="info offer">'+
-        (o.img?'<img src="'+esc(o.img)+'?w=640&h=420&fit=crop&auto=format" alt="'+esc(o.title)+'" loading="lazy" width="640" height="420">':'')+
-        (o.destination?'<span class="tagline">'+esc(o.destination)+'</span>':'')+
-        '<h3>'+esc(o.title)+'</h3><p>'+esc(o.summary)+'</p>'+
-        '<p class="price">'+esc(o.priceNote||'Ask for a quote')+'</p>'+
-        (o.validUntil?'<p class="until">Valid until '+esc(fmt(o.validUntil))+'</p>':'')+
-        '<a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/919814910087?text='+encodeURIComponent(msg)+'">Enquire on WhatsApp</a></article>';
-    }).join('');
-    sec.hidden=false;
-  }).catch(function(){if(isPage){empty.hidden=false}});
-})();
+
+<script>
+  import { wa } from '../data/site.js';
+
+  type Flight = {
+    origin: string; destination: string; domestic: boolean; airline: string;
+    kind: string; dates: string; fare: number | null;
+  };
+  type FeaturedFlights = { cards: Flight[]; periods: { until: number; picks: number[] }[] };
+  type Holiday = {
+    title: string; destination?: string; summary?: string; priceNote?: string; validUntil?: string; img?: string;
+  };
+
+  const section = document.querySelector<HTMLElement>('#offers')!;
+  const template = section.querySelector<HTMLTemplateElement>('template')!;
+  const day = new Intl.DateTimeFormat('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const inIndia = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
+  const dateLabel = (date: string) => day.format(new Date(date + 'T12:00:00Z'));
+
+  function card(title: string, tag: string, description: string, price: string, validity: string) {
+    const element = template.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    element.querySelector('h3')!.textContent = title;
+    for (const [selector, value] of [['.tagline', tag], ['[data-description]', description], ['.price', price], ['.until', validity]]) {
+      const field = element.querySelector(selector)!;
+      if (value) field.textContent = value;
+      else field.remove();
+    }
+    return element;
+  }
+
+  function flightCard(offer: Flight) {
+    const route = offer.origin + ' → ' + offer.destination;
+    const dates = offer.dates.split('/').map(dateLabel).join(' – ');
+    const price = offer.fare == null ? 'Ask for fare' : '₹' + offer.fare.toLocaleString('en-IN') + ' per person';
+    const itinerary = offer.airline + ' · ' + offer.kind;
+    const category = offer.domestic ? 'Domestic' : 'International';
+    const element = card(route, category, itinerary, price, dates);
+    const link = element.querySelector('a')!;
+    link.className = 'btn btn-line';
+    link.textContent = 'See departures for this route';
+    link.removeAttribute('target');
+    link.href = '/offers?' + new URLSearchParams({ from: offer.origin, to: offer.destination, category });
+    return element;
+  }
+
+  const flights = section.querySelector<HTMLElement>('#flight-highlights');
+  if (flights) {
+    const grid = flights.querySelector<HTMLElement>('[data-flight-grid]')!;
+    const empty = flights.querySelector<HTMLElement>('[data-no-flights]')!;
+    fetch('/featured-flights.json').then(async response => {
+      if (!response.ok) return;
+      const { cards, periods }: FeaturedFlights = await response.json();
+      let timer: number;
+      function refresh() {
+        clearTimeout(timer);
+        const now = Date.now();
+        const period = periods.find(item => item.until > now);
+        grid.replaceChildren(...(period?.picks ?? []).map(index => flightCard(cards[index])));
+        grid.hidden = !period;
+        empty.hidden = !!period;
+        if (period) timer = window.setTimeout(refresh, Math.min(period.until - now, 2147483647));
+      }
+      refresh();
+      window.addEventListener('pageshow', refresh);
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+    }).catch(() => { /* The full offer board remains accessible when this request fails. */ });
+  }
+
+  const holiday = section.querySelector<HTMLElement>('#holiday-offers')!;
+  const holidayGrid = holiday.querySelector<HTMLElement>('[data-holiday-grid]')!;
+  const limit = Number(section.dataset.limit);
+  function showHolidays(offers: Holiday[]) {
+    const today = inIndia.format(new Date());
+    const current = offers.filter(offer => offer.title && (!offer.validUntil || offer.validUntil >= today));
+    holidayGrid.replaceChildren(...current.slice(0, limit || current.length).map(offer => {
+      const element = card(offer.title, offer.destination || '', offer.summary || '', offer.priceNote || 'Ask for a quote',
+        offer.validUntil ? 'Valid until ' + dateLabel(offer.validUntil) : '');
+      element.querySelector('a')!.href = wa('Hi LeisureFlies, I am interested in ' + offer.title +
+        (offer.destination ? ' (' + offer.destination + ')' : '') + '.');
+      if (offer.img?.startsWith('https://cdn.sanity.io/images/xaf8quzi/production/')) {
+        const image = new Image(640, 420);
+        image.alt = '';
+        image.loading = 'lazy';
+        image.src = offer.img + '?w=640&h=420&fit=crop&auto=format';
+        element.prepend(image);
+      }
+      return element;
+    }));
+    holiday.hidden = !current.length;
+    section.hidden = !flights && !current.length;
+  }
+  fetch('/api/holiday-offers').then(async response => {
+    if (!response.ok) return;
+    const offers: Holiday[] = await response.json();
+    showHolidays(offers);
+    if (offers.some(offer => offer.validUntil)) {
+      const refresh = () => showHolidays(offers);
+      window.addEventListener('pageshow', refresh);
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+      const nextDay = new Date(inIndia.format(new Date()) + 'T00:00:00+05:30').getTime() + 86400000;
+      window.setTimeout(() => { refresh(); window.setInterval(refresh, 86400000); }, nextDay - Date.now());
+    }
+  }).catch(() => { /* Holiday listings are optional. */ });
 </script>
+<style>
+  #offers [hidden]{display:none}
+  #flight-highlights + #holiday-offers{margin-top:40px}
+</style>

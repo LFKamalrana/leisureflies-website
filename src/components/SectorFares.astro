@@ -1,11 +1,21 @@
 ---
 import fares from '../data/departures.json';
+import { departureCutoff } from '../data/flightAvailability.js';
 import { wa } from '../data/site.js';
 
 const money = (n) => n == null ? 'Ask for fare' : '₹' + n.toLocaleString('en-IN');
 const day = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const dateLabel = (s) => day.format(new Date(s + 'T12:00:00Z'));
-const hasPrice = (offer) => offer.groups.some(group => group.fare != null && group.dates.length);
+const builtAt = Date.now();
+function availableDates(offer) {
+  const dated = offer.validUntil ? [{ pair: offer.validUntil, amount: null }] :
+    offer.groups.flatMap(group => group.dates.map(pair => ({ pair, amount: group.fare })));
+  return dated.map(date => ({ ...date, cutoff: departureCutoff(offer, date.pair) }))
+    .filter(date => date.cutoff > builtAt)
+    .sort((a, b) => Number(a.amount == null) - Number(b.amount == null) || a.pair.localeCompare(b.pair));
+}
+const current = fares.map(offer => ({ ...offer, dates: availableDates(offer) })).filter(offer => offer.dates.length);
+const hasPrice = (offer) => offer.dates.some(date => date.amount != null);
 function groupByRoute(offers) {
   const routes = new Map();
   for (const fare of offers) {
@@ -13,14 +23,14 @@ function groupByRoute(offers) {
     if (!routes.has(key)) routes.set(key, []);
     routes.get(key).push(fare);
   }
-  return [...routes];
+  return [...routes].sort(([, a], [, b]) => Number(b.some(hasPrice)) - Number(a.some(hasPrice)));
 }
 const sections = ['Domestic', 'International'].map(name => {
-  const offers = fares.filter(fare => (fare.domestic ? 'Domestic' : 'International') === name);
-  return { name, routes: [...groupByRoute(offers.filter(hasPrice)), ...groupByRoute(offers.filter(o => !hasPrice(o)))] };
+  const offers = current.filter(fare => (fare.domestic ? 'Domestic' : 'International') === name);
+  return { name, routes: groupByRoute([...offers.filter(hasPrice), ...offers.filter(o => !hasPrice(o))]) };
 }).filter(section => section.routes.length);
 function priceSummary(offers) {
-  const prices = offers.flatMap(offer => offer.groups.filter(g => g.fare != null).map(g => ({ fare:g.fare, kind:offer.kind })));
+  const prices = offers.flatMap(offer => offer.dates.filter(date => date.amount != null).map(date => ({ fare:date.amount, kind:offer.kind })));
   if (!prices.length) return 'Ask for fare';
   const lowest = prices.reduce((a,b) => a.fare <= b.fare ? a : b);
   return lowest.kind + ' from ' + money(lowest.fare);
@@ -30,6 +40,7 @@ function priceSummary(offers) {
   <div class="eyebrow">Offers</div>
   <h1 id="departures-title">Fixed departure fares</h1>
   <p class="lead">Choose your route and travel dates. Prices are in Indian rupees per person. We confirm seats and the final price before you book.</p>
+  <div data-current-fares hidden>
   {sections.length > 1 && <fieldset class="fare-categories">
     <legend class="visually-hidden">Flight category</legend>
     {sections.map(({name}, index) => <label>
@@ -49,11 +60,6 @@ function priceSummary(offers) {
       <details class="fare-route" data-route={route} data-origin={offers[0].origin} data-destination={offers[0].destination}>
         <summary><span>{route}</span><small data-route-price>{priceSummary(offers)}</small></summary>
         {offers.map(o => {
-          const dates = o.validUntil ? [{ depart:o.validUntil, label:'Through ' + dateLabel(o.validUntil), price:money(null), amount:null }] : o.groups.flatMap(group => group.dates.map(pair => {
-            const [depart, back] = pair.split('/');
-            const label = dateLabel(depart) + (back ? ' – ' + dateLabel(back) : '');
-            return { depart, label, price: money(group.fare), amount: group.fare };
-          })).sort((a,b) => Number(a.amount == null) - Number(b.amount == null) || a.depart.localeCompare(b.depart));
           const description = route + ', ' + o.airline + ', ' + o.kind + (o.schedule ? ' (' + o.schedule + ')' : '');
           return <article class="fare-option" data-kind={o.kind} data-description={description}>
             <div><h3>{o.airline}</h3><p>{o.kind}{o.schedule && ' · ' + o.schedule}</p>
@@ -62,7 +68,11 @@ function priceSummary(offers) {
             {o.kind !== 'Package' && o.termsConfirmed !== false && <small>Non-refundable · Changes are not permitted.</small>}</div>
             <div class="fare-choice">
               <label>{o.validUntil ? 'Offer validity' : o.kind === 'One way' ? 'Departure and fare' : 'Departure, return and price'}
-                <select>{dates.map(d => <option value={d.depart} data-amount={d.amount}>{d.label} · {d.price}</option>)}</select>
+                <select>{o.dates.map(d => {
+                  const [depart, back] = d.pair.split('/');
+                  const label = (o.validUntil ? 'Through ' : '') + dateLabel(depart) + (back ? ' – ' + dateLabel(back) : '');
+                  return <option value={depart} data-amount={d.amount} data-cutoff={d.cutoff}>{label} · {money(d.amount)}</option>;
+                })}</select>
               </label>
               <a class="btn btn-line" href={wa('Hi LeisureFlies, please check availability for ' + description + '.')} target="_blank" rel="noopener">Check on WhatsApp</a>
             </div>
@@ -72,31 +82,39 @@ function priceSummary(offers) {
     ))}
     </div>
   </section>)}
-  <p class="note" data-no-fares hidden>No upcoming departures match this route. <a href={wa('Hi LeisureFlies, please help me find a flight.')} target="_blank" rel="noopener">Ask us for a fare</a>.</p>
+  <p class="note" data-no-fares hidden><span data-empty-message>No upcoming departures match this route.</span> <a href={wa('Hi LeisureFlies, please help me find a flight.')} target="_blank" rel="noopener">Ask us for a fare</a>. <a data-clear-route href="/offers" hidden>See all routes</a></p>
+  </div>
+  <noscript><p><a href={wa('Hi LeisureFlies, please help me find an upcoming flight.')} target="_blank" rel="noopener">Ask for current flight fares on WhatsApp</a>, or enable JavaScript to browse upcoming departures.</p></noscript>
 </section>
 <script>
   const board = document.querySelector<HTMLElement>('.fare-board')!;
   const from = board.querySelector<HTMLSelectElement>('#fare-from')!;
   const to = board.querySelector<HTMLSelectElement>('#fare-to')!;
   const routes = [...board.querySelectorAll<HTMLDetailsElement>('.fare-route')];
-  const sections = board.querySelectorAll<HTMLElement>('.fare-section');
+  const sections = [...board.querySelectorAll<HTMLElement>('.fare-section')];
+  const categories = [...board.querySelectorAll<HTMLInputElement>('input[name="flight-category"]')];
+  let missingRoute = '';
   function selectedSection() {
-    const category = board.querySelector<HTMLInputElement>('input[name="flight-category"]:checked')?.value;
-    return [...sections].find(section => section.dataset.category === category) ?? sections[0];
+    const category = categories.find(input => input.checked)?.value;
+    return sections.find(section => section.dataset.category === category) ?? sections[0];
   }
-  function updateCities(reset = false) {
+  function updateCities(origin = from.value, destination = to.value) {
     const eligible = [...(selectedSection()?.querySelectorAll<HTMLElement>('.fare-route') ?? [])]
       .filter(route => route.querySelector('.fare-option:not([hidden])'));
-    function populate(select: HTMLSelectElement, key: 'origin' | 'destination') {
-      const previous = select.value;
-      const cities = [...new Set(eligible.map(route => route.dataset[key]).filter((city): city is string => !!city))].sort();
-      select.replaceChildren(select.options[0], ...cities.map(city => new Option(city, city)));
-      select.value = !reset && cities.includes(previous) ? previous : '';
+    if ((origin || destination) && !eligible.some(route =>
+      (!origin || route.dataset.origin === origin) && (!destination || route.dataset.destination === destination))) {
+      missingRoute = [origin, destination].filter(Boolean).join(' → ');
     }
-    populate(from, 'origin');
-    populate(to, 'destination');
+    if (origin && !eligible.some(route => route.dataset.origin === origin)) origin = '';
+    if (destination && !eligible.some(route => (!origin || route.dataset.origin === origin) && route.dataset.destination === destination)) destination = '';
+    function populate(select: HTMLSelectElement, key: 'origin' | 'destination', matches: HTMLElement[], selected: string) {
+      const cities = [...new Set(matches.map(route => route.dataset[key]).filter((city): city is string => !!city))].sort();
+      select.replaceChildren(select.options[0], ...cities.map(city => new Option(city, city)));
+      select.value = selected;
+    }
+    populate(from, 'origin', eligible.filter(route => !destination || route.dataset.destination === destination), origin);
+    populate(to, 'destination', eligible.filter(route => !origin || route.dataset.origin === origin), destination);
   }
-  const clock = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
   // An offer or route can become enquiry-only when its last priced departure expires.
   function keepPricedFirst(items: NodeListOf<HTMLElement>) {
     let firstUnpriced: HTMLElement | null = null;
@@ -109,7 +127,7 @@ function priceSummary(offers) {
     const active = selectedSection();
     const visibleRoutes = new Set<string>();
     for (const route of routes) {
-      route.hidden = !active?.contains(route) || !route.querySelector('.fare-option:not([hidden])') ||
+      route.hidden = !!missingRoute || !active?.contains(route) || !route.querySelector('.fare-option:not([hidden])') ||
         (!!from.value && from.value !== route.dataset.origin) || (!!to.value && to.value !== route.dataset.destination);
       if (!route.hidden && route.dataset.origin) visibleRoutes.add(route.dataset.route!);
     }
@@ -117,13 +135,22 @@ function priceSummary(offers) {
     const matching = routes.filter(route => !route.hidden);
     for (const section of sections) section.hidden = !section.querySelector('.fare-route:not([hidden])');
     board.querySelector<HTMLElement>('[data-no-fares]')!.hidden = matching.length > 0;
+    board.querySelector('[data-empty-message]')!.textContent = missingRoute ? 'No upcoming departures match ' + missingRoute + '.' : 'No upcoming departures match this route.';
+    board.querySelector<HTMLElement>('[data-clear-route]')!.hidden = !missingRoute;
     if (visibleRoutes.size === 1) matching.forEach(route => { route.open = true; });
   }
+  let expiryTimer: number | undefined;
   function refreshDepartures() {
-    const today = clock.format(new Date());
+    window.clearTimeout(expiryTimer);
+    const now = Date.now();
+    let nextCutoff = Infinity;
     for (const offer of board.querySelectorAll<HTMLElement>('.fare-option')) {
       const select = offer.querySelector('select')!;
-      for (const option of [...select.options]) if (option.value < today) option.remove();
+      for (const option of [...select.options]) {
+        const cutoff = Number(option.dataset.cutoff);
+        if (cutoff > now) nextCutoff = Math.min(cutoff, nextCutoff);
+        else option.remove();
+      }
       offer.hidden = !select.options.length;
       if (!offer.hidden) updateEnquiry(offer);
     }
@@ -139,8 +166,24 @@ function priceSummary(offers) {
       keepPricedFirst(route.querySelectorAll<HTMLElement>('.fare-option'));
     }
     for (const section of sections) keepPricedFirst(section.querySelectorAll<HTMLElement>('.fare-route'));
+    for (const input of categories) {
+      const section = sections.find(section => section.dataset.category === input.value);
+      input.closest('label')!.hidden = !section?.querySelector('.fare-option:not([hidden])');
+    }
+    const activeExpired = categories.some(input => input.checked && input.closest('label')!.hidden);
+    if (activeExpired) {
+      const available = categories.find(input => !input.closest('label')!.hidden);
+      if (available) available.checked = true;
+    }
+    const tabs = board.querySelector<HTMLElement>('.fare-categories');
+    if (tabs) tabs.hidden = categories.filter(input => !input.closest('label')!.hidden).length < 2;
     updateCities();
     filterRoutes();
+    board.querySelector<HTMLElement>('.fare-filters')!.hidden = !board.querySelector('.fare-option:not([hidden])');
+    board.querySelector<HTMLElement>('[data-current-fares]')!.hidden = false;
+    if (Number.isFinite(nextCutoff)) {
+      expiryTimer = window.setTimeout(refreshDepartures, Math.min(nextCutoff - Date.now(), 2_147_483_647));
+    }
   }
   function updateEnquiry(offer: HTMLElement) {
     const selected = offer.querySelector('select')!.selectedOptions[0];
@@ -151,15 +194,29 @@ function priceSummary(offers) {
   }
   board.addEventListener('change', event => {
     const target = event.target as HTMLSelectElement;
-    if (target.name === 'flight-category') updateCities(true);
     const offer = target.closest<HTMLElement>('.fare-option');
     if (offer) updateEnquiry(offer);
-    else filterRoutes();
+    else {
+      missingRoute = '';
+      if (target.name === 'flight-category') updateCities('', '');
+      else updateCities();
+      filterRoutes();
+    }
   });
+  const query = new URLSearchParams(window.location.search);
+  const requestedCategory = categories.find(input => input.value === query.get('category'));
+  if (requestedCategory) requestedCategory.checked = true;
   refreshDepartures();
+  if (query.has('from') || query.has('to')) {
+    const category = query.get('category');
+    const origin = query.get('from') || '';
+    const destination = query.get('to') || '';
+    if (category && category !== selectedSection()?.dataset.category) missingRoute = [origin, destination].filter(Boolean).join(' → ');
+    updateCities(origin, destination);
+    filterRoutes();
+  }
   window.addEventListener('pageshow', refreshDepartures);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshDepartures(); });
-  board.querySelector<HTMLElement>('.fare-filters')!.hidden = false;
 </script>
 <style>
   .fare-board {padding-bottom:20px}
