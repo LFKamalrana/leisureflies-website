@@ -11,6 +11,7 @@ import { dubaiPlanNote, dubaiRoutes } from '../../data/dubaiPackages';
 import { kashmirPlanNote, kashmirRoutes } from '../../data/kashmirPackages';
 import { baliPlanNote, baliRoutes } from '../../data/baliPackages';
 import { maldivesPlanNote, maldivesRoutes } from '../../data/maldivesPackages';
+import { mauritiusPlanNote, mauritiusRoutes } from '../../data/mauritiusPackages';
 
 export function getStaticPaths() {
   return Object.keys(raw).map((slug) => ({ params: { slug } }));
@@ -19,6 +20,7 @@ const { slug } = Astro.params;
 const d = raw[slug];
 const meta = DEST[slug];
 const comparison = {
+  mauritius: { routes: mauritiusRoutes, note: mauritiusPlanNote },
   maldives: { routes: maldivesRoutes, note: maldivesPlanNote },
   bali: { routes: baliRoutes, note: baliPlanNote },
   thailand: { routes: thailandRoutes, note: thailandPlanNote },
