@@ -1489,16 +1489,12 @@
    },
    {
     "type": "h2",
-    "text": "Packages across 3, 4 & 5-star hotels.",
+    "text": "Choose your Mauritius hotel category",
     "options": [
      "3-Star Hotels",
      "4-Star Hotels",
      "5-Star Hotels"
     ]
-   },
-   {
-    "type": "p",
-    "text": "Full day-by-day itinerary and hotel options shared on request."
    },
    {
     "type": "h3",
