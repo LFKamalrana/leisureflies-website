@@ -1,7 +1,10 @@
 ---
 interface PackageOption {
   nights: number;
-  nightsByCity: string;
+  nightsByCity?: string;
+  title?: string;
+  slug?: string;
+  photo?: { src: string; width: number; height: number };
   difference: string;
   days: string[];
   inclusions: string[];
@@ -29,15 +32,16 @@ const { destination, note, routes, quoteOption } = Astro.props;
 {routes.map(route => (
   <section class="route" id={route.slug} aria-labelledby={`${route.slug}-name`}>
     <h3 id={`${route.slug}-name`}>{route.name}</h3>
-    <div class="trips">
+    <div class:list={['trips', { 'trips-pairs': route.packages.length === 4 }]}>
       {route.packages.map(trip => {
         const duration = `${trip.nights} nights / ${trip.nights + 1} days`;
-        const choice = trip.quoteLabel ?? `${duration} (${trip.quoteRoute ?? route.quoteRoute})`;
-        const tripId = `${route.slug}-${trip.nights}-nights`;
-        const tripName = `${trip.quoteRoute ?? route.name}, ${duration}`;
+        const choice = trip.quoteLabel ?? trip.title ?? `${duration} (${trip.quoteRoute ?? route.quoteRoute})`;
+        const tripId = trip.slug ?? `${route.slug}-${trip.nights}-nights`;
+        const tripName = trip.title ?? `${trip.quoteRoute ?? route.name}, ${duration}`;
         return (
           <article class="trip" id={tripId} aria-labelledby={`${tripId}-name`}>
-            <h4 id={`${tripId}-name`}>{duration}</h4>
+            {trip.photo && <img class="trip-photo" src={trip.photo.src} width={trip.photo.width} height={trip.photo.height} alt="" loading="lazy" decoding="async" />}
+            <h4 id={`${tripId}-name`}>{trip.title ?? duration}</h4>
             {trip.nightsByCity && <p class="city-nights">{trip.nightsByCity}</p>}
             <p class="difference">{trip.difference}</p>
             <details>
@@ -77,6 +81,8 @@ const { destination, note, routes, quoteOption } = Astro.props;
   .trip, .route { scroll-margin-top: 85px; }
   .route h3 { font-size: clamp(25px, 3vw, 34px); }
   .trips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; align-items: start; margin-top: 14px; }
+  .trips-pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trip-photo { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 12px; margin-bottom: 14px; }
   .trip { min-width: 0; padding: clamp(16px, 2vw, 24px); border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
   .trip h4 { margin: 0; font: 700 clamp(21px, 2vw, 27px)/1.2 var(--display); color: var(--ink); }
   .city-nights { margin-top: 8px; font-weight: 700; font-size: 15px; }
