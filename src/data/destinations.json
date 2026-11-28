@@ -1238,7 +1238,7 @@
   "chips": [
    "Honeymoon",
    "Water Villas",
-   "All-Inclusive"
+   "Resort stays"
   ],
   "blocks": [
    {
@@ -1295,7 +1295,7 @@
    },
    {
     "type": "p",
-    "text": "Every resort has its own version of these — we help you pick the one that fits."
+    "text": "These are optional experiences. Ask which ones your preferred resort offers and whether your meal plan or villa booking covers them."
    },
    {
     "type": "h3",
@@ -1319,7 +1319,7 @@
    },
    {
     "type": "p",
-    "text": "Breakfast served on a raft in your own private plunge pool — a Maldives signature."
+    "text": "Some resorts can arrange breakfast on a floating tray for guests staying in a villa with a private pool."
    },
    {
     "type": "h3",
@@ -1331,71 +1331,17 @@
    },
    {
     "type": "eyebrow",
-    "text": "Top Selling"
+    "text": "Resort stays"
    },
    {
     "type": "h2",
-    "text": "How to pick the perfect resort.",
+    "text": "Choose your Maldives villa",
     "options": [
-     "Transfers",
-     "Room Category",
-     "Meal Plan"
+     "Garden villa",
+     "Beach villa",
+     "Water villa",
+     "Villa with pool"
     ]
-   },
-   {
-    "type": "p",
-    "text": "Speedboat, domestic flight or seaplane transfers; Garden, Beach, Pool or Water Villa rooms; Breakfast-only through All-Inclusive meal plans — we match all three to your budget and trip length."
-   },
-   {
-    "type": "h3",
-    "text": "Villas, Explained",
-    "quoteVillas": true,
-    "photos": [
-     {
-      "src": "/img/holidays/garden-villa.webp",
-      "alt": "Garden villa",
-      "width": 900,
-      "height": 514,
-      "caption": "Garden villa"
-     },
-     {
-      "src": "/img/holidays/beach-villa.webp",
-      "alt": "Beach villa",
-      "width": 900,
-      "height": 636,
-      "caption": "Beach villa"
-     },
-     {
-      "src": "/img/holidays/water-villa.webp",
-      "alt": "Water villa",
-      "width": 494,
-      "height": 750,
-      "caption": "Water villa"
-     },
-     {
-      "src": "/img/holidays/pool-villa.webp",
-      "alt": "Villa with pool",
-      "width": 900,
-      "height": 600,
-      "caption": "Villa with pool"
-     }
-    ]
-   },
-   {
-    "type": "p",
-    "text": "The most budget-friendly category — ideal for a 2-3 day stay."
-   },
-   {
-    "type": "p",
-    "text": "Right on the beach — good for relaxation."
-   },
-   {
-    "type": "p",
-    "text": "Best for couples' privacy — a great luxurious option for your first 2-3 days."
-   },
-   {
-    "type": "p",
-    "text": "The famous overwater stilted villa — best saved for your last 1-2 nights."
    },
    {
     "type": "h3",
@@ -1414,7 +1360,7 @@
     "text": "Most resorts now offer dedicated vegetarian, Indian and Jain meal options — worth confirming when we book."
    }
   ],
-  "description": "Choose a Maldives resort by transfer, room type and meal plan. Compare beach and water villas, explore snorkelling or sunset fishing, and request a quote.",
+  "description": "Compare garden, beach, water and pool villas in the Maldives. See a sample itinerary for each, check inclusions and ask for a quote for your chosen villa.",
   "entry": {
    "advice": [
     "Tourists receive a visa on arrival if they meet Maldives Immigration’s entry requirements. For a resort holiday, carry your confirmed return ticket, proof of a prepaid stay at a registered property and evidence of funds for your trip.",
